@@ -1,0 +1,541 @@
+{
+  "chapter": 6,
+  "title": "الجهاز اللمفاوي والمناعي",
+  "title_en": "Lymphatic and Immune Systems",
+  "terms": [
+    {
+      "id": 226,
+      "term": "lymph",
+      "arabic": "لمف",
+      "latin": "lympha",
+      "pronunciation": "ليمف",
+      "definition": "سائل شفاف يشبه البلازما ينتشر في الأوعية اللمفاوية",
+      "parts": {},
+      "system": "الجهاز اللمفاوي",
+      "systemFunction": "نقل الخلايا المناعية والفضلات",
+      "location": "الأوعية اللمفاوية",
+      "nearbyOrgans": ["العقد اللمفاوية", "الطحال"],
+      "diseases": [],
+      "keywords": ["lymph", "لمف"]
+    },
+    {
+      "id": 227,
+      "term": "lymph node",
+      "arabic": "عقدة لمفاوية",
+      "latin": "nodus lymphoideus",
+      "pronunciation": "ليمف نود",
+      "definition": "عضو صغير على شكل حبة الفول يوجد على طول الأوعية اللمفاوية",
+      "parts": {},
+      "system": "الجهاز اللمفاوي",
+      "systemFunction": "ترشيح اللمف وتنقية الجسم من الجراثيم",
+      "location": "الرقبة، الإبط، الأربية، الصدر، البطن",
+      "nearbyOrgans": ["الأوعية اللمفاوية"],
+      "diseases": [
+        {
+          "name": "تضخم العقد اللمفاوية",
+          "symptoms": ["كتل تحت الجلد", "ألم", "حمى"],
+          "treatments": ["علاج السبب"]
+        }
+      ],
+      "keywords": ["lymph node", "عقدة لمفاوية"]
+    },
+    {
+      "id": 228,
+      "term": "lymphocyte",
+      "arabic": "لمفاوية",
+      "latin": "lymphocytus",
+      "pronunciation": "ليم-فو-سايت",
+      "definition": "نوع من كريات الدم البيضاء مسؤول عن المناعة النوعية",
+      "parts": {
+        "root1": { "value": "lymph", "meaning": "لمف" },
+        "root2": { "value": "cyt", "meaning": "خلية" }
+      },
+      "system": "الجهاز المناعي",
+      "systemFunction": "الدفاع عن الجسم",
+      "location": "الدم، الأنسجة اللمفاوية",
+      "nearbyOrgans": ["العقد اللمفاوية", "الطحال", "الدم"],
+      "diseases": [
+        {
+          "name": "كثرة اللمفاويات",
+          "symptoms": ["تضخم عقد لمفاوية", "تعب"],
+          "treatments": ["علاج السبب"]
+        }
+      ],
+      "keywords": ["lymphocyte", "لمفاوية"]
+    },
+    {
+      "id": 229,
+      "term": "tonsils",
+      "arabic": "لوزتان",
+      "latin": "tonsillae",
+      "pronunciation": "تون-سيلز",
+      "definition": "كتل من النسيج اللمفاوي في الجزء الخلفي من الحلق",
+      "parts": {},
+      "system": "الجهاز اللمفاوي",
+      "systemFunction": "الدفاع ضد الجراثيم الداخلة عبر الفم والأنف",
+      "location": "الحلق",
+      "nearbyOrgans": ["البلعوم", "اللهاة"],
+      "diseases": [
+        {
+          "name": "التهاب اللوزتين",
+          "symptoms": ["ألم حلق", "حمى", "صعوبة بلع"],
+          "treatments": ["مضادات حيوية", "مسكنات", "استئصال اللوزتين"]
+        }
+      ],
+      "keywords": ["tonsils", "لوزتين"]
+    },
+    {
+      "id": 230,
+      "term": "thymus",
+      "arabic": "غدة زعترية",
+      "latin": "thymus",
+      "pronunciation": "ثاي-مس",
+      "definition": "غدة في المنصف الخلفي خلف عظم القص، تلعب دوراً في تطور الخلايا التائية",
+      "parts": {},
+      "system": "الجهاز اللمفاوي والمناعي",
+      "systemFunction": "نضج الخلايا اللمفاوية التائية",
+      "location": "خلف عظم القص، أمام القلب",
+      "nearbyOrgans": ["القلب", "الرئتين", "القصبة الهوائية"],
+      "diseases": [
+        {
+          "name": "تضخم الغدة الزعترية",
+          "symptoms": ["سعال", "ضيق تنفس", "صعوبة بلع"],
+          "treatments": ["جراحة"]
+        }
+      ],
+      "keywords": ["thymus", "غدة زعترية"]
+    },
+    {
+      "id": 231,
+      "term": "spleen",
+      "arabic": "طحال",
+      "latin": "splen",
+      "pronunciation": "سپلين",
+      "definition": "عضو لمفاوي في الربع العلوي الأيسر من البطن، يرشح الدم",
+      "parts": {},
+      "system": "الجهاز اللمفاوي",
+      "systemFunction": "ترشيح الدم، تخزين خلايا الدم، مكافحة العدوى",
+      "location": "الربع العلوي الأيسر من البطن، تحت الحجاب الحاجز",
+      "nearbyOrgans": ["المعدة", "الكلية اليسرى", "البنكرياس"],
+      "diseases": [
+        {
+          "name": "تضخم الطحال",
+          "symptoms": ["ألم في البطن الأيسر", "شبع مبكر"],
+          "treatments": ["علاج السبب", "استئصال الطحال"]
+        }
+      ],
+      "keywords": ["spleen", "طحال"]
+    },
+    {
+      "id": 232,
+      "term": "lymphadenitis",
+      "arabic": "التهاب العقد اللمفية",
+      "latin": "lymphadenitis",
+      "pronunciation": "ليم-فاد-إ-ناي-تس",
+      "definition": "التهاب الغدد اللمفاوية، غالباً بسبب العدوى",
+      "parts": {
+        "root": { "value": "lymphaden", "meaning": "عقدة لمفاوية" },
+        "suffix": { "value": "itis", "meaning": "التهاب" }
+      },
+      "system": "الجهاز اللمفاوي",
+      "systemFunction": "الدفاع عن الجسم",
+      "location": "العقد اللمفاوية",
+      "nearbyOrgans": ["العقد اللمفاوية"],
+      "diseases": [
+        {
+          "name": "التهاب العقد اللمفاوية",
+          "symptoms": ["تورم العقد", "ألم", "احمرار", "حمى"],
+          "treatments": ["مضادات حيوية", "مسكنات"]
+        }
+      ],
+      "keywords": ["lymphadenitis", "التهاب عقد لمفاوية"]
+    },
+    {
+      "id": 233,
+      "term": "lymphadenopathy",
+      "arabic": "اعتلال العقد اللمفية",
+      "latin": "lymphadenopathia",
+      "pronunciation": "ليم-فاد-إ-نو-با-ثي",
+      "definition": "أي مرض يصيب العقد اللمفاوية (تضخم، ألم)",
+      "parts": {
+        "root1": { "value": "lymphaden", "meaning": "عقدة لمفاوية" },
+        "suffix": { "value": "pathy", "meaning": "مرض" }
+      },
+      "system": "الجهاز اللمفاوي",
+      "systemFunction": "الدفاع عن الجسم",
+      "location": "العقد اللمفاوية",
+      "nearbyOrgans": ["العقد اللمفاوية"],
+      "diseases": [
+        {
+          "name": "اعتلال العقد اللمفاوية",
+          "symptoms": ["تضخم العقد", "ألم"],
+          "treatments": ["علاج السبب"]
+        }
+      ],
+      "keywords": ["lymphadenopathy", "اعتلال عقد لمفاوية"]
+    },
+    {
+      "id": 234,
+      "term": "lymphedema",
+      "arabic": "وذمة لمفية",
+      "latin": "lymphoedema",
+      "pronunciation": "ليم-في-دي-ما",
+      "definition": "تورم بسبب تراكم السائل اللمفاوي في الأنسجة",
+      "parts": {
+        "root1": { "value": "lymph", "meaning": "لمف" },
+        "suffix": { "value": "edema", "meaning": "وذمة" }
+      },
+      "system": "الجهاز اللمفاوي",
+      "systemFunction": "تصريف السوائل",
+      "location": "الأطراف (عادة الذراعين أو الساقين)",
+      "nearbyOrgans": ["الجلد", "الأنسجة تحت الجلد"],
+      "diseases": [
+        {
+          "name": "وذمة لمفية أولية",
+          "symptoms": ["تورم مزمن في طرف", "ثقل"],
+          "treatments": ["علاج طبيعي", "جوارب ضاغطة", "تدليك"]
+        },
+        {
+          "name": "وذمة لمفية ثانوية",
+          "symptoms": ["تورم بعد استئصال العقد اللمفاوية"],
+          "treatments": ["علاج طبيعي", "جوارب ضاغطة"]
+        }
+      ],
+      "keywords": ["lymphedema", "وذمة لمفية"]
+    },
+    {
+      "id": 235,
+      "term": "splenomegaly",
+      "arabic": "تضخم الطحال",
+      "latin": "splenomegalia",
+      "pronunciation": "سپلين-أو-ميغ-أ-لي",
+      "definition": "تضخم غير طبيعي في حجم الطحال",
+      "parts": {
+        "root": { "value": "splen", "meaning": "طحال" },
+        "suffix": { "value": "megaly", "meaning": "تضخم" }
+      },
+      "system": "الجهاز اللمفاوي",
+      "systemFunction": "ترشيح الدم",
+      "location": "الطحال",
+      "nearbyOrgans": ["المعدة", "الكبد"],
+      "diseases": [
+        {
+          "name": "تضخم الطحال",
+          "symptoms": ["ألم في البطن الأيسر", "شبع مبكر", "فقر دم"],
+          "treatments": ["علاج السبب", "استئصال الطحال"]
+        }
+      ],
+      "keywords": ["splenomegaly", "تضخم طحال"]
+    },
+    {
+      "id": 236,
+      "term": "antigen",
+      "arabic": "مستضد",
+      "latin": "antigenum",
+      "pronunciation": "آن-تي-جن",
+      "definition": "مادة غريبة تحفز استجابة مناعية",
+      "parts": {
+        "prefix": { "value": "anti", "meaning": "ضد" },
+        "root": { "value": "gen", "meaning": "مولد" }
+      },
+      "system": "الجهاز المناعي",
+      "systemFunction": "تحفيز المناعة",
+      "location": "سطح الجراثيم، الخلايا",
+      "nearbyOrgans": ["الدم", "الأنسجة"],
+      "diseases": [],
+      "keywords": ["antigen", "مستضد"]
+    },
+    {
+      "id": 237,
+      "term": "antibody",
+      "arabic": "جسم مضاد",
+      "latin": "anticorpus",
+      "pronunciation": "آن-تي-بودي",
+      "definition": "بروتين ينتجه الجهاز المناعي استجابة لمستضد معين",
+      "parts": {
+        "prefix": { "value": "anti", "meaning": "ضد" }
+      },
+      "system": "الجهاز المناعي",
+      "systemFunction": "تحييد الجراثيم والسموم",
+      "location": "الدم، الأنسجة",
+      "nearbyOrgans": ["الدم", "الأنسجة اللمفاوية"],
+      "diseases": [],
+      "keywords": ["antibody", "جسم مضاد"]
+    },
+    {
+      "id": 238,
+      "term": "immunoglobulin",
+      "arabic": "غلوبيولين مناعي",
+      "latin": "immunoglobulinum",
+      "pronunciation": "إم-يو-نو-غلوب-يو-لين",
+      "definition": "بروتينات جسم مضاد تنتجها خلايا البلازما",
+      "parts": {},
+      "system": "الجهاز المناعي",
+      "systemFunction": "الدفاع عن الجسم",
+      "location": "الدم، الأنسجة",
+      "nearbyOrgans": ["الدم"],
+      "diseases": [
+        {
+          "name": "نقص الغلوبيولين المناعي",
+          "symptoms": ["تكرار العدوى"],
+          "treatments": ["تعويض الغلوبيولين المناعي"]
+        }
+      ],
+      "keywords": ["immunoglobulin", "غلوبيولين مناعي", "Ig"]
+    },
+    {
+      "id": 239,
+      "term": "B cell",
+      "arabic": "خلية بائية",
+      "latin": "lymphocytus B",
+      "pronunciation": "بي سيل",
+      "definition": "خلية لمفاوية تنتج الأجسام المضادة",
+      "parts": {},
+      "system": "الجهاز المناعي",
+      "systemFunction": "إنتاج الأجسام المضادة",
+      "location": "الدم، العقد اللمفاوية، الطحال",
+      "nearbyOrgans": ["العقد اللمفاوية", "الطحال"],
+      "diseases": [
+        {
+          "name": "لمفوما الخلايا البائية",
+          "symptoms": ["تضخم عقد لمفاوية", "تعب", "حمى"],
+          "treatments": ["علاج كيميائي", "علاج مناعي"]
+        }
+      ],
+      "keywords": ["B cell", "خلية بائية"]
+    },
+    {
+      "id": 240,
+      "term": "T cell",
+      "arabic": "خلية تائية",
+      "latin": "lymphocytus T",
+      "pronunciation": "تي سيل",
+      "definition": "خلية لمفاوية تنسق الاستجابة المناعية وتقتل الخلايا المصابة",
+      "parts": {},
+      "system": "الجهاز المناعي",
+      "systemFunction": "القتل المباشر للخلايا المصابة، تنظيم المناعة",
+      "location": "الدم، العقد اللمفاوية، الطحال",
+      "nearbyOrgans": ["العقد اللمفاوية", "الطحال"],
+      "diseases": [
+        {
+          "name": "نقص الخلايا التائية",
+          "symptoms": ["عدوى متكررة"],
+          "treatments": ["علاج السبب"]
+        }
+      ],
+      "keywords": ["T cell", "خلية تائية"]
+    },
+    {
+      "id": 241,
+      "term": "plasma cell",
+      "arabic": "خلية بلازمية",
+      "latin": "plasmocytus",
+      "pronunciation": "بلاز-ما سيل",
+      "definition": "خلية بائية متمايزة تنتج كميات كبيرة من الأجسام المضادة",
+      "parts": {},
+      "system": "الجهاز المناعي",
+      "systemFunction": "إنتاج الأجسام المضادة",
+      "location": "نخاع العظم، الأنسجة اللمفاوية",
+      "nearbyOrgans": ["نخاع العظم"],
+      "diseases": [
+        {
+          "name": "ورم نخاعي متعدد",
+          "symptoms": ["ألم عظام", "فقر دم", "فشل كلوي"],
+          "treatments": ["علاج كيميائي", "زراعة نخاع عظم"]
+        }
+      ],
+      "keywords": ["plasma cell", "خلية بلازمية"]
+    },
+    {
+      "id": 242,
+      "term": "interferon",
+      "arabic": "إنترفيرون",
+      "latin": "interferonum",
+      "pronunciation": "إن-تر-فير-ون",
+      "definition": "بروتينات ينتجها الجهاز المناعي استجابة للفيروسات",
+      "parts": {},
+      "system": "الجهاز المناعي",
+      "systemFunction": "مكافحة الفيروسات",
+      "location": "الدم، الأنسجة",
+      "nearbyOrgans": [],
+      "diseases": [],
+      "keywords": ["interferon", "إنترفيرون"]
+    },
+    {
+      "id": 243,
+      "term": "complement",
+      "arabic": "متممة",
+      "latin": "complementum",
+      "pronunciation": "كوم-بلي-منت",
+      "definition": "مجموعة من البروتينات في الدم تساعد في تدمير الجراثيم",
+      "parts": {},
+      "system": "الجهاز المناعي",
+      "systemFunction": "تعزيز فعالية الأجسام المضادة",
+      "location": "الدم",
+      "nearbyOrgans": [],
+      "diseases": [
+        {
+          "name": "نقص المتممة",
+          "symptoms": ["عدوى متكررة"],
+          "treatments": ["علاج السبب"]
+        }
+      ],
+      "keywords": ["complement", "متممة"]
+    },
+    {
+      "id": 244,
+      "term": "allergy",
+      "arabic": "حساسية",
+      "latin": "allergia",
+      "pronunciation": "أل-لير-جي",
+      "definition": "فرط استجابة الجهاز المناعي لمادة غير ضارة عادة",
+      "parts": {},
+      "system": "الجهاز المناعي",
+      "systemFunction": "الاستجابة لمسببات الحساسية",
+      "location": "الجهاز التنفسي، الجلد، الجهاز الهضمي",
+      "nearbyOrgans": ["الأنف", "الرئتين", "الجلد"],
+      "diseases": [
+        {
+          "name": "حساسية الأنف",
+          "symptoms": ["عطاس", "رشح", "حكة في الأنف"],
+          "treatments": ["مضادات هستامين", "بخاخات أنفية"]
+        },
+        {
+          "name": "حساسية الجلد",
+          "symptoms": ["طفح", "حكة"],
+          "treatments": ["كريمات كورتيزون", "مضادات هستامين"]
+        }
+      ],
+      "keywords": ["allergy", "حساسية"]
+    },
+    {
+      "id": 245,
+      "term": "allergen",
+      "arabic": "مسبب الحساسية",
+      "latin": "allergenum",
+      "pronunciation": "أل-لير-جن",
+      "definition": "مادة تسبب رد فعل تحسسي",
+      "parts": {},
+      "system": "الجهاز المناعي",
+      "systemFunction": "إثارة الحساسية",
+      "location": "البيئة، الطعام",
+      "nearbyOrgans": [],
+      "diseases": [],
+      "keywords": ["allergen", "مسبب حساسية"]
+    },
+    {
+      "id": 246,
+      "term": "anaphylaxis",
+      "arabic": "تأق",
+      "latin": "anaphylaxia",
+      "pronunciation": "آ-نا-في-لاك-سيس",
+      "definition": "رد فعل تحسسي شديد وسريع يهدد الحياة",
+      "parts": {},
+      "system": "الجهاز المناعي",
+      "systemFunction": "استجابة مناعية",
+      "location": "جميع أجهزة الجسم",
+      "nearbyOrgans": ["الجهاز التنفسي", "القلب", "الجلد"],
+      "diseases": [
+        {
+          "name": "صدمة تحسسية",
+          "symptoms": ["صعوبة تنفس", "هبوط ضغط", "طفح", "تورم الوجه والحلق"],
+          "treatments": ["أدرينالين", "مضادات هستامين", "كورتيزون", "دعم تنفسي"]
+        }
+      ],
+      "keywords": ["anaphylaxis", "تأق", "صدمة تحسسية"]
+    },
+    {
+      "id": 247,
+      "term": "antihistamine",
+      "arabic": "مضاد هستامين",
+      "latin": "antihistaminicum",
+      "pronunciation": "آن-تي-هيس-تا-مين",
+      "definition": "دواء يمنع تأثير الهستامين ويخفف أعراض الحساسية",
+      "parts": {},
+      "system": "الجهاز المناعي",
+      "systemFunction": "علاج الحساسية",
+      "location": "جميع أنحاء الجسم",
+      "nearbyOrgans": [],
+      "diseases": [],
+      "keywords": ["antihistamine", "مضاد هستامين"]
+    },
+    {
+      "id": 248,
+      "term": "autoimmune disorder",
+      "arabic": "اضطراب مناعي ذاتي",
+      "latin": "morbus autoimmunis",
+      "pronunciation": "أو-تو-إي-ميون ديس-أور-در",
+      "definition": "حالة يهاجم فيها الجهاز المناعي أنسجة الجسم نفسه",
+      "parts": {
+        "prefix": { "value": "auto", "meaning": "ذاتي" }
+      },
+      "system": "الجهاز المناعي",
+      "systemFunction": "الدفاع عن الجسم",
+      "location": "حسب المرض",
+      "nearbyOrgans": ["حسب المرض"],
+      "diseases": [
+        {
+          "name": "الذئبة الحمامية",
+          "symptoms": ["طفح", "ألم مفاصل", "تعب", "حمى"],
+          "treatments": ["كورتيزون", "مثبطات مناعة"]
+        },
+        {
+          "name": "التهاب المفاصل الروماتويدي",
+          "symptoms": ["ألم مفاصل", "تيبس صباحي", "تورم"],
+          "treatments": ["مضادات التهاب", "أدوية معدلة للمناعة"]
+        }
+      ],
+      "keywords": ["autoimmune", "مناعي ذاتي"]
+    },
+    {
+      "id": 249,
+      "term": "immunodeficiency",
+      "arabic": "نقص مناعة",
+      "latin": "immunodeficientia",
+      "pronunciation": "إم-يو-نو-دي-في-شن-سي",
+      "definition": "ضعف أو غياب قدرة الجهاز المناعي على مكافحة العدوى",
+      "parts": {
+        "prefix": { "value": "immuno", "meaning": "مناعة" },
+        "root": { "value": "deficient", "meaning": "نقص" }
+      },
+      "system": "الجهاز المناعي",
+      "systemFunction": "الدفاع عن الجسم",
+      "location": "جميع أنحاء الجسم",
+      "nearbyOrgans": ["نخاع العظم", "الغدة الزعترية"],
+      "diseases": [
+        {
+          "name": "نقص المناعة الأولي",
+          "symptoms": ["عدوى متكررة", "عدوى شديدة"],
+          "treatments": ["غلوبيولين مناعي", "زراعة نخاع عظم"]
+        },
+        {
+          "name": "الإيدز",
+          "symptoms": ["عدوى انتهازية", "تعب", "فقدان وزن"],
+          "treatments": ["مضادات فيروسية"]
+        }
+      ],
+      "keywords": ["immunodeficiency", "نقص مناعة"]
+    },
+    {
+      "id": 250,
+      "term": "HIV",
+      "arabic": "فيروس نقص المناعة البشرية",
+      "latin": "virus immunodeficientiae humanae",
+      "pronunciation": "إتش-آي-في",
+      "definition": "فيروس يهاجم الخلايا التائية المساعدة ويسبب نقص المناعة",
+      "parts": {},
+      "system": "الجهاز المناعي",
+      "systemFunction": "إضعاف المناعة",
+      "location": "الدم، السوائل الجسدية",
+      "nearbyOrgans": ["الدم", "الجهاز اللمفاوي"],
+      "diseases": [
+        {
+          "name": "عدوى HIV",
+          "symptoms": ["حمى", "تعب", "طفح", "تضخم عقد لمفاوية"],
+          "treatments": ["مضادات فيروسية"]
+        }
+      ],
+      "keywords": ["HIV", "فيروس نقص المناعة"]
+    }
+  ]
+}

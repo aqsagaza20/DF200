@@ -1,0 +1,1115 @@
+{
+  "chapter": 4,
+  "title": "الجهاز الهيكلي",
+  "title_en": "Skeletal System",
+  "terms": [
+    {
+      "id": 131,
+      "term": "ankylosis",
+      "arabic": "التحام المفصل",
+      "latin": "ankylosis",
+      "pronunciation": "آن-كي-لو-سيس",
+      "definition": "تصلب وعدم حركة المفصل بسبب التحام العظام",
+      "parts": {
+        "root": { "value": "ankyl", "meaning": "ملتحم، متصلب" },
+        "suffix": { "value": "osis", "meaning": "حالة مرضية" }
+      },
+      "system": "الجهاز الهيكلي",
+      "systemFunction": "الحركة ودعم الجسم",
+      "location": "المفاصل",
+      "nearbyOrgans": ["العظام", "الغضاريف", "الأربطة"],
+      "diseases": [
+        {
+          "name": "التهاب الفقار المقسط",
+          "symptoms": ["ألم وتيبس في أسفل الظهر", "تيبس صباحي", "التحام الفقرات", "انحناء الظهر"],
+          "treatments": ["مضادات التهاب", "علاج طبيعي", "أدوية بيولوجية", "تمارين رياضية"]
+        }
+      ],
+      "keywords": ["ankylosis", "التحام مفصل", "ankylosing spondylitis"]
+    },
+    {
+      "id": 132,
+      "term": "arthrosclerosis",
+      "arabic": "تصلب المفصل",
+      "latin": "arthrosclerosis",
+      "pronunciation": "آر-ثرو-سكل-رو-سيس",
+      "definition": "تصلب المفاصل خاصة عند كبار السن",
+      "parts": {
+        "root": { "value": "arthr", "meaning": "مفصل" },
+        "suffix": { "value": "sclerosis", "meaning": "تصلب" }
+      },
+      "system": "الجهاز الهيكلي",
+      "systemFunction": "الحركة",
+      "location": "المفاصل",
+      "nearbyOrgans": ["العظام", "الغضاريف"],
+      "diseases": [
+        {
+          "name": "تصلب المفاصل",
+          "symptoms": ["تيبس", "ألم", "محدودية الحركة"],
+          "treatments": ["علاج طبيعي", "مسكنات", "تمارين"]
+        }
+      ],
+      "keywords": ["arthrosclerosis", "تصلب مفصل"]
+    },
+    {
+      "id": 133,
+      "term": "bursitis",
+      "arabic": "التهاب الجراب",
+      "latin": "bursitis",
+      "pronunciation": "بور-ساي-تس",
+      "definition": "التهاب الجراب الزلالي (كيس مليء بالسائل يقلل الاحتكاك)",
+      "parts": {
+        "root": { "value": "burs", "meaning": "جراب" },
+        "suffix": { "value": "itis", "meaning": "التهاب" }
+      },
+      "system": "الجهاز الهيكلي",
+      "systemFunction": "تقليل الاحتكاك بين الأنسجة",
+      "location": "حول المفاصل (الكتف، المرفق، الورك، الركبة)",
+      "nearbyOrgans": ["الأوتار", "العظام", "العضلات"],
+      "diseases": [
+        {
+          "name": "التهاب الجراب تحت الأخرمي",
+          "symptoms": ["ألم الكتف", "صعوبة رفع الذراع", "ألم ليلي"],
+          "treatments": ["راحة", "ثلج", "مضادات التهاب", "حقن كورتيزون", "علاج طبيعي"]
+        },
+        {
+          "name": "التهاب جراب المرفق",
+          "symptoms": ["تورم خلف المرفق", "ألم", "احمرار"],
+          "treatments": ["راحة", "ضغط", "مضادات التهاب", "شفط السائل"]
+        }
+      ],
+      "keywords": ["bursitis", "التهاب جراب"]
+    },
+    {
+      "id": 134,
+      "term": "chondromalacia",
+      "arabic": "تليين الغضروف",
+      "latin": "chondromalacia",
+      "pronunciation": "كون-درو-ما-لا-شيا",
+      "definition": "لين غير طبيعي في الغضروف",
+      "parts": {
+        "root": { "value": "chondr", "meaning": "غضروف" },
+        "suffix": { "value": "malacia", "meaning": "لين" }
+      },
+      "system": "الجهاز الهيكلي",
+      "systemFunction": "توسيد المفاصل",
+      "location": "غضروف الرضفة (عظمة الركبة)",
+      "nearbyOrgans": ["الركبة", "الغضروف المفصلي"],
+      "diseases": [
+        {
+          "name": "تليين غضروف الرضفة",
+          "symptoms": ["ألم أمام الركبة", "فرقعة عند ثني الركبة", "ألم عند صعود الدرج"],
+          "treatments": ["علاج طبيعي", "تمارين تقوية", "مسكنات", "جراحة في الحالات الشديدة"]
+        }
+      ],
+      "keywords": ["chondromalacia", "تليين غضروف", "runner's knee"]
+    },
+    {
+      "id": 135,
+      "term": "chondroma",
+      "arabic": "ورم غضروفي",
+      "latin": "chondroma",
+      "pronunciation": "كون-درو-ما",
+      "definition": "ورم حميد ينشأ من خلايا الغضروف",
+      "parts": {
+        "root": { "value": "chondr", "meaning": "غضروف" },
+        "suffix": { "value": "oma", "meaning": "ورم" }
+      },
+      "system": "الجهاز الهيكلي",
+      "systemFunction": "تكوين الغضروف",
+      "location": "العظام (اليدين، القدمين)",
+      "nearbyOrgans": ["العظام", "الغضاريف"],
+      "diseases": [
+        {
+          "name": "ورم غضروفي",
+          "symptoms": ["كتلة غير مؤلمة", "تورم", "كسور مرضية"],
+          "treatments": ["مراقبة", "استئصال جراحي"]
+        }
+      ],
+      "keywords": ["chondroma", "ورم غضروفي"]
+    },
+    {
+      "id": 136,
+      "term": "costochondritis",
+      "arabic": "التهاب الغضروف الضلعي",
+      "latin": "costochondritis",
+      "pronunciation": "كوس-تو-كون-دراي-تس",
+      "definition": "التهاب الغضروف الذي يربط الضلع بعظم القص",
+      "parts": {
+        "root1": { "value": "cost", "meaning": "ضلع" },
+        "root2": { "value": "chondr", "meaning": "غضروف" },
+        "suffix": { "value": "itis", "meaning": "التهاب" }
+      },
+      "system": "الجهاز الهيكلي",
+      "systemFunction": "الربط بين الأضلاع والقص",
+      "location": "مفاصل الأضلاع مع عظم القص",
+      "nearbyOrgans": ["الأضلاع", "عظم القص", "القلب", "الرئتين"],
+      "diseases": [
+        {
+          "name": "التهاب الغضروف الضلعي",
+          "symptoms": ["ألم في الصدر يزداد مع الضغط", "ألم مع التنفس العميق", "ألم مع الحركة"],
+          "treatments": ["مسكنات", "مضادات التهاب", "راحة", "كمادات دافئة"]
+        }
+      ],
+      "keywords": ["costochondritis", "التهاب غضروف ضلعي", "chest wall pain"]
+    },
+    {
+      "id": 137,
+      "term": "hallux valgus",
+      "arabic": "إبهام القدم الأروح",
+      "latin": "hallux valgus",
+      "pronunciation": "هال-كس فال-غس",
+      "definition": "انحراف إصبع القدم الكبير نحو الخارج مع بروز عظمي في القاعدة",
+      "parts": {},
+      "system": "الجهاز الهيكلي",
+      "systemFunction": "المشي والاتزان",
+      "location": "مفصل إصبع القدم الكبير",
+      "nearbyOrgans": ["عظام مشط القدم", "الأصابع الأخرى"],
+      "diseases": [
+        {
+          "name": "الورم الملتهب (إبهام القدم الأروح)",
+          "symptoms": ["بروز عظمي في قاعدة الإصبع الكبير", "ألم", "احمرار", "تورم", "صعوبة في ارتداء الأحذية"],
+          "treatments": ["أحذية واسعة", "جبائر ليلية", "وسائد هلامية", "جراحة تصحيحية في الحالات الشديدة"]
+        }
+      ],
+      "keywords": ["hallux valgus", "إبهام أروح", "bunion"]
+    },
+    {
+      "id": 138,
+      "term": "hemarthrosis",
+      "arabic": "تدمي المفصل",
+      "latin": "haemarthrosis",
+      "pronunciation": "هيم-آر-ثرو-سيس",
+      "definition": "تجمع دموي داخل المفصل",
+      "parts": {
+        "root1": { "value": "hem", "meaning": "دم" },
+        "root2": { "value": "arthr", "meaning": "مفصل" },
+        "suffix": { "value": "osis", "meaning": "حالة مرضية" }
+      },
+      "system": "الجهاز الهيكلي والدوراني",
+      "systemFunction": "حركة المفصل",
+      "location": "المفاصل (الركبة، الكوع)",
+      "nearbyOrgans": ["الغضروف", "الغشاء الزليلي"],
+      "diseases": [
+        {
+          "name": "الناعور (الهيموفيليا)",
+          "symptoms": ["نزيف متكرر في المفاصل", "تورم", "ألم شديد", "تصلب المفصل"],
+          "treatments": ["عامل تخثر", "تجنب الإصابات", "علاج طبيعي", "بزل المفصل"]
+        }
+      ],
+      "keywords": ["hemarthrosis", "تدمي مفصل", "hemophilia"]
+    },
+    {
+      "id": 139,
+      "term": "synovitis",
+      "arabic": "التهاب الغشاء الزليلي",
+      "latin": "synovitis",
+      "pronunciation": "سي-نو-فاي-تس",
+      "definition": "التهاب الغشاء المبطن للمفاصل",
+      "parts": {
+        "root": { "value": "synov", "meaning": "زليلي" },
+        "suffix": { "value": "itis", "meaning": "التهاب" }
+      },
+      "system": "الجهاز الهيكلي",
+      "systemFunction": "إفراز السائل الزليلي لتزييت المفصل",
+      "location": "المفاصل",
+      "nearbyOrgans": ["الغضروف", "المفصل"],
+      "diseases": [
+        {
+          "name": "التهاب المفصل الروماتويدي",
+          "symptoms": ["ألم", "تورم", "تيبس صباحي", "احمرار", "دفء المفصل"],
+          "treatments": ["مضادات التهاب", "أدوية معدلة للمناعة", "كورتيزون", "علاج طبيعي"]
+        }
+      ],
+      "keywords": ["synovitis", "التهاب غشاء زليلي"]
+    },
+    {
+      "id": 140,
+      "term": "dislocation",
+      "arabic": "خلع",
+      "latin": "luxatio",
+      "pronunciation": "ديس-لو-كاي-شن",
+      "definition": "انزياح كامل لسطح المفصل العظمي عن مكانه الطبيعي",
+      "parts": {},
+      "system": "الجهاز الهيكلي",
+      "systemFunction": "حركة المفصل",
+      "location": "المفاصل (الكتف، المرفق، الورك، الأصابع)",
+      "nearbyOrgans": ["العظام", "الأربطة", "الأوتار", "الأعصاب", "الأوعية الدموية"],
+      "diseases": [
+        {
+          "name": "خلع الكتف",
+          "symptoms": ["ألم شديد", "تشوه واضح", "عدم القدرة على تحريك المفصل", "تورم"],
+          "treatments": ["رد الخلع", "تثبيت", "علاج طبيعي", "جراحة في الحالات المتكررة"]
+        },
+        {
+          "name": "خلع المرفق",
+          "symptoms": ["ألم", "تشوه", "تورم", "عدم القدرة على ثني المرفق"],
+          "treatments": ["رد الخلع", "تجبير", "علاج طبيعي"]
+        }
+      ],
+      "keywords": ["dislocation", "خلع", "joint displacement"]
+    },
+    {
+      "id": 141,
+      "term": "subluxation",
+      "arabic": "خلع جزئي",
+      "latin": "subluxatio",
+      "pronunciation": "ساب-لوك-ساي-شن",
+      "definition": "انزياح جزئي لسطح المفصل عن مكانه الطبيعي",
+      "parts": {
+        "prefix": { "value": "sub", "meaning": "تحت، جزئي" },
+        "root": { "value": "luxat", "meaning": "خلع" }
+      },
+      "system": "الجهاز الهيكلي",
+      "systemFunction": "حركة المفصل",
+      "location": "المفاصل (الكتف، الرقبة)",
+      "nearbyOrgans": ["العظام", "الأربطة"],
+      "diseases": [
+        {
+          "name": "خلع جزئي في الفقرات الرقبية",
+          "symptoms": ["ألم رقبة", "تيبس", "صداع", "تنميل في الذراعين"],
+          "treatments": ["تثبيت", "علاج طبيعي", "جراحة نادراً"]
+        }
+      ],
+      "keywords": ["subluxation", "خلع جزئي"]
+    },
+    {
+      "id": 142,
+      "term": "osteoarthritis",
+      "arabic": "الفصال العظمي",
+      "latin": "osteoarthritis",
+      "pronunciation": "أوس-تي-أو-آر-ثراي-تس",
+      "definition": "مرض تنكسي في المفاصل مع تآكل الغضروف",
+      "parts": {
+        "root1": { "value": "oste", "meaning": "عظم" },
+        "root2": { "value": "arthr", "meaning": "مفصل" },
+        "suffix": { "value": "itis", "meaning": "التهاب" }
+      },
+      "system": "الجهاز الهيكلي",
+      "systemFunction": "الحركة",
+      "location": "المفاصل الحاملة للوزن (الركبة، الورك، العمود الفقري)",
+      "nearbyOrgans": ["الغضروف", "العظم تحت الغضروفي"],
+      "diseases": [
+        {
+          "name": "خشونة الركبة",
+          "symptoms": ["ألم يزداد مع الحركة", "تيبس صباحي", "فرقعة", "محدودية الحركة", "تورم"],
+          "treatments": ["مسكنات", "علاج طبيعي", "تمارين تقوية", "حقن مفصلية", "استبدال المفصل"]
+        },
+        {
+          "name": "خشونة الورك",
+          "symptoms": ["ألم في الفخذ", "ألم في الأربية", "عرج", "تيبس"],
+          "treatments": ["مسكنات", "علاج طبيعي", "استبدال مفصل الورك"]
+        }
+      ],
+      "keywords": ["osteoarthritis", "فصال عظمي", "خشونة مفاصل"]
+    },
+    {
+      "id": 143,
+      "term": "spondylosis",
+      "arabic": "داء الفقار",
+      "latin": "spondylosis",
+      "pronunciation": "سبون-دي-لو-سيس",
+      "definition": "مرض تنكسي في العمود الفقري مع تكون نتوءات عظمية",
+      "parts": {
+        "root": { "value": "spondyl", "meaning": "فقرة" },
+        "suffix": { "value": "osis", "meaning": "حالة مرضية" }
+      },
+      "system": "الجهاز الهيكلي",
+      "systemFunction": "دعم الجسم وحماية النخاع الشوكي",
+      "location": "العمود الفقري",
+      "nearbyOrgans": ["الفقرات", "الأقراص الفقرية", "النخاع الشوكي", "الأعصاب"],
+      "diseases": [
+        {
+          "name": "داء الفقار الرقبية",
+          "symptoms": ["ألم رقبة", "تيبس", "صداع", "تنميل في الذراعين", "ضعف في اليدين"],
+          "treatments": ["علاج طبيعي", "مسكنات", "مرخيات عضلات", "جراحة في الحالات الشديدة"]
+        },
+        {
+          "name": "داء الفقار القطنية",
+          "symptoms": ["ألم أسفل الظهر", "تيبس", "ألم يمتد للساقين", "عرج"],
+          "treatments": ["علاج طبيعي", "مسكنات", "حقن", "جراحة"]
+        }
+      ],
+      "keywords": ["spondylosis", "داء الفقار", "spinal osteoarthritis"]
+    },
+    {
+      "id": 144,
+      "term": "gout",
+      "arabic": "نقرس",
+      "latin": "podagra",
+      "pronunciation": "جاوت",
+      "definition": "التهاب المفاصل بسبب ترسب بلورات حمض البول",
+      "parts": {},
+      "system": "الجهاز الهيكلي والاستقلابي",
+      "systemFunction": "الحركة",
+      "location": "مفصل إصبع القدم الكبير (غالباً)، الكاحل، الركبة",
+      "nearbyOrgans": ["المفاصل", "الكلى"],
+      "diseases": [
+        {
+          "name": "نوبة النقرس الحادة",
+          "symptoms": ["ألم مفاجئ وشديد", "احمرار", "تورم", "سخونة في المفصل"],
+          "treatments": ["مضادات التهاب", "كولشيسين", "كورتيزون", "تجنب الأطعمة الغنية بالبيورين"]
+        },
+        {
+          "name": "النقرس المزمن",
+          "symptoms": ["نوبات متكررة", "تورمات تحت الجلد", "حصوات كلوية"],
+          "treatments": ["أدوية خفض حمض البول", "تعديل النظام الغذائي", "تجنب الكحول"]
+        }
+      ],
+      "keywords": ["gout", "نقرس", "uric acid"]
+    },
+    {
+      "id": 145,
+      "term": "rheumatoid arthritis",
+      "arabic": "التهاب المفاصل الروماتويدي",
+      "latin": "arthritis rheumatoides",
+      "pronunciation": "رو-ما-تويد آر-ثراي-تس",
+      "definition": "مرض مناعي ذاتي مزمن يسبب التهاباً في المفاصل",
+      "parts": {},
+      "system": "الجهاز المناعي والهيكلي",
+      "systemFunction": "الحركة",
+      "location": "المفاصل الصغيرة (اليدين، القدمين) بشكل متماثل",
+      "nearbyOrgans": ["المفاصل", "الجلد", "القلب", "الرئتين", "العينين"],
+      "diseases": [
+        {
+          "name": "التهاب المفاصل الروماتويدي",
+          "symptoms": ["ألم وتورم في المفاصل", "تيبس صباحي", "تعب", "حمى خفيفة", "عقيدات روماتويدية"],
+          "treatments": ["مضادات التهاب", "أدوية معدلة للمناعة", "أدوية بيولوجية", "كورتيزون", "علاج طبيعي"]
+        }
+      ],
+      "keywords": ["rheumatoid arthritis", "التهاب مفاصل روماتويدي", "RA"]
+    },
+    {
+      "id": 146,
+      "term": "herniated disc",
+      "arabic": "انزلاق غضروفي",
+      "latin": "hernia disci intervertebralis",
+      "pronunciation": "هير-ني-ايتد ديسك",
+      "definition": "تمزق في القرص الفقري مع اندفاع المادة الهلامية للخارج وضغط على الأعصاب",
+      "parts": {},
+      "system": "الجهاز الهيكلي",
+      "systemFunction": "توسيد الفقرات وامتصاص الصدمات",
+      "location": "العمود الفقري (القطني والعنقي أكثر شيوعاً)",
+      "nearbyOrgans": ["الفقرات", "النخاع الشوكي", "الأعصاب الشوكية"],
+      "diseases": [
+        {
+          "name": "انزلاق غضروفي قطني",
+          "symptoms": ["ألم أسفل الظهر", "ألم يمتد للساق (عرق النسا)", "تنميل", "ضعف في الساق"],
+          "treatments": ["راحة", "علاج طبيعي", "مسكنات", "حقن", "جراحة في الحالات الشديدة"]
+        },
+        {
+          "name": "انزلاق غضروفي عنقي",
+          "symptoms": ["ألم رقبة", "ألم يمتد للذراع", "تنميل", "ضعف في اليد"],
+          "treatments": ["تثبيت رقبة", "علاج طبيعي", "مسكنات", "جراحة"]
+        }
+      ],
+      "keywords": ["herniated disc", "انزلاق غضروفي", "slipped disc"]
+    },
+    {
+      "id": 147,
+      "term": "spina bifida",
+      "arabic": "السنسنة المشقوقة",
+      "latin": "spina bifida",
+      "pronunciation": "سباي-نا بي-في-دا",
+      "definition": "خلل خلقي في إغلاق الأنبوب العصبي مع عدم التحام الفقرات بشكل كامل",
+      "parts": {},
+      "system": "الجهاز الهيكلي والعصبي",
+      "systemFunction": "حماية النخاع الشوكي",
+      "location": "العمود الفقري (غالباً المنطقة القطنية العجزية)",
+      "nearbyOrgans": ["الفقرات", "النخاع الشوكي", "السحايا"],
+      "diseases": [
+        {
+          "name": "السنسنة المشقوقة الخفية",
+          "symptoms": ["غالباً بلا أعراض", "وحمة أو خصلة شعر في موقع الخلل"],
+          "treatments": ["لا يحتاج علاجاً عادة"]
+        },
+        {
+          "name": "القيلة السحائية",
+          "symptoms": ["كيس بارز في الظهر يحتوي على السحايا"],
+          "treatments": ["جراحة لإغلاق الكيس"]
+        },
+        {
+          "name": "القيلة النخاعية السحائية",
+          "symptoms": ["كيس يحتوي على النخاع الشوكي", "شلل", "فقدان الإحساس", "مشاكل في المثانة والأمعاء"],
+          "treatments": ["جراحة", "رعاية داعمة", "علاج طبيعي"]
+        }
+      ],
+      "keywords": ["spina bifida", "سنسنة مشقوقة"]
+    },
+    {
+      "id": 148,
+      "term": "kyphosis",
+      "arabic": "حداب",
+      "latin": "kyphosis",
+      "pronunciation": "كاي-فو-سيس",
+      "definition": "انحناء زائد للخلف في العمود الفقري الصدري",
+      "parts": {
+        "root": { "value": "kyph", "meaning": "حدب" },
+        "suffix": { "value": "osis", "meaning": "حالة مرضية" }
+      },
+      "system": "الجهاز الهيكلي",
+      "systemFunction": "دعم الجسم",
+      "location": "العمود الفقري الصدري",
+      "nearbyOrgans": ["الفقرات", "الأضلاع", "الرئتين", "القلب"],
+      "diseases": [
+        {
+          "name": "حداب الشيخوخة",
+          "symptoms": ["انحناء الظهر", "ألم", "تيبس", "صعوبة في الوقوف باستقامة"],
+          "treatments": ["علاج طبيعي", "مسكنات", "دعامات", "جراحة في الحالات الشديدة"]
+        },
+        {
+          "name": "حداب شويرمان",
+          "symptoms": ["انحناء الظهر", "ألم", "تعب"],
+          "treatments": ["علاج طبيعي", "دعامات", "جراحة"]
+        }
+      ],
+      "keywords": ["kyphosis", "حداب", "humpback"]
+    },
+    {
+      "id": 149,
+      "term": "lordosis",
+      "arabic": "قعس",
+      "latin": "lordosis",
+      "pronunciation": "لور-دو-سيس",
+      "definition": "انحناء زائد للأمام في العمود الفقري القطني",
+      "parts": {
+        "root": { "value": "lord", "meaning": "قعس" },
+        "suffix": { "value": "osis", "meaning": "حالة مرضية" }
+      },
+      "system": "الجهاز الهيكلي",
+      "systemFunction": "دعم الجسم",
+      "location": "العمود الفقري القطني",
+      "nearbyOrgans": ["الفقرات", "عضلات البطن"],
+      "diseases": [
+        {
+          "name": "قعس قطني",
+          "symptoms": ["تحدب البطن للخارج", "ألم أسفل الظهر"],
+          "treatments": ["علاج طبيعي", "تمارين تقوية", "تعديل الوضعية"]
+        }
+      ],
+      "keywords": ["lordosis", "قعس", "swayback"]
+    },
+    {
+      "id": 150,
+      "term": "scoliosis",
+      "arabic": "جنف",
+      "latin": "scoliosis",
+      "pronunciation": "سكو-لي-أو-سيس",
+      "definition": "انحناء جانبي غير طبيعي في العمود الفقري",
+      "parts": {
+        "root": { "value": "scoli", "meaning": "اعوجاج" },
+        "suffix": { "value": "osis", "meaning": "حالة مرضية" }
+      },
+      "system": "الجهاز الهيكلي",
+      "systemFunction": "دعم الجسم",
+      "location": "العمود الفقري",
+      "nearbyOrgans": ["الفقرات", "الأضلاع", "الرئتين", "القلب"],
+      "diseases": [
+        {
+          "name": "الجنف مجهول السبب",
+          "symptoms": ["عدم تساوي الكتفين", "بروز لوح الكتف", "انحناء واضح", "ألم ظهر"],
+          "treatments": ["مراقبة", "دعامات", "علاج طبيعي", "جراحة تصحيحية في الحالات الشديدة"]
+        }
+      ],
+      "keywords": ["scoliosis", "جنف"]
+    },
+    {
+      "id": 151,
+      "term": "ostealgia",
+      "arabic": "ألم عظمي",
+      "latin": "ostealgia",
+      "pronunciation": "أوس-تي-آل-جيا",
+      "definition": "ألم في العظم",
+      "parts": {
+        "root": { "value": "oste", "meaning": "عظم" },
+        "suffix": { "value": "algia", "meaning": "ألم" }
+      },
+      "system": "الجهاز الهيكلي",
+      "systemFunction": "الدعم",
+      "location": "العظام",
+      "nearbyOrgans": ["العظام"],
+      "diseases": [],
+      "keywords": ["ostealgia", "ألم عظمي"]
+    },
+    {
+      "id": 152,
+      "term": "osteitis",
+      "arabic": "التهاب العظم",
+      "latin": "osteitis",
+      "pronunciation": "أوس-تي-آي-تس",
+      "definition": "التهاب يصيب العظم",
+      "parts": {
+        "root": { "value": "oste", "meaning": "عظم" },
+        "suffix": { "value": "itis", "meaning": "التهاب" }
+      },
+      "system": "الجهاز الهيكلي",
+      "systemFunction": "الدعم",
+      "location": "العظام",
+      "nearbyOrgans": ["العظام"],
+      "diseases": [
+        {
+          "name": "التهاب العظم المشوه (باجيت)",
+          "symptoms": ["ألم عظمي", "تشوه العظام", "كساح", "تضخم العظام"],
+          "treatments": ["بايفوسفونيت", "مسكنات", "جراحة في بعض الحالات"]
+        }
+      ],
+      "keywords": ["osteitis", "التهاب عظم"]
+    },
+    {
+      "id": 153,
+      "term": "osteomalacia",
+      "arabic": "لين العظام",
+      "latin": "osteomalacia",
+      "pronunciation": "أوس-تي-أو-ما-لا-شيا",
+      "definition": "لين غير طبيعي في العظام عند البالغين بسبب نقص فيتامين د",
+      "parts": {
+        "root": { "value": "oste", "meaning": "عظم" },
+        "suffix": { "value": "malacia", "meaning": "لين" }
+      },
+      "system": "الجهاز الهيكلي",
+      "systemFunction": "الدعم",
+      "location": "جميع العظام",
+      "nearbyOrgans": ["العظام", "الكلى", "الأمعاء"],
+      "diseases": [
+        {
+          "name": "لين العظام",
+          "symptoms": ["ألم عظمي منتشر", "ضعف عضلي", "كسور", "صعوبة في المشي"],
+          "treatments": ["مكملات فيتامين د", "مكملات كالسيوم", "التعرض للشمس"]
+        }
+      ],
+      "keywords": ["osteomalacia", "لين عظام"]
+    },
+    {
+      "id": 154,
+      "term": "osteomyelitis",
+      "arabic": "التهاب العظم والنقي",
+      "latin": "osteomyelitis",
+      "pronunciation": "أوس-تي-أو-ماي-أ-لاي-تس",
+      "definition": "التهاب يصيب العظم ونخاع العظم نتيجة عدوى بكتيرية",
+      "parts": {
+        "root1": { "value": "oste", "meaning": "عظم" },
+        "root2": { "value": "myel", "meaning": "نخاع" },
+        "suffix": { "value": "itis", "meaning": "التهاب" }
+      },
+      "system": "الجهاز الهيكلي",
+      "systemFunction": "الدعم",
+      "location": "العظام الطويلة (الفخذ، الساق)، الفقرات",
+      "nearbyOrgans": ["العظام", "نخاع العظم"],
+      "diseases": [
+        {
+          "name": "التهاب العظم والنقي الحاد",
+          "symptoms": ["حمى", "قشعريرة", "ألم عظمي شديد", "تورم", "احمرار"],
+          "treatments": ["مضادات حيوية وريدية", "جراحة لتنظيف العظم", "إزالة الأنسجة الميتة"]
+        },
+        {
+          "name": "التهاب العظم والنقي المزمن",
+          "symptoms": ["ألم مزمن", "تصريف قيح", "تعب"],
+          "treatments": ["مضادات حيوية مطولة", "جراحة", "ترقيع عظمي"]
+        }
+      ],
+      "keywords": ["osteomyelitis", "التهاب عظم ونقي"]
+    },
+    {
+      "id": 155,
+      "term": "osteonecrosis",
+      "arabic": "نخر عظمي",
+      "latin": "osteonecrosis",
+      "pronunciation": "أوس-تي-أو-ني-كرو-سيس",
+      "definition": "موت النسيج العظمي بسبب نقص التروية الدموية",
+      "parts": {
+        "root": { "value": "oste", "meaning": "عظم" },
+        "suffix": { "value": "necrosis", "meaning": "نخر" }
+      },
+      "system": "الجهاز الهيكلي",
+      "systemFunction": "الدعم",
+      "location": "رأس عظم الفخذ، عظم العضد، الركبة",
+      "nearbyOrgans": ["العظام", "المفاصل"],
+      "diseases": [
+        {
+          "name": "النخر اللاوعائي لرأس الفخذ",
+          "symptoms": ["ألم في الفخذ", "عرج", "تصلب", "صعوبة في المشي"],
+          "treatments": ["مسكنات", "علاج طبيعي", "جراحة", "استبدال مفصل الورك"]
+        }
+      ],
+      "keywords": ["osteonecrosis", "نخر عظمي", "avascular necrosis"]
+    },
+    {
+      "id": 156,
+      "term": "periostitis",
+      "arabic": "التهاب السمحاق",
+      "latin": "periostitis",
+      "pronunciation": "بير-ي-أوس-تاي-تس",
+      "definition": "التهاب السمحاق (الغشاء المحيط بالعظم)",
+      "parts": {
+        "prefix": { "value": "peri", "meaning": "حول" },
+        "root": { "value": "oste", "meaning": "عظم" },
+        "suffix": { "value": "itis", "meaning": "التهاب" }
+      },
+      "system": "الجهاز الهيكلي",
+      "systemFunction": "تغذية العظم ونموه",
+      "location": "السمحاق (غلاف العظم)",
+      "nearbyOrgans": ["العظام"],
+      "diseases": [
+        {
+          "name": "التهاب السمحاق",
+          "symptoms": ["ألم على طول العظم", "تورم", "ألم عند اللمس"],
+          "treatments": ["راحة", "مضادات التهاب", "علاج السبب"]
+        }
+      ],
+      "keywords": ["periostitis", "التهاب السمحاق"]
+    },
+    {
+      "id": 157,
+      "term": "rickets",
+      "arabic": "كساح",
+      "latin": "rachitis",
+      "pronunciation": "ري-كيتس",
+      "definition": "مرض نقص فيتامين د عند الأطفال يسبب لين العظام وتشوهاتها",
+      "parts": {},
+      "system": "الجهاز الهيكلي",
+      "systemFunction": "تمعدن العظام",
+      "location": "جميع العظام",
+      "nearbyOrgans": ["العظام"],
+      "diseases": [
+        {
+          "name": "الكساح",
+          "symptoms": ["تأخر النمو", "تقوس الساقين", "تضخم الرسغين والكاحلين", "بروز القفص الصدري", "ضعف عضلي", "ألم عظمي"],
+          "treatments": ["مكملات فيتامين د", "مكملات كالسيوم", "التعرض للشمس", "تصحيح التشوهات"]
+        }
+      ],
+      "keywords": ["rickets", "كساح"]
+    },
+    {
+      "id": 158,
+      "term": "closed fracture",
+      "arabic": "كسر مغلق",
+      "latin": "fractura clausa",
+      "pronunciation": "كلوزد فراك-شر",
+      "definition": "كسر عظمي دون جرح في الجلد يصل إلى موقع الكسر",
+      "parts": {},
+      "system": "الجهاز الهيكلي",
+      "systemFunction": "الدعم",
+      "location": "جميع العظام",
+      "nearbyOrgans": ["العظام", "الأنسجة الرخوة"],
+      "diseases": [
+        {
+          "name": "كسر مغلق بسيط",
+          "symptoms": ["ألم", "تورم", "كدمات", "تشوه", "عدم القدرة على استخدام الجزء المصاب"],
+          "treatments": ["تجبير", "جبس", "راحة", "مسكنات", "علاج طبيعي بعد إزالة الجبس"]
+        }
+      ],
+      "keywords": ["closed fracture", "كسر مغلق"]
+    },
+    {
+      "id": 159,
+      "term": "open fracture",
+      "arabic": "كسر مفتوح",
+      "latin": "fractura aperta",
+      "pronunciation": "أوبن فراك-شر",
+      "definition": "كسر عظمي مع جرح في الجلد يصل إلى موقع الكسر",
+      "parts": {},
+      "system": "الجهاز الهيكلي",
+      "systemFunction": "الدعم",
+      "location": "جميع العظام",
+      "nearbyOrgans": ["العظام", "الجلد", "العضلات"],
+      "diseases": [
+        {
+          "name": "كسر مفتوح",
+          "symptoms": ["ألم شديد", "جرح ظاهر", "نزيف", "ظهور العظم", "تورم"],
+          "treatments": ["تنظيف الجرح", "مضادات حيوية", "جراحة لتثبيت الكسر", "تطعيم ضد التيتانوس"]
+        }
+      ],
+      "keywords": ["open fracture", "كسر مفتوح", "compound fracture"]
+    },
+    {
+      "id": 160,
+      "term": "comminuted fracture",
+      "arabic": "كسر مفتت",
+      "latin": "fractura comminuta",
+      "pronunciation": "كو-مي-نوت-يد فراك-شر",
+      "definition": "كسر مع تفتت العظم إلى ثلاث قطع أو أكثر",
+      "parts": {},
+      "system": "الجهاز الهيكلي",
+      "systemFunction": "الدعم",
+      "location": "جميع العظام",
+      "nearbyOrgans": ["العظام", "الأنسجة المحيطة"],
+      "diseases": [
+        {
+          "name": "كسر مفتت",
+          "symptoms": ["ألم شديد", "تورم", "تشوه", "عدم القدرة على الحركة"],
+          "treatments": ["جراحة لتثبيت الكسر", "مسامير", "شرائح معدنية", "تثبيت خارجي"]
+        }
+      ],
+      "keywords": ["comminuted fracture", "كسر مفتت"]
+    },
+    {
+      "id": 161,
+      "term": "greenstick fracture",
+      "arabic": "كسر غصن النضير",
+      "latin": "fractura in completa",
+      "pronunciation": "غرين-ستيك فراك-شر",
+      "definition": "كسر غير كامل مع انحناء العظم (يحدث عند الأطفال)",
+      "parts": {},
+      "system": "الجهاز الهيكلي",
+      "systemFunction": "الدعم",
+      "location": "العظام الطويلة عند الأطفال",
+      "nearbyOrgans": ["العظام"],
+      "diseases": [
+        {
+          "name": "كسر غصن النضير",
+          "symptoms": ["ألم", "تورم", "تشوه بسيط"],
+          "treatments": ["تجبير", "جبس"]
+        }
+      ],
+      "keywords": ["greenstick fracture", "كسر غصن النضير"]
+    },
+    {
+      "id": 162,
+      "term": "pathologic fracture",
+      "arabic": "كسر مرضي",
+      "latin": "fractura pathologica",
+      "pronunciation": "با-ثو-لوج-يك فراك-شر",
+      "definition": "كسر يحدث في عظم ضعيف بسبب مرض كامن (ورم، هشاشة)",
+      "parts": {},
+      "system": "الجهاز الهيكلي",
+      "systemFunction": "الدعم",
+      "location": "جميع العظام",
+      "nearbyOrgans": ["العظام"],
+      "diseases": [
+        {
+          "name": "كسر مرضي",
+          "symptoms": ["ألم مفاجئ", "كسر بدون سبب واضح أو بسبب إصابة بسيطة"],
+          "treatments": ["علاج الكسر", "علاج المرض الأساسي"]
+        }
+      ],
+      "keywords": ["pathologic fracture", "كسر مرضي"]
+    },
+    {
+      "id": 163,
+      "term": "stress fracture",
+      "arabic": "كسر إجهاد",
+      "latin": "fractura stress",
+      "pronunciation": "ستريس فراك-شر",
+      "definition": "كسر ناتج عن إجهاد متكرر على العظم",
+      "parts": {},
+      "system": "الجهاز الهيكلي",
+      "systemFunction": "الدعم",
+      "location": "عظام الساق والقدم (عند العدائين)",
+      "nearbyOrgans": ["العظام"],
+      "diseases": [
+        {
+          "name": "كسر إجهاد",
+          "symptoms": ["ألم يزداد مع النشاط", "يقل مع الراحة", "تورم خفيف"],
+          "treatments": ["راحة", "تجنب النشاط المسبب", "ثلج", "مسكنات"]
+        }
+      ],
+      "keywords": ["stress fracture", "كسر إجهاد"]
+    },
+    {
+      "id": 164,
+      "term": "osteochondroma",
+      "arabic": "ورم عظمي غضروفي",
+      "latin": "osteochondroma",
+      "pronunciation": "أوس-تي-أو-كون-درو-ما",
+      "definition": "نتوء عظمي حميد مغطى بالغضروف (أكثر أورام العظام الحميدة شيوعاً)",
+      "parts": {
+        "root1": { "value": "oste", "meaning": "عظم" },
+        "root2": { "value": "chondr", "meaning": "غضروف" },
+        "suffix": { "value": "oma", "meaning": "ورم" }
+      },
+      "system": "الجهاز الهيكلي",
+      "systemFunction": "الدعم",
+      "location": "نهايات العظام الطويلة (عظم الفخذ، عظم الساق)",
+      "nearbyOrgans": ["العظام", "الغضاريف"],
+      "diseases": [
+        {
+          "name": "ورم عظمي غضروفي",
+          "symptoms": ["كتلة غير مؤلمة", "ألم إذا ضغطت على الأعصاب", "تورم"],
+          "treatments": ["مراقبة", "استئصال جراحي إذا سبب أعراضاً"]
+        }
+      ],
+      "keywords": ["osteochondroma", "ورم عظمي غضروفي"]
+    },
+    {
+      "id": 165,
+      "term": "osteoporosis",
+      "arabic": "هشاشة العظام",
+      "latin": "osteoporosis",
+      "pronunciation": "أوس-تي-أو-بو-رو-سيس",
+      "definition": "مرض يسبب فقدان كثافة العظام وزيادة مساميتها، مما يزيد خطر الكسور",
+      "parts": {
+        "root": { "value": "oste", "meaning": "عظم" },
+        "suffix": { "value": "osis", "meaning": "حالة مرضية" }
+      },
+      "system": "الجهاز الهيكلي",
+      "systemFunction": "الدعم",
+      "location": "جميع العظام (العمود الفقري، الورك، الرسغ)",
+      "nearbyOrgans": ["العظام"],
+      "diseases": [
+        {
+          "name": "هشاشة العظام بعد انقطاع الطمث",
+          "symptoms": ["غالباً بلا أعراض حتى حدوث كسر", "كسور متكررة", "فقدان الطول", "انحناء الظهر"],
+          "treatments": ["مكملات كالسيوم وفيتامين د", "بايفوسفونيت", "تمارين رياضية", "تجنب التدخين والكحول"]
+        },
+        {
+          "name": "هشاشة العظام الشيخوخية",
+          "symptoms": ["كسور الفقرات", "ألم الظهر", "فقدان الطول"],
+          "treatments": ["أدوية تقوية العظام", "الوقاية من السقوط"]
+        }
+      ],
+      "keywords": ["osteoporosis", "هشاشة عظام"]
+    },
+    {
+      "id": 166,
+      "term": "osteopenia",
+      "arabic": "قلة العظام",
+      "latin": "osteopenia",
+      "pronunciation": "أوس-تي-أو-بي-نيا",
+      "definition": "كثافة عظمية أقل من الطبيعي ولكن ليس بدرجة الهشاشة (مرحلة ما قبل الهشاشة)",
+      "parts": {
+        "root": { "value": "oste", "meaning": "عظم" },
+        "suffix": { "value": "penia", "meaning": "نقص" }
+      },
+      "system": "الجهاز الهيكلي",
+      "systemFunction": "الدعم",
+      "location": "جميع العظام",
+      "nearbyOrgans": ["العظام"],
+      "diseases": [
+        {
+          "name": "قلة العظام",
+          "symptoms": ["غالباً بلا أعراض"],
+          "treatments": ["مكملات كالسيوم وفيتامين د", "تمارين رياضية", "الوقاية من تطور الهشاشة"]
+        }
+      ],
+      "keywords": ["osteopenia", "قلة عظام"]
+    },
+    {
+      "id": 167,
+      "term": "arthrodesis",
+      "arabic": "تثبيت المفصل",
+      "latin": "arthrodesis",
+      "pronunciation": "آر-ثرو-دي-سيس",
+      "definition": "إجراء جراحي لدمج عظمتين معاً لتثبيت المفصل",
+      "parts": {
+        "root": { "value": "arthr", "meaning": "مفصل" },
+        "suffix": { "value": "desis", "meaning": "تثبيت" }
+      },
+      "system": "الجهاز الهيكلي",
+      "systemFunction": "الحركة",
+      "location": "المفاصل (الكاحل، العمود الفقري، الرسغ)",
+      "nearbyOrgans": ["العظام", "المفاصل"],
+      "diseases": [
+        {
+          "name": "تثبيت مفصل الكاحل",
+          "symptoms": ["ألم شديد في المفصل", "عدم استقرار", "تآكل المفصل"],
+          "treatments": ["تثبيت المفصل جراحياً", "دمج العظام", "تثبيت بمسامير وشرائح"]
+        },
+        {
+          "name": "دمج الفقرات",
+          "symptoms": ["ألم مزمن في الظهر", "عدم استقرار العمود الفقري"],
+          "treatments": ["دمج الفقرات جراحياً", "ترقيع عظمي", "تثبيت بمسامير وقضبان"]
+        }
+      ],
+      "keywords": ["arthrodesis", "تثبيت مفصل", "fusion"]
+    },
+    {
+      "id": 168,
+      "term": "arthrolysis",
+      "arabic": "تحرير المفصل",
+      "latin": "arthrolysis",
+      "pronunciation": "آر-ثرو-لاي-سيس",
+      "definition": "إجراء جراحي لتحرير المفصل المتصلب",
+      "parts": {
+        "root": { "value": "arthr", "meaning": "مفصل" },
+        "suffix": { "value": "lysis", "meaning": "تحرير، حل" }
+      },
+      "system": "الجهاز الهيكلي",
+      "systemFunction": "الحركة",
+      "location": "المفاصل",
+      "nearbyOrgans": ["العظام", "الأنسجة الرخوة"],
+      "diseases": [
+        {
+          "name": "تحرير المفصل بالمنظار",
+          "symptoms": ["تيبس المفصل", "محدودية الحركة"],
+          "treatments": ["إزالة الالتصاقات", "تحرير الأنسجة"]
+        }
+      ],
+      "keywords": ["arthrolysis", "تحرير مفصل"]
+    },
+    {
+      "id": 169,
+      "term": "arthroscopy",
+      "arabic": "تنظير مفصلي",
+      "latin": "arthroscopia",
+      "pronunciation": "آر-ثرو-سكو-بي",
+      "definition": "إجراء تنظيري لتشخيص وعلاج مشاكل المفاصل",
+      "parts": {
+        "root": { "value": "arthr", "meaning": "مفصل" },
+        "suffix": { "value": "scopy", "meaning": "فحص بصري" }
+      },
+      "system": "الجهاز الهيكلي",
+      "systemFunction": "الحركة",
+      "location": "الركبة، الكتف، الورك، الكوع",
+      "nearbyOrgans": ["العظام", "الغضاريف", "الأربطة"],
+      "diseases": [
+        {
+          "name": "تنظير الركبة",
+          "symptoms": ["ألم الركبة", "تورم", "عدم استقرار"],
+          "treatments": ["إصلاح الغضروف الهلالي", "ترميم الرباط الصليبي", "إزالة الأجسام الحرة"]
+        },
+        {
+          "name": "تنظير الكتف",
+          "symptoms": ["ألم الكتف", "ضعف", "عدم استقرار"],
+          "treatments": ["إصلاح الكفة المدورة", "تثبيت المفصل"]
+        }
+      ],
+      "keywords": ["arthroscopy", "تنظير مفصلي"]
+    },
+    {
+      "id": 170,
+      "term": "bursectomy",
+      "arabic": "استئصال الجراب",
+      "latin": "bursectomia",
+      "pronunciation": "بور-سيك-تو-مي",
+      "definition": "استئصال جراحي للجراب الزلالي",
+      "parts": {
+        "root": { "value": "burs", "meaning": "جراب" },
+        "suffix": { "value": "ectomy", "meaning": "استئصال" }
+      },
+      "system": "الجهاز الهيكلي",
+      "systemFunction": "تقليل الاحتكاك",
+      "location": "حول المفاصل",
+      "nearbyOrgans": ["المفاصل", "الأوتار"],
+      "diseases": [
+        {
+          "name": "استئصال جراب المرفق",
+          "symptoms": ["تورم مزمن", "ألم", "التهاب متكرر"],
+          "treatments": ["استئصال الجراب الملتهب"]
+        }
+      ],
+      "keywords": ["bursectomy", "استئصال جراب"]
+    },
+    {
+      "id": 171,
+      "term": "chondroplasty",
+      "arabic": "رأب الغضروف",
+      "latin": "chondroplastia",
+      "pronunciation": "كون-درو-بلاس-تي",
+      "definition": "إجراء جراحي لترميم أو تنعيم الغضروف التالف",
+      "parts": {
+        "root": { "value": "chondr", "meaning": "غضروف" },
+        "suffix": { "value": "plasty", "meaning": "ترميم" }
+      },
+      "system": "الجهاز الهيكلي",
+      "systemFunction": "توسيد المفاصل",
+      "location": "الركبة، الورك",
+      "nearbyOrgans": ["المفاصل"],
+      "diseases": [
+        {
+          "name": "رأب غضروف الركبة",
+          "symptoms": ["ألم الركبة", "تآكل الغضروف"],
+          "treatments": ["تنظيف وتنعيم الغضروف", "تحفيز نمو الغضروف"]
+        }
+      ],
+      "keywords": ["chondroplasty", "رأب غضروف"]
+    },
+    {
+      "id": 172,
+      "term": "synovectomy",
+      "arabic": "استئصال الغشاء الزليلي",
+      "latin": "synovectomia",
+      "pronunciation": "سي-نو-فيك-تو-مي",
+      "definition": "استئصال جراحي للغشاء الزليلي الملتهب",
+      "parts": {
+        "root": { "value": "synov", "meaning": "زليلي" },
+        "suffix": { "value": "ectomy", "meaning": "استئصال" }
+      },
+      "system": "الجهاز الهيكلي",
+      "systemFunction": "إفراز السائل الزليلي",
+      "location": "المفاصل",
+      "nearbyOrgans": ["المفاصل"],
+      "diseases": [
+        {
+          "name": "استئصال الغشاء الزليلي",
+          "symptoms": ["التهاب مزمن", "ألم", "تورم"],
+          "treatments": ["استئصال الغشاء الملتهب بالمنظار"]
+        }
+      ],
+      "keywords": ["synovectomy", "استئصال غشاء زليلي"]
+    },
+    {
+      "id": 173,
+      "term": "osteotomy",
+      "arabic": "قطع العظم",
+      "latin": "osteotomia",
+      "pronunciation": "أوس-تي-أو-تو-مي",
+      "definition": "قطع جراحي للعظم لإعادة تنظيمه أو تصحيح تشوه",
+      "parts": {
+        "root": { "value": "oste", "meaning": "عظم" },
+        "suffix": { "value": "otomy", "meaning": "قطع" }
+      },
+      "system": "الجهاز الهيكلي",
+      "systemFunction": "الدعم",
+      "location": "العظام الطويلة، الفك",
+      "nearbyOrgans": ["العظام"],
+      "diseases": [
+        {
+          "name": "قطع عظم الساق",
+          "symptoms": ["انحراف الركبة", "تآكل غير متساوٍ"],
+          "treatments": ["قطع وتعديل محور العظم", "تثبيت بشرائح ومسامير"]
+        },
+        {
+          "name": "قطع عظم الفك",
+          "symptoms": ["سوء إطباق", "تشوهات الوجه"],
+          "treatments": ["جراحة تقويم الفكين"]
+        }
+      ],
+      "keywords": ["osteotomy", "قطع عظم"]
+    },
+    {
+      "id": 174,
+      "term": "bone graft",
+      "arabic": "طعم عظمي",
+      "latin": "transplantatum osseum",
+      "pronunciation": "بون غرافت",
+      "definition": "زراعة نسيج عظمي من منطقة لأخرى أو من متبرع",
+      "parts": {},
+      "system": "الجهاز الهيكلي",
+      "systemFunction": "ترميم العظام",
+      "location": "حسب الحاجة",
+      "nearbyOrgans": ["العظام"],
+      "diseases": [
+        {
+          "name": "ترقيع العظام",
+          "symptoms": ["كسور غير ملتئمة", "عيوب عظمية", "دمج الفقرات"],
+          "treatments": ["أخذ عظم من الحرقفة", "استخدام عظم صناعي", "تثبيت الطعم"]
+        }
+      ],
+      "keywords": ["bone graft", "طعم عظمي"]
+    },
+    {
+      "id": 175,
+      "term": "arthrocentesis",
+      "arabic": "بزل المفصل",
+      "latin": "arthrocentesis",
+      "pronunciation": "آر-ثرو-سن-تي-سيس",
+      "definition": "إجراء لسحب السائل من المفصل لأغراض تشخيصية أو علاجية",
+      "parts": {
+        "root": { "value": "arthr", "meaning": "مفصل" },
+        "suffix": { "value": "centesis", "meaning": "بزل" }
+      },
+      "system": "الجهاز الهيكلي",
+      "systemFunction": "الحركة",
+      "location": "الركبة، الكتف، الكوع",
+      "nearbyOrgans": ["المفاصل"],
+      "diseases": [
+        {
+          "name": "بزل الركبة",
+          "symptoms": ["تورم المفصل", "ألم", "احمرار"],
+          "treatments": ["سحب السائل للتحليل", "حقن كورتيزون"]
+        }
+      ],
+      "keywords": ["arthrocentesis", "بزل مفصل", "joint aspiration"]
+    }
+  ]
+}

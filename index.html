@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     
     <style>
+        /* نفس التنسيقات السابقة */
         * {
             margin: 0;
             padding: 0;
@@ -515,34 +516,72 @@
 
     <script>
         // ==================== المتغيرات العامة ====================
-        let terms = [];
+        let allTerms = [];
+        let chapters = [];
         let savedTerms = JSON.parse(localStorage.getItem('savedTerms') || '[]');
         
         const mainContent = document.getElementById('mainContent');
         const searchInput = document.getElementById('searchInput');
         const chaptersList = document.getElementById('chaptersList');
 
-        // ==================== تحميل قاعدة البيانات ====================
-        async function loadDatabase() {
+        // ==================== تحميل جميع الفصول ====================
+        async function loadAllChapters() {
             try {
-                // ✅ تغيير المسار إلى database/database.json
-                const response = await fetch('database.json');
-                
-                if (!response.ok) {
-                    throw new Error(`الملف غير موجود (${response.status})`);
+                // عرض رسالة التحميل
+                mainContent.innerHTML = `
+                    <div class="loading">
+                        <i class="fas fa-spinner fa-spin"></i>
+                        <p>جاري تحميل الفصول...</p>
+                    </div>
+                `;
+
+                // تحميل معلومات الفصول أولاً
+                const chaptersInfo = [
+                    { num: 1, file: 'database/chapter1.json' },
+                    { num: 2, file: 'database/chapter2.json' },
+                    { num: 3, file: 'database/chapter3.json' },
+                    { num: 4, file: 'database/chapter4.json' },
+                    { num: 5, file: 'database/chapter5.json' },
+                    { num: 6, file: 'database/chapter6.json' },
+                    { num: 7, file: 'database/chapter7.json' },
+                    { num: 8, file: 'database/chapter8.json' },
+                    { num: 9, file: 'database/chapter9.json' },
+                    { num: 10, file: 'database/chapter10.json' },
+                    { num: 11, file: 'database/chapter11.json' }
+                ];
+
+                // تحميل كل فصل على حدة
+                for (const chapter of chaptersInfo) {
+                    try {
+                        const response = await fetch(chapter.file);
+                        if (!response.ok) continue;
+                        
+                        const data = await response.json();
+                        
+                        // إضافة معلومات الفصل
+                        chapters.push({
+                            number: data.chapter,
+                            title: data.title,
+                            title_en: data.title_en,
+                            count: data.terms.length
+                        });
+                        
+                        // إضافة المصطلحات إلى القائمة الكاملة
+                        allTerms = [...allTerms, ...data.terms];
+                        
+                    } catch (e) {
+                        console.log(`خطأ في تحميل الفصل ${chapter.num}`);
+                    }
                 }
+
+                // ترتيب المصطلحات حسب id
+                allTerms.sort((a, b) => a.id - b.id);
                 
-                const text = await response.text();
+                console.log(`✅ تم تحميل ${allTerms.length} مصطلح من ${chapters.length} فصول`);
                 
-                try {
-                    const data = JSON.parse(text);
-                    terms = data.terms;
-                    showHome();
-                    loadChapters();
-                    console.log('✅ تم تحميل', terms.length, 'مصطلح');
-                } catch (jsonError) {
-                    throw new Error('خطأ في تنسيق JSON: ' + jsonError.message);
-                }
+                // عرض الصفحة الرئيسية
+                showHome();
+                loadChaptersList();
                 
             } catch (error) {
                 console.error('❌ خطأ:', error);
@@ -551,15 +590,71 @@
                         <i class="fas fa-exclamation-circle" style="font-size: 48px; color: #e74c3c;"></i>
                         <p style="margin-top: 20px;">خطأ في تحميل قاعدة البيانات</p>
                         <p style="color: #95a5a6;">${error.message}</p>
-                        <p style="color: #95a5a6; margin-top: 10px;">تأكد من وجود ملف database.json في مجلد database/</p>
                     </div>
                 `;
             }
         }
 
+        // ==================== عرض قائمة الفصول ====================
+        function loadChaptersList() {
+            let html = '';
+            for (let i = 1; i <= 11; i++) {
+                const chapter = chapters.find(c => c.number === i);
+                const count = chapter ? chapter.count : 0;
+                const title = chapter ? (currentLanguage === 'ar' ? chapter.title : chapter.title_en) : `الفصل ${i}`;
+                
+                html += `
+                    <div class="chapter-item" onclick="showChapter(${i})">
+                        <div class="chapter-number">${i}</div>
+                        <div>${title}</div>
+                        <div style="font-size: 12px; color: #95a5a6;">${count} مصطلحات</div>
+                    </div>
+                `;
+            }
+            chaptersList.innerHTML = html;
+        }
+
+        // ==================== عرض فصل معين ====================
+        async function showChapter(chapterNum) {
+            try {
+                mainContent.innerHTML = `
+                    <div class="loading">
+                        <i class="fas fa-spinner fa-spin"></i>
+                        <p>جاري تحميل الفصل ${chapterNum}...</p>
+                    </div>
+                `;
+
+                const response = await fetch(`database/chapter${chapterNum}.json`);
+                const data = await response.json();
+                
+                mainContent.innerHTML = `
+                    <div class="search-results">
+                        <h3 style="margin-bottom: 15px; color: #2c3e50;">
+                            ${currentLanguage === 'ar' ? data.title : data.title_en} (${data.terms.length})
+                        </h3>
+                        ${data.terms.map(term => `
+                            <div class="result-item" onclick="showTermDetail(${term.id})">
+                                <div style="display: flex; justify-content: space-between;">
+                                    <div class="result-term">${term.term}</div>
+                                    <span style="color: #27ae60;">${term.arabic}</span>
+                                </div>
+                                <div style="color: #7f8c8d; margin-top: 5px;">${term.definition.substring(0, 60)}...</div>
+                            </div>
+                        `).join('')}
+                        <button class="back-button" onclick="showHome()">
+                            <i class="fas fa-arrow-right"></i> عودة للرئيسية
+                        </button>
+                    </div>
+                `;
+                
+            } catch (error) {
+                alert('خطأ في تحميل الفصل');
+            }
+        }
+
         // ==================== عرض الصفحة الرئيسية ====================
         function showHome() {
-            if (!terms || terms.length === 0) {
+            if (allTerms.length === 0) {
                 mainContent.innerHTML = `
                     <div class="search-results" style="text-align: center; padding: 40px;">
                         <i class="fas fa-database" style="font-size: 48px; color: #95a5a6;"></i>
@@ -571,24 +666,24 @@
             
             mainContent.innerHTML = `
                 <div class="search-results">
-                    <h3 style="margin-bottom: 15px; color: #2c3e50;">🔍 جميع المصطلحات (${terms.length})</h3>
-                    ${terms.slice(0, 20).map(term => `
+                    <h3 style="margin-bottom: 15px; color: #2c3e50;">🔍 أحدث المصطلحات (${allTerms.length})</h3>
+                    ${allTerms.slice(0, 20).map(term => `
                         <div class="result-item" onclick="showTermDetail(${term.id})">
                             <div style="display: flex; justify-content: space-between;">
                                 <div class="result-term">${term.term}</div>
                                 <span style="color: #27ae60;">${term.arabic}</span>
                             </div>
-                            <div style="color: #7f8c8d; margin-top: 5px;">${term.definition.substring(0, 50)}...</div>
+                            <div style="color: #7f8c8d; margin-top: 5px;">${term.definition.substring(0, 60)}...</div>
                         </div>
                     `).join('')}
-                    ${terms.length > 20 ? '<p style="text-align: center; margin-top: 15px;">وعشرات المصطلحات الأخرى...</p>' : ''}
+                    ${allTerms.length > 20 ? '<p style="text-align: center; margin-top: 15px;">وعشرات المصطلحات الأخرى...</p>' : ''}
                 </div>
             `;
         }
 
         // ==================== عرض تفاصيل المصطلح ====================
         function showTermDetail(id) {
-            const term = terms.find(t => t.id === id);
+            const term = allTerms.find(t => t.id === id);
             if (!term) return;
 
             const isSaved = savedTerms.includes(id);
@@ -603,7 +698,6 @@
                             <div class="part-type">بادئة (Prefix)</div>
                             <div class="part-value">${term.parts.prefix.value}</div>
                             <div class="part-meaning">${term.parts.prefix.meaning}</div>
-                            <div style="font-size: 12px; margin-top: 10px;">${term.parts.prefix.function || ''}</div>
                         </div>
                     `;
                 }
@@ -614,7 +708,6 @@
                             <div class="part-type">جذر (Root)</div>
                             <div class="part-value">${term.parts.root.value}</div>
                             <div class="part-meaning">${term.parts.root.meaning}</div>
-                            <div style="font-size: 12px; margin-top: 10px;">${term.parts.root.function || ''}</div>
                         </div>
                     `;
                 }
@@ -625,7 +718,26 @@
                             <div class="part-type">لاحقة (Suffix)</div>
                             <div class="part-value">${term.parts.suffix.value}</div>
                             <div class="part-meaning">${term.parts.suffix.meaning}</div>
-                            <div style="font-size: 12px; margin-top: 10px;">${term.parts.suffix.function || ''}</div>
+                        </div>
+                    `;
+                }
+                
+                if (term.parts.root1) {
+                    partsHtml += `
+                        <div class="part-card">
+                            <div class="part-type">جذر (Root)</div>
+                            <div class="part-value">${term.parts.root1.value}</div>
+                            <div class="part-meaning">${term.parts.root1.meaning}</div>
+                        </div>
+                    `;
+                }
+                
+                if (term.parts.root2) {
+                    partsHtml += `
+                        <div class="part-card">
+                            <div class="part-type">جذر (Root)</div>
+                            <div class="part-value">${term.parts.root2.value}</div>
+                            <div class="part-meaning">${term.parts.root2.meaning}</div>
                         </div>
                     `;
                 }
@@ -736,11 +848,11 @@
 
             query = query.toLowerCase().trim();
             
-            const results = terms.filter(term => {
+            const results = allTerms.filter(term => {
                 return (
                     term.term.toLowerCase().includes(query) ||
                     term.arabic.includes(query) ||
-                    (term.keywords && term.keywords.some(k => k && k.includes(query)))
+                    (term.keywords && term.keywords.some(k => k && k.toLowerCase().includes(query)))
                 );
             });
 
@@ -786,7 +898,7 @@
 
         // ==================== عرض المحفوظات ====================
         function showSaved() {
-            const saved = terms.filter(t => savedTerms.includes(t.id));
+            const saved = allTerms.filter(t => savedTerms.includes(t.id));
             if (saved.length === 0) {
                 mainContent.innerHTML = `
                     <div class="search-results" style="text-align: center; padding: 40px;">
@@ -812,30 +924,29 @@
             `;
         }
 
-        // ==================== تحميل الفصول ====================
-        function loadChapters() {
-            if (!terms || terms.length === 0) {
-                chaptersList.innerHTML = '<p style="color: #95a5a6;">لا توجد بيانات</p>';
-                return;
-            }
-            
-            let html = '';
-            for (let i = 1; i <= 11; i++) {
-                const count = terms.filter(t => t.chapter === i).length;
-                html += `
-                    <div class="chapter-item" onclick="alert('الفصل ${i}: ${count} مصطلح')">
-                        <div class="chapter-number">${i}</div>
-                        <div>الفصل ${i}</div>
-                        <div style="font-size: 12px; color: #95a5a6;">${count} مصطلحات</div>
-                    </div>
-                `;
-            }
-            chaptersList.innerHTML = html;
-        }
-
         // ==================== دوال مساعدة ====================
+        let currentLanguage = 'ar';
+        
         function showChapters() {
-            alert('📚 الفصول - قريباً');
+            loadChaptersList();
+            mainContent.innerHTML = `
+                <div class="search-results">
+                    <h3 style="margin-bottom: 15px;">اختر الفصل</h3>
+                    <div class="chapters-grid">
+                        ${Array.from({length: 11}, (_, i) => i + 1).map(num => {
+                            const chapter = chapters.find(c => c.number === num);
+                            const count = chapter ? chapter.count : 0;
+                            return `
+                                <div class="chapter-item" onclick="showChapter(${num})">
+                                    <div class="chapter-number">${num}</div>
+                                    <div>الفصل ${num}</div>
+                                    <div style="font-size: 12px; color: #95a5a6;">${count} مصطلحات</div>
+                                </div>
+                            `;
+                        }).join('')}
+                    </div>
+                </div>
+            `;
         }
 
         function showAnalyzer() {
@@ -852,7 +963,7 @@
         });
 
         // ==================== بدء التحميل ====================
-        loadDatabase();
+        loadAllChapters();
     </script>
 </body>
 </html>

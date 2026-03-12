@@ -1,0 +1,956 @@
+{
+  "chapter": 1,
+  "title": "مقدمة في المصطلحات الطبية",
+  "title_en": "Introduction to Medical Terminology",
+  "terms": [
+    {
+      "id": 1,
+      "term": "cyanosis",
+      "arabic": "زراق",
+      "latin": "cyanosis",
+      "pronunciation": "ساي-أ-نو-سيس",
+      "definition": "ازرقاق الجلد والأغشية المخاطية نتيجة نقص الأكسجين في الدم",
+      "parts": {
+        "root": { "value": "cyan", "meaning": "أزرق" },
+        "suffix": { "value": "osis", "meaning": "حالة مرضية" }
+      },
+      "system": "الجهاز الدوراني والتنفسي",
+      "systemFunction": "نقل الأكسجين وثاني أكسيد الكربون",
+      "location": "يظهر في الجلد والأغشية المخاطية وخاصة الشفتين وأطراف الأصابع",
+      "nearbyOrgans": ["الجلد", "الأوعية الدموية", "الرئتين", "القلب"],
+      "diseases": [
+        {
+          "name": "الزراق المركزي",
+          "symptoms": ["زرقة في جميع أنحاء الجسم", "ضيق تنفس", "تسارع ضربات القلب"],
+          "treatments": ["علاج السبب الكامن", "أكسجين", "تحسين وظائف الرئة والقلب"]
+        },
+        {
+          "name": "الزراق المحيطي",
+          "symptoms": ["زرقة في الأطراف فقط", "برودة الأصابع", "ألم في الأطراف"],
+          "treatments": ["تدفئة الأطراف", "تحسين الدورة الدموية", "علاج سبب انقباض الأوعية"]
+        }
+      ],
+      "keywords": ["blue", "أزرق", "cyanosis", "زراق", "نقص أكسجين"]
+    },
+    {
+      "id": 2,
+      "term": "erythrocyte",
+      "arabic": "كرية دم حمراء",
+      "latin": "erythrocytus",
+      "pronunciation": "إ-ريث-رو-سايت",
+      "definition": "خلية دم حمراء ناضجة تحتوي على الهيموغلوبين وتقوم بنقل الأكسجين",
+      "parts": {
+        "root": { "value": "erythr", "meaning": "أحمر" },
+        "suffix": { "value": "cyte", "meaning": "خلية" }
+      },
+      "system": "الجهاز الدوراني",
+      "systemFunction": "نقل الأكسجين وثاني أكسيد الكربون",
+      "location": "تنتشر في جميع أنحاء الجسم عبر الأوعية الدموية",
+      "nearbyOrgans": ["القلب", "الأوعية الدموية", "الطحال", "نخاع العظم"],
+      "diseases": [
+        {
+          "name": "فقر الدم",
+          "symptoms": ["تعب", "شحوب", "دوخة", "ضيق تنفس", "تسارع ضربات القلب"],
+          "treatments": ["مكملات الحديد", "فيتامين B12", "حمض الفوليك", "نقل دم في الحالات الشديدة"]
+        },
+        {
+          "name": "كثرة الكريات الحمر",
+          "symptoms": ["احمرار الوجه", "صداع", "دوخة", "حكة بعد الاستحمام", "تضخم الطحال"],
+          "treatments": ["فصد الدم", "أسبرين", "علاج السبب الكامن"]
+        }
+      ],
+      "keywords": ["red blood cell", "كرية حمراء", "erythrocyte", "دم"]
+    },
+    {
+      "id": 3,
+      "term": "leukocyte",
+      "arabic": "كرية دم بيضاء",
+      "latin": "leukocytus",
+      "pronunciation": "لو-كو-سايت",
+      "definition": "خلية دم بيضاء مسؤولة عن الدفاع المناعي ومكافحة العدوى",
+      "parts": {
+        "root": { "value": "leuk", "meaning": "أبيض" },
+        "suffix": { "value": "cyte", "meaning": "خلية" }
+      },
+      "system": "الجهاز المناعي والدوراني",
+      "systemFunction": "الدفاع عن الجسم ضد الكائنات الدقيقة والمواد الغريبة",
+      "location": "تنتشر في الدم والجهاز اللمفاوي والأنسجة",
+      "nearbyOrgans": ["الطحال", "العقد اللمفاوية", "نخاع العظم", "الغدة الزعترية"],
+      "diseases": [
+        {
+          "name": "نقص الكريات البيض",
+          "symptoms": ["تكرار العدوى", "حمى", "تعب", "قروح فموية"],
+          "treatments": ["علاج السبب", "عوامل تحفيز النخاع", "مضادات حيوية وقائية"]
+        },
+        {
+          "name": "ابيضاض الدم",
+          "symptoms": ["تعب", "حمى", "سهولة النزف", "كدمات", "ألم عظام", "تضخم العقد اللمفاوية"],
+          "treatments": ["علاج كيميائي", "علاج إشعاعي", "زراعة نخاع عظم", "علاج موجه"]
+        }
+      ],
+      "keywords": ["white blood cell", "كرية بيضاء", "leukocyte", "مناعة"]
+    },
+    {
+      "id": 4,
+      "term": "melanosis",
+      "arabic": "ملانين",
+      "latin": "melanosis",
+      "pronunciation": "ميل-أ-نو-سيس",
+      "definition": "ترسب غير طبيعي لصبغة الميلانين في الأنسجة",
+      "parts": {
+        "root": { "value": "melan", "meaning": "أسود" },
+        "suffix": { "value": "osis", "meaning": "حالة مرضية" }
+      },
+      "system": "الجهاز اللحافي",
+      "systemFunction": "حماية الجسم وإنتاج الصبغات",
+      "location": "يظهر في الجلد والأغشية المخاطية",
+      "nearbyOrgans": ["الجلد", "العينان", "الأمعاء"],
+      "diseases": [
+        {
+          "name": "ملانين القولون",
+          "symptoms": ["تغير لون جدار القولون", "إمساك مزمن", "ألم بطني"],
+          "treatments": ["إيقاف الملينات", "علاج الإمساك", "نظام غذائي غني بالألياف"]
+        }
+      ],
+      "keywords": ["melanin", "ميلانين", "melanosis", "تصبغ"]
+    },
+    {
+      "id": 5,
+      "term": "poliomyelitis",
+      "arabic": "شلل الأطفال",
+      "latin": "poliomyelitis",
+      "pronunciation": "بو-لي-و-ماي-أ-لاي-تس",
+      "definition": "التهاب فيروسي يصيب المادة الرمادية في النخاع الشوكي مسبباً شللاً",
+      "parts": {
+        "root1": { "value": "poli", "meaning": "رمادي" },
+        "root2": { "value": "myel", "meaning": "نخاع" },
+        "suffix": { "value": "itis", "meaning": "التهاب" }
+      },
+      "system": "الجهاز العصبي",
+      "systemFunction": "التحكم في حركة العضلات ونقل الإشارات العصبية",
+      "location": "يصيب النخاع الشوكي وخاصة المادة الرمادية",
+      "nearbyOrgans": ["النخاع الشوكي", "الأعصاب الطرفية", "العضلات"],
+      "diseases": [
+        {
+          "name": "شلل الأطفال الشللي",
+          "symptoms": ["حمى", "صداع", "تصلب رقبة", "ضعف عضلي", "شلل رخو", "فقدان المنعكسات"],
+          "treatments": ["راحة", "مسكنات", "علاج طبيعي", "أجهزة تقويم", "تهوية ميكانيكية في الحالات الشديدة"]
+        },
+        {
+          "name": "متلازمة ما بعد شلل الأطفال",
+          "symptoms": ["ضعف عضلي جديد", "تعب", "ألم عضلي", "ضمور عضلي"],
+          "treatments": ["علاج طبيعي", "أجهزة مساعدة", "تعديل النشاط"]
+        }
+      ],
+      "keywords": ["polio", "شلل أطفال", "poliomyelitis", "شلل", "فيروس"]
+    },
+    {
+      "id": 6,
+      "term": "neuroplasty",
+      "arabic": "رأب العصب",
+      "latin": "neuroplastia",
+      "pronunciation": "نيو-رو-بلاس-تي",
+      "definition": "إجراء جراحي لترميم العصب التالف",
+      "parts": {
+        "root": { "value": "neur", "meaning": "عصب" },
+        "suffix": { "value": "plasty", "meaning": "ترميم جراحي" }
+      },
+      "system": "الجهاز العصبي",
+      "systemFunction": "نقل الإشارات العصبية",
+      "location": "يتم في موقع العصب المتضرر",
+      "nearbyOrgans": ["الأعصاب", "العضلات", "الأنسجة المحيطة"],
+      "diseases": [
+        {
+          "name": "تلف الأعصاب المحيطية",
+          "symptoms": ["خدر", "ضعف عضلي", "ألم", "فقدان الإحساس"],
+          "treatments": ["جراحة ترميم العصب", "علاج طبيعي", "أدوية مسكنة للألم العصبي"]
+        }
+      ],
+      "keywords": ["nerve repair", "ترميم عصب", "neuroplasty", "جراحة أعصاب"]
+    },
+    {
+      "id": 7,
+      "term": "neuritis",
+      "arabic": "التهاب العصب",
+      "latin": "neuritis",
+      "pronunciation": "نيو-راي-تس",
+      "definition": "التهاب يصيب العصب أو الأعصاب",
+      "parts": {
+        "root": { "value": "neur", "meaning": "عصب" },
+        "suffix": { "value": "itis", "meaning": "التهاب" }
+      },
+      "system": "الجهاز العصبي",
+      "systemFunction": "نقل الإشارات العصبية",
+      "location": "يمكن أن يصيب أي عصب في الجسم",
+      "nearbyOrgans": ["الأعصاب", "الأنسجة المحيطة", "العضلات المعصبة"],
+      "diseases": [
+        {
+          "name": "التهاب العصب البصري",
+          "symptoms": ["ألم مع حركة العين", "ضعف الرؤية", "فقدان رؤية الألوان", "وميض ضوئي"],
+          "treatments": ["كورتيزون", "علاج السبب", "مراقبة"]
+        },
+        {
+          "name": "التهاب العصب الدهليزي",
+          "symptoms": ["دوار شديد", "غثيان", "قيء", "عدم اتزان"],
+          "treatments": ["مضادات هستامين", "مضادات قيء", "تمارين توازن"]
+        }
+      ],
+      "keywords": ["nerve inflammation", "التهاب عصب", "neuritis", "ألم عصبي"]
+    },
+    {
+      "id": 8,
+      "term": "tonsillitis",
+      "arabic": "التهاب اللوزتين",
+      "latin": "tonsillitis",
+      "pronunciation": "تون-سي-لاي-تس",
+      "definition": "التهاب يصيب اللوزتين",
+      "parts": {
+        "root": { "value": "tonsill", "meaning": "لوزة" },
+        "suffix": { "value": "itis", "meaning": "التهاب" }
+      },
+      "system": "الجهاز اللمفاوي والتنفسي",
+      "systemFunction": "الدفاع المناعي وترطيب وتدفئة الهواء",
+      "location": "تقع اللوزتان في الجزء الخلفي من الحلق",
+      "nearbyOrgans": ["البلعوم", "الحنجرة", "اللهاة", "الغدانيات"],
+      "diseases": [
+        {
+          "name": "التهاب اللوزتين الحاد",
+          "symptoms": ["ألم حلق شديد", "حمى", "صعوبة بلع", "احمرار اللوزتين", "صديد على اللوزتين", "تورم العقد اللمفاوية"],
+          "treatments": ["مضادات حيوية", "مسكنات", "خافضات حرارة", "غرغرة", "سوائل دافئة"]
+        },
+        {
+          "name": "التهاب اللوزتين المزمن",
+          "symptoms": ["ألم حلق متكرر", "رائحة فم كريهة", "صعوبة بلع مزمنة", "تضخم اللوزتين"],
+          "treatments": ["استئصال اللوزتين", "مضادات حيوية عند النوبات الحادة"]
+        }
+      ],
+      "keywords": ["tonsils", "لوزتين", "tonsillitis", "التهاب لوزتين", "ألم حلق"]
+    },
+    {
+      "id": 9,
+      "term": "tonsillectomy",
+      "arabic": "استئصال اللوزتين",
+      "latin": "tonsillectomia",
+      "pronunciation": "تون-سي-ليك-تو-مي",
+      "definition": "عملية جراحية لاستئصال اللوزتين",
+      "parts": {
+        "root": { "value": "tonsill", "meaning": "لوزة" },
+        "suffix": { "value": "ectomy", "meaning": "استئصال جراحي" }
+      },
+      "system": "الجهاز اللمفاوي والتنفسي",
+      "systemFunction": "الدفاع المناعي",
+      "location": "يتم في الجزء الخلفي من الحلق",
+      "nearbyOrgans": ["البلعوم", "اللهاة", "الغدانيات"],
+      "diseases": [
+        {
+          "name": "ما بعد استئصال اللوزتين",
+          "symptoms": ["ألم بعد العملية", "صعوبة بلع مؤقتة", "نزيف محتمل"],
+          "treatments": ["مسكنات", "سوائل باردة", "طعام طري", "مراقبة النزيف"]
+        }
+      ],
+      "keywords": ["tonsil removal", "استئصال لوزتين", "tonsillectomy", "جراحة"]
+    },
+    {
+      "id": 10,
+      "term": "cardiac",
+      "arabic": "قلبي",
+      "latin": "cardiacus",
+      "pronunciation": "كار-دي-أك",
+      "definition": "متعلق بالقلب",
+      "parts": {
+        "root": { "value": "cardi", "meaning": "قلب" },
+        "suffix": { "value": "ac", "meaning": "متعلق بـ" }
+      },
+      "system": "الجهاز القلبي الوعائي",
+      "systemFunction": "ضخ الدم إلى جميع أنحاء الجسم",
+      "location": "يقع القلب في التجويف الصدري بين الرئتين",
+      "nearbyOrgans": ["الرئتين", "الأبهر", "الوريد الأجوف", "التامور"],
+      "diseases": [
+        {
+          "name": "أمراض القلب",
+          "symptoms": ["ألم صدر", "ضيق تنفس", "خفقان", "تعب"],
+          "treatments": ["أدوية", "قسطرة", "جراحة"]
+        }
+      ],
+      "keywords": ["heart", "قلب", "cardiac", "قلبي"]
+    },
+    {
+      "id": 11,
+      "term": "gastrosis",
+      "arabic": "مرض معدي",
+      "latin": "gastrosis",
+      "pronunciation": "جاس-ترو-سيس",
+      "definition": "أي مرض يصيب المعدة",
+      "parts": {
+        "root": { "value": "gastr", "meaning": "معدة" },
+        "suffix": { "value": "osis", "meaning": "حالة مرضية" }
+      },
+      "system": "الجهاز الهضمي",
+      "systemFunction": "هضم الطعام",
+      "location": "تقع المعدة في الجزء العلوي من البطن",
+      "nearbyOrgans": ["المريء", "الأمعاء الدقيقة", "الكبد", "البنكرياس"],
+      "diseases": [
+        {
+          "name": "أمراض المعدة المختلفة",
+          "symptoms": ["ألم بطني", "غثيان", "قيء", "عسر هضم"],
+          "treatments": ["علاج حسب السبب"]
+        }
+      ],
+      "keywords": ["stomach disease", "مرض معدي", "gastrosis"]
+    },
+    {
+      "id": 12,
+      "term": "gastralgia",
+      "arabic": "ألم معدي",
+      "latin": "gastralgia",
+      "pronunciation": "جاس-ترال-جيا",
+      "definition": "ألم في المعدة",
+      "parts": {
+        "root": { "value": "gastr", "meaning": "معدة" },
+        "suffix": { "value": "algia", "meaning": "ألم" }
+      },
+      "system": "الجهاز الهضمي",
+      "systemFunction": "هضم الطعام",
+      "location": "في منطقة المعدة أعلى البطن",
+      "nearbyOrgans": ["المريء", "الأمعاء"],
+      "diseases": [
+        {
+          "name": "ألم المعدة الوظيفي",
+          "symptoms": ["ألم متكرر", "حرقة", "انتفاخ"],
+          "treatments": ["مضادات حموضة", "تعديل النظام الغذائي"]
+        }
+      ],
+      "keywords": ["stomach pain", "ألم معدي", "gastralgia"]
+    },
+    {
+      "id": 13,
+      "term": "arterionecrosis",
+      "arabic": "نخر شرياني",
+      "latin": "arterionecrosis",
+      "pronunciation": "آر-تير-يو-ني-كرو-سيس",
+      "definition": "موت أنسجة الشريان",
+      "parts": {
+        "root": { "value": "arteri", "meaning": "شريان" },
+        "suffix": { "value": "necrosis", "meaning": "نخر" }
+      },
+      "system": "الجهاز القلبي الوعائي",
+      "systemFunction": "نقل الدم المحمل بالأكسجين",
+      "location": "يمكن أن يصيب أي شريان في الجسم",
+      "nearbyOrgans": ["الأنسجة التي يغذيها الشريان"],
+      "diseases": [
+        {
+          "name": "نخر شرياني",
+          "symptoms": ["ألم", "فقدان وظيفة العضو المصاب", "تغير لون الجلد"],
+          "treatments": ["علاج السبب", "إزالة النسيج الميت"]
+        }
+      ],
+      "keywords": ["artery necrosis", "نخر شرياني", "arterionecrosis"]
+    },
+    {
+      "id": 14,
+      "term": "arteriosclerosis",
+      "arabic": "تصلب شرايين",
+      "latin": "arteriosclerosis",
+      "pronunciation": "آر-تير-يو-سكل-رو-سيس",
+      "definition": "تصلب وفقدان مرونة جدران الشرايين",
+      "parts": {
+        "root": { "value": "arteri", "meaning": "شريان" },
+        "suffix": { "value": "sclerosis", "meaning": "تصلب" }
+      },
+      "system": "الجهاز القلبي الوعائي",
+      "systemFunction": "نقل الدم",
+      "location": "يصيب الشرايين في جميع أنحاء الجسم",
+      "nearbyOrgans": ["القلب", "الدماغ", "الكلى", "الأطراف"],
+      "diseases": [
+        {
+          "name": "تصلب الشرايين",
+          "symptoms": ["ارتفاع ضغط الدم", "ألم صدر", "ضعف في الأطراف", "ضعف الانتصاب"],
+          "treatments": ["أدوية خافضة للكوليسترول", "أدوية خافضة للضغط", "تغيير نمط الحياة", "جراحة في الحالات المتقدمة"]
+        }
+      ],
+      "keywords": ["artery hardening", "تصلب شرايين", "arteriosclerosis"]
+    },
+    {
+      "id": 15,
+      "term": "arteriostenosis",
+      "arabic": "تضيق شرياني",
+      "latin": "arteriostenosis",
+      "pronunciation": "آر-تير-يو-ست-نو-سيس",
+      "definition": "تضيق غير طبيعي في الشريان",
+      "parts": {
+        "root": { "value": "arteri", "meaning": "شريان" },
+        "suffix": { "value": "stenosis", "meaning": "تضيق" }
+      },
+      "system": "الجهاز القلبي الوعائي",
+      "systemFunction": "نقل الدم",
+      "location": "يمكن أن يصيب أي شريان",
+      "nearbyOrgans": ["العضو الذي يغذيه الشريان"],
+      "diseases": [
+        {
+          "name": "تضيق الشريان السباتي",
+          "symptoms": ["دوخة", "إغماء", "ضعف في أحد جانبي الجسم", "صعوبة كلام"],
+          "treatments": ["أدوية", "رأب الوعاء", "استئصال بطانة الشريان"]
+        }
+      ],
+      "keywords": ["artery narrowing", "تضيق شرياني", "arteriostenosis"]
+    },
+    {
+      "id": 16,
+      "term": "arteriomalacia",
+      "arabic": "لين شرياني",
+      "latin": "arteriomalacia",
+      "pronunciation": "آر-تير-يو-ما-لا-شيا",
+      "definition": "لين غير طبيعي في جدران الشرايين",
+      "parts": {
+        "root": { "value": "arteri", "meaning": "شريان" },
+        "suffix": { "value": "malacia", "meaning": "لين" }
+      },
+      "system": "الجهاز القلبي الوعائي",
+      "systemFunction": "نقل الدم",
+      "location": "يمكن أن يصيب الشرايين",
+      "nearbyOrgans": ["الأنسجة المحيطة"],
+      "diseases": [
+        {
+          "name": "لين الشرايين",
+          "symptoms": ["تمدد وعائي", "ضعف جدار الشريان"],
+          "treatments": ["علاج السبب"]
+        }
+      ],
+      "keywords": ["artery softening", "لين شرياني", "arteriomalacia"]
+    },
+    {
+      "id": 17,
+      "term": "hepatomegaly",
+      "arabic": "تضخم كبد",
+      "latin": "hepatomegalia",
+      "pronunciation": "هي-با-تو-ميغ-أ-لي",
+      "definition": "تضخم غير طبيعي في حجم الكبد",
+      "parts": {
+        "root": { "value": "hepat", "meaning": "كبد" },
+        "suffix": { "value": "megaly", "meaning": "تضخم" }
+      },
+      "system": "الجهاز الهضمي",
+      "systemFunction": "إزالة السموم وإنتاج العصارة الصفراوية",
+      "location": "يقع الكبد في الربع العلوي الأيمن من البطن",
+      "nearbyOrgans": ["المرارة", "المعدة", "البنكرياس", "الأمعاء"],
+      "diseases": [
+        {
+          "name": "تضخم الكبد",
+          "symptoms": ["ألم في أعلى البطن الأيمن", "شبع مبكر", "غثيان", "يرقان"],
+          "treatments": ["علاج السبب الكامن (فيروسي، كحولي، دهني)"]
+        }
+      ],
+      "keywords": ["liver enlargement", "تضخم كبد", "hepatomegaly"]
+    },
+    {
+      "id": 18,
+      "term": "abdominocentesis",
+      "arabic": "بزل بطني",
+      "latin": "abdominocentesis",
+      "pronunciation": "أب-دو-مي-نو-سن-تي-سيس",
+      "definition": "إجراء جراحي لسحب السوائل من تجويف البطن",
+      "parts": {
+        "root": { "value": "abdomin", "meaning": "بطن" },
+        "suffix": { "value": "centesis", "meaning": "بزل جراحي" }
+      },
+      "system": "الجهاز الهضمي",
+      "systemFunction": "تشخيصي أو علاجي",
+      "location": "يتم في تجويف البطن",
+      "nearbyOrgans": ["الكبد", "الأمعاء", "المثانة"],
+      "diseases": [
+        {
+          "name": "الاستسقاء البطني",
+          "symptoms": ["انتفاخ البطن", "ضيق تنفس", "ألم", "تورم الساقين"],
+          "treatments": ["بزل بطني", "مدرات بول", "علاج السبب"]
+        }
+      ],
+      "keywords": ["abdominal tap", "بزل بطني", "abdominocentesis", "ascites"]
+    },
+    {
+      "id": 19,
+      "term": "angiography",
+      "arabic": "تصوير الأوعية",
+      "latin": "angiographia",
+      "pronunciation": "آن-جي-و-غرا-في",
+      "definition": "تصوير الأوعية الدموية باستخدام الأشعة ومادة تباين",
+      "parts": {
+        "root": { "value": "angi", "meaning": "وعاء" },
+        "suffix": { "value": "graphy", "meaning": "تصوير" }
+      },
+      "system": "الجهاز القلبي الوعائي",
+      "systemFunction": "تشخيص أمراض الأوعية",
+      "location": "يمكن تصوير أي وعاء دموي في الجسم",
+      "nearbyOrgans": ["القلب", "الدماغ", "الكلى", "الأطراف"],
+      "diseases": [
+        {
+          "name": "أمراض الأوعية المختلفة",
+          "symptoms": ["ألم", "ضعف تروية"],
+          "treatments": ["قسطرة", "رأب الوعاء"]
+        }
+      ],
+      "keywords": ["vessel imaging", "تصوير أوعية", "angiography"]
+    },
+    {
+      "id": 20,
+      "term": "angiogram",
+      "arabic": "صورة وعائية",
+      "latin": "angiogramma",
+      "pronunciation": "آن-جي-و-غرام",
+      "definition": "الصورة الناتجة عن تصوير الأوعية الدموية",
+      "parts": {
+        "root": { "value": "angi", "meaning": "وعاء" },
+        "suffix": { "value": "gram", "meaning": "صورة" }
+      },
+      "system": "الجهاز القلبي الوعائي",
+      "systemFunction": "توثيق حالة الأوعية",
+      "location": "حسب المنطقة المصورة",
+      "nearbyOrgans": ["حسب المنطقة"],
+      "diseases": [],
+      "keywords": ["angiogram", "صورة وعائية"]
+    },
+    {
+      "id": 21,
+      "term": "myoplasty",
+      "arabic": "رأب العضلة",
+      "latin": "myoplastia",
+      "pronunciation": "مايو-بلاس-تي",
+      "definition": "ترميم جراحي للعضلة",
+      "parts": {
+        "root": { "value": "myo", "meaning": "عضلة" },
+        "suffix": { "value": "plasty", "meaning": "ترميم جراحي" }
+      },
+      "system": "الجهاز العضلي",
+      "systemFunction": "الحركة",
+      "location": "حسب العضلة المصابة",
+      "nearbyOrgans": ["العظام", "الأوتار"],
+      "diseases": [
+        {
+          "name": "تمزق عضلي",
+          "symptoms": ["ألم", "تورم", "ضعف", "كدمات"],
+          "treatments": ["جراحة ترميم", "علاج طبيعي"]
+        }
+      ],
+      "keywords": ["muscle repair", "رأب عضلة", "myoplasty"]
+    },
+    {
+      "id": 22,
+      "term": "arthroscopy",
+      "arabic": "تنظير مفصلي",
+      "latin": "arthroscopia",
+      "pronunciation": "آر-ثرو-سكو-بي",
+      "definition": "فحص داخلي للمفصل باستخدام المنظار",
+      "parts": {
+        "root": { "value": "arthr", "meaning": "مفصل" },
+        "suffix": { "value": "scopy", "meaning": "فحص بصري" }
+      },
+      "system": "الجهاز الهيكلي",
+      "systemFunction": "تشخيص وعلاج أمراض المفاصل",
+      "location": "أي مفصل في الجسم",
+      "nearbyOrgans": ["العظام", "الأربطة", "الغضاريف"],
+      "diseases": [
+        {
+          "name": "تمزق الغضروف الهلالي",
+          "symptoms": ["ألم", "تورم", "قفل المفصل", "عدم ثبات"],
+          "treatments": ["تنظير مفصلي", "استئصال أو ترميم الغضروف"]
+        }
+      ],
+      "keywords": ["joint scope", "تنظير مفصلي", "arthroscopy"]
+    },
+    {
+      "id": 23,
+      "term": "hemorrhage",
+      "arabic": "نزف",
+      "latin": "haemorrhagia",
+      "pronunciation": "هي-مو-ريدج",
+      "definition": "فقدان كمية كبيرة من الدم في وقت قصير",
+      "parts": {
+        "root": { "value": "hem", "meaning": "دم" },
+        "suffix": { "value": "rrhage", "meaning": "نزف" }
+      },
+      "system": "الجهاز الدوراني",
+      "systemFunction": "الدورة الدموية",
+      "location": "يمكن أن يحدث في أي جزء من الجسم",
+      "nearbyOrgans": ["حسب موقع النزف"],
+      "diseases": [
+        {
+          "name": "نزف داخلي",
+          "symptoms": ["ألم", "انتفاخ", "انخفاض ضغط الدم", "تسارع نبضات القلب", "شحوب"],
+          "treatments": ["إيقاف النزف", "نقل دم", "جراحة"]
+        },
+        {
+          "name": "نزف خارجي",
+          "symptoms": ["نزف مرئي", "ضعف", "دوخة"],
+          "treatments": ["ضغط", "خياطة", "كي"]
+        }
+      ],
+      "keywords": ["bleeding", "نزف", "hemorrhage"]
+    },
+    {
+      "id": 24,
+      "term": "myorrhaphy",
+      "arabic": "خياطة عضلية",
+      "latin": "myorrhaphia",
+      "pronunciation": "مايو-رو-رافي",
+      "definition": "خياطة جراحية لجرح أو تمزق عضلي",
+      "parts": {
+        "root": { "value": "myo", "meaning": "عضلة" },
+        "suffix": { "value": "rrhaphy", "meaning": "خياطة جراحية" }
+      },
+      "system": "الجهاز العضلي",
+      "systemFunction": "إصلاح العضلات",
+      "location": "حسب العضلة المصابة",
+      "nearbyOrgans": ["العظام", "الأوتار"],
+      "diseases": [
+        {
+          "name": "تمزق عضلي",
+          "symptoms": ["ألم", "ورم دموي", "ضعف"],
+          "treatments": ["جراحة", "خياطة", "تثبيت"]
+        }
+      ],
+      "keywords": ["muscle suture", "خياطة عضلية", "myorrhaphy"]
+    },
+    {
+      "id": 25,
+      "term": "diarrhea",
+      "arabic": "إسهال",
+      "latin": "diarrhoea",
+      "pronunciation": "داي-أ-ريا",
+      "definition": "حالة من التبرز المتكرر للبراز السائل أو المائي",
+      "parts": {
+        "prefix": { "value": "dia", "meaning": "خلال" },
+        "suffix": { "value": "rrhea", "meaning": "تدفق" }
+      },
+      "system": "الجهاز الهضمي",
+      "systemFunction": "امتصاص الماء والمواد الغذائية",
+      "location": "يصيب الأمعاء",
+      "nearbyOrgans": ["المعدة", "الأمعاء الدقيقة", "الأمعاء الغليظة"],
+      "diseases": [
+        {
+          "name": "إسهال حاد",
+          "symptoms": ["براز مائي متكرر", "تقلصات بطنية", "غثيان", "قيء", "جفاف"],
+          "treatments": ["محاليل الجفاف", "مضادات إسهال", "مضادات حيوية للسبب الجرثومي"]
+        },
+        {
+          "name": "إسهال مزمن",
+          "symptoms": ["إسهال مستمر", "نقص وزن", "تعب", "سوء تغذية"],
+          "treatments": ["علاج السبب", "تعديل النظام الغذائي"]
+        }
+      ],
+      "keywords": ["diarrhea", "إسهال"]
+    },
+    {
+      "id": 26,
+      "term": "myorrhexis",
+      "arabic": "تمزق عضلي",
+      "latin": "myorrhexis",
+      "pronunciation": "مايو-ريك-سيس",
+      "definition": "تمزق في العضلة",
+      "parts": {
+        "root": { "value": "myo", "meaning": "عضلة" },
+        "suffix": { "value": "rrhexis", "meaning": "تمزق" }
+      },
+      "system": "الجهاز العضلي",
+      "systemFunction": "الحركة",
+      "location": "أي عضلة في الجسم",
+      "nearbyOrgans": ["العظام", "الأوتار"],
+      "diseases": [
+        {
+          "name": "تمزق عضلي حاد",
+          "symptoms": ["ألم مفاجئ", "تورم", "ورم دموي", "ضعف شديد"],
+          "treatments": ["راحة", "ثلج", "ضغط", "رفع", "جراحة في الحالات الشديدة"]
+        }
+      ],
+      "keywords": ["muscle rupture", "تمزق عضلي", "myorrhexis"]
+    },
+    {
+      "id": 27,
+      "term": "prenatal",
+      "arabic": "قبل الولادة",
+      "latin": "prenatalis",
+      "pronunciation": "بري-ناي-تال",
+      "definition": "الفترة التي تسبق الولادة",
+      "parts": {
+        "prefix": { "value": "pre", "meaning": "قبل" },
+        "root": { "value": "nat", "meaning": "ولادة" },
+        "suffix": { "value": "al", "meaning": "متعلق بـ" }
+      },
+      "system": "الجهاز التناسلي",
+      "systemFunction": "الحمل والولادة",
+      "location": "الرحم",
+      "nearbyOrgans": ["الرحم", "المشيمة", "الجنين"],
+      "diseases": [],
+      "keywords": ["prenatal", "قبل الولادة", "حمل"]
+    },
+    {
+      "id": 28,
+      "term": "perinatal",
+      "arabic": "حول الولادة",
+      "latin": "perinatalis",
+      "pronunciation": "بير-ي-ناي-تال",
+      "definition": "الفترة المحيطة بالولادة (قبل وأثناء وبعد)",
+      "parts": {
+        "prefix": { "value": "peri", "meaning": "حول" },
+        "root": { "value": "nat", "meaning": "ولادة" },
+        "suffix": { "value": "al", "meaning": "متعلق بـ" }
+      },
+      "system": "الجهاز التناسلي",
+      "systemFunction": "الولادة",
+      "location": "الرحم وقناة الولادة",
+      "nearbyOrgans": ["الرحم", "المهبل", "الجنين"],
+      "diseases": [],
+      "keywords": ["perinatal", "حول الولادة"]
+    },
+    {
+      "id": 29,
+      "term": "postnatal",
+      "arabic": "بعد الولادة",
+      "latin": "postnatalis",
+      "pronunciation": "بوست-ناي-تال",
+      "definition": "الفترة التي تلي الولادة",
+      "parts": {
+        "prefix": { "value": "post", "meaning": "بعد" },
+        "root": { "value": "nat", "meaning": "ولادة" },
+        "suffix": { "value": "al", "meaning": "متعلق بـ" }
+      },
+      "system": "الجهاز التناسلي",
+      "systemFunction": "رعاية المولود",
+      "location": "خارج الرحم",
+      "nearbyOrgans": ["الطفل", "الأم"],
+      "diseases": [],
+      "keywords": ["postnatal", "بعد الولادة"]
+    },
+    {
+      "id": 30,
+      "term": "abnormal",
+      "arabic": "شاذ",
+      "latin": "abnormalis",
+      "pronunciation": "أب-نور-مال",
+      "definition": "غير طبيعي أو بعيد عن الطبيعي",
+      "parts": {
+        "prefix": { "value": "ab", "meaning": "بعيد عن" },
+        "root": { "value": "norm", "meaning": "قاعدة" },
+        "suffix": { "value": "al", "meaning": "متعلق بـ" }
+      },
+      "system": "عام",
+      "systemFunction": "وصف الحالات",
+      "location": "جميع أنحاء الجسم",
+      "nearbyOrgans": ["حسب السياق"],
+      "diseases": [],
+      "keywords": ["abnormal", "شاذ", "غير طبيعي"]
+    },
+    {
+      "id": 31,
+      "term": "addiction",
+      "arabic": "إدمان",
+      "latin": "addictio",
+      "pronunciation": "أ-ديك-شن",
+      "definition": "اعتماد قوي على مادة أو سلوك",
+      "parts": {
+        "prefix": { "value": "ad", "meaning": "باتجاه" },
+        "root": { "value": "dict", "meaning": "يقول" },
+        "suffix": { "value": "ion", "meaning": "حالة" }
+      },
+      "system": "الجهاز العصبي",
+      "systemFunction": "التحكم في السلوك والمكافأة",
+      "location": "الدماغ",
+      "nearbyOrgans": ["الجهاز الحوفي", "القشرة المخية"],
+      "diseases": [
+        {
+          "name": "إدمان المواد",
+          "symptoms": ["رغبة ملحة", "فقدان السيطرة", "تحمل", "أعراض انسحاب", "استمرار رغم الضرر"],
+          "treatments": ["علاج سلوكي", "أدوية", "دعم نفسي", "برامج إزالة السموم"]
+        }
+      ],
+      "keywords": ["addiction", "إدمان"]
+    },
+    {
+      "id": 32,
+      "term": "dysfunctional",
+      "arabic": "مختل وظيفياً",
+      "latin": "dysfunctional",
+      "pronunciation": "ديس-فانك-شن-ال",
+      "definition": "عضو أو جزء من الجسم لا يعمل بشكل صحيح",
+      "parts": {
+        "prefix": { "value": "dys", "meaning": "صعب، سيء" },
+        "root": { "value": "function", "meaning": "وظيفة" },
+        "suffix": { "value": "al", "meaning": "متعلق بـ" }
+      },
+      "system": "عام",
+      "systemFunction": "الوظائف الحيوية",
+      "location": "حسب العضو المصاب",
+      "nearbyOrgans": ["حسب السياق"],
+      "diseases": [],
+      "keywords": ["dysfunctional", "مختل وظيفياً"]
+    },
+    {
+      "id": 33,
+      "term": "euthyroid",
+      "arabic": "سوي الدرقية",
+      "latin": "euthyroideus",
+      "pronunciation": "يو-ثاي-رويد",
+      "definition": "غدة درقية تعمل بشكل طبيعي",
+      "parts": {
+        "prefix": { "value": "eu", "meaning": "جيد، طبيعي" },
+        "root": { "value": "thyroid", "meaning": "درقية" }
+      },
+      "system": "جهاز الغدد الصماء",
+      "systemFunction": "إنتاج الهرمونات",
+      "location": "الرقبة",
+      "nearbyOrgans": ["الحنجرة", "القصبة الهوائية", "الغدد جار الدرقية"],
+      "diseases": [],
+      "keywords": ["euthyroid", "سوي الدرقية"]
+    },
+    {
+      "id": 34,
+      "term": "hypertension",
+      "arabic": "فرط ضغط الدم",
+      "latin": "hypertensio",
+      "pronunciation": "هاي-بر-تن-شن",
+      "definition": "ارتفاع مزمن في ضغط الدم عن المعدل الطبيعي",
+      "parts": {
+        "prefix": { "value": "hyper", "meaning": "فوق، زيادة" },
+        "root": { "value": "tens", "meaning": "ضغط" },
+        "suffix": { "value": "ion", "meaning": "حالة" }
+      },
+      "system": "الجهاز القلبي الوعائي",
+      "systemFunction": "ضخ الدم",
+      "location": "الشرايين في جميع أنحاء الجسم",
+      "nearbyOrgans": ["القلب", "الدماغ", "الكلى", "العينان"],
+      "diseases": [
+        {
+          "name": "فرط ضغط الدم الأساسي",
+          "symptoms": ["معظم الحالات بلا أعراض", "صداع", "دوخة", "نزيف أنفي"],
+          "treatments": ["أدوية خافضة للضغط", "تغيير نمط الحياة", "تقليل الملح", "رياضة"]
+        }
+      ],
+      "keywords": ["hypertension", "فرط ضغط", "ضغط دم مرتفع"]
+    },
+    {
+      "id": 35,
+      "term": "hypotension",
+      "arabic": "انخفاض ضغط الدم",
+      "latin": "hypotensio",
+      "pronunciation": "هاي-بو-تن-شن",
+      "definition": "انخفاض ضغط الدم عن المعدل الطبيعي",
+      "parts": {
+        "prefix": { "value": "hypo", "meaning": "تحت، نقص" },
+        "root": { "value": "tens", "meaning": "ضغط" },
+        "suffix": { "value": "ion", "meaning": "حالة" }
+      },
+      "system": "الجهاز القلبي الوعائي",
+      "systemFunction": "ضخ الدم",
+      "location": "الشرايين",
+      "nearbyOrgans": ["القلب", "الدماغ"],
+      "diseases": [
+        {
+          "name": "انخفاض ضغط الدم الانتصابي",
+          "symptoms": ["دوخة عند الوقوف", "إغماء", "ضعف", "تشوش الرؤية"],
+          "treatments": ["زيادة السوائل", "تعديل الأدوية", "جوارب ضاغطة", "تغيير وضعية الجسم ببطء"]
+        }
+      ],
+      "keywords": ["hypotension", "انخفاض ضغط", "ضغط دم منخفض"]
+    },
+    {
+      "id": 36,
+      "term": "interstitial",
+      "arabic": "خلالي",
+      "latin": "interstitialis",
+      "pronunciation": "إن-تر-ستي-شيال",
+      "definition": "بين أجزاء النسيج وليس داخلها",
+      "parts": {
+        "prefix": { "value": "inter", "meaning": "بين" },
+        "root": { "value": "stit", "meaning": "وضع" },
+        "suffix": { "value": "ial", "meaning": "متعلق بـ" }
+      },
+      "system": "عام",
+      "systemFunction": "وصف الموقع",
+      "location": "بين الخلايا",
+      "nearbyOrgans": ["الأنسجة المختلفة"],
+      "diseases": [
+        {
+          "name": "مرض الرئة الخلالي",
+          "symptoms": ["ضيق تنفس", "سعال جاف", "تعب"],
+          "treatments": ["علاج السبب", "كورتيزون", "أكسجين"]
+        }
+      ],
+      "keywords": ["interstitial", "خلالي"]
+    },
+    {
+      "id": 37,
+      "term": "intramuscular",
+      "arabic": "عضلي",
+      "latin": "intramuscularis",
+      "pronunciation": "إن-تر-ماس-كيو-لار",
+      "definition": "داخل العضلة",
+      "parts": {
+        "prefix": { "value": "intra", "meaning": "داخل" },
+        "root": { "value": "muscul", "meaning": "عضلة" },
+        "suffix": { "value": "ar", "meaning": "متعلق بـ" }
+      },
+      "system": "الجهاز العضلي",
+      "systemFunction": "الحركة",
+      "location": "داخل العضلة",
+      "nearbyOrgans": ["العضلات", "الأوعية الدموية"],
+      "diseases": [],
+      "keywords": ["intramuscular", "عضلي", "IM"]
+    },
+    {
+      "id": 38,
+      "term": "subcostal",
+      "arabic": "تحت الضلعي",
+      "latin": "subcostalis",
+      "pronunciation": "ساب-كوس-تال",
+      "definition": "أسفل الضلع أو الأضلاع",
+      "parts": {
+        "prefix": { "value": "sub", "meaning": "تحت" },
+        "root": { "value": "cost", "meaning": "ضلع" },
+        "suffix": { "value": "al", "meaning": "متعلق بـ" }
+      },
+      "system": "الجهاز الهيكلي",
+      "systemFunction": "حماية الأعضاء",
+      "location": "أسفل الأضلاع",
+      "nearbyOrgans": ["الكبد", "الطحال", "الكلى"],
+      "diseases": [],
+      "keywords": ["subcostal", "تحت ضلعي"]
+    },
+    {
+      "id": 39,
+      "term": "supracostal",
+      "arabic": "فوق الضلعي",
+      "latin": "supracostalis",
+      "pronunciation": "سو-برا-كوس-تال",
+      "definition": "فوق أو خارج الأضلاع",
+      "parts": {
+        "prefix": { "value": "supra", "meaning": "فوق" },
+        "root": { "value": "cost", "meaning": "ضلع" },
+        "suffix": { "value": "al", "meaning": "متعلق بـ" }
+      },
+      "system": "الجهاز الهيكلي",
+      "systemFunction": "حماية الأعضاء",
+      "location": "فوق الأضلاع",
+      "nearbyOrgans": ["عضلات الصدر"],
+      "diseases": [],
+      "keywords": ["supracostal", "فوق ضلعي"]
+    },
+    {
+      "id": 40,
+      "term": "otorhinolaryngology",
+      "arabic": "طب الأنف والأذن والحنجرة",
+      "latin": "otorhinolaryngologia",
+      "pronunciation": "أو-تو-راي-نو-لار-ين-غو-لو-جي",
+      "definition": "فرع الطب المتخصص في أمراض الأذن والأنف والحنجرة",
+      "parts": {
+        "root1": { "value": "ot", "meaning": "أذن" },
+        "root2": { "value": "rhin", "meaning": "أنف" },
+        "root3": { "value": "laryng", "meaning": "حنجرة" },
+        "suffix": { "value": "ology", "meaning": "علم" }
+      },
+      "system": "الجهاز السمعي والتنفسي",
+      "systemFunction": "السمع والتوازن والتنفس والكلام",
+      "location": "الرأس والرقبة",
+      "nearbyOrgans": ["الأذن", "الأنف", "الحنجرة", "البلعوم"],
+      "diseases": [],
+      "keywords": ["ENT", "أنف وأذن وحنجرة", "otorhinolaryngology"]
+    }
+  ]
+}

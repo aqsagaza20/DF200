@@ -1,0 +1,1168 @@
+{
+  "chapter": 5,
+  "title": "الجهاز القلبي الوعائي",
+  "title_en": "Cardiovascular System",
+  "terms": [
+    {
+      "id": 176,
+      "term": "pericardium",
+      "arabic": "تامور",
+      "latin": "pericardium",
+      "pronunciation": "بير-ي-كار-دي-أم",
+      "definition": "كيس غشائي مزدوج يحيط بالقلب ويحميه",
+      "parts": {
+        "prefix": { "value": "peri", "meaning": "حول" },
+        "root": { "value": "cardi", "meaning": "قلب" },
+        "suffix": { "value": "um", "meaning": "اسم" }
+      },
+      "system": "الجهاز القلبي الوعائي",
+      "systemFunction": "حماية القلب وتثبيته",
+      "location": "حول القلب في المنصف",
+      "nearbyOrgans": ["القلب", "الرئتين", "الأبهر"],
+      "diseases": [
+        {
+          "name": "التهاب التامور",
+          "symptoms": ["ألم صدر حاد", "حمى", "ضيق تنفس", "خفقان"],
+          "treatments": ["مضادات التهاب", "كورتيزون", "مدرات بول", "جراحة في الحالات الشديدة"]
+        }
+      ],
+      "keywords": ["pericardium", "تامور"]
+    },
+    {
+      "id": 177,
+      "term": "myocardium",
+      "arabic": "عضلة القلب",
+      "latin": "myocardium",
+      "pronunciation": "مايو-كار-دي-أم",
+      "definition": "الطبقة العضلية للقلب المسؤولة عن انقباض القلب",
+      "parts": {
+        "root1": { "value": "myo", "meaning": "عضلة" },
+        "root2": { "value": "cardi", "meaning": "قلب" },
+        "suffix": { "value": "um", "meaning": "اسم" }
+      },
+      "system": "الجهاز القلبي الوعائي",
+      "systemFunction": "انقباض القلب وضخ الدم",
+      "location": "القلب",
+      "nearbyOrgans": ["الشغاف", "التامور"],
+      "diseases": [
+        {
+          "name": "احتشاء عضلة القلب",
+          "symptoms": ["ألم صدر", "ضيق تنفس", "تعرق", "غثيان"],
+          "treatments": ["قسطرة", "أدوية مذيبة للجلطات", "أسبرين", "جراحة"]
+        },
+        {
+          "name": "اعتلال عضلة القلب",
+          "symptoms": ["تعب", "ضيق تنفس", "تورم الأطراف"],
+          "treatments": ["أدوية", "جهاز تنظيم ضربات القلب", "زراعة القلب"]
+        }
+      ],
+      "keywords": ["myocardium", "عضلة قلب"]
+    },
+    {
+      "id": 178,
+      "term": "endocardium",
+      "arabic": "شغاف",
+      "latin": "endocardium",
+      "pronunciation": "إن-دو-كار-دي-أم",
+      "definition": "البطانة الداخلية للقلب والغطاء الداخلي للصمامات",
+      "parts": {
+        "prefix": { "value": "endo", "meaning": "داخل" },
+        "root": { "value": "cardi", "meaning": "قلب" },
+        "suffix": { "value": "um", "meaning": "اسم" }
+      },
+      "system": "الجهاز القلبي الوعائي",
+      "systemFunction": "تبطين تجاويف القلب والصمامات",
+      "location": "داخل القلب",
+      "nearbyOrgans": ["عضلة القلب", "الصمامات"],
+      "diseases": [
+        {
+          "name": "التهاب الشغاف",
+          "symptoms": ["حمى", "تعب", "نفخة قلبية", "تعرق ليلي", "ألم مفاصل"],
+          "treatments": ["مضادات حيوية", "جراحة لاستبدال الصمامات"]
+        }
+      ],
+      "keywords": ["endocardium", "شغاف"]
+    },
+    {
+      "id": 179,
+      "term": "atrium",
+      "arabic": "أذين",
+      "latin": "atrium",
+      "pronunciation": "آي-تري-أم",
+      "definition": "الحجرة العلوية للقلب التي تستقبل الدم",
+      "parts": {},
+      "system": "الجهاز القلبي الوعائي",
+      "systemFunction": "استقبال الدم العائد إلى القلب",
+      "location": "الجزء العلوي من القلب",
+      "nearbyOrgans": ["البطينين", "الأوردة"],
+      "diseases": [
+        {
+          "name": "رجفان أذيني",
+          "symptoms": ["خفقان", "ضيق تنفس", "تعب", "دوار"],
+          "treatments": ["أدوية", "تخثر الدم", "تعديل نظم القلب"]
+        },
+        {
+          "name": "عيوب الحاجز الأذيني",
+          "symptoms": ["تعب", "ضيق تنفس", "نفخة قلبية"],
+          "treatments": ["جراحة", "قسطرة"]
+        }
+      ],
+      "keywords": ["atrium", "أذين"],
+      "plural": "atria"
+    },
+    {
+      "id": 180,
+      "term": "ventricle",
+      "arabic": "بطين",
+      "latin": "ventriculus",
+      "pronunciation": "فين-تري-كل",
+      "definition": "الحجرة السفلية للقلب التي تضخ الدم إلى خارج القلب",
+      "parts": {},
+      "system": "الجهاز القلبي الوعائي",
+      "systemFunction": "ضخ الدم إلى الشرايين",
+      "location": "الجزء السفلي من القلب",
+      "nearbyOrgans": ["الأذينين", "الشرايين"],
+      "diseases": [
+        {
+          "name": "تضخم البطين الأيسر",
+          "symptoms": ["ضيق تنفس", "ألم صدر", "خفقان"],
+          "treatments": ["علاج السبب", "أدوية"]
+        },
+        {
+          "name": "فشل البطين",
+          "symptoms": ["تورم الساقين", "ضيق تنفس", "تعب"],
+          "treatments": ["مدرات بول", "أدوية", "جهاز مساعد"]
+        }
+      ],
+      "keywords": ["ventricle", "بطين"]
+    },
+    {
+      "id": 181,
+      "term": "tricuspid valve",
+      "arabic": "صمام ثلاثي الشرف",
+      "latin": "valva tricuspidalis",
+      "pronunciation": "تراي-كاس-بيد فالف",
+      "definition": "صمام بين الأذين الأيمن والبطين الأيمن، يتكون من ثلاث شرفات",
+      "parts": {},
+      "system": "الجهاز القلبي الوعائي",
+      "systemFunction": "منع ارتجاع الدم من البطين الأيمن إلى الأذين الأيمن",
+      "location": "بين الأذين الأيمن والبطين الأيمن",
+      "nearbyOrgans": ["الأذين الأيمن", "البطين الأيمن"],
+      "diseases": [
+        {
+          "name": "تضيق الصمام ثلاثي الشرف",
+          "symptoms": ["تعب", "تورم", "ضيق تنفس"],
+          "treatments": ["جراحة", "رأب الصمام"]
+        },
+        {
+          "name": "قصور الصمام ثلاثي الشرف",
+          "symptoms": ["تورم الكبد", "تورم الأطراف"],
+          "treatments": ["أدوية", "جراحة"]
+        }
+      ],
+      "keywords": ["tricuspid valve", "صمام ثلاثي"]
+    },
+    {
+      "id": 182,
+      "term": "mitral valve",
+      "arabic": "صمام تاجي",
+      "latin": "valva mitralis",
+      "pronunciation": "ماي-ترال فالف",
+      "definition": "صمام بين الأذين الأيسر والبطين الأيسر، يتكون من شرفتين",
+      "parts": {},
+      "system": "الجهاز القلبي الوعائي",
+      "systemFunction": "منع ارتجاع الدم من البطين الأيسر إلى الأذين الأيسر",
+      "location": "بين الأذين الأيسر والبطين الأيسر",
+      "nearbyOrgans": ["الأذين الأيسر", "البطين الأيسر"],
+      "diseases": [
+        {
+          "name": "تضيق الصمام التاجي",
+          "symptoms": ["ضيق تنفس", "خفقان", "تعب"],
+          "treatments": ["رأب الصمام", "استبدال الصمام"]
+        },
+        {
+          "name": "ارتخاء الصمام التاجي",
+          "symptoms": ["خفقان", "ألم صدر", "قلق"],
+          "treatments": ["مراقبة", "أدوية"]
+        }
+      ],
+      "keywords": ["mitral valve", "صمام تاجي"]
+    },
+    {
+      "id": 183,
+      "term": "aortic valve",
+      "arabic": "صمام أبهري",
+      "latin": "valva aortae",
+      "pronunciation": "آي-أور-تيك فالف",
+      "definition": "صمام بين البطين الأيسر والشريان الأبهر",
+      "parts": {},
+      "system": "الجهاز القلبي الوعائي",
+      "systemFunction": "منع ارتجاع الدم من الأبهر إلى البطين الأيسر",
+      "location": "بين البطين الأيسر والأبهر",
+      "nearbyOrgans": ["البطين الأيسر", "الأبهر"],
+      "diseases": [
+        {
+          "name": "تضيق الصمام الأبهري",
+          "symptoms": ["ألم صدر", "إغماء", "ضيق تنفس"],
+          "treatments": ["استبدال الصمام", "رأب الصمام"]
+        }
+      ],
+      "keywords": ["aortic valve", "صمام أبهري"]
+    },
+    {
+      "id": 184,
+      "term": "pulmonary valve",
+      "arabic": "صمام رئوي",
+      "latin": "valva pulmonalis",
+      "pronunciation": "بول-مو-ناري فالف",
+      "definition": "صمام بين البطين الأيمن والشريان الرئوي",
+      "parts": {},
+      "system": "الجهاز القلبي الوعائي",
+      "systemFunction": "منع ارتجاع الدم من الشريان الرئوي إلى البطين الأيمن",
+      "location": "بين البطين الأيمن والشريان الرئوي",
+      "nearbyOrgans": ["البطين الأيمن", "الشريان الرئوي"],
+      "diseases": [
+        {
+          "name": "تضيق الصمام الرئوي",
+          "symptoms": ["تعب", "ضيق تنفس", "نفخة قلبية"],
+          "treatments": ["رأب الصمام", "استبدال الصمام"]
+        }
+      ],
+      "keywords": ["pulmonary valve", "صمام رئوي"]
+    },
+    {
+      "id": 185,
+      "term": "coronary artery",
+      "arabic": "شريان تاجي",
+      "latin": "arteria coronaria",
+      "pronunciation": "كور-أو-نيري آر-تيري",
+      "definition": "الشرايين التي تغذي عضلة القلب بالدم",
+      "parts": {},
+      "system": "الجهاز القلبي الوعائي",
+      "systemFunction": "تغذية عضلة القلب",
+      "location": "على سطح القلب",
+      "nearbyOrgans": ["عضلة القلب", "الأبهر"],
+      "diseases": [
+        {
+          "name": "مرض الشريان التاجي",
+          "symptoms": ["ألم صدر", "ضيق تنفس", "تعب"],
+          "treatments": ["أدوية", "قسطرة", "جراحة تحويل مسار"]
+        }
+      ],
+      "keywords": ["coronary artery", "شريان تاجي"]
+    },
+    {
+      "id": 186,
+      "term": "aorta",
+      "arabic": "أبهر",
+      "latin": "aorta",
+      "pronunciation": "آي-أور-تا",
+      "definition": "أكبر شريان في الجسم، يحمل الدم من القلب إلى الدورة الدموية",
+      "parts": {},
+      "system": "الجهاز القلبي الوعائي",
+      "systemFunction": "نقل الدم من القلب إلى الجسم",
+      "location": "من القلب نزولاً إلى البطن",
+      "nearbyOrgans": ["القلب", "الفقرات", "المريء"],
+      "diseases": [
+        {
+          "name": "تمدد الأبهر",
+          "symptoms": ["ألم صدر أو ظهر", "نبض في البطن"],
+          "treatments": ["مراقبة", "جراحة", "دعامة"]
+        },
+        {
+          "name": "تسلخ الأبهر",
+          "symptoms": ["ألم صدري حاد", "فقدان الوعي"],
+          "treatments": ["جراحة طارئة"]
+        }
+      ],
+      "keywords": ["aorta", "أبهر"]
+    },
+    {
+      "id": 187,
+      "term": "vena cava",
+      "arabic": "وريد أجوف",
+      "latin": "vena cava",
+      "pronunciation": "في-نا كا-فا",
+      "definition": "أوردة كبيرة تعيد الدم من الجسم إلى القلب",
+      "parts": {},
+      "system": "الجهاز القلبي الوعائي",
+      "systemFunction": "إعادة الدم غير المؤكسج إلى القلب",
+      "location": "الصدر والبطن",
+      "nearbyOrgans": ["القلب", "الرئتين"],
+      "diseases": [
+        {
+          "name": "انسداد الوريد الأجوف",
+          "symptoms": ["تورم", "زرقة"],
+          "treatments": ["علاج السبب"]
+        }
+      ],
+      "keywords": ["vena cava", "وريد أجوف"]
+    },
+    {
+      "id": 188,
+      "term": "arteriole",
+      "arabic": "شريان",
+      "latin": "arteriola",
+      "pronunciation": "آر-تير-ي-أول",
+      "definition": "فرع صغير من الشريان يؤدي إلى الشعيرات الدموية",
+      "parts": {},
+      "system": "الجهاز القلبي الوعائي",
+      "systemFunction": "تنظيم تدفق الدم إلى الشعيرات الدموية",
+      "location": "جميع أنحاء الجسم",
+      "nearbyOrgans": ["الشعيرات الدموية", "الأنسجة"],
+      "diseases": [
+        {
+          "name": "تصلب الشرينات",
+          "symptoms": ["ارتفاع ضغط الدم"],
+          "treatments": ["أدوية خافضة للضغط"]
+        }
+      ],
+      "keywords": ["arteriole", "شريان"]
+    },
+    {
+      "id": 189,
+      "term": "venule",
+      "arabic": "وريد",
+      "latin": "venula",
+      "pronunciation": "فين-يول",
+      "definition": "وريد صغير يتجمع من الشعيرات الدموية",
+      "parts": {},
+      "system": "الجهاز القلبي الوعائي",
+      "systemFunction": "تجميع الدم من الشعيرات الدموية",
+      "location": "جميع أنحاء الجسم",
+      "nearbyOrgans": ["الشعيرات الدموية", "الأوردة"],
+      "diseases": [],
+      "keywords": ["venule", "وريد"]
+    },
+    {
+      "id": 190,
+      "term": "capillary",
+      "arabic": "شعيرة دموية",
+      "latin": "vas capillare",
+      "pronunciation": "كا-بي-لا-ري",
+      "definition": "أصغر الأوعية الدموية حيث يحدث تبادل المواد بين الدم والأنسجة",
+      "parts": {},
+      "system": "الجهاز القلبي الوعائي",
+      "systemFunction": "تبادل الأكسجين والغذاء والفضلات",
+      "location": "جميع أنحاء الجسم",
+      "nearbyOrgans": ["الأنسجة", "الخلايا"],
+      "diseases": [
+        {
+          "name": "زيادة نفاذية الشعيرات",
+          "symptoms": ["وذمة", "تورم"],
+          "treatments": ["علاج السبب"]
+        }
+      ],
+      "keywords": ["capillary", "شعيرة"]
+    },
+    {
+      "id": 191,
+      "term": "atherosclerosis",
+      "arabic": "تصلب عصيدي",
+      "latin": "atherosclerosis",
+      "pronunciation": "آ-ثير-أو-سكل-رو-سيس",
+      "definition": "تراكم الدهون والكوليسترول والمواد الأخرى على جدران الشرايين",
+      "parts": {
+        "root": { "value": "ather", "meaning": "عصيدة" },
+        "suffix": { "value": "sclerosis", "meaning": "تصلب" }
+      },
+      "system": "الجهاز القلبي الوعائي",
+      "systemFunction": "نقل الدم",
+      "location": "الشرايين",
+      "nearbyOrgans": ["القلب", "الدماغ", "الكلى"],
+      "diseases": [
+        {
+          "name": "تصلب الشرايين التاجية",
+          "symptoms": ["ألم صدر", "نوبة قلبية"],
+          "treatments": ["ستاتينات", "أسبرين", "تغيير نمط الحياة", "قسطرة"]
+        }
+      ],
+      "keywords": ["atherosclerosis", "تصلب عصيدي"]
+    },
+    {
+      "id": 192,
+      "term": "atheroma",
+      "arabic": "عصيدة",
+      "latin": "atheroma",
+      "pronunciation": "آ-ثير-أو-ما",
+      "definition": "ترسبات دهنية (لويحات) على جدار الشريان",
+      "parts": {
+        "root": { "value": "ather", "meaning": "عصيدة" },
+        "suffix": { "value": "oma", "meaning": "كتلة" }
+      },
+      "system": "الجهاز القلبي الوعائي",
+      "systemFunction": "نقل الدم",
+      "location": "داخل الشرايين",
+      "nearbyOrgans": ["الشرايين"],
+      "diseases": [],
+      "keywords": ["atheroma", "عصيدة", "plaque"]
+    },
+    {
+      "id": 193,
+      "term": "ischemia",
+      "arabic": "نقص تروية",
+      "latin": "ischaemia",
+      "pronunciation": "إيس-كي-ميا",
+      "definition": "نقص إمداد الدم إلى جزء من الجسم، مما يسبب نقص الأكسجين",
+      "parts": {
+        "root": { "value": "isch", "meaning": "منع" },
+        "suffix": { "value": "emia", "meaning": "دم" }
+      },
+      "system": "الجهاز القلبي الوعائي",
+      "systemFunction": "الدورة الدموية",
+      "location": "القلب، الدماغ، الأطراف",
+      "nearbyOrgans": ["حسب العضو المصاب"],
+      "diseases": [
+        {
+          "name": "نقص تروية القلب",
+          "symptoms": ["ألم صدر", "ضيق تنفس"],
+          "treatments": ["أدوية", "قسطرة", "جراحة"]
+        }
+      ],
+      "keywords": ["ischemia", "نقص تروية"]
+    },
+    {
+      "id": 194,
+      "term": "angina pectoris",
+      "arabic": "ذبحة صدرية",
+      "latin": "angina pectoris",
+      "pronunciation": "آن-جاي-نا بيك-تو-ريس",
+      "definition": "ألم أو انزعاج في الصدر بسبب نقص تدفق الدم إلى عضلة القلب",
+      "parts": {},
+      "system": "الجهاز القلبي الوعائي",
+      "systemFunction": "ضخ الدم",
+      "location": "الصدر",
+      "nearbyOrgans": ["القلب", "الشرايين التاجية"],
+      "diseases": [
+        {
+          "name": "ذبحة صدرية مستقرة",
+          "symptoms": ["ألم مع المجهود", "يزول بالراحة"],
+          "treatments": ["نيتروغليسرين", "أدوية", "تغيير نمط الحياة"]
+        },
+        {
+          "name": "ذبحة صدرية غير مستقرة",
+          "symptoms": ["ألم حتى في الراحة", "ألم شديد"],
+          "treatments": ["دخول المستشفى", "قسطرة", "أدوية"]
+        }
+      ],
+      "keywords": ["angina", "ذبحة صدرية"]
+    },
+    {
+      "id": 195,
+      "term": "myocardial infarction",
+      "arabic": "احتشاء عضلة القلب",
+      "latin": "infarctus myocardii",
+      "pronunciation": "مايو-كار-دي-ال إن-فارك-شن",
+      "definition": "موت جزء من عضلة القلب بسبب انسداد أحد الشرايين التاجية",
+      "parts": {},
+      "system": "الجهاز القلبي الوعائي",
+      "systemFunction": "ضخ الدم",
+      "location": "القلب",
+      "nearbyOrgans": ["الشرايين التاجية"],
+      "diseases": [
+        {
+          "name": "نوبة قلبية حادة",
+          "symptoms": ["ألم صدر شديد", "ضيق تنفس", "غثيان", "تعرق", "دوار"],
+          "treatments": ["قسطرة عاجلة", "أدوية مذيبة للجلطات", "أسبرين", "أكسجين"]
+        }
+      ],
+      "keywords": ["myocardial infarction", "احتشاء عضلة القلب", "heart attack"]
+    },
+    {
+      "id": 196,
+      "term": "heart failure",
+      "arabic": "فشل القلب",
+      "latin": "insufficientia cordis",
+      "pronunciation": "هارت فايل-يور",
+      "definition": "حالة لا يستطيع فيها القلب ضخ كمية كافية من الدم لتلبية احتياجات الجسم",
+      "parts": {},
+      "system": "الجهاز القلبي الوعائي",
+      "systemFunction": "ضخ الدم",
+      "location": "القلب",
+      "nearbyOrgans": ["الرئتين", "الكبد", "الكلى"],
+      "diseases": [
+        {
+          "name": "فشل القلب الأيسر",
+          "symptoms": ["ضيق تنفس", "تعب", "سعال"],
+          "treatments": ["مدرات بول", "مثبطات ACE", "حاصرات بيتا"]
+        },
+        {
+          "name": "فشل القلب الأيمن",
+          "symptoms": ["تورم الساقين", "تورم البطن", "تعب"],
+          "treatments": ["مدرات بول", "علاج السبب"]
+        }
+      ],
+      "keywords": ["heart failure", "فشل القلب"]
+    },
+    {
+      "id": 197,
+      "term": "cardiomegaly",
+      "arabic": "تضخم القلب",
+      "latin": "cardiomegalia",
+      "pronunciation": "كار-دي-أو-ميغ-أ-لي",
+      "definition": "تضخم غير طبيعي في حجم القلب",
+      "parts": {
+        "root": { "value": "cardi", "meaning": "قلب" },
+        "suffix": { "value": "megaly", "meaning": "تضخم" }
+      },
+      "system": "الجهاز القلبي الوعائي",
+      "systemFunction": "ضخ الدم",
+      "location": "القلب",
+      "nearbyOrgans": ["الرئتين"],
+      "diseases": [
+        {
+          "name": "اعتلال عضلة القلب التوسعي",
+          "symptoms": ["تعب", "ضيق تنفس", "تورم"],
+          "treatments": ["أدوية", "جهاز مساعد", "زراعة قلب"]
+        }
+      ],
+      "keywords": ["cardiomegaly", "تضخم قلب"]
+    },
+    {
+      "id": 198,
+      "term": "endocarditis",
+      "arabic": "التهاب الشغاف",
+      "latin": "endocarditis",
+      "pronunciation": "إن-دو-كار-داي-تس",
+      "definition": "التهاب البطانة الداخلية للقلب والصمامات",
+      "parts": {
+        "prefix": { "value": "endo", "meaning": "داخل" },
+        "root": { "value": "cardi", "meaning": "قلب" },
+        "suffix": { "value": "itis", "meaning": "التهاب" }
+      },
+      "system": "الجهاز القلبي الوعائي",
+      "systemFunction": "تبطين القلب",
+      "location": "الشغاف والصمامات",
+      "nearbyOrgans": ["الصمامات"],
+      "diseases": [
+        {
+          "name": "التهاب الشغاف الجرثومي",
+          "symptoms": ["حمى", "نفخة قلبية جديدة", "تعب", "تعرق ليلي"],
+          "treatments": ["مضادات حيوية وريدية", "جراحة"]
+        }
+      ],
+      "keywords": ["endocarditis", "التهاب شغاف"]
+    },
+    {
+      "id": 199,
+      "term": "myocarditis",
+      "arabic": "التهاب عضلة القلب",
+      "latin": "myocarditis",
+      "pronunciation": "مايو-كار-داي-تس",
+      "definition": "التهاب يصيب عضلة القلب",
+      "parts": {
+        "root1": { "value": "myo", "meaning": "عضلة" },
+        "root2": { "value": "cardi", "meaning": "قلب" },
+        "suffix": { "value": "itis", "meaning": "التهاب" }
+      },
+      "system": "الجهاز القلبي الوعائي",
+      "systemFunction": "ضخ الدم",
+      "location": "عضلة القلب",
+      "nearbyOrgans": ["عضلة القلب"],
+      "diseases": [
+        {
+          "name": "التهاب عضلة القلب الفيروسي",
+          "symptoms": ["ألم صدر", "تعب", "ضيق تنفس", "خفقان"],
+          "treatments": ["علاج داعم", "أدوية", "راحة"]
+        }
+      ],
+      "keywords": ["myocarditis", "التهاب عضلة قلب"]
+    },
+    {
+      "id": 200,
+      "term": "pericarditis",
+      "arabic": "التهاب التامور",
+      "latin": "pericarditis",
+      "pronunciation": "بير-ي-كار-داي-تس",
+      "definition": "التهاب الغشاء المحيط بالقلب (التامور)",
+      "parts": {
+        "prefix": { "value": "peri", "meaning": "حول" },
+        "root": { "value": "cardi", "meaning": "قلب" },
+        "suffix": { "value": "itis", "meaning": "التهاب" }
+      },
+      "system": "الجهاز القلبي الوعائي",
+      "systemFunction": "حماية القلب",
+      "location": "التامور",
+      "nearbyOrgans": ["القلب"],
+      "diseases": [
+        {
+          "name": "التهاب التامور الحاد",
+          "symptoms": ["ألم صدر حاد", "حمى", "ضيق تنفس"],
+          "treatments": ["مضادات التهاب", "كورتيزون", "كولشيسين"]
+        }
+      ],
+      "keywords": ["pericarditis", "التهاب تامور"]
+    },
+    {
+      "id": 201,
+      "term": "arrhythmia",
+      "arabic": "اضطراب نظم",
+      "latin": "arrhythmia",
+      "pronunciation": "آ-ريث-ميا",
+      "definition": "اضطراب في إيقاع ضربات القلب (سرعة، بطء، أو عدم انتظام)",
+      "parts": {
+        "prefix": { "value": "a", "meaning": "بدون" },
+        "root": { "value": "rhythm", "meaning": "نظم" },
+        "suffix": { "value": "ia", "meaning": "حالة" }
+      },
+      "system": "الجهاز القلبي الوعائي",
+      "systemFunction": "انتظام ضربات القلب",
+      "location": "القلب",
+      "nearbyOrgans": ["القلب"],
+      "diseases": [
+        {
+          "name": "الرجفان الأذيني",
+          "symptoms": ["خفقان", "تعب", "ضيق تنفس"],
+          "treatments": ["أدوية", "تعديل نظم القلب"]
+        },
+        {
+          "name": "تسرع القلب البطيني",
+          "symptoms": ["خفقان", "دوار", "إغماء"],
+          "treatments": ["أدوية", "جهاز مزيل الرجفان"]
+        }
+      ],
+      "keywords": ["arrhythmia", "اضطراب نظم"]
+    },
+    {
+      "id": 202,
+      "term": "tachycardia",
+      "arabic": "تسارع القلب",
+      "latin": "tachycardia",
+      "pronunciation": "تا-كي-كار-ديا",
+      "definition": "سرعة في ضربات القلب أثناء الراحة (أكثر من 100 نبضة في الدقيقة)",
+      "parts": {
+        "prefix": { "value": "tachy", "meaning": "سريع" },
+        "root": { "value": "cardi", "meaning": "قلب" },
+        "suffix": { "value": "ia", "meaning": "حالة" }
+      },
+      "system": "الجهاز القلبي الوعائي",
+      "systemFunction": "ضخ الدم",
+      "location": "القلب",
+      "nearbyOrgans": ["القلب"],
+      "diseases": [
+        {
+          "name": "تسرع القلب الجيبي",
+          "symptoms": ["خفقان", "دوار"],
+          "treatments": ["علاج السبب"]
+        },
+        {
+          "name": "تسرع القلب فوق البطيني",
+          "symptoms": ["خفقان مفاجئ", "ألم صدر"],
+          "treatments": ["مناورات", "أدوية", "تعديل نظم القلب"]
+        }
+      ],
+      "keywords": ["tachycardia", "تسارع قلب"]
+    },
+    {
+      "id": 203,
+      "term": "bradycardia",
+      "arabic": "بطء القلب",
+      "latin": "bradycardia",
+      "pronunciation": "برا-دي-كار-ديا",
+      "definition": "بطء في ضربات القلب (أقل من 60 نبضة في الدقيقة)",
+      "parts": {
+        "prefix": { "value": "brady", "meaning": "بطيء" },
+        "root": { "value": "cardi", "meaning": "قلب" },
+        "suffix": { "value": "ia", "meaning": "حالة" }
+      },
+      "system": "الجهاز القلبي الوعائي",
+      "systemFunction": "ضخ الدم",
+      "location": "القلب",
+      "nearbyOrgans": ["القلب"],
+      "diseases": [
+        {
+          "name": "بطء القلب الجيبي",
+          "symptoms": ["دوار", "تعب", "إغماء"],
+          "treatments": ["مراقبة", "جهاز تنظيم ضربات القلب"]
+        }
+      ],
+      "keywords": ["bradycardia", "بطء قلب"]
+    },
+    {
+      "id": 204,
+      "term": "fibrillation",
+      "arabic": "رجفان",
+      "latin": "fibrillatio",
+      "pronunciation": "فاي-بري-لاي-شن",
+      "definition": "انقباضات سريعة وغير منتظمة لعضلة القلب",
+      "parts": {},
+      "system": "الجهاز القلبي الوعائي",
+      "systemFunction": "ضخ الدم",
+      "location": "الأذينين أو البطينين",
+      "nearbyOrgans": ["القلب"],
+      "diseases": [
+        {
+          "name": "رجفان أذيني",
+          "symptoms": ["خفقان", "تعب", "ضيق تنفس"],
+          "treatments": ["أدوية", "مميعات دم", "تعديل نظم القلب"]
+        },
+        {
+          "name": "رجفان بطيني",
+          "symptoms": ["فقدان الوعي", "توقف القلب"],
+          "treatments": ["صعق كهربائي", "إنعاش قلبي رئوي"]
+        }
+      ],
+      "keywords": ["fibrillation", "رجفان"]
+    },
+    {
+      "id": 205,
+      "term": "aneurysm",
+      "arabic": "أم الدم",
+      "latin": "aneurysma",
+      "pronunciation": "آن-يو-ريزم",
+      "definition": "تمدد موضعي في جدار الشريان يشبه البالون",
+      "parts": {},
+      "system": "الجهاز القلبي الوعائي",
+      "systemFunction": "نقل الدم",
+      "location": "الشريان الأبهر، الشرايين الدماغية",
+      "nearbyOrgans": ["حسب الموقع"],
+      "diseases": [
+        {
+          "name": "تمدد الأبهر البطني",
+          "symptoms": ["نبض في البطن", "ألم ظهر"],
+          "treatments": ["مراقبة", "جراحة", "دعامة"]
+        },
+        {
+          "name": "تمدد الأبهر الصدري",
+          "symptoms": ["ألم صدر", "بحة صوت", "صعوبة بلع"],
+          "treatments": ["جراحة", "دعامة"]
+        }
+      ],
+      "keywords": ["aneurysm", "أم الدم"]
+    },
+    {
+      "id": 206,
+      "term": "phlebitis",
+      "arabic": "التهاب الوريد",
+      "latin": "phlebitis",
+      "pronunciation": "فلي-باي-تس",
+      "definition": "التهاب جدار الوريد",
+      "parts": {
+        "root": { "value": "phleb", "meaning": "وريد" },
+        "suffix": { "value": "itis", "meaning": "التهاب" }
+      },
+      "system": "الجهاز القلبي الوعائي",
+      "systemFunction": "إعادة الدم إلى القلب",
+      "location": "الأوردة السطحية في الساقين",
+      "nearbyOrgans": ["الأوردة"],
+      "diseases": [
+        {
+          "name": "التهاب الوريد السطحي",
+          "symptoms": ["احمرار", "ألم", "تورم", "سخونة"],
+          "treatments": ["مضادات التهاب", "كمادات دافئة", "رفع الطرف"]
+        }
+      ],
+      "keywords": ["phlebitis", "التهاب وريد"]
+    },
+    {
+      "id": 207,
+      "term": "thrombosis",
+      "arabic": "خثار",
+      "latin": "thrombosis",
+      "pronunciation": "ثروم-بو-سيس",
+      "definition": "تكون جلطة دموية داخل وعاء دموي",
+      "parts": {
+        "root": { "value": "thromb", "meaning": "خثرة" },
+        "suffix": { "value": "osis", "meaning": "حالة مرضية" }
+      },
+      "system": "الجهاز القلبي الوعائي",
+      "systemFunction": "الدورة الدموية",
+      "location": "الأوردة أو الشرايين",
+      "nearbyOrgans": ["الأوعية الدموية"],
+      "diseases": [
+        {
+          "name": "خثار وريدي عميق",
+          "symptoms": ["تورم الساق", "ألم", "احمرار"],
+          "treatments": ["مميعات دم", "جوارب ضاغطة"]
+        }
+      ],
+      "keywords": ["thrombosis", "خثار"]
+    },
+    {
+      "id": 208,
+      "term": "thrombus",
+      "arabic": "خثرة",
+      "latin": "thrombus",
+      "pronunciation": "ثروم-بس",
+      "definition": "جلطة دموية ملتصقة بجدار الوعاء",
+      "parts": {},
+      "system": "الجهاز القلبي الوعائي",
+      "systemFunction": "تخثر الدم",
+      "location": "داخل الأوعية الدموية",
+      "nearbyOrgans": ["الأوعية الدموية"],
+      "diseases": [],
+      "keywords": ["thrombus", "خثرة", "clot"]
+    },
+    {
+      "id": 209,
+      "term": "embolism",
+      "arabic": "انصمام",
+      "latin": "embolia",
+      "pronunciation": "إم-بو-ليزم",
+      "definition": "انسداد وعاء دموي بجسم غريب (صمة) انتقل عبر مجرى الدم",
+      "parts": {
+        "root": { "value": "embol", "meaning": "صمة" },
+        "suffix": { "value": "ism", "meaning": "حالة" }
+      },
+      "system": "الجهاز القلبي الوعائي",
+      "systemFunction": "الدورة الدموية",
+      "location": "الرئتين، الدماغ، الأطراف",
+      "nearbyOrgans": ["حسب الموقع"],
+      "diseases": [
+        {
+          "name": "انصمام رئوي",
+          "symptoms": ["ضيق تنفس مفاجئ", "ألم صدر", "نفث الدم"],
+          "treatments": ["مميعات دم", "مذيبات جلطات"]
+        }
+      ],
+      "keywords": ["embolism", "انصمام"]
+    },
+    {
+      "id": 210,
+      "term": "embolus",
+      "arabic": "صمة",
+      "latin": "embolus",
+      "pronunciation": "إم-بو-لس",
+      "definition": "جسم غريب ينتقل في مجرى الدم (جلطة، فقاعة هواء، دهون)",
+      "parts": {},
+      "system": "الجهاز القلبي الوعائي",
+      "systemFunction": "الدورة الدموية",
+      "location": "داخل الأوعية الدموية",
+      "nearbyOrgans": ["الأوعية الدموية"],
+      "diseases": [],
+      "keywords": ["embolus", "صمة"]
+    },
+    {
+      "id": 211,
+      "term": "deep vein thrombosis",
+      "arabic": "خثار وريدي عميق",
+      "latin": "thrombosis venae profundae",
+      "pronunciation": "ديب فين ثروم-بو-سيس",
+      "definition": "تكون جلطة دموية في الأوردة العميقة (عادة في الساقين)",
+      "parts": {},
+      "system": "الجهاز القلبي الوعائي",
+      "systemFunction": "إعادة الدم إلى القلب",
+      "location": "الأوردة العميقة في الساقين",
+      "nearbyOrgans": ["أوردة الساق"],
+      "diseases": [
+        {
+          "name": "خثار وريدي عميق",
+          "symptoms": ["تورم ساق واحدة", "ألم", "احمرار", "سخونة"],
+          "treatments": ["مميعات دم", "جوارب ضاغطة", "مذيبات جلطات"]
+        }
+      ],
+      "keywords": ["DVT", "خثار وريدي عميق"]
+    },
+    {
+      "id": 212,
+      "term": "anemia",
+      "arabic": "فقر الدم",
+      "latin": "anaemia",
+      "pronunciation": "أ-ني-ميا",
+      "definition": "نقص في عدد كريات الدم الحمراء أو كمية الهيموغلوبين",
+      "parts": {
+        "prefix": { "value": "an", "meaning": "بدون" },
+        "root": { "value": "emia", "meaning": "دم" }
+      },
+      "system": "الجهاز القلبي الوعائي",
+      "systemFunction": "نقل الأكسجين",
+      "location": "الدم",
+      "nearbyOrgans": ["نخاع العظم", "الطحال"],
+      "diseases": [
+        {
+          "name": "فقر الدم بعوز الحديد",
+          "symptoms": ["تعب", "شحوب", "ضيق تنفس", "دوار"],
+          "treatments": ["مكملات حديد", "تعديل النظام الغذائي"]
+        },
+        {
+          "name": "فقر الدم اللاتنسجي",
+          "symptoms": ["تعب", "نزيف", "عدوى متكررة"],
+          "treatments": ["نقل دم", "زراعة نخاع عظم"]
+        }
+      ],
+      "keywords": ["anemia", "فقر دم"]
+    },
+    {
+      "id": 213,
+      "term": "leukemia",
+      "arabic": "ابيضاض الدم",
+      "latin": "leukaemia",
+      "pronunciation": "لو-كي-ميا",
+      "definition": "سرطان خلايا الدم البيضاء في نخاع العظم",
+      "parts": {
+        "root": { "value": "leuk", "meaning": "أبيض" },
+        "suffix": { "value": "emia", "meaning": "دم" }
+      },
+      "system": "الجهاز القلبي الوعائي والمناعي",
+      "systemFunction": "إنتاج خلايا الدم",
+      "location": "نخاع العظم، الدم",
+      "nearbyOrgans": ["نخاع العظم", "الطحال", "العقد اللمفاوية"],
+      "diseases": [
+        {
+          "name": "ابيضاض الدم اللمفاوي الحاد",
+          "symptoms": ["تعب", "حمى", "نزيف", "ألم عظام"],
+          "treatments": ["علاج كيميائي", "علاج إشعاعي", "زراعة نخاع عظم"]
+        }
+      ],
+      "keywords": ["leukemia", "ابيضاض دم"]
+    },
+    {
+      "id": 214,
+      "term": "leukopenia",
+      "arabic": "نقص الكريات البيض",
+      "latin": "leukopenia",
+      "pronunciation": "لو-كو-بي-نيا",
+      "definition": "انخفاض عدد كريات الدم البيضاء عن المعدل الطبيعي",
+      "parts": {
+        "root": { "value": "leuk", "meaning": "أبيض" },
+        "suffix": { "value": "penia", "meaning": "نقص" }
+      },
+      "system": "الجهاز المناعي",
+      "systemFunction": "الدفاع عن الجسم",
+      "location": "الدم",
+      "nearbyOrgans": ["نخاع العظم"],
+      "diseases": [
+        {
+          "name": "نقص الكريات البيض",
+          "symptoms": ["تكرار العدوى", "حمى"],
+          "treatments": ["علاج السبب", "عوامل تحفيز النخاع"]
+        }
+      ],
+      "keywords": ["leukopenia", "نقص كريات بيض"]
+    },
+    {
+      "id": 215,
+      "term": "thrombocytopenia",
+      "arabic": "نقص الصفيحات",
+      "latin": "thrombocytopenia",
+      "pronunciation": "ثروم-بو-ساي-تو-بي-نيا",
+      "definition": "انخفاض عدد الصفيحات الدموية",
+      "parts": {
+        "root1": { "value": "thromb", "meaning": "خثرة" },
+        "root2": { "value": "cyt", "meaning": "خلية" },
+        "suffix": { "value": "penia", "meaning": "نقص" }
+      },
+      "system": "الجهاز القلبي الوعائي",
+      "systemFunction": "تخثر الدم",
+      "location": "الدم",
+      "nearbyOrgans": ["نخاع العظم", "الطحال"],
+      "diseases": [
+        {
+          "name": "نقص الصفيحات المناعي",
+          "symptoms": ["كدمات", "نزيف", "نمشات"],
+          "treatments": ["كورتيزون", "نقل صفيحات", "استئصال الطحال"]
+        }
+      ],
+      "keywords": ["thrombocytopenia", "نقص صفيحات"]
+    },
+    {
+      "id": 216,
+      "term": "polycythemia",
+      "arabic": "كثرة الحمر",
+      "latin": "polycythaemia",
+      "pronunciation": "بول-إي-ساي-ثي-ميا",
+      "definition": "زيادة غير طبيعية في عدد كريات الدم الحمراء",
+      "parts": {
+        "prefix": { "value": "poly", "meaning": "كثير" },
+        "root": { "value": "cyt", "meaning": "خلية" },
+        "suffix": { "value": "emia", "meaning": "دم" }
+      },
+      "system": "الجهاز القلبي الوعائي",
+      "systemFunction": "نقل الأكسجين",
+      "location": "الدم",
+      "nearbyOrgans": ["نخاع العظم"],
+      "diseases": [
+        {
+          "name": "كثرة الحمر الحقيقية",
+          "symptoms": ["صداع", "دوار", "حكة", "احمرار الوجه"],
+          "treatments": ["فصد الدم", "أسبرين", "علاج كيميائي"]
+        }
+      ],
+      "keywords": ["polycythemia", "كثرة حمر"]
+    },
+    {
+      "id": 217,
+      "term": "septicemia",
+      "arabic": "تسمم الدم",
+      "latin": "septicaemia",
+      "pronunciation": "سيب-تي-سي-ميا",
+      "definition": "عدوى بكتيرية في الدم تنتشر في جميع أنحاء الجسم",
+      "parts": {
+        "root": { "value": "septic", "meaning": "تعفن" },
+        "suffix": { "value": "emia", "meaning": "دم" }
+      },
+      "system": "الجهاز الدوراني والمناعي",
+      "systemFunction": "الدورة الدموية",
+      "location": "الدم",
+      "nearbyOrgans": ["جميع الأعضاء"],
+      "diseases": [
+        {
+          "name": "الإنتان",
+          "symptoms": ["حمى", "قشعريرة", "تسرع القلب", "تسرع التنفس", "انخفاض ضغط الدم"],
+          "treatments": ["مضادات حيوية", "سوائل وريدية", "دعم وظائف الأعضاء"]
+        }
+      ],
+      "keywords": ["septicemia", "تسمم دم", "sepsis"]
+    },
+    {
+      "id": 218,
+      "term": "hyperlipidemia",
+      "arabic": "فرط شحميات الدم",
+      "latin": "hyperlipidaemia",
+      "pronunciation": "هاي-بر-لي-بي-دي-ميا",
+      "definition": "ارتفاع مستويات الدهون (الكوليسترول والدهون الثلاثية) في الدم",
+      "parts": {
+        "prefix": { "value": "hyper", "meaning": "فرط" },
+        "root": { "value": "lipid", "meaning": "دهن" },
+        "suffix": { "value": "emia", "meaning": "دم" }
+      },
+      "system": "الجهاز القلبي الوعائي",
+      "systemFunction": "الاستقلاب",
+      "location": "الدم",
+      "nearbyOrgans": ["الكبد", "الشرايين"],
+      "diseases": [
+        {
+          "name": "فرط كوليسترول الدم العائلي",
+          "symptoms": ["ارتفاع الكوليسترول", "ترسبات دهنية في الجلد", "أمراض قلب مبكرة"],
+          "treatments": ["ستاتينات", "تغيير نمط الحياة", "نظام غذائي"]
+        }
+      ],
+      "keywords": ["hyperlipidemia", "فرط شحميات"]
+    },
+    {
+      "id": 219,
+      "term": "hypertension",
+      "arabic": "فرط ضغط الدم",
+      "latin": "hypertensio",
+      "pronunciation": "هاي-بر-تن-شن",
+      "definition": "ارتفاع ضغط الدم الشرياني عن المعدل الطبيعي",
+      "parts": {
+        "prefix": { "value": "hyper", "meaning": "فرط" },
+        "root": { "value": "tens", "meaning": "ضغط" },
+        "suffix": { "value": "ion", "meaning": "حالة" }
+      },
+      "system": "الجهاز القلبي الوعائي",
+      "systemFunction": "ضخ الدم",
+      "location": "الشرايين",
+      "nearbyOrgans": ["القلب", "الدماغ", "الكلى"],
+      "diseases": [
+        {
+          "name": "فرط ضغط الدم الأساسي",
+          "symptoms": ["معظم الحالات بلا أعراض", "صداع", "دوخة"],
+          "treatments": ["أدوية خافضة للضغط", "تغيير نمط الحياة", "تقليل الملح"]
+        }
+      ],
+      "keywords": ["hypertension", "فرط ضغط"]
+    },
+    {
+      "id": 220,
+      "term": "hypotension",
+      "arabic": "انخفاض ضغط الدم",
+      "latin": "hypotensio",
+      "pronunciation": "هاي-بو-تن-شن",
+      "definition": "انخفاض ضغط الدم عن المعدل الطبيعي",
+      "parts": {
+        "prefix": { "value": "hypo", "meaning": "نقص" },
+        "root": { "value": "tens", "meaning": "ضغط" },
+        "suffix": { "value": "ion", "meaning": "حالة" }
+      },
+      "system": "الجهاز القلبي الوعائي",
+      "systemFunction": "ضخ الدم",
+      "location": "الشرايين",
+      "nearbyOrgans": ["القلب", "الدماغ"],
+      "diseases": [
+        {
+          "name": "انخفاض الضغط الانتصابي",
+          "symptoms": ["دوار عند الوقوف", "إغماء"],
+          "treatments": ["زيادة السوائل", "جوارب ضاغطة"]
+        }
+      ],
+      "keywords": ["hypotension", "انخفاض ضغط"]
+    },
+    {
+      "id": 221,
+      "term": "electrocardiogram",
+      "arabic": "تخطيط كهربية القلب",
+      "latin": "electrocardiogramma",
+      "pronunciation": "إ-ليك-ترو-كار-دي-و-غرام",
+      "definition": "تسجيل النشاط الكهربائي للقلب",
+      "parts": {
+        "root1": { "value": "electr", "meaning": "كهرباء" },
+        "root2": { "value": "cardi", "meaning": "قلب" },
+        "suffix": { "value": "gram", "meaning": "تسجيل" }
+      },
+      "system": "الجهاز القلبي الوعائي",
+      "systemFunction": "تشخيص أمراض القلب",
+      "location": "القلب",
+      "nearbyOrgans": ["القلب"],
+      "diseases": [],
+      "keywords": ["ECG", "EKG", "تخطيط قلب"]
+    },
+    {
+      "id": 222,
+      "term": "echocardiogram",
+      "arabic": "تخطيط صدى القلب",
+      "latin": "echocardiogramma",
+      "pronunciation": "إ-كو-كار-دي-و-غرام",
+      "definition": "تصوير القلب بالموجات فوق الصوتية",
+      "parts": {},
+      "system": "الجهاز القلبي الوعائي",
+      "systemFunction": "تشخيص أمراض القلب",
+      "location": "القلب",
+      "nearbyOrgans": ["القلب"],
+      "diseases": [],
+      "keywords": ["echocardiogram", "تخطيط صدى"]
+    },
+    {
+      "id": 223,
+      "term": "angiography",
+      "arabic": "تصوير الأوعية",
+      "latin": "angiographia",
+      "pronunciation": "آن-جي-أو-غرا-في",
+      "definition": "تصوير الأوعية الدموية باستخدام صبغة وأشعة سينية",
+      "parts": {
+        "root": { "value": "angi", "meaning": "وعاء" },
+        "suffix": { "value": "graphy", "meaning": "تصوير" }
+      },
+      "system": "الجهاز القلبي الوعائي",
+      "systemFunction": "تشخيص أمراض الأوعية",
+      "location": "الشرايين والأوردة",
+      "nearbyOrgans": ["حسب المنطقة المصورة"],
+      "diseases": [],
+      "keywords": ["angiography", "تصوير أوعية"]
+    },
+    {
+      "id": 224,
+      "term": "angioplasty",
+      "arabic": "رأب الوعاء",
+      "latin": "angioplastia",
+      "pronunciation": "آن-جي-أو-بلاس-تي",
+      "definition": "إجراء لفتح الشرايين المسدودة أو المتضيقة باستخدام بالون",
+      "parts": {
+        "root": { "value": "angi", "meaning": "وعاء" },
+        "suffix": { "value": "plasty", "meaning": "ترميم" }
+      },
+      "system": "الجهاز القلبي الوعائي",
+      "systemFunction": "تحسين تدفق الدم",
+      "location": "الشرايين التاجية",
+      "nearbyOrgans": ["الشرايين"],
+      "diseases": [],
+      "keywords": ["angioplasty", "رأب وعاء"]
+    },
+    {
+      "id": 225,
+      "term": "stent",
+      "arabic": "دعامة",
+      "latin": "stent",
+      "pronunciation": "ستنت",
+      "definition": "أنبوب شبكي صغير يوضع في الشريان لإبقائه مفتوحاً",
+      "parts": {},
+      "system": "الجهاز القلبي الوعائي",
+      "systemFunction": "إبقاء الشريان مفتوحاً",
+      "location": "الشرايين التاجية",
+      "nearbyOrgans": ["الشرايين"],
+      "diseases": [],
+      "keywords": ["stent", "دعامة"]
+    }
+  ]
+}

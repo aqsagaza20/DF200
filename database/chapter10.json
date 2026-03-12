@@ -1,0 +1,1608 @@
+{
+  "chapter": 10,
+  "title": "جهاز الغدد الصماء",
+  "title_en": "Endocrine System",
+  "terms": [
+    {
+      "id": 384,
+      "term": "endocrine gland",
+      "arabic": "غدة صماء",
+      "latin": "glandula endocrina",
+      "pronunciation": "إن-دو-كراين غلاند",
+      "definition": "غدة تفرز الهرمونات مباشرة في مجرى الدم",
+      "parts": {
+        "prefix": { "value": "endo", "meaning": "داخل" },
+        "root": { "value": "crin", "meaning": "يفرز" }
+      },
+      "system": "جهاز الغدد الصماء",
+      "systemFunction": "إفراز الهرمونات لتنظيم وظائف الجسم",
+      "location": "موزعة في جميع أنحاء الجسم",
+      "nearbyOrgans": ["حسب نوع الغدة"],
+      "diseases": [
+        {
+          "name": "قصور الغدة",
+          "symptoms": ["نقص الهرمون", "أعراض حسب الغدة"],
+          "treatments": ["تعويض هرموني"]
+        },
+        {
+          "name": "فرط نشاط الغدة",
+          "symptoms": ["زيادة الهرمون", "أعراض حسب الغدة"],
+          "treatments": ["أدوية مثبطة", "جراحة", "علاج إشعاعي"]
+        }
+      ],
+      "keywords": ["endocrine", "غدة صماء"]
+    },
+    {
+      "id": 385,
+      "term": "hormone",
+      "arabic": "هرمون",
+      "latin": "hormon",
+      "pronunciation": "هور-مون",
+      "definition": "رسول كيميائي تفرزه الغدد الصماء وينتقل عبر الدم ليؤثر على أعضاء مستهدفة",
+      "parts": {},
+      "system": "جهاز الغدد الصماء",
+      "systemFunction": "تنظيم وظائف الجسم",
+      "location": "الدم",
+      "nearbyOrgans": ["جميع الأعضاء"],
+      "diseases": [
+        {
+          "name": "اضطرابات هرمونية",
+          "symptoms": ["أعراض متنوعة حسب الهرمون"],
+          "treatments": ["علاج هرموني"]
+        }
+      ],
+      "keywords": ["hormone", "هرمون"]
+    },
+    {
+      "id": 386,
+      "term": "hypothalamus",
+      "arabic": "تحت المهاد",
+      "latin": "hypothalamus",
+      "pronunciation": "هاي-بو-ثال-أ-مس",
+      "definition": "منطقة في الدماغ تتحكم في الغدة النخامية وتنظم وظائف الجسم الأساسية",
+      "parts": {
+        "prefix": { "value": "hypo", "meaning": "تحت" }
+      },
+      "system": "جهاز الغدد الصماء والجهاز العصبي",
+      "systemFunction": "تنظيم إفراز الهرمونات، التحكم في الجوع والعطش ودرجة الحرارة",
+      "location": "الدماغ، تحت المهاد",
+      "nearbyOrgans": ["الغدة النخامية", "المهاد"],
+      "diseases": [
+        {
+          "name": "اضطرابات تحت المهاد",
+          "symptoms": ["اضطرابات هرمونية", "اضطرابات في الشهية", "اضطرابات في درجة الحرارة"],
+          "treatments": ["علاج السبب"]
+        }
+      ],
+      "keywords": ["hypothalamus", "تحت المهاد"]
+    },
+    {
+      "id": 387,
+      "term": "pituitary gland",
+      "arabic": "غدة نخامية",
+      "latin": "glandula pituitaria",
+      "pronunciation": "بي-تو-إ-تيري غلاند",
+      "definition": "الغدة الرئيسية التي تتحكم في معظم الغدد الصماء الأخرى",
+      "parts": {},
+      "system": "جهاز الغدد الصماء",
+      "systemFunction": "إفراز هرمونات تتحكم في النمو والتكاثر ووظائف الغدد الأخرى",
+      "location": "قاعدة الدماغ، خلف تجويف الأنف",
+      "nearbyOrgans": ["تحت المهاد", "العينان"],
+      "diseases": [
+        {
+          "name": "ورم الغدة النخامية",
+          "symptoms": ["صداع", "اضطرابات بصرية", "اضطرابات هرمونية"],
+          "treatments": ["جراحة", "أدوية", "علاج إشعاعي"]
+        },
+        {
+          "name": "قصور النخامية",
+          "symptoms": ["تعب", "ضعف", "نقص هرمونات"],
+          "treatments": ["تعويض هرموني"]
+        }
+      ],
+      "keywords": ["pituitary", "غدة نخامية"]
+    },
+    {
+      "id": 388,
+      "term": "adenohypophysis",
+      "arabic": "النخامة الغدية",
+      "latin": "adenohypophysis",
+      "pronunciation": "أ-دين-أو-هاي-بوف-إ-سيس",
+      "definition": "الفص الأمامي للغدة النخامية، يفرز هرمونات تتحكم في الغدد الأخرى",
+      "parts": {},
+      "system": "جهاز الغدد الصماء",
+      "systemFunction": "إفراز هرمونات تتحكم في الغدة الدرقية، الغدة الكظرية، الغدد التناسلية",
+      "location": "الجزء الأمامي من الغدة النخامية",
+      "nearbyOrgans": ["الغدة النخامية الخلفية"],
+      "diseases": [
+        {
+          "name": "أورام الفص الأمامي",
+          "symptoms": ["اضطرابات هرمونية متنوعة"],
+          "treatments": ["جراحة", "أدوية"]
+        }
+      ],
+      "keywords": ["adenohypophysis", "فص أمامي"]
+    },
+    {
+      "id": 389,
+      "term": "neurohypophysis",
+      "arabic": "النخامة العصبية",
+      "latin": "neurohypophysis",
+      "pronunciation": "نيو-رو-هاي-بوف-إ-سيس",
+      "definition": "الفص الخلفي للغدة النخامية، يخزن ويفرز هرمونات ينتجها تحت المهاد",
+      "parts": {},
+      "system": "جهاز الغدد الصماء",
+      "systemFunction": "تخزين وإفراز الأوكسيتوسين والهرمون المضاد لإدرار البول",
+      "location": "الجزء الخلفي من الغدة النخامية",
+      "nearbyOrgans": ["تحت المهاد"],
+      "diseases": [
+        {
+          "name": "مرض السكري الكاذب",
+          "symptoms": ["عطش شديد", "تبول كثير"],
+          "treatments": ["تعويض الهرمون المضاد لإدرار البول"]
+        }
+      ],
+      "keywords": ["neurohypophysis", "فص خلفي"]
+    },
+    {
+      "id": 390,
+      "term": "growth hormone",
+      "arabic": "هرمون النمو",
+      "latin": "hormon somatotropinum",
+      "pronunciation": "غروث هور-مون",
+      "definition": "هرمون تفرزه الغدة النخامية يحفز النمو وتكاثر الخلايا",
+      "parts": {},
+      "system": "جهاز الغدد الصماء",
+      "systemFunction": "تحفيز النمو",
+      "location": "الدم",
+      "nearbyOrgans": ["جميع الأنسجة"],
+      "diseases": [
+        {
+          "name": "نقص هرمون النمو",
+          "symptoms": ["قصر القامة", "تأخر النمو"],
+          "treatments": ["تعويض هرمون النمو"]
+        },
+        {
+          "name": "زيادة هرمون النمو",
+          "symptoms": ["عملقة", "ضخامة أطراف"],
+          "treatments": ["جراحة", "أدوية"]
+        }
+      ],
+      "keywords": ["GH", "هرمون نمو"]
+    },
+    {
+      "id": 391,
+      "term": "prolactin",
+      "arabic": "برولاكتين",
+      "latin": "prolactin",
+      "pronunciation": "برو-لاك-تين",
+      "definition": "هرمون تفرزه الغدة النخامية يحفز إنتاج الحليب",
+      "parts": {},
+      "system": "جهاز الغدد الصماء",
+      "systemFunction": "تحفيز إنتاج الحليب",
+      "location": "الدم",
+      "nearbyOrgans": ["الثدي"],
+      "diseases": [
+        {
+          "name": "فرط برولاكتين الدم",
+          "symptoms": ["اضطرابات الدورة الشهرية", "إفراز حليب غير طبيعي", "عقم"],
+          "treatments": ["أدوية", "جراحة"]
+        }
+      ],
+      "keywords": ["prolactin", "برولاكتين", "PRL"]
+    },
+    {
+      "id": 392,
+      "term": "ACTH",
+      "arabic": "الهرمون الموجه لقشر الكظر",
+      "latin": "hormon adrenocorticotropicum",
+      "pronunciation": "أ-سي-تي-إتش",
+      "definition": "هرمون تفرزه الغدة النخامية يحفز إفراز الكورتيزول من الغدة الكظرية",
+      "parts": {},
+      "system": "جهاز الغدد الصماء",
+      "systemFunction": "تحفيز إفراز الكورتيزول",
+      "location": "الدم",
+      "nearbyOrgans": ["الغدة الكظرية"],
+      "diseases": [
+        {
+          "name": "مرض كوشينغ",
+          "symptoms": ["سمنة مركزية", "وجه قمري", "ارتفاع ضغط الدم"],
+          "treatments": ["جراحة", "أدوية"]
+        }
+      ],
+      "keywords": ["ACTH", "هرمون موجه للكظر"]
+    },
+    {
+      "id": 393,
+      "term": "TSH",
+      "arabic": "الهرمون المنبه للدرقية",
+      "latin": "hormon thyreotropicum",
+      "pronunciation": "تي-إس-إتش",
+      "definition": "هرمون تفرزه الغدة النخامية يحفز إفراز هرمونات الغدة الدرقية",
+      "parts": {},
+      "system": "جهاز الغدد الصماء",
+      "systemFunction": "تحفيز الغدة الدرقية",
+      "location": "الدم",
+      "nearbyOrgans": ["الغدة الدرقية"],
+      "diseases": [
+        {
+          "name": "قصور الدرقية",
+          "symptoms": ["تعب", "زيادة وزن", "اكتئاب"],
+          "treatments": ["تعويض هرموني"]
+        },
+        {
+          "name": "فرط الدرقية",
+          "symptoms": ["فقدان وزن", "عصبية", "تسارع قلب"],
+          "treatments": ["أدوية", "يود مشع", "جراحة"]
+        }
+      ],
+      "keywords": ["TSH", "هرمون منبه للدرقية"]
+    },
+    {
+      "id": 394,
+      "term": "FSH",
+      "arabic": "الهرمون المنبه للجريب",
+      "latin": "hormon folliculostimulans",
+      "pronunciation": "إف-إس-إتش",
+      "definition": "هرمون تفرزه الغدة النخامية يحفز نمو البويضات والحيوانات المنوية",
+      "parts": {},
+      "system": "جهاز الغدد الصماء",
+      "systemFunction": "تحفيز الغدد التناسلية",
+      "location": "الدم",
+      "nearbyOrgans": ["المبيض", "الخصية"],
+      "diseases": [
+        {
+          "name": "اضطرابات FSH",
+          "symptoms": ["عقم", "اضطرابات الدورة الشهرية"],
+          "treatments": ["علاج هرموني"]
+        }
+      ],
+      "keywords": ["FSH", "هرمون منبه للجريب"]
+    },
+    {
+      "id": 395,
+      "term": "LH",
+      "arabic": "الهرمون الملوتن",
+      "latin": "hormon luteinisans",
+      "pronunciation": "إل-إتش",
+      "definition": "هرمون تفرزه الغدة النخامية يحفز الإباضة وإفراز التستوستيرون",
+      "parts": {},
+      "system": "جهاز الغدد الصماء",
+      "systemFunction": "تحفيز الإباضة وإفراز الهرمونات الجنسية",
+      "location": "الدم",
+      "nearbyOrgans": ["المبيض", "الخصية"],
+      "diseases": [
+        {
+          "name": "اضطرابات LH",
+          "symptoms": ["عقم", "اضطرابات الدورة الشهرية"],
+          "treatments": ["علاج هرموني"]
+        }
+      ],
+      "keywords": ["LH", "هرمون ملوتن"]
+    },
+    {
+      "id": 396,
+      "term": "ADH",
+      "arabic": "الهرمون المضاد لإدرار البول",
+      "latin": "hormon antidiureticum",
+      "pronunciation": "أ-دي-إتش",
+      "definition": "هرمون تفرزه الغدة النخامية الخلفية يقلل إنتاج البول",
+      "parts": {},
+      "system": "جهاز الغدد الصماء",
+      "systemFunction": "تنظيم توازن الماء في الجسم",
+      "location": "الدم",
+      "nearbyOrgans": ["الكلى"],
+      "diseases": [
+        {
+          "name": "مرض السكري الكاذب",
+          "symptoms": ["عطش شديد", "تبول كثير"],
+          "treatments": ["تعويض ADH"]
+        },
+        {
+          "name": "متلازمة الإفراز غير الملائم لـ ADH",
+          "symptoms": ["احتباس ماء", "انخفاض الصوديوم"],
+          "treatments": ["تقييد السوائل", "علاج السبب"]
+        }
+      ],
+      "keywords": ["ADH", "هرمون مضاد لإدرار البول", "vasopressin"]
+    },
+    {
+      "id": 397,
+      "term": "oxytocin",
+      "arabic": "أوكسيتوسين",
+      "latin": "oxytocinum",
+      "pronunciation": "أوك-سي-تو-سين",
+      "definition": "هرمون تفرزه الغدة النخامية الخلفية يحفز انقباضات الرحم وإفراز الحليب",
+      "parts": {},
+      "system": "جهاز الغدد الصماء",
+      "systemFunction": "تحفيز الولادة وإفراز الحليب",
+      "location": "الدم",
+      "nearbyOrgans": ["الرحم", "الثدي"],
+      "diseases": [],
+      "keywords": ["oxytocin", "أوكسيتوسين"]
+    },
+    {
+      "id": 398,
+      "term": "thyroid gland",
+      "arabic": "غدة درقية",
+      "latin": "glandula thyroidea",
+      "pronunciation": "ثاي-رويد غلاند",
+      "definition": "غدة على شكل فراشة في الرقبة تفرز هرمونات تنظم الأيض",
+      "parts": {},
+      "system": "جهاز الغدد الصماء",
+      "systemFunction": "تنظيم معدل الأيض والنمو",
+      "location": "الرقبة، أمام القصبة الهوائية",
+      "nearbyOrgans": ["الحنجرة", "القصبة الهوائية", "الغدد جار الدرقية"],
+      "diseases": [
+        {
+          "name": "قصور الدرقية",
+          "symptoms": ["تعب", "زيادة وزن", "برودة", "اكتئاب"],
+          "treatments": ["ليفوثيروكسين"]
+        },
+        {
+          "name": "فرط الدرقية",
+          "symptoms": ["فقدان وزن", "عصبية", "تعرق", "تسارع قلب"],
+          "treatments": ["أدوية", "يود مشع", "جراحة"]
+        },
+        {
+          "name": "تضخم الدرقية",
+          "symptoms": ["كتلة في الرقبة", "صعوبة بلع"],
+          "treatments": ["علاج حسب السبب"]
+        }
+      ],
+      "keywords": ["thyroid", "غدة درقية"]
+    },
+    {
+      "id": 399,
+      "term": "thyroxine",
+      "arabic": "ثيروكسين",
+      "latin": "thyroxinum",
+      "pronunciation": "ثاي-روك-سين",
+      "definition": "هرمون T4 تفرزه الغدة الدرقية، ينظم الأيض",
+      "parts": {},
+      "system": "جهاز الغدد الصماء",
+      "systemFunction": "تنظيم معدل الأيض",
+      "location": "الدم",
+      "nearbyOrgans": ["جميع الخلايا"],
+      "diseases": [
+        {
+          "name": "نقص T4",
+          "symptoms": ["قصور درقية"],
+          "treatments": ["تعويض هرموني"]
+        }
+      ],
+      "keywords": ["thyroxine", "T4", "ثيروكسين"]
+    },
+    {
+      "id": 400,
+      "term": "triiodothyronine",
+      "arabic": "ثلاثي يود الثيرونين",
+      "latin": "triiodothyroninum",
+      "pronunciation": "تراي-آي-أو-دو-ثاي-رو-نين",
+      "definition": "هرمون T3 تفرزه الغدة الدرقية، الشكل النشط لهرمون الدرقية",
+      "parts": {},
+      "system": "جهاز الغدد الصماء",
+      "systemFunction": "تنظيم معدل الأيض",
+      "location": "الدم",
+      "nearbyOrgans": ["جميع الخلايا"],
+      "diseases": [],
+      "keywords": ["triiodothyronine", "T3"]
+    },
+    {
+      "id": 401,
+      "term": "calcitonin",
+      "arabic": "كالسيتونين",
+      "latin": "calcitoninum",
+      "pronunciation": "كال-سي-تو-نين",
+      "definition": "هرمون تفرزه الغدة الدرقية يخفض مستوى الكالسيوم في الدم",
+      "parts": {},
+      "system": "جهاز الغدد الصماء",
+      "systemFunction": "خفض الكالسيوم في الدم",
+      "location": "الدم",
+      "nearbyOrgans": ["العظام", "الكلى"],
+      "diseases": [],
+      "keywords": ["calcitonin", "كالسيتونين"]
+    },
+    {
+      "id": 402,
+      "term": "parathyroid glands",
+      "arabic": "غدد جار درقية",
+      "latin": "glandulae parathyroideae",
+      "pronunciation": "بار-أ-ثاي-رويد غلاندز",
+      "definition": "أربع غدد صغيرة خلف الغدة الدرقية تفرز هرمون الغدة جار الدرقية",
+      "parts": {
+        "prefix": { "value": "para", "meaning": "بجانب" }
+      },
+      "system": "جهاز الغدد الصماء",
+      "systemFunction": "تنظيم مستوى الكالسيوم في الدم",
+      "location": "خلف الغدة الدرقية في الرقبة",
+      "nearbyOrgans": ["الغدة الدرقية"],
+      "diseases": [
+        {
+          "name": "فرط نشاط جار الدرقية",
+          "symptoms": ["ارتفاع الكالسيوم", "حصوات كلوية", "آلام عظام"],
+          "treatments": ["جراحة"]
+        },
+        {
+          "name": "قصور جار الدرقية",
+          "symptoms": ["انخفاض الكالسيوم", "تشنجات", "تنميل"],
+          "treatments": ["كالسيوم", "فيتامين د"]
+        }
+      ],
+      "keywords": ["parathyroid", "غدد جار درقية"]
+    },
+    {
+      "id": 403,
+      "term": "PTH",
+      "arabic": "الهرمون الجار درقي",
+      "latin": "hormon parathyreoideum",
+      "pronunciation": "بي-تي-إتش",
+      "definition": "هرمون تفرزه الغدد جار الدرقية يرفع مستوى الكالسيوم في الدم",
+      "parts": {},
+      "system": "جهاز الغدد الصماء",
+      "systemFunction": "رفع الكالسيوم في الدم",
+      "location": "الدم",
+      "nearbyOrgans": ["العظام", "الكلى", "الأمعاء"],
+      "diseases": [
+        {
+          "name": "فرط PTH",
+          "symptoms": ["ارتفاع الكالسيوم", "هشاشة عظام"],
+          "treatments": ["جراحة"]
+        },
+        {
+          "name": "نقص PTH",
+          "symptoms": ["انخفاض الكالسيوم", "تشنجات"],
+          "treatments": ["كالسيوم", "فيتامين د"]
+        }
+      ],
+      "keywords": ["PTH", "هرمون جار درقي"]
+    },
+    {
+      "id": 404,
+      "term": "adrenal glands",
+      "arabic": "غدد كظرية",
+      "latin": "glandulae suprarenales",
+      "pronunciation": "أ-دري-نال غلاندز",
+      "definition": "غدد تقع فوق الكلى تفرز هرمونات الإجهاد والكورتيزول والألدوستيرون",
+      "parts": {},
+      "system": "جهاز الغدد الصماء",
+      "systemFunction": "إفراز هرمونات الإجهاد والكورتيزول والألدوستيرون",
+      "location": "فوق الكلى",
+      "nearbyOrgans": ["الكلى", "الأبهر"],
+      "diseases": [
+        {
+          "name": "مرض أديسون",
+          "symptoms": ["تعب", "فقدان وزن", "فرط تصبغ", "انخفاض ضغط الدم"],
+          "treatments": ["تعويض هرموني"]
+        },
+        {
+          "name": "متلازمة كوشينغ",
+          "symptoms": ["سمنة مركزية", "وجه قمري", "ارتفاع ضغط الدم"],
+          "treatments": ["جراحة", "أدوية"]
+        }
+      ],
+      "keywords": ["adrenal", "غدة كظرية"]
+    },
+    {
+      "id": 405,
+      "term": "adrenal cortex",
+      "arabic": "قشرة كظرية",
+      "latin": "cortex suprarenalis",
+      "pronunciation": "أ-دري-نال كور-تكس",
+      "definition": "الطبقة الخارجية من الغدة الكظرية تفرز الكورتيزول والألدوستيرون",
+      "parts": {},
+      "system": "جهاز الغدد الصماء",
+      "systemFunction": "إفراز الكورتيزول والألدوستيرون",
+      "location": "الجزء الخارجي من الغدة الكظرية",
+      "nearbyOrgans": ["لب الكظر"],
+      "diseases": [
+        {
+          "name": "قصور القشرة الكظرية",
+          "symptoms": ["تعب", "انخفاض ضغط الدم"],
+          "treatments": ["تعويض هرموني"]
+        }
+      ],
+      "keywords": ["adrenal cortex", "قشرة كظرية"]
+    },
+    {
+      "id": 406,
+      "term": "adrenal medulla",
+      "arabic": "لب كظري",
+      "latin": "medulla suprarenalis",
+      "pronunciation": "أ-دري-نال مي-دولا",
+      "definition": "الطبقة الداخلية من الغدة الكظرية تفرز الأدرينالين والنورأدرينالين",
+      "parts": {},
+      "system": "جهاز الغدد الصماء",
+      "systemFunction": "إفراز هرمونات الإجهاد (الأدرينالين والنورأدرينالين)",
+      "location": "الجزء الداخلي من الغدة الكظرية",
+      "nearbyOrgans": ["قشرة الكظر"],
+      "diseases": [
+        {
+          "name": "ورم القواتم",
+          "symptoms": ["ارتفاع ضغط الدم", "تعرق", "صداع", "خفقان"],
+          "treatments": ["جراحة"]
+        }
+      ],
+      "keywords": ["adrenal medulla", "لب كظري"]
+    },
+    {
+      "id": 407,
+      "term": "cortisol",
+      "arabic": "كورتيزول",
+      "latin": "cortisolum",
+      "pronunciation": "كور-تي-سول",
+      "definition": "هرمون تفرزه قشرة الكظرية استجابة للإجهاد، ينظم الأيض والمناعة",
+      "parts": {},
+      "system": "جهاز الغدد الصماء",
+      "systemFunction": "تنظيم الأيض، الاستجابة للإجهاد، تثبيط الالتهاب",
+      "location": "الدم",
+      "nearbyOrgans": ["جميع الخلايا"],
+      "diseases": [
+        {
+          "name": "زيادة الكورتيزول",
+          "symptoms": ["سمنة", "ارتفاع سكر الدم", "ضعف مناعة"],
+          "treatments": ["علاج السبب"]
+        },
+        {
+          "name": "نقص الكورتيزول",
+          "symptoms": ["تعب", "انخفاض ضغط الدم"],
+          "treatments": ["تعويض هرموني"]
+        }
+      ],
+      "keywords": ["cortisol", "كورتيزول"]
+    },
+    {
+      "id": 408,
+      "term": "aldosterone",
+      "arabic": "ألدوستيرون",
+      "latin": "aldosteronum",
+      "pronunciation": "أل-دوس-تير-ون",
+      "definition": "هرمون تفرزه قشرة الكظرية ينظم توازن الصوديوم والبوتاسيوم",
+      "parts": {},
+      "system": "جهاز الغدد الصماء",
+      "systemFunction": "تنظيم ضغط الدم وتوازن الأملاح",
+      "location": "الدم",
+      "nearbyOrgans": ["الكلى"],
+      "diseases": [
+        {
+          "name": "فرط الألدوستيرونية",
+          "symptoms": ["ارتفاع ضغط الدم", "انخفاض البوتاسيوم"],
+          "treatments": ["أدوية", "جراحة"]
+        }
+      ],
+      "keywords": ["aldosterone", "ألدوستيرون"]
+    },
+    {
+      "id": 409,
+      "term": "epinephrine",
+      "arabic": "إبينفرين",
+      "latin": "epinephrinum",
+      "pronunciation": "إبي-نيف-رين",
+      "definition": "هرمون تفرزه لب الكظرية (الأدرينالين) يزيد معدل ضربات القلب وضغط الدم",
+      "parts": {},
+      "system": "جهاز الغدد الصماء",
+      "systemFunction": "الاستجابة للإجهاد (القتال أو الهروب)",
+      "location": "الدم",
+      "nearbyOrgans": ["القلب", "الأوعية الدموية"],
+      "diseases": [],
+      "keywords": ["epinephrine", "adrenaline", "إبينفرين"]
+    },
+    {
+      "id": 410,
+      "term": "norepinephrine",
+      "arabic": "نورإبينفرين",
+      "latin": "norepinephrinum",
+      "pronunciation": "نور-إبي-نيف-رين",
+      "definition": "هرمون تفرزه لب الكظرية (النورأدرينالين) يضيق الأوعية الدموية ويرفع ضغط الدم",
+      "parts": {},
+      "system": "جهاز الغدد الصماء",
+      "systemFunction": "الاستجابة للإجهاد، تضييق الأوعية",
+      "location": "الدم",
+      "nearbyOrgans": ["الأوعية الدموية"],
+      "diseases": [],
+      "keywords": ["norepinephrine", "noradrenaline", "نورإبينفرين"]
+    },
+    {
+      "id": 411,
+      "term": "pancreas",
+      "arabic": "بنكرياس",
+      "latin": "pancreas",
+      "pronunciation": "بان-كري-أس",
+      "definition": "غدة خلف المعدة لها وظائف هضمية (خارجية) وغدد صماء (الأنسولين والغلوكاغون)",
+      "parts": {},
+      "system": "جهاز الغدد الصماء والجهاز الهضمي",
+      "systemFunction": "إفراز الأنسولين والغلوكاغون لتنظيم سكر الدم، وإفراز إنزيمات هاضمة",
+      "location": "خلف المعدة، أمام العمود الفقري",
+      "nearbyOrgans": ["المعدة", "الاثنا عشر", "الكبد", "الطحال"],
+      "diseases": [
+        {
+          "name": "داء السكري",
+          "symptoms": ["عطش", "تبول كثير", "فقدان وزن"],
+          "treatments": ["أنسولين", "أدوية"]
+        },
+        {
+          "name": "التهاب البنكرياس",
+          "symptoms": ["ألم بطني", "غثيان", "قيء"],
+          "treatments": ["صيام", "سوائل"]
+        }
+      ],
+      "keywords": ["pancreas", "بنكرياس"]
+    },
+    {
+      "id": 412,
+      "term": "islets of Langerhans",
+      "arabic": "جزر لانغرهانس",
+      "latin": "insulae pancreaticae",
+      "pronunciation": "آي-ليتس أوف لان-غر-هانز",
+      "definition": "مجموعات من الخلايا في البنكرياس تفرز الأنسولين والغلوكاغون",
+      "parts": {},
+      "system": "جهاز الغدد الصماء",
+      "systemFunction": "إفراز الأنسولين والغلوكاغون",
+      "location": "داخل البنكرياس",
+      "nearbyOrgans": ["البنكرياس"],
+      "diseases": [
+        {
+          "name": "داء السكري من النوع الأول",
+          "symptoms": ["تدمير خلايا بيتا", "نقص الأنسولين"],
+          "treatments": ["أنسولين"]
+        }
+      ],
+      "keywords": ["islets of Langerhans", "جزر لانغرهانس"]
+    },
+    {
+      "id": 413,
+      "term": "insulin",
+      "arabic": "أنسولين",
+      "latin": "insulinum",
+      "pronunciation": "إن-سو-لين",
+      "definition": "هرمون تفرزه خلايا بيتا في البنكرياس يخفض مستوى السكر في الدم",
+      "parts": {},
+      "system": "جهاز الغدد الصماء",
+      "systemFunction": "خفض سكر الدم، تخزين الجلوكوز",
+      "location": "الدم",
+      "nearbyOrgans": ["الكبد", "العضلات", "الخلايا الدهنية"],
+      "diseases": [
+        {
+          "name": "داء السكري",
+          "symptoms": ["ارتفاع سكر الدم"],
+          "treatments": ["أنسولين", "أدوية"]
+        }
+      ],
+      "keywords": ["insulin", "أنسولين"]
+    },
+    {
+      "id": 414,
+      "term": "glucagon",
+      "arabic": "غلوكاغون",
+      "latin": "glucagonum",
+      "pronunciation": "غلو-كا-غون",
+      "definition": "هرمون تفرزه خلايا ألفا في البنكرياس يرفع مستوى السكر في الدم",
+      "parts": {},
+      "system": "جهاز الغدد الصماء",
+      "systemFunction": "رفع سكر الدم، تحرير الجلوكوز من الكبد",
+      "location": "الدم",
+      "nearbyOrgans": ["الكبد"],
+      "diseases": [
+        {
+          "name": "نقص السكر",
+          "symptoms": ["دوار", "تعرق", "ارتعاش"],
+          "treatments": ["غلوكاغون", "سكر"]
+        }
+      ],
+      "keywords": ["glucagon", "غلوكاغون"]
+    },
+    {
+      "id": 415,
+      "term": "somatostatin",
+      "arabic": "سوماتوستاتين",
+      "latin": "somatostatinum",
+      "pronunciation": "سو-ما-تو-ستا-تين",
+      "definition": "هرمون تفرزه خلايا دلتا في البنكرياس يثبط إفراز الأنسولين والغلوكاغون",
+      "parts": {},
+      "system": "جهاز الغدد الصماء",
+      "systemFunction": "تثبيط إفراز هرمونات أخرى",
+      "location": "الدم",
+      "nearbyOrgans": ["البنكرياس"],
+      "diseases": [],
+      "keywords": ["somatostatin", "سوماتوستاتين"]
+    },
+    {
+      "id": 416,
+      "term": "pineal gland",
+      "arabic": "غدة صنوبرية",
+      "latin": "glandula pinealis",
+      "pronunciation": "باي-ني-أل غلاند",
+      "definition": "غدة صغيرة في الدماغ تفرز هرمون الميلاتونين",
+      "parts": {},
+      "system": "جهاز الغدد الصماء",
+      "systemFunction": "إفراز الميلاتونين لتنظيم النوم والاستيقاظ",
+      "location": "الدماغ",
+      "nearbyOrgans": ["الدماغ"],
+      "diseases": [
+        {
+          "name": "أورام الصنوبرية",
+          "symptoms": ["صداع", "اضطرابات بصرية"],
+          "treatments": ["جراحة"]
+        }
+      ],
+      "keywords": ["pineal gland", "غدة صنوبرية"]
+    },
+    {
+      "id": 417,
+      "term": "melatonin",
+      "arabic": "ميلاتونين",
+      "latin": "melatonin",
+      "pronunciation": "مي-لا-تو-نين",
+      "definition": "هرمون تفرزه الغدة الصنوبرية ينظم دورة النوم والاستيقاظ",
+      "parts": {},
+      "system": "جهاز الغدد الصماء",
+      "systemFunction": "تنظيم النوم",
+      "location": "الدم",
+      "nearbyOrgans": ["الدماغ"],
+      "diseases": [
+        {
+          "name": "اضطرابات النوم",
+          "symptoms": ["أرق", "اضطراب النوم"],
+          "treatments": ["مكملات ميلاتونين"]
+        }
+      ],
+      "keywords": ["melatonin", "ميلاتونين"]
+    },
+    {
+      "id": 418,
+      "term": "thymus",
+      "arabic": "غدة زعترية",
+      "latin": "thymus",
+      "pronunciation": "ثاي-مس",
+      "definition": "غدة في المنصف تلعب دوراً في نضج الخلايا التائية",
+      "parts": {},
+      "system": "جهاز الغدد الصماء والمناعة",
+      "systemFunction": "نضج الخلايا التائية",
+      "location": "خلف عظم القص، أمام القلب",
+      "nearbyOrgans": ["القلب", "الرئتين"],
+      "diseases": [
+        {
+          "name": "ورم الغدة الزعترية",
+          "symptoms": ["وهن عضلي", "سعال"],
+          "treatments": ["جراحة"]
+        }
+      ],
+      "keywords": ["thymus", "غدة زعترية"]
+    },
+    {
+      "id": 419,
+      "term": "thymosin",
+      "arabic": "ثيموسين",
+      "latin": "thymosinum",
+      "pronunciation": "ثاي-مو-سين",
+      "definition": "هرمون تفرزه الغدة الزعترية يحفز نضج الخلايا التائية",
+      "parts": {},
+      "system": "جهاز الغدد الصماء",
+      "systemFunction": "نضج الخلايا التائية",
+      "location": "الدم",
+      "nearbyOrgans": ["الغدة الزعترية"],
+      "diseases": [],
+      "keywords": ["thymosin", "ثيموسين"]
+    },
+    {
+      "id": 420,
+      "term": "gonads",
+      "arabic": "غدد تناسلية",
+      "latin": "gonades",
+      "pronunciation": "غو-نادز",
+      "definition": "الغدد الجنسية (المبيض في الأنثى والخصية في الذكر)",
+      "parts": {},
+      "system": "جهاز الغدد الصماء والتناسلي",
+      "systemFunction": "إفراز الهرمونات الجنسية وإنتاج الخلايا التناسلية",
+      "location": "الحوض (مبيض)، كيس الصفن (خصية)",
+      "nearbyOrgans": ["الرحم", "البروستاتا"],
+      "diseases": [
+        {
+          "name": "قصور الغدد التناسلية",
+          "symptoms": ["عقم", "ضعف الرغبة الجنسية"],
+          "treatments": ["تعويض هرموني"]
+        }
+      ],
+      "keywords": ["gonads", "غدد تناسلية"]
+    },
+    {
+      "id": 421,
+      "term": "testis",
+      "arabic": "خصية",
+      "latin": "testis",
+      "pronunciation": "تيس-تيس",
+      "definition": "الغدة التناسلية الذكرية، تنتج الحيوانات المنوية والتستوستيرون",
+      "parts": {},
+      "system": "جهاز الغدد الصماء والتناسلي",
+      "systemFunction": "إنتاج الحيوانات المنوية والتستوستيرون",
+      "location": "كيس الصفن",
+      "nearbyOrgans": ["البربخ", "الأسهر"],
+      "diseases": [
+        {
+          "name": "سرطان الخصية",
+          "symptoms": ["كتلة في الخصية", "ألم"],
+          "treatments": ["جراحة", "علاج كيميائي"]
+        },
+        {
+          "name": "قصور الخصية",
+          "symptoms": ["انخفاض التستوستيرون", "عقم"],
+          "treatments": ["تعويض هرموني"]
+        }
+      ],
+      "keywords": ["testis", "testicle", "خصية"],
+      "plural": "testes"
+    },
+    {
+      "id": 422,
+      "term": "testosterone",
+      "arabic": "تستوستيرون",
+      "latin": "testosteronum",
+      "pronunciation": "تيس-توس-تير-ون",
+      "definition": "الهرمون الجنسي الذكري المسؤول عن الصفات الذكرية",
+      "parts": {},
+      "system": "جهاز الغدد الصماء",
+      "systemFunction": "تطور الصفات الذكرية، إنتاج الحيوانات المنوية",
+      "location": "الدم",
+      "nearbyOrgans": ["الخصية", "البروستاتا"],
+      "diseases": [
+        {
+          "name": "نقص التستوستيرون",
+          "symptoms": ["ضعف الرغبة", "اكتئاب", "هشاشة عظام"],
+          "treatments": ["تعويض هرموني"]
+        }
+      ],
+      "keywords": ["testosterone", "تستوستيرون"]
+    },
+    {
+      "id": 423,
+      "term": "ovary",
+      "arabic": "مبيض",
+      "latin": "ovarium",
+      "pronunciation": "أو-فا-ري",
+      "definition": "الغدة التناسلية الأنثوية، تنتج البويضات والإستروجين والبروجسترون",
+      "parts": {},
+      "system": "جهاز الغدد الصماء والتناسلي",
+      "systemFunction": "إنتاج البويضات والهرمونات الأنثوية",
+      "location": "الحوض، على جانبي الرحم",
+      "nearbyOrgans": ["الرحم", "قناة فالوب"],
+      "diseases": [
+        {
+          "name": "تكيس المبايض",
+          "symptoms": ["اضطرابات الدورة", "عقم"],
+          "treatments": ["أدوية", "تعديل نمط الحياة"]
+        },
+        {
+          "name": "سرطان المبيض",
+          "symptoms": ["انتفاخ", "ألم"],
+          "treatments": ["جراحة", "علاج كيميائي"]
+        }
+      ],
+      "keywords": ["ovary", "مبيض"],
+      "plural": "ovaries"
+    },
+    {
+      "id": 424,
+      "term": "estrogen",
+      "arabic": "إستروجين",
+      "latin": "oestrogenum",
+      "pronunciation": "إيس-ترو-جين",
+      "definition": "الهرمون الجنسي الأنثوي المسؤول عن الصفات الأنثوية",
+      "parts": {},
+      "system": "جهاز الغدد الصماء",
+      "systemFunction": "تطور الصفات الأنثوية، تنظيم الدورة الشهرية",
+      "location": "الدم",
+      "nearbyOrgans": ["الرحم", "الثدي"],
+      "diseases": [
+        {
+          "name": "نقص الإستروجين",
+          "symptoms": ["هبات ساخنة", "هشاشة عظام"],
+          "treatments": ["تعويض هرموني"]
+        }
+      ],
+      "keywords": ["estrogen", "إستروجين"]
+    },
+    {
+      "id": 425,
+      "term": "progesterone",
+      "arabic": "بروجستيرون",
+      "latin": "progesteronum",
+      "pronunciation": "برو-جيس-تير-ون",
+      "definition": "الهرمون الأنثوي المسؤول عن تهيئة الرحم للحمل",
+      "parts": {},
+      "system": "جهاز الغدد الصماء",
+      "systemFunction": "تهيئة الرحم للحمل",
+      "location": "الدم",
+      "nearbyOrgans": ["الرحم"],
+      "diseases": [
+        {
+          "name": "نقص البروجستيرون",
+          "symptoms": ["اضطرابات الدورة", "إجهاض"],
+          "treatments": ["تعويض هرموني"]
+        }
+      ],
+      "keywords": ["progesterone", "بروجستيرون"]
+    },
+    {
+      "id": 426,
+      "term": "hyperpituitarism",
+      "arabic": "فرط النخامية",
+      "latin": "hyperpituitarismus",
+      "pronunciation": "هاي-بر-بي-تو-إ-تا-ريزم",
+      "definition": "زيادة نشاط الغدة النخامية وإفراز هرموناتها",
+      "parts": {
+        "prefix": { "value": "hyper", "meaning": "فرط" },
+        "root": { "value": "pituit", "meaning": "نخامية" },
+        "suffix": { "value": "ism", "meaning": "حالة" }
+      },
+      "system": "جهاز الغدد الصماء",
+      "systemFunction": "إفراز الهرمونات",
+      "location": "الغدة النخامية",
+      "nearbyOrgans": ["الغدة النخامية"],
+      "diseases": [
+        {
+          "name": "ضخامة الأطراف",
+          "symptoms": ["تضخم اليدين والقدمين", "تضخم ملامح الوجه"],
+          "treatments": ["جراحة", "أدوية"]
+        },
+        {
+          "name": "مرض كوشينغ",
+          "symptoms": ["سمنة مركزية", "وجه قمري"],
+          "treatments": ["جراحة"]
+        }
+      ],
+      "keywords": ["hyperpituitarism", "فرط نخامية"]
+    },
+    {
+      "id": 427,
+      "term": "hypopituitarism",
+      "arabic": "قصور النخامية",
+      "latin": "hypopituitarismus",
+      "pronunciation": "هاي-بو-بي-تو-إ-تا-ريزم",
+      "definition": "نقص نشاط الغدة النخامية وإفراز هرموناتها",
+      "parts": {
+        "prefix": { "value": "hypo", "meaning": "نقص" },
+        "root": { "value": "pituit", "meaning": "نخامية" },
+        "suffix": { "value": "ism", "meaning": "حالة" }
+      },
+      "system": "جهاز الغدد الصماء",
+      "systemFunction": "إفراز الهرمونات",
+      "location": "الغدة النخامية",
+      "nearbyOrgans": ["الغدة النخامية"],
+      "diseases": [
+        {
+          "name": "قصور النخامية",
+          "symptoms": ["تعب", "ضعف", "نقص هرمونات"],
+          "treatments": ["تعويض هرموني"]
+        }
+      ],
+      "keywords": ["hypopituitarism", "قصور نخامية"]
+    },
+    {
+      "id": 428,
+      "term": "acromegaly",
+      "arabic": "ضخامة الأطراف",
+      "latin": "acromegalia",
+      "pronunciation": "أك-رو-ميغ-أ-لي",
+      "definition": "تضخم اليدين والقدمين وملامح الوجه بسبب زيادة هرمون النمو بعد البلوغ",
+      "parts": {
+        "root": { "value": "acr", "meaning": "طرف" },
+        "suffix": { "value": "megaly", "meaning": "تضخم" }
+      },
+      "system": "جهاز الغدد الصماء",
+      "systemFunction": "النمو",
+      "location": "الغدة النخامية",
+      "nearbyOrgans": ["الغدة النخامية"],
+      "diseases": [
+        {
+          "name": "ضخامة الأطراف",
+          "symptoms": ["تضخم اليدين والقدمين", "تضخم ملامح الوجه", "ألم مفاصل"],
+          "treatments": ["جراحة", "أدوية", "علاج إشعاعي"]
+        }
+      ],
+      "keywords": ["acromegaly", "ضخامة أطراف"]
+    },
+    {
+      "id": 429,
+      "term": "gigantism",
+      "arabic": "عملقة",
+      "latin": "gigantismus",
+      "pronunciation": "جاي-غان-تيزم",
+      "definition": "زيادة الطول بشكل مفرط بسبب زيادة هرمون النمو قبل البلوغ",
+      "parts": {},
+      "system": "جهاز الغدد الصماء",
+      "systemFunction": "النمو",
+      "location": "الغدة النخامية",
+      "nearbyOrgans": ["الغدة النخامية"],
+      "diseases": [
+        {
+          "name": "العملقة",
+          "symptoms": ["طول مفرط", "ألم مفاصل"],
+          "treatments": ["جراحة", "أدوية"]
+        }
+      ],
+      "keywords": ["gigantism", "عملقة"]
+    },
+    {
+      "id": 430,
+      "term": "diabetes insipidus",
+      "arabic": "مرض السكري الكاذب",
+      "latin": "diabetes insipidus",
+      "pronunciation": "داي-أ-بي-تيز إن-سي-بي-دس",
+      "definition": "مرض ناتج عن نقص الهرمون المضاد لإدرار البول يسبب عطشاً شديداً وتبولاً كثيراً",
+      "parts": {},
+      "system": "جهاز الغدد الصماء",
+      "systemFunction": "تنظيم الماء",
+      "location": "الغدة النخامية الخلفية أو الكلى",
+      "nearbyOrgans": ["الغدة النخامية", "الكلى"],
+      "diseases": [
+        {
+          "name": "السكري الكاذب",
+          "symptoms": ["عطش شديد", "تبول كثير", "جفاف"],
+          "treatments": ["تعويض الهرمون", "علاج السبب"]
+        }
+      ],
+      "keywords": ["diabetes insipidus", "سكري كاذب"]
+    },
+    {
+      "id": 431,
+      "term": "hyperthyroidism",
+      "arabic": "فرط الدرقية",
+      "latin": "hyperthyreoidismus",
+      "pronunciation": "هاي-بر-ثاي-روي-ديزم",
+      "definition": "زيادة نشاط الغدة الدرقية وإفراز هرموناتها",
+      "parts": {
+        "prefix": { "value": "hyper", "meaning": "فرط" },
+        "root": { "value": "thyroid", "meaning": "درقية" },
+        "suffix": { "value": "ism", "meaning": "حالة" }
+      },
+      "system": "جهاز الغدد الصماء",
+      "systemFunction": "تنظيم الأيض",
+      "location": "الغدة الدرقية",
+      "nearbyOrgans": ["الغدة الدرقية"],
+      "diseases": [
+        {
+          "name": "مرض غريفز",
+          "symptoms": ["فقدان وزن", "عصبية", "تسارع قلب", "جحوظ العينين"],
+          "treatments": ["أدوية", "يود مشع", "جراحة"]
+        }
+      ],
+      "keywords": ["hyperthyroidism", "فرط درقية"]
+    },
+    {
+      "id": 432,
+      "term": "hypothyroidism",
+      "arabic": "قصور الدرقية",
+      "latin": "hypothyreoidismus",
+      "pronunciation": "هاي-بو-ثاي-روي-ديزم",
+      "definition": "نقص نشاط الغدة الدرقية وإفراز هرموناتها",
+      "parts": {
+        "prefix": { "value": "hypo", "meaning": "نقص" },
+        "root": { "value": "thyroid", "meaning": "درقية" },
+        "suffix": { "value": "ism", "meaning": "حالة" }
+      },
+      "system": "جهاز الغدد الصماء",
+      "systemFunction": "تنظيم الأيض",
+      "location": "الغدة الدرقية",
+      "nearbyOrgans": ["الغدة الدرقية"],
+      "diseases": [
+        {
+          "name": "قصور الدرقية",
+          "symptoms": ["تعب", "زيادة وزن", "برودة", "اكتئاب"],
+          "treatments": ["ليفوثيروكسين"]
+        },
+        {
+          "name": "التهاب الغدة الدرقية لهاشيموتو",
+          "symptoms": ["تضخم الغدة", "أعراض قصور"],
+          "treatments": ["تعويض هرموني"]
+        }
+      ],
+      "keywords": ["hypothyroidism", "قصور درقية"]
+    },
+    {
+      "id": 433,
+      "term": "goiter",
+      "arabic": "تضخم درقي",
+      "latin": "struma",
+      "pronunciation": "غوي-تر",
+      "definition": "تضخم الغدة الدرقية",
+      "parts": {},
+      "system": "جهاز الغدد الصماء",
+      "systemFunction": "إفراز الهرمونات",
+      "location": "الرقبة",
+      "nearbyOrgans": ["الغدة الدرقية"],
+      "diseases": [
+        {
+          "name": "تضخم الدرقية",
+          "symptoms": ["كتلة في الرقبة", "صعوبة بلع", "صعوبة تنفس"],
+          "treatments": ["علاج حسب السبب", "جراحة"]
+        }
+      ],
+      "keywords": ["goiter", "تضخم درقي"]
+    },
+    {
+      "id": 434,
+      "term": "Graves' disease",
+      "arabic": "داء غريفز",
+      "latin": "morbus Basedow",
+      "pronunciation": "غريفز دي-زيز",
+      "definition": "مرض مناعي ذاتي يسبب فرط نشاط الغدة الدرقية",
+      "parts": {},
+      "system": "جهاز الغدد الصماء",
+      "systemFunction": "إفراز الهرمونات",
+      "location": "الغدة الدرقية",
+      "nearbyOrgans": ["الغدة الدرقية", "العينان"],
+      "diseases": [
+        {
+          "name": "مرض غريفز",
+          "symptoms": ["فرط درقية", "جحوظ العينين", "تضخم الدرقية"],
+          "treatments": ["أدوية", "يود مشع", "جراحة"]
+        }
+      ],
+      "keywords": ["Graves' disease", "داء غريفز"]
+    },
+    {
+      "id": 435,
+      "term": "Hashimoto's disease",
+      "arabic": "داء هاشيموتو",
+      "latin": "thyreoiditis Hashimoto",
+      "pronunciation": "ها-شي-مو-توز دي-زيز",
+      "definition": "مرض مناعي ذاتي يسبب التهاب وتدمير الغدة الدرقية",
+      "parts": {},
+      "system": "جهاز الغدد الصماء",
+      "systemFunction": "إفراز الهرمونات",
+      "location": "الغدة الدرقية",
+      "nearbyOrgans": ["الغدة الدرقية"],
+      "diseases": [
+        {
+          "name": "داء هاشيموتو",
+          "symptoms": ["تضخم الغدة", "قصور درقية"],
+          "treatments": ["تعويض هرموني"]
+        }
+      ],
+      "keywords": ["Hashimoto's disease", "داء هاشيموتو"]
+    },
+    {
+      "id": 436,
+      "term": "thyroiditis",
+      "arabic": "التهاب الغدة الدرقية",
+      "latin": "thyreoiditis",
+      "pronunciation": "ثاي-روي-داي-تس",
+      "definition": "التهاب يصيب الغدة الدرقية",
+      "parts": {
+        "root": { "value": "thyroid", "meaning": "درقية" },
+        "suffix": { "value": "itis", "meaning": "التهاب" }
+      },
+      "system": "جهاز الغدد الصماء",
+      "systemFunction": "إفراز الهرمونات",
+      "location": "الغدة الدرقية",
+      "nearbyOrgans": ["الغدة الدرقية"],
+      "diseases": [
+        {
+          "name": "التهاب الغدة الدرقية",
+          "symptoms": ["ألم في الرقبة", "حمى", "أعراض فرط أو قصور"],
+          "treatments": ["مضادات التهاب", "علاج الأعراض"]
+        }
+      ],
+      "keywords": ["thyroiditis", "التهاب درقية"]
+    },
+    {
+      "id": 437,
+      "term": "thyroid nodule",
+      "arabic": "عقدة درقية",
+      "latin": "nodus thyroideus",
+      "pronunciation": "ثاي-رويد نو-دول",
+      "definition": "كتلة صلبة أو سائلة في الغدة الدرقية",
+      "parts": {},
+      "system": "جهاز الغدد الصماء",
+      "systemFunction": "إفراز الهرمونات",
+      "location": "الغدة الدرقية",
+      "nearbyOrgans": ["الغدة الدرقية"],
+      "diseases": [
+        {
+          "name": "العقد الدرقية",
+          "symptoms": ["كتلة في الرقبة", "معظمها حميد"],
+          "treatments": ["مراقبة", "خزعة", "جراحة"]
+        }
+      ],
+      "keywords": ["thyroid nodule", "عقدة درقية"]
+    },
+    {
+      "id": 438,
+      "term": "thyroid cancer",
+      "arabic": "سرطان الغدة الدرقية",
+      "latin": "carcinoma thyroideum",
+      "pronunciation": "ثاي-رويد كان-سر",
+      "definition": "ورم خبيث في الغدة الدرقية",
+      "parts": {},
+      "system": "جهاز الغدد الصماء",
+      "systemFunction": "إفراز الهرمونات",
+      "location": "الغدة الدرقية",
+      "nearbyOrgans": ["الغدة الدرقية"],
+      "diseases": [
+        {
+          "name": "سرطان الغدة الدرقية",
+          "symptoms": ["كتلة في الرقبة", "بحة صوت", "صعوبة بلع"],
+          "treatments": ["جراحة", "يود مشع", "علاج هرموني"]
+        }
+      ],
+      "keywords": ["thyroid cancer", "سرطان درقية"]
+    },
+    {
+      "id": 439,
+      "term": "hyperparathyroidism",
+      "arabic": "فرط جار الدرقية",
+      "latin": "hyperparathyreoidismus",
+      "pronunciation": "هاي-بر-بار-أ-ثاي-روي-ديزم",
+      "definition": "زيادة نشاط الغدد جار الدرقية وارتفاع PTH",
+      "parts": {
+        "prefix": { "value": "hyper", "meaning": "فرط" },
+        "root": { "value": "parathyroid", "meaning": "جار درقية" },
+        "suffix": { "value": "ism", "meaning": "حالة" }
+      },
+      "system": "جهاز الغدد الصماء",
+      "systemFunction": "تنظيم الكالسيوم",
+      "location": "الغدد جار الدرقية",
+      "nearbyOrgans": ["الغدد جار الدرقية"],
+      "diseases": [
+        {
+          "name": "فرط جار الدرقية",
+          "symptoms": ["ارتفاع الكالسيوم", "حصوات كلوية", "آلام عظام"],
+          "treatments": ["جراحة", "أدوية"]
+        }
+      ],
+      "keywords": ["hyperparathyroidism", "فرط جار درقية"]
+    },
+    {
+      "id": 440,
+      "term": "hypoparathyroidism",
+      "arabic": "قصور جار الدرقية",
+      "latin": "hypoparathyreoidismus",
+      "pronunciation": "هاي-بو-بار-أ-ثاي-روي-ديزم",
+      "definition": "نقص نشاط الغدد جار الدرقية وانخفاض PTH",
+      "parts": {
+        "prefix": { "value": "hypo", "meaning": "نقص" },
+        "root": { "value": "parathyroid", "meaning": "جار درقية" },
+        "suffix": { "value": "ism", "meaning": "حالة" }
+      },
+      "system": "جهاز الغدد الصماء",
+      "systemFunction": "تنظيم الكالسيوم",
+      "location": "الغدد جار الدرقية",
+      "nearbyOrgans": ["الغدد جار الدرقية"],
+      "diseases": [
+        {
+          "name": "قصور جار الدرقية",
+          "symptoms": ["انخفاض الكالسيوم", "تشنجات", "تنميل"],
+          "treatments": ["كالسيوم", "فيتامين د"]
+        }
+      ],
+      "keywords": ["hypoparathyroidism", "قصور جار درقية"]
+    },
+    {
+      "id": 441,
+      "term": "hypercalcemia",
+      "arabic": "فرط كالسيوم الدم",
+      "latin": "hypercalcaemia",
+      "pronunciation": "هاي-بر-كال-سي-ميا",
+      "definition": "ارتفاع مستوى الكالسيوم في الدم",
+      "parts": {
+        "prefix": { "value": "hyper", "meaning": "فرط" },
+        "root": { "value": "calc", "meaning": "كالسيوم" },
+        "suffix": { "value": "emia", "meaning": "دم" }
+      },
+      "system": "جهاز الغدد الصماء",
+      "systemFunction": "توازن الكالسيوم",
+      "location": "الدم",
+      "nearbyOrgans": ["الكلى", "العظام"],
+      "diseases": [
+        {
+          "name": "فرط الكالسيوم",
+          "symptoms": ["عطش", "تبول كثير", "إمساك", "ضعف عضلي"],
+          "treatments": ["علاج السبب", "سوائل", "أدوية"]
+        }
+      ],
+      "keywords": ["hypercalcemia", "فرط كالسيوم"]
+    },
+    {
+      "id": 442,
+      "term": "hypocalcemia",
+      "arabic": "نقص كالسيوم الدم",
+      "latin": "hypocalcaemia",
+      "pronunciation": "هاي-بو-كال-سي-ميا",
+      "definition": "انخفاض مستوى الكالسيوم في الدم",
+      "parts": {
+        "prefix": { "value": "hypo", "meaning": "نقص" },
+        "root": { "value": "calc", "meaning": "كالسيوم" },
+        "suffix": { "value": "emia", "meaning": "دم" }
+      },
+      "system": "جهاز الغدد الصماء",
+      "systemFunction": "توازن الكالسيوم",
+      "location": "الدم",
+      "nearbyOrgans": ["الغدد جار الدرقية"],
+      "diseases": [
+        {
+          "name": "نقص الكالسيوم",
+          "symptoms": ["تشنجات", "تنميل", "تكزز"],
+          "treatments": ["كالسيوم", "فيتامين د"]
+        }
+      ],
+      "keywords": ["hypocalcemia", "نقص كالسيوم"]
+    },
+    {
+      "id": 443,
+      "term": "diabetes mellitus",
+      "arabic": "داء السكري",
+      "latin": "diabetes mellitus",
+      "pronunciation": "داي-أ-بي-تيز ميل-إي-تس",
+      "definition": "اضطراب استقلابي يتميز بارتفاع مستوى السكر في الدم",
+      "parts": {},
+      "system": "جهاز الغدد الصماء",
+      "systemFunction": "تنظيم سكر الدم",
+      "location": "البنكرياس",
+      "nearbyOrgans": ["البنكرياس"],
+      "diseases": [
+        {
+          "name": "النوع الأول",
+          "symptoms": ["عطش", "تبول كثير", "فقدان وزن", "تعب"],
+          "treatments": ["أنسولين"]
+        },
+        {
+          "name": "النوع الثاني",
+          "symptoms": ["عطش", "تبول كثير", "تعب", "التئام بطيء"],
+          "treatments": ["أدوية", "أنسولين", "حمية", "رياضة"]
+        }
+      ],
+      "keywords": ["diabetes", "سكري"]
+    },
+    {
+      "id": 444,
+      "term": "type 1 diabetes",
+      "arabic": "سكري النمط الأول",
+      "latin": "diabetes mellitus typus 1",
+      "pronunciation": "تايب وان داي-أ-بي-تيز",
+      "definition": "مرض مناعي ذاتي يدمر خلايا بيتا في البنكرياس مسبباً نقص الأنسولين",
+      "parts": {},
+      "system": "جهاز الغدد الصماء",
+      "systemFunction": "إفراز الأنسولين",
+      "location": "البنكرياس",
+      "nearbyOrgans": ["البنكرياس"],
+      "diseases": [
+        {
+          "name": "السكري من النوع الأول",
+          "symptoms": ["عطش", "تبول كثير", "فقدان وزن", "حماض كيتوني"],
+          "treatments": ["أنسولين مدى الحياة"]
+        }
+      ],
+      "keywords": ["type 1 diabetes", "سكري نوع أول"]
+    },
+    {
+      "id": 445,
+      "term": "type 2 diabetes",
+      "arabic": "سكري النمط الثاني",
+      "latin": "diabetes mellitus typus 2",
+      "pronunciation": "تايب تو داي-أ-بي-تيز",
+      "definition": "مقاومة الأنسولين مع نقص نسبي في إفرازه",
+      "parts": {},
+      "system": "جهاز الغدد الصماء",
+      "systemFunction": "إفراز الأنسولين",
+      "location": "البنكرياس",
+      "nearbyOrgans": ["البنكرياس"],
+      "diseases": [
+        {
+          "name": "السكري من النوع الثاني",
+          "symptoms": ["عطش", "تبول كثير", "تعب", "التئام بطيء"],
+          "treatments": ["حمية", "رياضة", "أدوية", "أنسولين"]
+        }
+      ],
+      "keywords": ["type 2 diabetes", "سكري نوع ثان"]
+    },
+    {
+      "id": 446,
+      "term": "gestational diabetes",
+      "arabic": "سكري حملي",
+      "latin": "diabetes gestationis",
+      "pronunciation": "جيس-تاي-شن-ال داي-أ-بي-تيز",
+      "definition": "سكري يظهر أثناء الحمل ويعود طبيعياً بعد الولادة",
+      "parts": {},
+      "system": "جهاز الغدد الصماء",
+      "systemFunction": "تنظيم سكر الدم",
+      "location": "البنكرياس",
+      "nearbyOrgans": ["البنكرياس"],
+      "diseases": [
+        {
+          "name": "السكري الحملي",
+          "symptoms": ["غالباً بلا أعراض", "يكشف بتحليل السكر"],
+          "treatments": ["حمية", "أنسولين"]
+        }
+      ],
+      "keywords": ["gestational diabetes", "سكري حملي"]
+    },
+    {
+      "id": 447,
+      "term": "hyperglycemia",
+      "arabic": "فرط سكر الدم",
+      "latin": "hyperglycaemia",
+      "pronunciation": "هاي-بر-غلاي-سي-ميا",
+      "definition": "ارتفاع مستوى السكر (الجلوكوز) في الدم",
+      "parts": {
+        "prefix": { "value": "hyper", "meaning": "فرط" },
+        "root": { "value": "glyc", "meaning": "سكر" },
+        "suffix": { "value": "emia", "meaning": "دم" }
+      },
+      "system": "جهاز الغدد الصماء",
+      "systemFunction": "تنظيم سكر الدم",
+      "location": "الدم",
+      "nearbyOrgans": ["البنكرياس"],
+      "diseases": [
+        {
+          "name": "فرط السكر",
+          "symptoms": ["عطش", "تبول كثير", "تعب", "تشوش رؤية"],
+          "treatments": ["أنسولين", "أدوية"]
+        }
+      ],
+      "keywords": ["hyperglycemia", "فرط سكر"]
+    },
+    {
+      "id": 448,
+      "term": "hypoglycemia",
+      "arabic": "نقص سكر الدم",
+      "latin": "hypoglycaemia",
+      "pronunciation": "هاي-بو-غلاي-سي-ميا",
+      "definition": "انخفاض مستوى السكر (الجلوكوز) في الدم",
+      "parts": {
+        "prefix": { "value": "hypo", "meaning": "نقص" },
+        "root": { "value": "glyc", "meaning": "سكر" },
+        "suffix": { "value": "emia", "meaning": "دم" }
+      },
+      "system": "جهاز الغدد الصماء",
+      "systemFunction": "تنظيم سكر الدم",
+      "location": "الدم",
+      "nearbyOrgans": ["البنكرياس"],
+      "diseases": [
+        {
+          "name": "نقص السكر",
+          "symptoms": ["تعرق", "دوخة", "ارتعاش", "جوع", "ارتباك"],
+          "treatments": ["سكر", "غلوكاغون"]
+        }
+      ],
+      "keywords": ["hypoglycemia", "نقص سكر"]
+    },
+    {
+      "id": 449,
+      "term": "Addison's disease",
+      "arabic": "داء أديسون",
+      "latin": "morbus Addison",
+      "pronunciation": "أ-دي-سونز دي-زيز",
+      "definition": "قصور الغدة الكظرية الأولي، نقص إفراز الكورتيزول والألدوستيرون",
+      "parts": {},
+      "system": "جهاز الغدد الصماء",
+      "systemFunction": "إفراز هرمونات الكظر",
+      "location": "الغدة الكظرية",
+      "nearbyOrgans": ["الغدة الكظرية"],
+      "diseases": [
+        {
+          "name": "مرض أديسون",
+          "symptoms": ["تعب", "فقدان وزن", "فرط تصبغ", "انخفاض ضغط الدم"],
+          "treatments": ["تعويض هرموني"]
+        }
+      ],
+      "keywords": ["Addison's disease", "داء أديسون"]
+    },
+    {
+      "id": 450,
+      "term": "Cushing's syndrome",
+      "arabic": "متلازمة كوشينغ",
+      "latin": "syndroma Cushing",
+      "pronunciation": "كوش-ينغز سين-دروم",
+      "definition": "زيادة الكورتيزول في الدم بسبب فرط نشاط قشرة الكظر",
+      "parts": {},
+      "system": "جهاز الغدد الصماء",
+      "systemFunction": "إفراز الكورتيزول",
+      "location": "الغدة الكظرية أو الغدة النخامية",
+      "nearbyOrgans": ["الغدة الكظرية", "الغدة النخامية"],
+      "diseases": [
+        {
+          "name": "متلازمة كوشينغ",
+          "symptoms": ["سمنة مركزية", "وجه قمري", "علامات تمدد", "ارتفاع ضغط الدم"],
+          "treatments": ["جراحة", "أدوية"]
+        }
+      ],
+      "keywords": ["Cushing's syndrome", "متلازمة كوشينغ"]
+    },
+    {
+      "id": 451,
+      "term": "pheochromocytoma",
+      "arabic": "ورم القواتم",
+      "latin": "phaeochromocytoma",
+      "pronunciation": "في-أو-كرو-مو-ساي-تو-ما",
+      "definition": "ورم في لب الكظرية يفرز كميات زائدة من الأدرينالين والنورأدرينالين",
+      "parts": {},
+      "system": "جهاز الغدد الصماء",
+      "systemFunction": "إفراز الكاتيكولامينات",
+      "location": "لب الكظرية",
+      "nearbyOrgans": ["الغدة الكظرية"],
+      "diseases": [
+        {
+          "name": "ورم القواتم",
+          "symptoms": ["ارتفاع ضغط الدم", "صداع", "تعرق", "خفقان"],
+          "treatments": ["جراحة", "أدوية"]
+        }
+      ],
+      "keywords": ["pheochromocytoma", "ورم قواتم"]
+    },
+    {
+      "id": 452,
+      "term": "hyperaldosteronism",
+      "arabic": "فرط الألدوستيرونية",
+      "latin": "hyperaldosteronismus",
+      "pronunciation": "هاي-بر-أل-دوس-تير-أو-نيزم",
+      "definition": "زيادة إفراز الألدوستيرون من قشرة الكظرية",
+      "parts": {},
+      "system": "جهاز الغدد الصماء",
+      "systemFunction": "تنظيم الصوديوم والبوتاسيوم",
+      "location": "قشرة الكظرية",
+      "nearbyOrgans": ["الغدة الكظرية"],
+      "diseases": [
+        {
+          "name": "متلازمة كون",
+          "symptoms": ["ارتفاع ضغط الدم", "انخفاض البوتاسيوم"],
+          "treatments": ["جراحة", "أدوية"]
+        }
+      ],
+      "keywords": ["hyperaldosteronism", "فرط ألدوستيرون"]
+    },
+    {
+      "id": 453,
+      "term": "thyroidectomy",
+      "arabic": "استئصال الدرقية",
+      "latin": "thyreoidectomia",
+      "pronunciation": "ثاي-روي-ديك-تو-مي",
+      "definition": "استئصال جراحي للغدة الدرقية",
+      "parts": {
+        "root": { "value": "thyroid", "meaning": "درقية" },
+        "suffix": { "value": "ectomy", "meaning": "استئصال" }
+      },
+      "system": "جهاز الغدد الصماء",
+      "systemFunction": "إزالة الغدة الدرقية",
+      "location": "الرقبة",
+      "nearbyOrgans": ["الغدة الدرقية"],
+      "diseases": [],
+      "keywords": ["thyroidectomy", "استئصال درقية"]
+    },
+    {
+      "id": 454,
+      "term": "parathyroidectomy",
+      "arabic": "استئصال جار الدرقية",
+      "latin": "parathyreoidectomia",
+      "pronunciation": "بار-أ-ثاي-روي-ديك-تو-مي",
+      "definition": "استئصال جراحي للغدد جار الدرقية",
+      "parts": {
+        "root": { "value": "parathyroid", "meaning": "جار درقية" },
+        "suffix": { "value": "ectomy", "meaning": "استئصال" }
+      },
+      "system": "جهاز الغدد الصماء",
+      "systemFunction": "إزالة الغدد جار الدرقية",
+      "location": "الرقبة",
+      "nearbyOrgans": ["الغدد جار الدرقية"],
+      "diseases": [],
+      "keywords": ["parathyroidectomy", "استئصال جار درقية"]
+    },
+    {
+      "id": 455,
+      "term": "adrenalectomy",
+      "arabic": "استئصال الكظر",
+      "latin": "adrenalectomia",
+      "pronunciation": "أ-دري-نا-ليك-تو-مي",
+      "definition": "استئصال جراحي للغدة الكظرية",
+      "parts": {
+        "root": { "value": "adrenal", "meaning": "كظري" },
+        "suffix": { "value": "ectomy", "meaning": "استئصال" }
+      },
+      "system": "جهاز الغدد الصماء",
+      "systemFunction": "إزالة الغدة الكظرية",
+      "location": "البطن",
+      "nearbyOrgans": ["الغدة الكظرية", "الكلى"],
+      "diseases": [],
+      "keywords": ["adrenalectomy", "استئصال كظري"]
+    }
+  ]
+}

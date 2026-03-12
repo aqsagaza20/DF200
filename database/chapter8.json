@@ -1,0 +1,787 @@
+{
+  "chapter": 8,
+  "title": "الجهاز الهضمي",
+  "title_en": "Digestive System",
+  "terms": [
+    {
+      "id": 298,
+      "term": "mouth",
+      "arabic": "فم",
+      "latin": "os",
+      "pronunciation": "ماوث",
+      "definition": "فتحة الجهاز الهضمي التي تستقبل الطعام",
+      "parts": {},
+      "system": "الجهاز الهضمي",
+      "systemFunction": "مضغ الطعام وبدء الهضم",
+      "location": "الوجه، أسفل الأنف",
+      "nearbyOrgans": ["اللسان", "الأسنان", "الغدد اللعابية", "البلعوم"],
+      "diseases": [
+        {
+          "name": "تقرحات الفم",
+          "symptoms": ["قروح مؤلمة", "احمرار"],
+          "treatments": ["مضادات فطرية", "مسكنات موضعية"]
+        }
+      ],
+      "keywords": ["mouth", "فم"]
+    },
+    {
+      "id": 299,
+      "term": "oral cavity",
+      "arabic": "تجويف الفم",
+      "latin": "cavitas oris",
+      "pronunciation": "أور-ال كاف-يتي",
+      "definition": "الفراغ داخل الفم الذي يحتوي على اللسان والأسنان",
+      "parts": {},
+      "system": "الجهاز الهضمي",
+      "systemFunction": "مضغ وبلع الطعام",
+      "location": "داخل الفم",
+      "nearbyOrgans": ["اللسان", "الأسنان", "اللثة", "الحنك"],
+      "diseases": [
+        {
+          "name": "التهاب الفم",
+          "symptoms": ["احمرار", "ألم", "تقرحات"],
+          "treatments": ["مضادات فطرية", "مضادات حيوية"]
+        }
+      ],
+      "keywords": ["oral cavity", "تجويف فم"]
+    },
+    {
+      "id": 300,
+      "term": "salivary glands",
+      "arabic": "غدد لعابية",
+      "latin": "glandulae salivariae",
+      "pronunciation": "سال-إ-فيري غلاندز",
+      "definition": "غدد تفرز اللعاب في الفم",
+      "parts": {},
+      "system": "الجهاز الهضمي",
+      "systemFunction": "إفراز اللعاب لترطيب الطعام وبدء هضم النشويات",
+      "location": "الفم والرقبة",
+      "nearbyOrgans": ["الفك", "اللسان"],
+      "diseases": [
+        {
+          "name": "التهاب الغدة النكافية",
+          "symptoms": ["تورم الخد", "ألم", "حمى"],
+          "treatments": ["مسكنات", "سوائل", "لقاح"]
+        }
+      ],
+      "keywords": ["salivary glands", "غدد لعابية"]
+    },
+    {
+      "id": 301,
+      "term": "tongue",
+      "arabic": "لسان",
+      "latin": "lingua",
+      "pronunciation": "تونغ",
+      "definition": "عضو عضلي في الفم مسؤول عن التذوق والبلع والكلام",
+      "parts": {},
+      "system": "الجهاز الهضمي",
+      "systemFunction": "تذوق الطعام، تحريك الطعام، الكلام",
+      "location": "أرضية الفم",
+      "nearbyOrgans": ["الأسنان", "الحنك", "البلعوم"],
+      "diseases": [
+        {
+          "name": "التهاب اللسان",
+          "symptoms": ["تورم", "احمرار", "ألم"],
+          "treatments": ["علاج السبب"]
+        }
+      ],
+      "keywords": ["tongue", "لسان"]
+    },
+    {
+      "id": 302,
+      "term": "teeth",
+      "arabic": "أسنان",
+      "latin": "dentes",
+      "pronunciation": "تيث",
+      "definition": "تراكيب صلبة في الفم تستخدم لمضغ الطعام",
+      "parts": {},
+      "system": "الجهاز الهضمي",
+      "systemFunction": "تقطيع وطحن الطعام",
+      "location": "الفم",
+      "nearbyOrgans": ["اللثة", "الفك"],
+      "diseases": [
+        {
+          "name": "تسوس الأسنان",
+          "symptoms": ["ألم", "حساسية", "ثقوب في الأسنان"],
+          "treatments": ["حشوات", "معالجة لب", "خلع"]
+        },
+        {
+          "name": "التهاب اللثة",
+          "symptoms": ["نزيف", "احمرار", "تورم"],
+          "treatments": ["تنظيف", "عناية بالفم"]
+        }
+      ],
+      "keywords": ["teeth", "أسنان"]
+    },
+    {
+      "id": 303,
+      "term": "esophagus",
+      "arabic": "مريء",
+      "latin": "esophagus",
+      "pronunciation": "إي-سوف-أ-غس",
+      "definition": "أنبوب عضلي يصل بين البلعوم والمعدة",
+      "parts": {},
+      "system": "الجهاز الهضمي",
+      "systemFunction": "نقل الطعام من الفم إلى المعدة",
+      "location": "خلف القصبة الهوائية، أمام العمود الفقري",
+      "nearbyOrgans": ["القصبة الهوائية", "القلب", "الأبهر", "المعدة"],
+      "diseases": [
+        {
+          "name": "ارتجاع المريء",
+          "symptoms": ["حرقة", "قلس حمضي", "ألم صدر"],
+          "treatments": ["مضادات حموضة", "مثبطات مضخة البروتون", "تعديل نمط الحياة"]
+        },
+        {
+          "name": "سرطان المريء",
+          "symptoms": ["صعوبة بلع", "فقدان وزن", "ألم"],
+          "treatments": ["جراحة", "علاج كيميائي", "علاج إشعاعي"]
+        }
+      ],
+      "keywords": ["esophagus", "مريء"]
+    },
+    {
+      "id": 304,
+      "term": "stomach",
+      "arabic": "معدة",
+      "latin": "ventriculus",
+      "pronunciation": "ستوم-أك",
+      "definition": "عضو عضلي مجوف في الجزء العلوي من البطن، يهضم الطعام",
+      "parts": {},
+      "system": "الجهاز الهضمي",
+      "systemFunction": "هضم الطعام بواسطة الأحماض والإنزيمات",
+      "location": "الجزء العلوي من البطن، تحت الحجاب الحاجز",
+      "nearbyOrgans": ["المريء", "الأمعاء الدقيقة", "الكبد", "البنكرياس", "الطحال"],
+      "diseases": [
+        {
+          "name": "التهاب المعدة",
+          "symptoms": ["ألم أعلى البطن", "غثيان", "قيء"],
+          "treatments": ["مضادات حموضة", "مثبطات مضخة البروتون"]
+        },
+        {
+          "name": "قرحة المعدة",
+          "symptoms": ["ألم حارق", "نزيف", "غثيان"],
+          "treatments": ["مضادات حموضة", "مضادات حيوية", "جراحة"]
+        }
+      ],
+      "keywords": ["stomach", "معدة"]
+    },
+    {
+      "id": 305,
+      "term": "small intestine",
+      "arabic": "أمعاء دقيقة",
+      "latin": "intestinum tenue",
+      "pronunciation": "سمول إن-تيس-تين",
+      "definition": "الجزء الأطول من الأمعاء، حيث يتم معظم الهضم والامتصاص",
+      "parts": {},
+      "system": "الجهاز الهضمي",
+      "systemFunction": "هضم وامتصاص العناصر الغذائية",
+      "location": "البطن، بين المعدة والأمعاء الغليظة",
+      "nearbyOrgans": ["المعدة", "الأمعاء الغليظة", "البنكرياس", "الكبد"],
+      "diseases": [
+        {
+          "name": "مرض كرون",
+          "symptoms": ["ألم بطني", "إسهال", "نزيف", "فقدان وزن"],
+          "treatments": ["مضادات التهاب", "مثبطات مناعة", "جراحة"]
+        },
+        {
+          "name": "الداء البطني",
+          "symptoms": ["إسهال", "انتفاخ", "تعب", "فقدان وزن"],
+          "treatments": ["حمية خالية من الغلوتين"]
+        }
+      ],
+      "keywords": ["small intestine", "أمعاء دقيقة"]
+    },
+    {
+      "id": 306,
+      "term": "duodenum",
+      "arabic": "اثنا عشر",
+      "latin": "duodenum",
+      "pronunciation": "دو-أو-دي-نوم",
+      "definition": "الجزء الأول من الأمعاء الدقيقة، يتصل بالمعدة",
+      "parts": {},
+      "system": "الجهاز الهضمي",
+      "systemFunction": "استقبال العصارات الهاضمة من البنكرياس والكبد",
+      "location": "بداية الأمعاء الدقيقة، بعد المعدة",
+      "nearbyOrgans": ["المعدة", "البنكرياس", "الكبد", "المرارة"],
+      "diseases": [
+        {
+          "name": "قرحة الاثنا عشر",
+          "symptoms": ["ألم يخفف بالأكل", "حرقة"],
+          "treatments": ["مضادات حموضة", "مضادات حيوية"]
+        }
+      ],
+      "keywords": ["duodenum", "اثنا عشر"]
+    },
+    {
+      "id": 307,
+      "term": "jejunum",
+      "arabic": "صائم",
+      "latin": "jejunum",
+      "pronunciation": "جي-جو-نوم",
+      "definition": "الجزء الأوسط من الأمعاء الدقيقة",
+      "parts": {},
+      "system": "الجهاز الهضمي",
+      "systemFunction": "امتصاص العناصر الغذائية",
+      "location": "بين الاثنا عشر واللفائفي",
+      "nearbyOrgans": ["الاثنا عشر", "اللفائفي"],
+      "diseases": [],
+      "keywords": ["jejunum", "صائم"]
+    },
+    {
+      "id": 308,
+      "term": "ileum",
+      "arabic": "لفائفي",
+      "latin": "ileum",
+      "pronunciation": "إي-لي-أم",
+      "definition": "الجزء الأخير من الأمعاء الدقيقة، يتصل بالأمعاء الغليظة",
+      "parts": {},
+      "system": "الجهاز الهضمي",
+      "systemFunction": "امتصاص فيتامين B12 والأملاح الصفراوية",
+      "location": "نهاية الأمعاء الدقيقة",
+      "nearbyOrgans": ["الصائم", "الأعور"],
+      "diseases": [
+        {
+          "name": "داء كرون اللفائفي",
+          "symptoms": ["ألم", "إسهال", "نزيف"],
+          "treatments": ["مضادات التهاب", "جراحة"]
+        }
+      ],
+      "keywords": ["ileum", "لفائفي"]
+    },
+    {
+      "id": 309,
+      "term": "large intestine",
+      "arabic": "أمعاء غليظة",
+      "latin": "intestinum crassum",
+      "pronunciation": "لارج إن-تيس-تين",
+      "definition": "الجزء الأخير من الأمعاء، يمتص الماء ويشكل البراز",
+      "parts": {},
+      "system": "الجهاز الهضمي",
+      "systemFunction": "امتصاص الماء والأملاح، تكوين وتخزين البراز",
+      "location": "البطن، يحيط بالأمعاء الدقيقة",
+      "nearbyOrgans": ["الأمعاء الدقيقة", "المستقيم", "الشرج"],
+      "diseases": [
+        {
+          "name": "التهاب القولون",
+          "symptoms": ["إسهال", "ألم بطني", "دم في البراز"],
+          "treatments": ["مضادات التهاب", "أدوية"]
+        },
+        {
+          "name": "سرطان القولون",
+          "symptoms": ["تغير عادات التبرز", "دم في البراز", "فقدان وزن"],
+          "treatments": ["جراحة", "علاج كيميائي"]
+        }
+      ],
+      "keywords": ["large intestine", "أمعاء غليظة", "colon"]
+    },
+    {
+      "id": 310,
+      "term": "cecum",
+      "arabic": "أعور",
+      "latin": "cecum",
+      "pronunciation": "سي-كوم",
+      "definition": "الجزء الأول من الأمعاء الغليظة، يتصل بالأمعاء الدقيقة",
+      "parts": {},
+      "system": "الجهاز الهضمي",
+      "systemFunction": "بداية الأمعاء الغليظة",
+      "location": "أسفل البطن الأيمن",
+      "nearbyOrgans": ["اللفائفي", "الزائدة الدودية", "القولون الصاعد"],
+      "diseases": [],
+      "keywords": ["cecum", "أعور"]
+    },
+    {
+      "id": 311,
+      "term": "appendix",
+      "arabic": "زائدة دودية",
+      "latin": "appendix",
+      "pronunciation": "أ-بن-ديكس",
+      "definition": "امتداد أنبوبي صغير من الأعور",
+      "parts": {},
+      "system": "الجهاز الهضمي",
+      "systemFunction": "وظيفة مناعية (يعتقد أنها مخزن للبكتيريا النافعة)",
+      "location": "أسفل البطن الأيمن",
+      "nearbyOrgans": ["الأعور", "الأمعاء الدقيقة"],
+      "diseases": [
+        {
+          "name": "التهاب الزائدة الدودية",
+          "symptoms": ["ألم حول السرة ينتقل لأسفل اليمين", "غثيان", "قيء", "حمى"],
+          "treatments": ["استئصال الزائدة الدودية", "مضادات حيوية"]
+        }
+      ],
+      "keywords": ["appendix", "زائدة دودية"]
+    },
+    {
+      "id": 312,
+      "term": "colon",
+      "arabic": "قولون",
+      "latin": "colon",
+      "pronunciation": "كو-لون",
+      "definition": "الجزء الرئيسي من الأمعاء الغليظة",
+      "parts": {},
+      "system": "الجهاز الهضمي",
+      "systemFunction": "امتصاص الماء، تكوين البراز",
+      "location": "البطن",
+      "nearbyOrgans": ["الأمعاء الدقيقة", "المستقيم"],
+      "diseases": [
+        {
+          "name": "متلازمة القولون العصبي",
+          "symptoms": ["ألم بطني", "انتفاخ", "إمساك أو إسهال"],
+          "treatments": ["تعديل النظام الغذائي", "أدوية"]
+        }
+      ],
+      "keywords": ["colon", "قولون"]
+    },
+    {
+      "id": 313,
+      "term": "rectum",
+      "arabic": "مستقيم",
+      "latin": "rectum",
+      "pronunciation": "ريك-توم",
+      "definition": "الجزء الأخير من الأمعاء الغليظة قبل الشرج",
+      "parts": {},
+      "system": "الجهاز الهضمي",
+      "systemFunction": "تخزين البراز قبل الإخراج",
+      "location": "الحوض، أمام العجز",
+      "nearbyOrgans": ["القولون السيني", "الشرج", "المثانة"],
+      "diseases": [
+        {
+          "name": "التهاب المستقيم",
+          "symptoms": ["ألم", "نزيف", "إفرازات"],
+          "treatments": ["علاج السبب"]
+        }
+      ],
+      "keywords": ["rectum", "مستقيم"]
+    },
+    {
+      "id": 314,
+      "term": "anus",
+      "arabic": "شرج",
+      "latin": "anus",
+      "pronunciation": "آي-نس",
+      "definition": "الفتحة الخارجية التي يخرج منها البراز",
+      "parts": {},
+      "system": "الجهاز الهضمي",
+      "systemFunction": "إخراج البراز",
+      "location": "نهاية الجهاز الهضمي",
+      "nearbyOrgans": ["المستقيم", "العضلة العاصرة الشرجية"],
+      "diseases": [
+        {
+          "name": "البواسير",
+          "symptoms": ["حكة", "ألم", "نزيف"],
+          "treatments": ["ملينات", "كريمات", "جراحة"]
+        },
+        {
+          "name": "الشق الشرجي",
+          "symptoms": ["ألم أثناء التبرز", "دم"],
+          "treatments": ["ملينات", "مراهم", "جراحة"]
+        }
+      ],
+      "keywords": ["anus", "شرج"]
+    },
+    {
+      "id": 315,
+      "term": "liver",
+      "arabic": "كبد",
+      "latin": "hepar",
+      "pronunciation": "لي-فر",
+      "definition": "أكبر غدة في الجسم، تقوم بوظائف حيوية متعددة",
+      "parts": {},
+      "system": "الجهاز الهضمي",
+      "systemFunction": "إنتاج العصارة الصفراوية، إزالة السموم، تخزين الفيتامينات",
+      "location": "الربع العلوي الأيمن من البطن",
+      "nearbyOrgans": ["المرارة", "المعدة", "البنكرياس", "الأمعاء"],
+      "diseases": [
+        {
+          "name": "التهاب الكبد",
+          "symptoms": ["يرقان", "تعب", "غثيان", "ألم بطني"],
+          "treatments": ["مضادات فيروسية", "راحة"]
+        },
+        {
+          "name": "تشمع الكبد",
+          "symptoms": ["يرقان", "استسقاء", "نزيف", "ارتباك"],
+          "treatments": ["علاج السبب", "زراعة كبد"]
+        }
+      ],
+      "keywords": ["liver", "كبد"]
+    },
+    {
+      "id": 316,
+      "term": "gallbladder",
+      "arabic": "مرارة",
+      "latin": "vesica biliaris",
+      "pronunciation": "غول-بلاد-ر",
+      "definition": "كيس صغير تحت الكبد يخزن العصارة الصفراوية",
+      "parts": {},
+      "system": "الجهاز الهضمي",
+      "systemFunction": "تخزين وتركيز العصارة الصفراوية",
+      "location": "تحت الكبد، في الربع العلوي الأيمن",
+      "nearbyOrgans": ["الكبد", "البنكرياس", "الأمعاء الدقيقة"],
+      "diseases": [
+        {
+          "name": "حصوات المرارة",
+          "symptoms": ["ألم في أعلى البطن الأيمن", "غثيان", "قيء"],
+          "treatments": ["استئصال المرارة", "أدوية"]
+        },
+        {
+          "name": "التهاب المرارة",
+          "symptoms": ["ألم", "حمى", "غثيان"],
+          "treatments": ["مضادات حيوية", "استئصال المرارة"]
+        }
+      ],
+      "keywords": ["gallbladder", "مرارة"]
+    },
+    {
+      "id": 317,
+      "term": "pancreas",
+      "arabic": "بنكرياس",
+      "latin": "pancreas",
+      "pronunciation": "بان-كري-أس",
+      "definition": "غدة خلف المعدة تفرز إنزيمات هضمية وهرمونات",
+      "parts": {},
+      "system": "الجهاز الهضمي والغدد الصماء",
+      "systemFunction": "إفراز إنزيمات هضمية وإفراز الأنسولين والغلوكاغون",
+      "location": "خلف المعدة، في الجزء العلوي من البطن",
+      "nearbyOrgans": ["المعدة", "الاثنا عشر", "الكبد", "الطحال"],
+      "diseases": [
+        {
+          "name": "التهاب البنكرياس",
+          "symptoms": ["ألم بطني شديد", "غثيان", "قيء", "حمى"],
+          "treatments": ["صيام", "سوائل وريدية", "مسكنات"]
+        },
+        {
+          "name": "سرطان البنكرياس",
+          "symptoms": ["ألم", "فقدان وزن", "يرقان"],
+          "treatments": ["جراحة", "علاج كيميائي"]
+        }
+      ],
+      "keywords": ["pancreas", "بنكرياس"]
+    },
+    {
+      "id": 318,
+      "term": "peritoneum",
+      "arabic": "صفاق",
+      "latin": "peritoneum",
+      "pronunciation": "بير-إي-تو-ني-أم",
+      "definition": "غشاء مصلي يبطن تجويف البطن ويغطي الأحشاء",
+      "parts": {},
+      "system": "الجهاز الهضمي",
+      "systemFunction": "تغطية وحماية أعضاء البطن",
+      "location": "بطانة تجويف البطن",
+      "nearbyOrgans": ["جميع أعضاء البطن"],
+      "diseases": [
+        {
+          "name": "التهاب الصفاق",
+          "symptoms": ["ألم بطني شديد", "تصلب البطن", "حمى"],
+          "treatments": ["مضادات حيوية", "جراحة"]
+        }
+      ],
+      "keywords": ["peritoneum", "صفاق"]
+    },
+    {
+      "id": 319,
+      "term": "dysphagia",
+      "arabic": "عسر البلع",
+      "latin": "dysphagia",
+      "pronunciation": "ديس-فا-جيا",
+      "definition": "صعوبة في البلع",
+      "parts": {
+        "prefix": { "value": "dys", "meaning": "صعب" },
+        "root": { "value": "phag", "meaning": "بلع" },
+        "suffix": { "value": "ia", "meaning": "حالة" }
+      },
+      "system": "الجهاز الهضمي",
+      "systemFunction": "البلع",
+      "location": "المريء والبلعوم",
+      "nearbyOrgans": ["البلعوم", "المريء"],
+      "diseases": [
+        {
+          "name": "عسر البلع",
+          "symptoms": ["صعوبة في بلع الطعام", "ألم أثناء البلع", "شرقة"],
+          "treatments": ["علاج السبب", "تمارين بلع", "تعديل قوام الطعام"]
+        }
+      ],
+      "keywords": ["dysphagia", "عسر بلع"]
+    },
+    {
+      "id": 320,
+      "term": "GERD",
+      "arabic": "الجزر المعدي المريئي",
+      "latin": "morbus refluxus gastroesophagealis",
+      "pronunciation": "جيرد",
+      "definition": "ارتداد حمض المعدة إلى المريء",
+      "parts": {},
+      "system": "الجهاز الهضمي",
+      "systemFunction": "الهضم",
+      "location": "المعدة والمريء",
+      "nearbyOrgans": ["المعدة", "المريء"],
+      "diseases": [
+        {
+          "name": "الجزر المعدي المريئي",
+          "symptoms": ["حرقة", "قلس حمضي", "ألم صدر", "صعوبة بلع"],
+          "treatments": ["مضادات حموضة", "مثبطات مضخة البروتون", "تعديل نمط الحياة"]
+        }
+      ],
+      "keywords": ["GERD", "جزر معدي مريئي"]
+    },
+    {
+      "id": 321,
+      "term": "pyrosis",
+      "arabic": "حرقة الفؤاد",
+      "latin": "pyrosis",
+      "pronunciation": "باي-رو-سيس",
+      "definition": "إحساس بالحرقة خلف عظم القص بسبب ارتجاع الحمض",
+      "parts": {},
+      "system": "الجهاز الهضمي",
+      "systemFunction": "الهضم",
+      "location": "المريء",
+      "nearbyOrgans": ["المعدة", "المريء"],
+      "diseases": [
+        {
+          "name": "حرقة المعدة",
+          "symptoms": ["حرقة", "ألم", "طعم حامض في الفم"],
+          "treatments": ["مضادات حموضة", "تجنب الأطعمة المهيجة"]
+        }
+      ],
+      "keywords": ["pyrosis", "heartburn", "حرقة"]
+    },
+    {
+      "id": 322,
+      "term": "hiatal hernia",
+      "arabic": "فتق حجابي",
+      "latin": "hernia hiatalis",
+      "pronunciation": "هاي-آي-تال هير-نيا",
+      "definition": "بروز جزء من المعدة إلى الصدر من خلال فتحة في الحجاب الحاجز",
+      "parts": {},
+      "system": "الجهاز الهضمي",
+      "systemFunction": "الهضم",
+      "location": "الحجاب الحاجز والمعدة",
+      "nearbyOrgans": ["المعدة", "المريء", "الحجاب الحاجز"],
+      "diseases": [
+        {
+          "name": "الفتق الحجابي",
+          "symptoms": ["حرقة", "ألم صدر", "صعوبة بلع"],
+          "treatments": ["أدوية", "جراحة"]
+        }
+      ],
+      "keywords": ["hiatal hernia", "فتق حجابي"]
+    },
+    {
+      "id": 323,
+      "term": "gastritis",
+      "arabic": "التهاب المعدة",
+      "latin": "gastritis",
+      "pronunciation": "جاس-تراي-تس",
+      "definition": "التهاب بطانة المعدة",
+      "parts": {
+        "root": { "value": "gastr", "meaning": "معدة" },
+        "suffix": { "value": "itis", "meaning": "التهاب" }
+      },
+      "system": "الجهاز الهضمي",
+      "systemFunction": "الهضم",
+      "location": "المعدة",
+      "nearbyOrgans": ["المعدة"],
+      "diseases": [
+        {
+          "name": "التهاب المعدة الحاد",
+          "symptoms": ["ألم أعلى البطن", "غثيان", "قيء"],
+          "treatments": ["مضادات حموضة", "تجنب المهيجات"]
+        },
+        {
+          "name": "التهاب المعدة المزمن",
+          "symptoms": ["ألم خفيف", "شبع مبكر"],
+          "treatments": ["علاج السبب"]
+        }
+      ],
+      "keywords": ["gastritis", "التهاب معدة"]
+    },
+    {
+      "id": 324,
+      "term": "gastroenteritis",
+      "arabic": "التهاب المعدة والأمعاء",
+      "latin": "gastroenteritis",
+      "pronunciation": "جاس-ترو-إن-تير-آي-تس",
+      "definition": "التهاب الغشاء المخاطي للمعدة والأمعاء الدقيقة",
+      "parts": {
+        "root1": { "value": "gastr", "meaning": "معدة" },
+        "root2": { "value": "enter", "meaning": "أمعاء" },
+        "suffix": { "value": "itis", "meaning": "التهاب" }
+      },
+      "system": "الجهاز الهضمي",
+      "systemFunction": "الهضم",
+      "location": "المعدة والأمعاء",
+      "nearbyOrgans": ["المعدة", "الأمعاء"],
+      "diseases": [
+        {
+          "name": "التهاب المعدة والأمعاء الفيروسي",
+          "symptoms": ["إسهال", "قيء", "ألم بطني", "حمى"],
+          "treatments": ["محاليل الجفاف", "راحة", "تعديل الغذاء"]
+        }
+      ],
+      "keywords": ["gastroenteritis", "التهاب معدة وأمعاء"]
+    },
+    {
+      "id": 325,
+      "term": "peptic ulcer",
+      "arabic": "قرحة هضمية",
+      "latin": "ulcus pepticum",
+      "pronunciation": "بيب-تيك أل-سر",
+      "definition": "قرحة مفتوحة في بطانة المعدة أو الاثنا عشر",
+      "parts": {},
+      "system": "الجهاز الهضمي",
+      "systemFunction": "الهضم",
+      "location": "المعدة أو الاثنا عشر",
+      "nearbyOrgans": ["المعدة", "الاثنا عشر"],
+      "diseases": [
+        {
+          "name": "قرحة المعدة",
+          "symptoms": ["ألم حارق", "غثيان", "نزيف"],
+          "treatments": ["مضادات حموضة", "مضادات حيوية", "جراحة"]
+        },
+        {
+          "name": "قرحة الاثنا عشر",
+          "symptoms": ["ألم يخفف بالأكل", "ألم ليلي"],
+          "treatments": ["مضادات حموضة", "مضادات حيوية"]
+        }
+      ],
+      "keywords": ["peptic ulcer", "قرحة هضمية"]
+    },
+    {
+      "id": 326,
+      "term": "Helicobacter pylori",
+      "arabic": "هيليكوباكتر بيلوري",
+      "latin": "Helicobacter pylori",
+      "pronunciation": "هي-لي-كو-باك-تر باي-لوري",
+      "definition": "بكتيريا حلزونية تصيب المعدة وتسبب القرحة",
+      "parts": {},
+      "system": "الجهاز الهضمي",
+      "systemFunction": "العدوى",
+      "location": "المعدة",
+      "nearbyOrgans": ["المعدة"],
+      "diseases": [
+        {
+          "name": "عدوى الملوية البوابية",
+          "symptoms": ["ألم بطني", "غثيان", "انتفاخ"],
+          "treatments": ["مضادات حيوية", "مثبطات مضخة البروتون"]
+        }
+      ],
+      "keywords": ["H. pylori", "هيليكوباكتر"]
+    },
+    {
+      "id": 327,
+      "term": "nausea",
+      "arabic": "غثيان",
+      "latin": "nausea",
+      "pronunciation": "نا-وز-يا",
+      "definition": "إحساس بعدم الراحة في المعدة مع رغبة في التقيؤ",
+      "parts": {},
+      "system": "الجهاز الهضمي",
+      "systemFunction": "إنذار",
+      "location": "المعدة",
+      "nearbyOrgans": ["المعدة"],
+      "diseases": [],
+      "keywords": ["nausea", "غثيان"]
+    },
+    {
+      "id": 328,
+      "term": "emesis",
+      "arabic": "تقيؤ",
+      "latin": "emesis",
+      "pronunciation": "إمي-سيس",
+      "definition": "إخراج محتويات المعدة بقوة عبر الفم",
+      "parts": {},
+      "system": "الجهاز الهضمي",
+      "systemFunction": "التخلص من المواد الضارة",
+      "location": "المعدة والفم",
+      "nearbyOrgans": ["المعدة", "المريء", "البلعوم"],
+      "diseases": [],
+      "keywords": ["emesis", "vomiting", "تقيؤ"]
+    },
+    {
+      "id": 329,
+      "term": "hematemesis",
+      "arabic": "تقيؤ دموي",
+      "latin": "haematemesis",
+      "pronunciation": "هي-ما-تي-مي-سيس",
+      "definition": "تقيؤ الدم",
+      "parts": {
+        "root1": { "value": "hemat", "meaning": "دم" },
+        "root2": { "value": "emesis", "meaning": "تقيؤ" }
+      },
+      "system": "الجهاز الهضمي",
+      "systemFunction": "الهضم",
+      "location": "المعدة والمريء",
+      "nearbyOrgans": ["المعدة", "المريء"],
+      "diseases": [
+        {
+          "name": "نزيف الجهاز الهضمي العلوي",
+          "symptoms": ["تقيؤ دم", "براز أسود"],
+          "treatments": ["تنظير", "كي", "أدوية"]
+        }
+      ],
+      "keywords": ["hematemesis", "تقيؤ دموي"]
+    },
+    {
+      "id": 330,
+      "term": "melena",
+      "arabic": "براز أسود",
+      "latin": "melena",
+      "pronunciation": "مي-لي-نا",
+      "definition": "براز أسود قطراني بسبب وجود دم مهضوم",
+      "parts": {},
+      "system": "الجهاز الهضمي",
+      "systemFunction": "الهضم",
+      "location": "الأمعاء",
+      "nearbyOrgans": ["المعدة", "الأمعاء"],
+      "diseases": [
+        {
+          "name": "نزيف الجهاز الهضمي العلوي",
+          "symptoms": ["براز أسود", "تقيؤ دم", "فقر دم"],
+          "treatments": ["تنظير", "كي", "أدوية"]
+        }
+      ],
+      "keywords": ["melena", "براز أسود"]
+    },
+    {
+      "id": 331,
+      "term": "diarrhea",
+      "arabic": "إسهال",
+      "latin": "diarrhoea",
+      "pronunciation": "داي-أ-ريا",
+      "definition": "حالة من التبرز المتكرر للبراز السائل أو المائي",
+      "parts": {},
+      "system": "الجهاز الهضمي",
+      "systemFunction": "الهضم",
+      "location": "الأمعاء",
+      "nearbyOrgans": ["الأمعاء"],
+      "diseases": [
+        {
+          "name": "إسهال حاد",
+          "symptoms": ["براز مائي متكرر", "جفاف"],
+          "treatments": ["محاليل الجفاف", "مضادات إسهال"]
+        }
+      ],
+      "keywords": ["diarrhea", "إسهال"]
+    },
+    {
+      "id": 332,
+      "term": "constipation",
+      "arabic": "إمساك",
+      "latin": "constipatio",
+      "pronunciation": "كون-ستي-باي-شن",
+      "definition": "صعوبة في التبرز أو قلة عدد مرات التبرز",
+      "parts": {},
+      "system": "الجهاز الهضمي",
+      "systemFunction": "الإخراج",
+      "location": "الأمعاء الغليظة",
+      "nearbyOrgans": ["القولون", "المستقيم"],
+      "diseases": [
+        {
+          "name": "الإمساك المزمن",
+          "symptoms": ["براز صلب", "جهد أثناء التبرز", "شعور بعدم الإفراغ"],
+          "treatments": ["ملينات", "ألياف", "سوائل", "رياضة"]
+        }
+      ],
+      "keywords": ["constipation", "إمساك"]
+    }
+  ]
+}

@@ -1,0 +1,858 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MedTerm AI - المصطلحات الطبية الذكية</title>
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: system-ui, 'Segoe UI', Tahoma, Arial, sans-serif;
+        }
+        
+        body {
+            background: #f8fafc;
+            color: #1e2a3a;
+            padding: 16px;
+            padding-bottom: 80px;
+        }
+        
+        .header {
+            background: white;
+            padding: 15px 20px;
+            border-radius: 15px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+        }
+        
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .logo i {
+            color: #27ae60;
+            font-size: 28px;
+        }
+        
+        .logo h1 {
+            font-size: 22px;
+            font-weight: 600;
+            color: #2c3e50;
+        }
+        
+        .back-btn {
+            background: #f0f2f5;
+            border: none;
+            padding: 8px 16px;
+            border-radius: 30px;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+        
+        .search-box {
+            background: white;
+            border-radius: 30px;
+            padding: 15px 20px;
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+            border: 2px solid #e9ecef;
+        }
+        
+        .search-box i {
+            color: #95a5a6;
+            font-size: 18px;
+        }
+        
+        .search-box input {
+            border: none;
+            outline: none;
+            width: 100%;
+            font-size: 16px;
+            background: transparent;
+        }
+        
+        .loading {
+            text-align: center;
+            padding: 40px;
+            color: #95a5a6;
+        }
+        
+        .loading i {
+            font-size: 40px;
+            margin-bottom: 15px;
+            color: #27ae60;
+        }
+        
+        .search-results {
+            background: white;
+            border-radius: 15px;
+            padding: 20px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+            margin-top: 10px;
+            margin-bottom: 20px;
+        }
+        
+        .result-item {
+            padding: 15px;
+            border-bottom: 1px solid #e9ecef;
+            cursor: pointer;
+            transition: background 0.2s;
+        }
+        
+        .result-item:hover {
+            background: #f8fafc;
+        }
+        
+        .result-item:last-child {
+            border-bottom: none;
+        }
+        
+        .result-term {
+            font-size: 18px;
+            font-weight: 600;
+            color: #2c3e50;
+        }
+        
+        .result-arabic {
+            color: #27ae60;
+            margin-top: 5px;
+            font-size: 16px;
+        }
+        
+        .detail-card {
+            background: white;
+            border-radius: 20px;
+            padding: 25px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+            margin-bottom: 20px;
+        }
+        
+        .term-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+            border-bottom: 2px solid #f0f2f5;
+            padding-bottom: 20px;
+        }
+        
+        .term-title {
+            font-size: 36px;
+            font-weight: 700;
+            color: #2c3e50;
+        }
+        
+        .term-arabic {
+            font-size: 28px;
+            color: #27ae60;
+            margin-top: 5px;
+        }
+        
+        .save-btn {
+            background: #f8f9fa;
+            border: none;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            font-size: 24px;
+            color: #f1c40f;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+        
+        .save-btn.saved {
+            background: #f1c40f;
+            color: white;
+        }
+        
+        .pronunciation {
+            background: #f0f2f5;
+            padding: 10px 15px;
+            border-radius: 30px;
+            display: inline-block;
+            margin: 10px 0;
+            font-size: 18px;
+        }
+        
+        .pronunciation i {
+            margin-left: 8px;
+            color: #27ae60;
+        }
+        
+        .info-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 15px;
+            margin: 20px 0;
+        }
+        
+        .info-item {
+            background: #f8fafc;
+            padding: 15px;
+            border-radius: 12px;
+        }
+        
+        .info-label {
+            font-size: 14px;
+            color: #7f8c8d;
+            margin-bottom: 5px;
+        }
+        
+        .info-value {
+            font-size: 18px;
+            font-weight: 600;
+            color: #27ae60;
+        }
+        
+        .latin-term {
+            font-family: 'Courier New', monospace;
+            background: #2c3e50;
+            color: white;
+            padding: 10px 15px;
+            border-radius: 10px;
+            margin: 15px 0;
+            text-align: center;
+            font-size: 20px;
+        }
+        
+        .section-title {
+            font-size: 20px;
+            margin: 25px 0 15px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            color: #2c3e50;
+        }
+        
+        .section-title i {
+            color: #27ae60;
+        }
+        
+        .parts-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 15px;
+            margin: 20px 0;
+        }
+        
+        .part-card {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 20px;
+            border-radius: 15px;
+            text-align: center;
+        }
+        
+        .part-type {
+            font-size: 14px;
+            opacity: 0.9;
+            margin-bottom: 10px;
+        }
+        
+        .part-value {
+            font-size: 24px;
+            font-weight: 700;
+            margin-bottom: 10px;
+        }
+        
+        .part-meaning {
+            font-size: 16px;
+            background: rgba(255,255,255,0.2);
+            padding: 5px;
+            border-radius: 8px;
+        }
+        
+        .anatomy-section {
+            background: #f8fafc;
+            padding: 20px;
+            border-radius: 15px;
+            margin: 20px 0;
+        }
+        
+        .location-text {
+            line-height: 1.8;
+            margin: 15px 0;
+        }
+        
+        .nearby-organs {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin: 15px 0;
+        }
+        
+        .organ-tag {
+            background: #e9ecef;
+            padding: 8px 15px;
+            border-radius: 30px;
+            font-size: 14px;
+        }
+        
+        .disease-item {
+            background: white;
+            padding: 20px;
+            border-radius: 12px;
+            margin-bottom: 15px;
+            border-right: 4px solid #e74c3c;
+        }
+        
+        .disease-name {
+            font-size: 18px;
+            font-weight: 600;
+            color: #e74c3c;
+            margin-bottom: 10px;
+        }
+        
+        .symptoms {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin: 10px 0;
+        }
+        
+        .symptom-tag {
+            background: #fee;
+            color: #e74c3c;
+            padding: 5px 12px;
+            border-radius: 20px;
+            font-size: 13px;
+        }
+        
+        .treatment-tag {
+            background: #e8f5e9;
+            color: #27ae60;
+            padding: 5px 12px;
+            border-radius: 20px;
+            font-size: 13px;
+            display: inline-block;
+            margin: 3px;
+        }
+        
+        .bottom-nav {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: white;
+            display: flex;
+            justify-content: space-around;
+            padding: 10px 0;
+            border-top-left-radius: 20px;
+            border-top-right-radius: 20px;
+            box-shadow: 0 -2px 10px rgba(0,0,0,0.05);
+        }
+        
+        .nav-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-decoration: none;
+            color: #95a5a6;
+            font-size: 12px;
+            flex: 1;
+            cursor: pointer;
+        }
+        
+        .nav-item i {
+            font-size: 20px;
+            margin-bottom: 3px;
+        }
+        
+        .nav-item.active {
+            color: #27ae60;
+        }
+        
+        .back-button {
+            background: #e9ecef;
+            border: none;
+            padding: 12px 25px;
+            border-radius: 30px;
+            cursor: pointer;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            margin-top: 20px;
+            font-size: 16px;
+        }
+        
+        .grid-3 {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 12px;
+            margin: 20px 0;
+        }
+        
+        .card {
+            background: white;
+            padding: 15px;
+            border-radius: 12px;
+            text-align: center;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+            cursor: pointer;
+        }
+        
+        .card i {
+            font-size: 24px;
+            color: #27ae60;
+            margin-bottom: 8px;
+        }
+        
+        .chapters-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 10px;
+        }
+        
+        .chapter-item {
+            background: white;
+            padding: 15px;
+            border-radius: 12px;
+            text-align: center;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+            cursor: pointer;
+        }
+        
+        .chapter-number {
+            color: #27ae60;
+            font-weight: bold;
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="logo">
+            <i class="fas fa-heartbeat"></i>
+            <h1>MedTerm AI</h1>
+        </div>
+        <button class="back-btn" onclick="showHome()">
+            <i class="fas fa-home"></i> الرئيسية
+        </button>
+    </div>
+
+    <div class="search-box">
+        <i class="fas fa-search"></i>
+        <input type="text" id="searchInput" placeholder="ابحث عن مصطلح طبي..." autocomplete="off">
+    </div>
+
+    <div id="mainContent">
+        <div class="loading">
+            <i class="fas fa-spinner fa-spin"></i>
+            <p>جاري تحميل قاعدة البيانات...</p>
+        </div>
+    </div>
+
+    <div class="grid-3" id="quickCards">
+        <div class="card" onclick="alert('قريباً')">
+            <i class="fas fa-microscope"></i>
+            <span>المحلل</span>
+        </div>
+        <div class="card" onclick="alert('قريباً')">
+            <i class="fas fa-question-circle"></i>
+            <span>اختبار</span>
+        </div>
+        <div class="card" onclick="alert('قريباً')">
+            <i class="fas fa-layer-group"></i>
+            <span>بطاقات</span>
+        </div>
+        <div class="card" onclick="alert('قريباً')">
+            <i class="fas fa-book"></i>
+            <span>الفصول</span>
+        </div>
+        <div class="card" onclick="alert('قريباً')">
+            <i class="fas fa-bone"></i>
+            <span>أجهزة</span>
+        </div>
+        <div class="card" onclick="alert('قريباً')">
+            <i class="fas fa-font"></i>
+            <span>اختصارات</span>
+        </div>
+    </div>
+
+    <h2 class="section-title" id="chaptersTitle">
+        <i class="fas fa-book-open"></i> الفصول الدراسية
+    </h2>
+    <div class="chapters-grid" id="chaptersList"></div>
+
+    <div class="bottom-nav">
+        <div class="nav-item active" onclick="showHome()">
+            <i class="fas fa-home"></i>
+            <span>الرئيسية</span>
+        </div>
+        <div class="nav-item" onclick="showChapters()">
+            <i class="fas fa-book"></i>
+            <span>الفصول</span>
+        </div>
+        <div class="nav-item" onclick="showAnalyzer()">
+            <i class="fas fa-microscope"></i>
+            <span>المحلل</span>
+        </div>
+        <div class="nav-item" onclick="focusSearch()">
+            <i class="fas fa-search"></i>
+            <span>البحث</span>
+        </div>
+        <div class="nav-item" onclick="showSaved()">
+            <i class="fas fa-star"></i>
+            <span>محفوظات</span>
+        </div>
+    </div>
+
+    <script>
+        // ==================== المتغيرات العامة ====================
+        let terms = [];
+        let savedTerms = JSON.parse(localStorage.getItem('savedTerms') || '[]');
+        
+        const mainContent = document.getElementById('mainContent');
+        const searchInput = document.getElementById('searchInput');
+        const chaptersList = document.getElementById('chaptersList');
+
+        // ==================== تحميل قاعدة البيانات ====================
+        async function loadDatabase() {
+            try {
+                // ✅ تغيير المسار إلى database/database.json
+                const response = await fetch('database.json');
+                
+                if (!response.ok) {
+                    throw new Error(`الملف غير موجود (${response.status})`);
+                }
+                
+                const text = await response.text();
+                
+                try {
+                    const data = JSON.parse(text);
+                    terms = data.terms;
+                    showHome();
+                    loadChapters();
+                    console.log('✅ تم تحميل', terms.length, 'مصطلح');
+                } catch (jsonError) {
+                    throw new Error('خطأ في تنسيق JSON: ' + jsonError.message);
+                }
+                
+            } catch (error) {
+                console.error('❌ خطأ:', error);
+                mainContent.innerHTML = `
+                    <div class="search-results" style="text-align: center; padding: 40px;">
+                        <i class="fas fa-exclamation-circle" style="font-size: 48px; color: #e74c3c;"></i>
+                        <p style="margin-top: 20px;">خطأ في تحميل قاعدة البيانات</p>
+                        <p style="color: #95a5a6;">${error.message}</p>
+                        <p style="color: #95a5a6; margin-top: 10px;">تأكد من وجود ملف database.json في مجلد database/</p>
+                    </div>
+                `;
+            }
+        }
+
+        // ==================== عرض الصفحة الرئيسية ====================
+        function showHome() {
+            if (!terms || terms.length === 0) {
+                mainContent.innerHTML = `
+                    <div class="search-results" style="text-align: center; padding: 40px;">
+                        <i class="fas fa-database" style="font-size: 48px; color: #95a5a6;"></i>
+                        <p>لا توجد بيانات</p>
+                    </div>
+                `;
+                return;
+            }
+            
+            mainContent.innerHTML = `
+                <div class="search-results">
+                    <h3 style="margin-bottom: 15px; color: #2c3e50;">🔍 جميع المصطلحات (${terms.length})</h3>
+                    ${terms.slice(0, 20).map(term => `
+                        <div class="result-item" onclick="showTermDetail(${term.id})">
+                            <div style="display: flex; justify-content: space-between;">
+                                <div class="result-term">${term.term}</div>
+                                <span style="color: #27ae60;">${term.arabic}</span>
+                            </div>
+                            <div style="color: #7f8c8d; margin-top: 5px;">${term.definition.substring(0, 50)}...</div>
+                        </div>
+                    `).join('')}
+                    ${terms.length > 20 ? '<p style="text-align: center; margin-top: 15px;">وعشرات المصطلحات الأخرى...</p>' : ''}
+                </div>
+            `;
+        }
+
+        // ==================== عرض تفاصيل المصطلح ====================
+        function showTermDetail(id) {
+            const term = terms.find(t => t.id === id);
+            if (!term) return;
+
+            const isSaved = savedTerms.includes(id);
+            
+            let partsHtml = '';
+            if (term.parts) {
+                partsHtml = '<div class="parts-container">';
+                
+                if (term.parts.prefix) {
+                    partsHtml += `
+                        <div class="part-card">
+                            <div class="part-type">بادئة (Prefix)</div>
+                            <div class="part-value">${term.parts.prefix.value}</div>
+                            <div class="part-meaning">${term.parts.prefix.meaning}</div>
+                            <div style="font-size: 12px; margin-top: 10px;">${term.parts.prefix.function || ''}</div>
+                        </div>
+                    `;
+                }
+                
+                if (term.parts.root) {
+                    partsHtml += `
+                        <div class="part-card">
+                            <div class="part-type">جذر (Root)</div>
+                            <div class="part-value">${term.parts.root.value}</div>
+                            <div class="part-meaning">${term.parts.root.meaning}</div>
+                            <div style="font-size: 12px; margin-top: 10px;">${term.parts.root.function || ''}</div>
+                        </div>
+                    `;
+                }
+                
+                if (term.parts.suffix) {
+                    partsHtml += `
+                        <div class="part-card">
+                            <div class="part-type">لاحقة (Suffix)</div>
+                            <div class="part-value">${term.parts.suffix.value}</div>
+                            <div class="part-meaning">${term.parts.suffix.meaning}</div>
+                            <div style="font-size: 12px; margin-top: 10px;">${term.parts.suffix.function || ''}</div>
+                        </div>
+                    `;
+                }
+                
+                partsHtml += '</div>';
+            }
+
+            let diseasesHtml = '';
+            if (term.diseases && term.diseases.length > 0) {
+                diseasesHtml = '<div style="margin-top: 30px;">';
+                term.diseases.forEach(disease => {
+                    diseasesHtml += `
+                        <div class="disease-item">
+                            <div class="disease-name">📌 ${disease.name}</div>
+                            <div style="margin: 15px 0;">
+                                <strong>الأعراض:</strong>
+                                <div class="symptoms">
+                                    ${disease.symptoms ? disease.symptoms.map(s => `<span class="symptom-tag">${s}</span>`).join('') : ''}
+                                </div>
+                            </div>
+                            <div>
+                                <strong>العلاج:</strong>
+                                <div style="margin-top: 10px;">
+                                    ${disease.treatments ? disease.treatments.map(t => `<span class="treatment-tag">${t}</span>`).join('') : ''}
+                                </div>
+                            </div>
+                        </div>
+                    `;
+                });
+                diseasesHtml += '</div>';
+            }
+
+            mainContent.innerHTML = `
+                <div class="detail-card">
+                    <div class="term-header">
+                        <div>
+                            <div class="term-title">${term.term}</div>
+                            <div class="term-arabic">${term.arabic}</div>
+                        </div>
+                        <button class="save-btn ${isSaved ? 'saved' : ''}" onclick="toggleSave(${term.id})">
+                            <i class="${isSaved ? 'fas' : 'far'} fa-star"></i>
+                        </button>
+                    </div>
+
+                    <div class="pronunciation">
+                        <i class="fas fa-microphone"></i> النطق: ${term.pronunciation || 'غير متوفر'}
+                    </div>
+
+                    <div class="latin-term">
+                        <i class="fas fa-scroll"></i> الاسم اللاتيني: ${term.latin || term.term}
+                    </div>
+
+                    <div style="line-height: 1.8; margin: 20px 0;">
+                        <strong>📝 التعريف:</strong> ${term.definition}
+                    </div>
+
+                    <h3 class="section-title">
+                        <i class="fas fa-puzzle-piece"></i> تحليل المصطلح
+                    </h3>
+                    ${partsHtml || '<p style="color: #95a5a6;">لا يوجد تحليل متاح</p>'}
+
+                    <h3 class="section-title">
+                        <i class="fas fa-heartbeat"></i> معلومات الجهاز
+                    </h3>
+                    <div class="anatomy-section">
+                        <div class="info-grid">
+                            <div class="info-item">
+                                <div class="info-label">الجهاز</div>
+                                <div class="info-value">${term.system || 'غير محدد'}</div>
+                            </div>
+                            <div class="info-item">
+                                <div class="info-label">وظيفة الجهاز</div>
+                                <div class="info-value">${term.systemFunction || 'غير محدد'}</div>
+                            </div>
+                        </div>
+                        
+                        <div style="margin: 20px 0;">
+                            <strong>📍 الموقع التشريحي:</strong>
+                            <div class="location-text">${term.location || 'غير محدد'}</div>
+                        </div>
+
+                        <div>
+                            <strong>🫁 الأعضاء المجاورة:</strong>
+                            <div class="nearby-organs">
+                                ${term.nearbyOrgans ? term.nearbyOrgans.map(organ => `<span class="organ-tag">${organ}</span>`).join('') : '<span class="organ-tag">غير محدد</span>'}
+                            </div>
+                        </div>
+                    </div>
+
+                    <h3 class="section-title">
+                        <i class="fas fa-disease"></i> الأمراض المرتبطة
+                    </h3>
+                    ${diseasesHtml || '<p style="color: #95a5a6;">لا توجد أمراض مرتبطة</p>'}
+
+                    <button class="back-button" onclick="showHome()">
+                        <i class="fas fa-arrow-right"></i> عودة للرئيسية
+                    </button>
+                </div>
+            `;
+        }
+
+        // ==================== البحث ====================
+        function search(query) {
+            if (!query || query.length < 2) {
+                showHome();
+                return;
+            }
+
+            query = query.toLowerCase().trim();
+            
+            const results = terms.filter(term => {
+                return (
+                    term.term.toLowerCase().includes(query) ||
+                    term.arabic.includes(query) ||
+                    (term.keywords && term.keywords.some(k => k && k.includes(query)))
+                );
+            });
+
+            if (results.length === 0) {
+                mainContent.innerHTML = `
+                    <div class="search-results">
+                        <div style="text-align: center; padding: 40px;">
+                            <i class="fas fa-frown" style="font-size: 48px; color: #95a5a6;"></i>
+                            <p style="margin-top: 20px;">لا توجد نتائج لـ "${query}"</p>
+                        </div>
+                    </div>
+                `;
+                return;
+            }
+
+            mainContent.innerHTML = `
+                <div class="search-results">
+                    <h3 style="margin-bottom: 15px;">نتائج البحث عن "${query}" (${results.length})</h3>
+                    ${results.slice(0, 20).map(term => `
+                        <div class="result-item" onclick="showTermDetail(${term.id})">
+                            <div style="display: flex; justify-content: space-between;">
+                                <div class="result-term">${term.term}</div>
+                                <span style="color: #27ae60;">${term.arabic}</span>
+                            </div>
+                            <div style="color: #7f8c8d; margin-top: 5px;">${term.definition.substring(0, 60)}...</div>
+                        </div>
+                    `).join('')}
+                    ${results.length > 20 ? '<p style="text-align: center; margin-top: 15px;">و' + (results.length - 20) + ' نتائج أخرى...</p>' : ''}
+                </div>
+            `;
+        }
+
+        // ==================== حفظ/إزالة من المفضلة ====================
+        function toggleSave(id) {
+            if (savedTerms.includes(id)) {
+                savedTerms = savedTerms.filter(t => t !== id);
+            } else {
+                savedTerms.push(id);
+            }
+            localStorage.setItem('savedTerms', JSON.stringify(savedTerms));
+            showTermDetail(id);
+        }
+
+        // ==================== عرض المحفوظات ====================
+        function showSaved() {
+            const saved = terms.filter(t => savedTerms.includes(t.id));
+            if (saved.length === 0) {
+                mainContent.innerHTML = `
+                    <div class="search-results" style="text-align: center; padding: 40px;">
+                        <i class="far fa-star" style="font-size: 48px; color: #f1c40f;"></i>
+                        <p style="margin-top: 20px;">لا توجد مصطلحات محفوظة</p>
+                    </div>
+                `;
+                return;
+            }
+
+            mainContent.innerHTML = `
+                <div class="search-results">
+                    <h3 style="margin-bottom: 15px;">المصطلحات المحفوظة ⭐</h3>
+                    ${saved.map(term => `
+                        <div class="result-item" onclick="showTermDetail(${term.id})">
+                            <div style="display: flex; justify-content: space-between;">
+                                <div class="result-term">${term.term}</div>
+                                <span style="color: #27ae60;">${term.arabic}</span>
+                            </div>
+                        </div>
+                    `).join('')}
+                </div>
+            `;
+        }
+
+        // ==================== تحميل الفصول ====================
+        function loadChapters() {
+            if (!terms || terms.length === 0) {
+                chaptersList.innerHTML = '<p style="color: #95a5a6;">لا توجد بيانات</p>';
+                return;
+            }
+            
+            let html = '';
+            for (let i = 1; i <= 11; i++) {
+                const count = terms.filter(t => t.chapter === i).length;
+                html += `
+                    <div class="chapter-item" onclick="alert('الفصل ${i}: ${count} مصطلح')">
+                        <div class="chapter-number">${i}</div>
+                        <div>الفصل ${i}</div>
+                        <div style="font-size: 12px; color: #95a5a6;">${count} مصطلحات</div>
+                    </div>
+                `;
+            }
+            chaptersList.innerHTML = html;
+        }
+
+        // ==================== دوال مساعدة ====================
+        function showChapters() {
+            alert('📚 الفصول - قريباً');
+        }
+
+        function showAnalyzer() {
+            alert('🔬 المحلل الطبي - قريباً');
+        }
+
+        function focusSearch() {
+            searchInput.focus();
+        }
+
+        // ==================== الأحداث ====================
+        searchInput.addEventListener('input', (e) => {
+            search(e.target.value);
+        });
+
+        // ==================== بدء التحميل ====================
+        loadDatabase();
+    </script>
+</body>
+</html>

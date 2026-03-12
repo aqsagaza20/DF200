@@ -1,0 +1,622 @@
+{
+  "chapter": 3,
+  "title": "أنظمة المرجع التشريحي",
+  "title_en": "Anatomic Reference Systems",
+  "terms": [
+    {
+      "id": 100,
+      "term": "ventral",
+      "arabic": "بطني",
+      "latin": "ventralis",
+      "pronunciation": "فين-ترال",
+      "definition": "متعلق بالجانب الأمامي أو البطن",
+      "parts": {
+        "root": { "value": "ventr", "meaning": "بطن" },
+        "suffix": { "value": "al", "meaning": "متعلق بـ" }
+      },
+      "system": "عام",
+      "systemFunction": "تحديد الاتجاهات",
+      "location": "الجانب الأمامي من الجسم",
+      "nearbyOrgans": ["الأعضاء الأمامية"],
+      "diseases": [],
+      "keywords": ["ventral", "بطني", "anterior"]
+    },
+    {
+      "id": 101,
+      "term": "dorsal",
+      "arabic": "ظهري",
+      "latin": "dorsalis",
+      "pronunciation": "دور-سال",
+      "definition": "متعلق بالظهر أو الجانب الخلفي",
+      "parts": {
+        "root": { "value": "dors", "meaning": "ظهر" },
+        "suffix": { "value": "al", "meaning": "متعلق بـ" }
+      },
+      "system": "عام",
+      "systemFunction": "تحديد الاتجاهات",
+      "location": "الجانب الخلفي من الجسم",
+      "nearbyOrgans": ["الأعضاء الخلفية"],
+      "diseases": [],
+      "keywords": ["dorsal", "ظهري", "posterior"]
+    },
+    {
+      "id": 102,
+      "term": "anterior",
+      "arabic": "أمامي",
+      "latin": "anterior",
+      "pronunciation": "آن-تير-ي-ور",
+      "definition": "يقع في الأمام",
+      "parts": {},
+      "system": "عام",
+      "systemFunction": "تحديد الاتجاهات",
+      "location": "الجانب الأمامي",
+      "nearbyOrgans": ["الأعضاء الأمامية"],
+      "diseases": [],
+      "keywords": ["anterior", "أمامي"]
+    },
+    {
+      "id": 103,
+      "term": "posterior",
+      "arabic": "خلفي",
+      "latin": "posterior",
+      "pronunciation": "بوس-تير-ي-ور",
+      "definition": "يقع في الخلف",
+      "parts": {},
+      "system": "عام",
+      "systemFunction": "تحديد الاتجاهات",
+      "location": "الجانب الخلفي",
+      "nearbyOrgans": ["الأعضاء الخلفية"],
+      "diseases": [],
+      "keywords": ["posterior", "خلفي"]
+    },
+    {
+      "id": 104,
+      "term": "superior",
+      "arabic": "علوي",
+      "latin": "superior",
+      "pronunciation": "سو-بير-ي-ور",
+      "definition": "أعلى أو باتجاه الرأس",
+      "parts": {},
+      "system": "عام",
+      "systemFunction": "تحديد الاتجاهات",
+      "location": "الجزء العلوي",
+      "nearbyOrgans": ["الأعضاء العلوية"],
+      "diseases": [],
+      "keywords": ["superior", "علوي"]
+    },
+    {
+      "id": 105,
+      "term": "inferior",
+      "arabic": "سفلي",
+      "latin": "inferior",
+      "pronunciation": "إن-فير-ي-ور",
+      "definition": "أسفل أو باتجاه القدمين",
+      "parts": {},
+      "system": "عام",
+      "systemFunction": "تحديد الاتجاهات",
+      "location": "الجزء السفلي",
+      "nearbyOrgans": ["الأعضاء السفلية"],
+      "diseases": [],
+      "keywords": ["inferior", "سفلي"]
+    },
+    {
+      "id": 106,
+      "term": "cephalic",
+      "arabic": "رأسي",
+      "latin": "cephalicus",
+      "pronunciation": "سيف-ال-يك",
+      "definition": "باتجاه الرأس",
+      "parts": {
+        "root": { "value": "cephal", "meaning": "رأس" },
+        "suffix": { "value": "ic", "meaning": "متعلق بـ" }
+      },
+      "system": "عام",
+      "systemFunction": "تحديد الاتجاهات",
+      "location": "باتجاه الرأس",
+      "nearbyOrgans": [],
+      "diseases": [],
+      "keywords": ["cephalic", "رأسي"]
+    },
+    {
+      "id": 107,
+      "term": "caudal",
+      "arabic": "ذنبي",
+      "latin": "caudalis",
+      "pronunciation": "كاو-دال",
+      "definition": "باتجاه الجزء السفلي من الجسم (الذنب)",
+      "parts": {
+        "root": { "value": "caud", "meaning": "ذنب" },
+        "suffix": { "value": "al", "meaning": "متعلق بـ" }
+      },
+      "system": "عام",
+      "systemFunction": "تحديد الاتجاهات",
+      "location": "باتجاه الأسفل",
+      "nearbyOrgans": [],
+      "diseases": [],
+      "keywords": ["caudal", "ذنبي"]
+    },
+    {
+      "id": 108,
+      "term": "proximal",
+      "arabic": "داني",
+      "latin": "proximalis",
+      "pronunciation": "بروك-سي-مال",
+      "definition": "أقرب إلى نقطة الأصل أو خط الوسط",
+      "parts": {
+        "root": { "value": "proxim", "meaning": "قريب" },
+        "suffix": { "value": "al", "meaning": "متعلق بـ" }
+      },
+      "system": "عام",
+      "systemFunction": "تحديد الاتجاهات",
+      "location": "قريب من مركز الجسم",
+      "nearbyOrgans": [],
+      "diseases": [],
+      "keywords": ["proximal", "داني"]
+    },
+    {
+      "id": 109,
+      "term": "distal",
+      "arabic": "قصي",
+      "latin": "distalis",
+      "pronunciation": "ديس-تال",
+      "definition": "أبعد عن نقطة الأصل أو خط الوسط",
+      "parts": {
+        "root": { "value": "dist", "meaning": "بعيد" },
+        "suffix": { "value": "al", "meaning": "متعلق بـ" }
+      },
+      "system": "عام",
+      "systemFunction": "تحديد الاتجاهات",
+      "location": "بعيد عن مركز الجسم",
+      "nearbyOrgans": [],
+      "diseases": [],
+      "keywords": ["distal", "قصي"]
+    },
+    {
+      "id": 110,
+      "term": "stem cell",
+      "arabic": "خلية جذعية",
+      "latin": "cellula praecursoria",
+      "pronunciation": "ستيم سيل",
+      "definition": "خلية غير متخصصة يمكنها التجدد والتحول لخلايا متخصصة",
+      "parts": {},
+      "system": "عام",
+      "systemFunction": "تكوين الأنسجة",
+      "location": "نخاع العظم، الأنسجة المختلفة",
+      "nearbyOrgans": ["نخاع العظم", "الدم"],
+      "diseases": [],
+      "keywords": ["stem cell", "خلية جذعية"]
+    },
+    {
+      "id": 111,
+      "term": "histology",
+      "arabic": "علم الأنسجة",
+      "latin": "histologia",
+      "pronunciation": "هيس-تو-لو-جي",
+      "definition": "دراسة التركيب المجهري للأنسجة",
+      "parts": {
+        "root": { "value": "hist", "meaning": "نسيج" },
+        "suffix": { "value": "ology", "meaning": "علم" }
+      },
+      "system": "عام",
+      "systemFunction": "دراسة الأنسجة",
+      "location": "جميع أنحاء الجسم",
+      "nearbyOrgans": [],
+      "diseases": [],
+      "keywords": ["histology", "علم الأنسجة"]
+    },
+    {
+      "id": 112,
+      "term": "histologist",
+      "arabic": "أخصائي أنسجة",
+      "latin": "histologus",
+      "pronunciation": "هيس-تو-لو-جيست",
+      "definition": "أخصائي في دراسة الأنسجة",
+      "parts": {
+        "root": { "value": "hist", "meaning": "نسيج" },
+        "suffix": { "value": "ologist", "meaning": "أخصائي" }
+      },
+      "system": "عام",
+      "systemFunction": "دراسة الأنسجة",
+      "location": "المختبر",
+      "nearbyOrgans": [],
+      "diseases": [],
+      "keywords": ["histologist", "أخصائي أنسجة"]
+    },
+    {
+      "id": 113,
+      "term": "aplasia",
+      "arabic": "لاتنسج",
+      "latin": "aplasia",
+      "pronunciation": "أ-بلا-زيا",
+      "definition": "عدم تطور عضو أو نسيج",
+      "parts": {
+        "prefix": { "value": "a", "meaning": "عدم، بدون" },
+        "root": { "value": "plasia", "meaning": "تكون" }
+      },
+      "system": "عام",
+      "systemFunction": "تطور الأنسجة",
+      "location": "حسب العضو",
+      "nearbyOrgans": [],
+      "diseases": [
+        {
+          "name": "لاتنسج النخاع",
+          "symptoms": ["تعب", "شحوب", "نزيف", "تكرار العدوى"],
+          "treatments": ["نقل دم", "زراعة نخاع عظم"]
+        }
+      ],
+      "keywords": ["aplasia", "لاتنسج"]
+    },
+    {
+      "id": 114,
+      "term": "hypoplasia",
+      "arabic": "نقص تنسج",
+      "latin": "hypoplasia",
+      "pronunciation": "هاي-بو-بلا-زيا",
+      "definition": "تطور غير كامل لعضو أو نسيج",
+      "parts": {
+        "prefix": { "value": "hypo", "meaning": "نقص" },
+        "root": { "value": "plasia", "meaning": "تكون" }
+      },
+      "system": "عام",
+      "systemFunction": "تطور الأنسجة",
+      "location": "حسب العضو",
+      "nearbyOrgans": [],
+      "diseases": [
+        {
+          "name": "نقص تنسج الكلى",
+          "symptoms": ["ارتفاع ضغط الدم", "فشل كلوي"],
+          "treatments": ["علاج الأعراض"]
+        }
+      ],
+      "keywords": ["hypoplasia", "نقص تنسج"]
+    },
+    {
+      "id": 115,
+      "term": "anaplasia",
+      "arabic": "لاتمايز",
+      "latin": "anaplasia",
+      "pronunciation": "آ-نا-بلا-زيا",
+      "definition": "تغير في بنية الخلايا واتجاهها (خاصة في الأورام الخبيثة)",
+      "parts": {
+        "prefix": { "value": "ana", "meaning": "خلف، عكسي" },
+        "root": { "value": "plasia", "meaning": "تكون" }
+      },
+      "system": "الأورام",
+      "systemFunction": "تمايز الخلايا",
+      "location": "الأورام",
+      "nearbyOrgans": [],
+      "diseases": [],
+      "keywords": ["anaplasia", "لاتمايز"]
+    },
+    {
+      "id": 116,
+      "term": "leiomyosarcoma",
+      "arabic": "ساركوما عضلية ملساء",
+      "latin": "leiomyosarcoma",
+      "pronunciation": "لاي-أو-ماي-أو-سار-كو-ما",
+      "definition": "ورم خبيث في العضلات الملساء",
+      "parts": {
+        "prefix": { "value": "leio", "meaning": "أملس" },
+        "root": { "value": "myo", "meaning": "عضلة" },
+        "suffix": { "value": "sarcoma", "meaning": "ساركوما" }
+      },
+      "system": "الأورام",
+      "systemFunction": "حركة الأعضاء",
+      "location": "الرحم، المعدة، الأمعاء",
+      "nearbyOrgans": ["الرحم", "الجهاز الهضمي"],
+      "diseases": [
+        {
+          "name": "ساركوما عضلية ملساء",
+          "symptoms": ["ألم", "نزيف", "كتلة"],
+          "treatments": ["جراحة", "علاج كيميائي", "علاج إشعاعي"]
+        }
+      ],
+      "keywords": ["leiomyosarcoma", "ساركوما عضلية ملساء"]
+    },
+    {
+      "id": 117,
+      "term": "leiomyoma",
+      "arabic": "ورم عضلي أملس",
+      "latin": "leiomyoma",
+      "pronunciation": "لاي-أو-ماي-أو-ما",
+      "definition": "ورم حميد في العضلات الملساء",
+      "parts": {
+        "prefix": { "value": "leio", "meaning": "أملس" },
+        "root": { "value": "myo", "meaning": "عضلة" },
+        "suffix": { "value": "oma", "meaning": "ورم" }
+      },
+      "system": "الأورام",
+      "systemFunction": "حركة الأعضاء",
+      "location": "الرحم (الأكثر شيوعاً)",
+      "nearbyOrgans": ["الرحم"],
+      "diseases": [
+        {
+          "name": "أورام الرحم الليفية",
+          "symptoms": ["نزيف حيضي غزير", "ألم", "ضغط على المثانة"],
+          "treatments": ["مراقبة", "أدوية", "جراحة", "إصمام الشريان الرحمي"]
+        }
+      ],
+      "keywords": ["leiomyoma", "ورم عضلي أملس", "fibroid"]
+    },
+    {
+      "id": 118,
+      "term": "dysplasia",
+      "arabic": "خلل تنسج",
+      "latin": "dysplasia",
+      "pronunciation": "ديس-بلا-زيا",
+      "definition": "تطور غير طبيعي للخلايا أو الأنسجة",
+      "parts": {
+        "prefix": { "value": "dys", "meaning": "خلل" },
+        "root": { "value": "plasia", "meaning": "تكون" }
+      },
+      "system": "عام",
+      "systemFunction": "تكون الخلايا",
+      "location": "عنق الرحم، الجهاز التنفسي",
+      "nearbyOrgans": [],
+      "diseases": [
+        {
+          "name": "خلل تنسج عنق الرحم",
+          "symptoms": ["غالباً بلا أعراض"],
+          "treatments": ["مراقبة", "كشط", "جراحة"]
+        }
+      ],
+      "keywords": ["dysplasia", "خلل تنسج"]
+    },
+    {
+      "id": 119,
+      "term": "hyperplasia",
+      "arabic": "فرط تنسج",
+      "latin": "hyperplasia",
+      "pronunciation": "هاي-بر-بلا-زيا",
+      "definition": "تضخم عضو بسبب زيادة عدد الخلايا",
+      "parts": {
+        "prefix": { "value": "hyper", "meaning": "فرط" },
+        "root": { "value": "plasia", "meaning": "تكون" }
+      },
+      "system": "عام",
+      "systemFunction": "تكون الخلايا",
+      "location": "البروستاتا، بطانة الرحم",
+      "nearbyOrgans": [],
+      "diseases": [
+        {
+          "name": "فرط تنسج البروستاتا الحميد",
+          "symptoms": ["صعوبة التبول", "تبول متكرر"],
+          "treatments": ["أدوية", "جراحة"]
+        }
+      ],
+      "keywords": ["hyperplasia", "فرط تنسج"]
+    },
+    {
+      "id": 120,
+      "term": "hypertrophy",
+      "arabic": "تضخم",
+      "latin": "hypertrophia",
+      "pronunciation": "هاي-بر-ترو-في",
+      "definition": "زيادة حجم العضو بسبب زيادة حجم الخلايا",
+      "parts": {
+        "prefix": { "value": "hyper", "meaning": "فرط" },
+        "root": { "value": "trophy", "meaning": "نمو" }
+      },
+      "system": "عام",
+      "systemFunction": "نمو الخلايا",
+      "location": "عضلة القلب، العضلات الهيكلية",
+      "nearbyOrgans": [],
+      "diseases": [
+        {
+          "name": "تضخم عضلة القلب",
+          "symptoms": ["ضيق تنفس", "ألم صدر", "خفقان"],
+          "treatments": ["أدوية", "تعديل نمط الحياة"]
+        }
+      ],
+      "keywords": ["hypertrophy", "تضخم"]
+    },
+    {
+      "id": 121,
+      "term": "exocrine gland",
+      "arabic": "غدة خارجية الإفراز",
+      "latin": "glandula exocrina",
+      "pronunciation": "إك-سو-كرين غلاند",
+      "definition": "غدة تفرز مواد عبر قنوات إلى سطح الجسم أو تجويف",
+      "parts": {
+        "prefix": { "value": "exo", "meaning": "خارج" },
+        "root": { "value": "crin", "meaning": "يفرز" }
+      },
+      "system": "الجهاز الغدي",
+      "systemFunction": "الإفراز",
+      "location": "الجلد، الجهاز الهضمي",
+      "nearbyOrgans": ["الجلد", "البنكرياس", "الكبد"],
+      "diseases": [],
+      "keywords": ["exocrine gland", "غدة خارجية"]
+    },
+    {
+      "id": 122,
+      "term": "adenitis",
+      "arabic": "التهاب غدة",
+      "latin": "adenitis",
+      "pronunciation": "أ-دين-آي-تس",
+      "definition": "التهاب يصيب الغدة",
+      "parts": {
+        "root": { "value": "aden", "meaning": "غدة" },
+        "suffix": { "value": "itis", "meaning": "التهاب" }
+      },
+      "system": "الجهاز الغدي",
+      "systemFunction": "إفراز الهرمونات أو المواد",
+      "location": "حسب الغدة المصابة",
+      "nearbyOrgans": [],
+      "diseases": [
+        {
+          "name": "التهاب الغدة اللمفاوية",
+          "symptoms": ["تورم", "ألم", "احمرار", "حمى"],
+          "treatments": ["مضادات حيوية", "مسكنات"]
+        }
+      ],
+      "keywords": ["adenitis", "التهاب غدة"]
+    },
+    {
+      "id": 123,
+      "term": "adenocarcinoma",
+      "arabic": "سرطانة غدية",
+      "latin": "adenocarcinoma",
+      "pronunciation": "أ-دين-أو-كار-سي-نو-ما",
+      "definition": "ورم خبيث في النسيج الغدي",
+      "parts": {
+        "root1": { "value": "aden", "meaning": "غدة" },
+        "root2": { "value": "carcin", "meaning": "سرطان" },
+        "suffix": { "value": "oma", "meaning": "ورم" }
+      },
+      "system": "الأورام",
+      "systemFunction": "وظيفة الغدة",
+      "location": "الثدي، الرئة، البروستاتا، القولون",
+      "nearbyOrgans": ["حسب الموقع"],
+      "diseases": [
+        {
+          "name": "سرطانة غدية رئوية",
+          "symptoms": ["سعال", "ضيق تنفس", "ألم صدر", "نفث الدم"],
+          "treatments": ["جراحة", "علاج كيميائي", "علاج إشعاعي", "علاج موجه"]
+        }
+      ],
+      "keywords": ["adenocarcinoma", "سرطانة غدية"]
+    },
+    {
+      "id": 124,
+      "term": "adenoma",
+      "arabic": "ورم غدي",
+      "latin": "adenoma",
+      "pronunciation": "أ-دين-أو-ما",
+      "definition": "ورم حميد في النسيج الغدي",
+      "parts": {
+        "root": { "value": "aden", "meaning": "غدة" },
+        "suffix": { "value": "oma", "meaning": "ورم" }
+      },
+      "system": "الأورام",
+      "systemFunction": "وظيفة الغدة",
+      "location": "الغدة النخامية، الدرقية، القولون",
+      "nearbyOrgans": ["حسب الموقع"],
+      "diseases": [
+        {
+          "name": "ورم غدي نخامي",
+          "symptoms": ["صداع", "اضطرابات بصرية", "اضطرابات هرمونية"],
+          "treatments": ["جراحة", "أدوية", "علاج إشعاعي"]
+        }
+      ],
+      "keywords": ["adenoma", "ورم غدي"]
+    },
+    {
+      "id": 125,
+      "term": "adenomalacia",
+      "arabic": "لين غدي",
+      "latin": "adenomalacia",
+      "pronunciation": "أ-دين-أو-ما-لا-شيا",
+      "definition": "لين غير طبيعي في الغدة",
+      "parts": {
+        "root": { "value": "aden", "meaning": "غدة" },
+        "suffix": { "value": "malacia", "meaning": "لين" }
+      },
+      "system": "الجهاز الغدي",
+      "systemFunction": "وظيفة الغدة",
+      "location": "حسب الغدة",
+      "nearbyOrgans": [],
+      "diseases": [],
+      "keywords": ["adenomalacia", "لين غدي"]
+    },
+    {
+      "id": 126,
+      "term": "adenosis",
+      "arabic": "مرض غدي",
+      "latin": "adenosis",
+      "pronunciation": "أ-دين-أو-سيس",
+      "definition": "أي حالة مرضية في الغدة",
+      "parts": {
+        "root": { "value": "aden", "meaning": "غدة" },
+        "suffix": { "value": "osis", "meaning": "حالة مرضية" }
+      },
+      "system": "الجهاز الغدي",
+      "systemFunction": "وظيفة الغدة",
+      "location": "الثدي (الأكثر شيوعاً)",
+      "nearbyOrgans": ["الثدي"],
+      "diseases": [
+        {
+          "name": "تصلب الغدة",
+          "symptoms": ["كتلة", "ألم"],
+          "treatments": ["مراقبة", "خزعة"]
+        }
+      ],
+      "keywords": ["adenosis", "مرض غدي"]
+    },
+    {
+      "id": 127,
+      "term": "adenosclerosis",
+      "arabic": "تصلب غدي",
+      "latin": "adenosclerosis",
+      "pronunciation": "أ-دين-أو-سكل-رو-سيس",
+      "definition": "تصلب غير طبيعي في الغدة",
+      "parts": {
+        "root": { "value": "aden", "meaning": "غدة" },
+        "suffix": { "value": "sclerosis", "meaning": "تصلب" }
+      },
+      "system": "الجهاز الغدي",
+      "systemFunction": "وظيفة الغدة",
+      "location": "حسب الغدة",
+      "nearbyOrgans": [],
+      "diseases": [],
+      "keywords": ["adenosclerosis", "تصلب غدي"]
+    },
+    {
+      "id": 128,
+      "term": "endemic",
+      "arabic": "مستوطن",
+      "latin": "endemicus",
+      "pronunciation": "إن-ديم-يك",
+      "definition": "وجود مستمر لمرض ضمن مجموعة سكانية معينة",
+      "parts": {
+        "prefix": { "value": "en", "meaning": "في" },
+        "root": { "value": "dem", "meaning": "شعب" },
+        "suffix": { "value": "ic", "meaning": "متعلق بـ" }
+      },
+      "system": "الصحة العامة",
+      "systemFunction": "وصف انتشار الأمراض",
+      "location": "منطقة جغرافية محددة",
+      "nearbyOrgans": [],
+      "diseases": [],
+      "keywords": ["endemic", "مستوطن"]
+    },
+    {
+      "id": 129,
+      "term": "epidemic",
+      "arabic": "وباء",
+      "latin": "epidemicus",
+      "pronunciation": "إبي-ديم-يك",
+      "definition": "تفشي مفاجئ واسع لمرض في منطقة معينة",
+      "parts": {
+        "prefix": { "value": "epi", "meaning": "على" },
+        "root": { "value": "dem", "meaning": "شعب" },
+        "suffix": { "value": "ic", "meaning": "متعلق بـ" }
+      },
+      "system": "الصحة العامة",
+      "systemFunction": "وصف انتشار الأمراض",
+      "location": "منطقة جغرافية محددة",
+      "nearbyOrgans": [],
+      "diseases": [],
+      "keywords": ["epidemic", "وباء"]
+    },
+    {
+      "id": 130,
+      "term": "pandemic",
+      "arabic": "جائحة",
+      "latin": "pandemicus",
+      "pronunciation": "بان-ديم-يك",
+      "definition": "تفشي مرض على مساحة جغرافية كبيرة (عدة قارات)",
+      "parts": {
+        "prefix": { "value": "pan", "meaning": "كل" },
+        "root": { "value": "dem", "meaning": "شعب" },
+        "suffix": { "value": "ic", "meaning": "متعلق بـ" }
+      },
+      "system": "الصحة العامة",
+      "systemFunction": "وصف انتشار الأمراض",
+      "location": "عالمي",
+      "nearbyOrgans": [],
+      "diseases": [],
+      "keywords": ["pandemic", "جائحة"]
+    }
+  ]
+}

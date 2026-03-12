@@ -1,0 +1,971 @@
+{
+  "chapter": 7,
+  "title": "الجهاز التنفسي",
+  "title_en": "Respiratory System",
+  "terms": [
+    {
+      "id": 251,
+      "term": "nose",
+      "arabic": "أنف",
+      "latin": "nasus",
+      "pronunciation": "نوز",
+      "definition": "العضو الخارجي للجهاز التنفسي، يحتوي على فتحتين للتنفس",
+      "parts": {},
+      "system": "الجهاز التنفسي",
+      "systemFunction": "تدفئة وترطيب وتنقية الهواء الداخل",
+      "location": "الوجه، فوق الفم",
+      "nearbyOrgans": ["الفم", "الجيوب الأنفية", "العينان"],
+      "diseases": [
+        {
+          "name": "التهاب الأنف",
+          "symptoms": ["رشح", "عطاس", "احتقان"],
+          "treatments": ["مضادات هستامين", "بخاخات أنفية"]
+        }
+      ],
+      "keywords": ["nose", "أنف"]
+    },
+    {
+      "id": 252,
+      "term": "nasal cavity",
+      "arabic": "تجويف أنفي",
+      "latin": "cavitas nasi",
+      "pronunciation": "ناي-زال كاف-يتي",
+      "definition": "الفراغ داخل الأنف وخلفه، مبطن بغشاء مخاطي",
+      "parts": {},
+      "system": "الجهاز التنفسي",
+      "systemFunction": "تنقية وترطيب الهواء",
+      "location": "داخل الأنف وخلفه",
+      "nearbyOrgans": ["الجيوب الأنفية", "البلعوم"],
+      "diseases": [
+        {
+          "name": "التهاب الجيوب الأنفية",
+          "symptoms": ["صداع", "احتقان", "إفرازات أنفية"],
+          "treatments": ["مضادات حيوية", "مسكنات", "بخاخات أنفية"]
+        }
+      ],
+      "keywords": ["nasal cavity", "تجويف أنفي"]
+    },
+    {
+      "id": 253,
+      "term": "pharynx",
+      "arabic": "بلعوم",
+      "latin": "pharynx",
+      "pronunciation": "فار-ينكس",
+      "definition": "ممر مشترك للهواء والطعام، يربط الأنف والفم بالحنجرة والمريء",
+      "parts": {},
+      "system": "الجهاز التنفسي والهضمي",
+      "systemFunction": "تمرير الهواء إلى الحنجرة والطعام إلى المريء",
+      "location": "خلف الأنف والفم، أمام الفقرات العنقية",
+      "nearbyOrgans": ["الأنف", "الفم", "الحنجرة", "المريء", "اللوزتين"],
+      "diseases": [
+        {
+          "name": "التهاب البلعوم",
+          "symptoms": ["ألم حلق", "احمرار", "صعوبة بلع"],
+          "treatments": ["مسكنات", "مضادات حيوية", "غرغرة"]
+        }
+      ],
+      "keywords": ["pharynx", "بلعوم"]
+    },
+    {
+      "id": 254,
+      "term": "larynx",
+      "arabic": "حنجرة",
+      "latin": "larynx",
+      "pronunciation": "لار-ينكس",
+      "definition": "صندوق الصوت، يحتوي على الأحبال الصوتية ويفصل بين البلعوم والقصبة الهوائية",
+      "parts": {},
+      "system": "الجهاز التنفسي",
+      "systemFunction": "إنتاج الصوت، منع دخول الطعام إلى القصبة الهوائية",
+      "location": "الرقبة، بين البلعوم والقصبة الهوائية",
+      "nearbyOrgans": ["البلعوم", "القصبة الهوائية", "الغدة الدرقية"],
+      "diseases": [
+        {
+          "name": "التهاب الحنجرة",
+          "symptoms": ["بحة صوت", "فقدان الصوت", "ألم حلق"],
+          "treatments": ["راحة الصوت", "ترطيب الجو", "مسكنات"]
+        }
+      ],
+      "keywords": ["larynx", "حنجرة"]
+    },
+    {
+      "id": 255,
+      "term": "epiglottis",
+      "arabic": "لسان المزمار",
+      "latin": "epiglottis",
+      "pronunciation": "إبي-غلوت-يس",
+      "definition": "غطاء غضروفي يغلق فتحة الحنجرة أثناء البلع لمنع دخول الطعام",
+      "parts": {},
+      "system": "الجهاز التنفسي والهضمي",
+      "systemFunction": "منع دخول الطعام والشراب إلى القصبة الهوائية",
+      "location": "أعلى الحنجرة، خلف اللسان",
+      "nearbyOrgans": ["اللسان", "الحنجرة", "البلعوم"],
+      "diseases": [
+        {
+          "name": "التهاب لسان المزمار",
+          "symptoms": ["حمى", "ألم حلق شديد", "صعوبة بلع", "سيلان اللعاب", "صعوبة تنفس"],
+          "treatments": ["مضادات حيوية", "تنبيب", "رعاية مركزة"]
+        }
+      ],
+      "keywords": ["epiglottis", "لسان مزمار"]
+    },
+    {
+      "id": 256,
+      "term": "trachea",
+      "arabic": "قصبة هوائية",
+      "latin": "trachea",
+      "pronunciation": "تراي-كيا",
+      "definition": "أنبوب غضروفي يصل بين الحنجرة والشعب الهوائية",
+      "parts": {},
+      "system": "الجهاز التنفسي",
+      "systemFunction": "تمرير الهواء إلى الرئتين",
+      "location": "الرقبة والصدر، أمام المريء",
+      "nearbyOrgans": ["الحنجرة", "المريء", "الشعب الهوائية", "الغدة الدرقية"],
+      "diseases": [
+        {
+          "name": "التهاب القصبة الهوائية",
+          "symptoms": ["سعال", "ألم صدر", "حمى"],
+          "treatments": ["مضادات حيوية", "مسكنات", "ترطيب"]
+        }
+      ],
+      "keywords": ["trachea", "قصبة هوائية"]
+    },
+    {
+      "id": 257,
+      "term": "bronchus",
+      "arabic": "شعبة هوائية",
+      "latin": "bronchus",
+      "pronunciation": "برون-كس",
+      "definition": "أحد الفرعين الرئيسيين الناتجين عن انقسام القصبة الهوائية",
+      "parts": {},
+      "system": "الجهاز التنفسي",
+      "systemFunction": "توصيل الهواء إلى الرئة",
+      "location": "الصدر، داخل الرئتين",
+      "nearbyOrgans": ["القصبة الهوائية", "الرئتين", "الأوعية الدموية"],
+      "diseases": [
+        {
+          "name": "التهاب القصبات",
+          "symptoms": ["سعال", "بلغم", "ضيق تنفس"],
+          "treatments": ["مضادات حيوية", "موسعات شعب", "طاردات بلغم"]
+        }
+      ],
+      "keywords": ["bronchus", "شعبة هوائية"],
+      "plural": "bronchi"
+    },
+    {
+      "id": 258,
+      "term": "bronchiole",
+      "arabic": "قصيبة",
+      "latin": "bronchiolus",
+      "pronunciation": "برون-كي-أول",
+      "definition": "أصغر فروع الشعب الهوائية داخل الرئة",
+      "parts": {},
+      "system": "الجهاز التنفسي",
+      "systemFunction": "توصيل الهواء إلى الحويصلات الهوائية",
+      "location": "داخل الرئتين",
+      "nearbyOrgans": ["الشعب الهوائية", "الحويصلات الهوائية"],
+      "diseases": [
+        {
+          "name": "التهاب القصيبات",
+          "symptoms": ["سعال", "صفير", "ضيق تنفس"],
+          "treatments": ["ترطيب", "أكسجين", "موسعات شعب"]
+        }
+      ],
+      "keywords": ["bronchiole", "قصيبة"]
+    },
+    {
+      "id": 259,
+      "term": "alveolus",
+      "arabic": "حويصلة هوائية",
+      "latin": "alveolus",
+      "pronunciation": "أل-في-أو-لس",
+      "definition": "كيس هوائي مجهري في الرئة، موقع تبادل الغازات",
+      "parts": {},
+      "system": "الجهاز التنفسي",
+      "systemFunction": "تبادل الأكسجين وثاني أكسيد الكربون بين الهواء والدم",
+      "location": "نهايات القصيبات في الرئتين",
+      "nearbyOrgans": ["الشعيرات الدموية", "القصيبات"],
+      "diseases": [
+        {
+          "name": "انتفاخ الرئة",
+          "symptoms": ["ضيق تنفس", "سعال مزمن"],
+          "treatments": ["موسعات شعب", "أكسجين"]
+        }
+      ],
+      "keywords": ["alveolus", "حويصلة هوائية"],
+      "plural": "alveoli"
+    },
+    {
+      "id": 260,
+      "term": "lung",
+      "arabic": "رئة",
+      "latin": "pulmo",
+      "pronunciation": "لانغ",
+      "definition": "العضو الرئيسي للتنفس، يوجد رئتين في الصدر",
+      "parts": {},
+      "system": "الجهاز التنفسي",
+      "systemFunction": "تبادل الغازات (الأكسجين وثاني أكسيد الكربون)",
+      "location": "التجويف الصدري، على جانبي القلب",
+      "nearbyOrgans": ["القلب", "القصبة الهوائية", "الأضلاع", "الحجاب الحاجز"],
+      "diseases": [
+        {
+          "name": "التهاب رئوي",
+          "symptoms": ["حمى", "سعال", "ضيق تنفس", "ألم صدر"],
+          "treatments": ["مضادات حيوية", "مسكنات", "أكسجين"]
+        }
+      ],
+      "keywords": ["lung", "رئة"]
+    },
+    {
+      "id": 261,
+      "term": "pleura",
+      "arabic": "غشاء الجنب",
+      "latin": "pleura",
+      "pronunciation": "بلو-را",
+      "definition": "غشاء مصلي مزدوج يحيط بالرئة ويبطن جدار الصدر",
+      "parts": {},
+      "system": "الجهاز التنفسي",
+      "systemFunction": "تسهيل حركة الرئة داخل الصدر",
+      "location": "حول الرئتين وداخل جدار الصدر",
+      "nearbyOrgans": ["الرئتين", "الأضلاع", "الحجاب الحاجز"],
+      "diseases": [
+        {
+          "name": "التهاب الجنب",
+          "symptoms": ["ألم صدر حاد يزداد مع التنفس", "حمى"],
+          "treatments": ["مضادات التهاب", "مسكنات"]
+        }
+      ],
+      "keywords": ["pleura", "غشاء جنب"]
+    },
+    {
+      "id": 262,
+      "term": "diaphragm",
+      "arabic": "حجاب حاجز",
+      "latin": "diaphragma",
+      "pronunciation": "داي-أ-فرام",
+      "definition": "عضلة تفصل تجويف الصدر عن تجويف البطن، وهي العضلة الرئيسية للتنفس",
+      "parts": {},
+      "system": "الجهاز التنفسي والعضلي",
+      "systemFunction": "الانقباض والانبساط لتغيير حجم الصدر أثناء التنفس",
+      "location": "أسفل الرئتين، يفصل الصدر عن البطن",
+      "nearbyOrgans": ["الرئتين", "القلب", "الكبد", "المعدة"],
+      "diseases": [
+        {
+          "name": "شلل الحجاب الحاجز",
+          "symptoms": ["ضيق تنفس", "صعوبة في التنفس عند الاستلقاء"],
+          "treatments": ["علاج السبب", "تهوية ميكانيكية"]
+        }
+      ],
+      "keywords": ["diaphragm", "حجاب حاجز"]
+    },
+    {
+      "id": 263,
+      "term": "mediastinum",
+      "arabic": "منصف",
+      "latin": "mediastinum",
+      "pronunciation": "مي-دي-أس-تاي-نم",
+      "definition": "الفراغ بين الرئتين الذي يحتوي على القلب والأوعية الكبيرة والمريء",
+      "parts": {},
+      "system": "الجهاز التنفسي والقلبي",
+      "systemFunction": "إيواء الأعضاء الحيوية",
+      "location": "بين الرئتين في الصدر",
+      "nearbyOrgans": ["القلب", "الأبهر", "الوريد الأجوف", "المريء", "القصبة الهوائية"],
+      "diseases": [
+        {
+          "name": "التهاب المنصف",
+          "symptoms": ["ألم صدر", "حمى", "ضيق تنفس"],
+          "treatments": ["مضادات حيوية", "جراحة"]
+        }
+      ],
+      "keywords": ["mediastinum", "منصف"]
+    },
+    {
+      "id": 264,
+      "term": "respiration",
+      "arabic": "تنفس",
+      "latin": "respiratio",
+      "pronunciation": "ريس-بي-راي-شن",
+      "definition": "عملية تبادل الأكسجين وثاني أكسيد الكربون بين الكائن الحي والبيئة",
+      "parts": {},
+      "system": "الجهاز التنفسي",
+      "systemFunction": "إمداد الجسم بالأكسجين والتخلص من ثاني أكسيد الكربون",
+      "location": "الرئتين والأنسجة",
+      "nearbyOrgans": ["الرئتين", "القلب"],
+      "diseases": [],
+      "keywords": ["respiration", "تنفس"]
+    },
+    {
+      "id": 265,
+      "term": "inhalation",
+      "arabic": "شهيق",
+      "latin": "inhalatio",
+      "pronunciation": "إن-ها-لاي-شن",
+      "definition": "عملية إدخال الهواء إلى الرئتين",
+      "parts": {},
+      "system": "الجهاز التنفسي",
+      "systemFunction": "إدخال الأكسجين",
+      "location": "الرئتين",
+      "nearbyOrgans": ["الحجاب الحاجز", "عضلات الصدر"],
+      "diseases": [],
+      "keywords": ["inhalation", "شهيق"]
+    },
+    {
+      "id": 266,
+      "term": "exhalation",
+      "arabic": "زفير",
+      "latin": "exhalatio",
+      "pronunciation": "إكس-ها-لاي-شن",
+      "definition": "عملية إخراج الهواء من الرئتين",
+      "parts": {},
+      "system": "الجهاز التنفسي",
+      "systemFunction": "إخراج ثاني أكسيد الكربون",
+      "location": "الرئتين",
+      "nearbyOrgans": ["الحجاب الحاجز", "عضلات الصدر"],
+      "diseases": [],
+      "keywords": ["exhalation", "زفير"]
+    },
+    {
+      "id": 267,
+      "term": "COPD",
+      "arabic": "داء الانسداد الرئوي المزمن",
+      "latin": "morbus pulmonarius obstructivus chronicus",
+      "pronunciation": "سي-أو-بي-دي",
+      "definition": "مرض رئوي مزمن يسبب انسداد تدفق الهواء وصعوبة التنفس",
+      "parts": {},
+      "system": "الجهاز التنفسي",
+      "systemFunction": "التهوية",
+      "location": "الرئتين",
+      "nearbyOrgans": ["الرئتين", "الشعب الهوائية"],
+      "diseases": [
+        {
+          "name": "مرض الانسداد الرئوي المزمن",
+          "symptoms": ["ضيق تنفس", "سعال مزمن", "بلغم", "صفير"],
+          "treatments": ["موسعات شعب", "كورتيزون", "أكسجين", "إيقاف التدخين"]
+        }
+      ],
+      "keywords": ["COPD", "انسداد رئوي مزمن"]
+    },
+    {
+      "id": 268,
+      "term": "chronic bronchitis",
+      "arabic": "التهاب القصبات المزمن",
+      "latin": "bronchitis chronica",
+      "pronunciation": "كرون-يك برون-كاي-تس",
+      "definition": "التهاب مزمن في القصبات الهوائية مع سعال وبلغم لمدة 3 أشهر على الأقل سنوياً",
+      "parts": {},
+      "system": "الجهاز التنفسي",
+      "systemFunction": "تهوية الرئتين",
+      "location": "القصبات الهوائية",
+      "nearbyOrgans": ["الرئتين"],
+      "diseases": [
+        {
+          "name": "التهاب القصبات المزمن",
+          "symptoms": ["سعال مزمن", "بلغم", "ضيق تنفس", "صفير"],
+          "treatments": ["موسعات شعب", "كورتيزون", "إيقاف التدخين"]
+        }
+      ],
+      "keywords": ["chronic bronchitis", "التهاب قصبات مزمن"]
+    },
+    {
+      "id": 269,
+      "term": "emphysema",
+      "arabic": "نفاخ رئوي",
+      "latin": "emphysema pulmonum",
+      "pronunciation": "إم-في-سي-ما",
+      "definition": "تدمير الحويصلات الهوائية مما يقلل مساحة تبادل الغازات",
+      "parts": {},
+      "system": "الجهاز التنفسي",
+      "systemFunction": "تبادل الغازات",
+      "location": "الحويصلات الهوائية",
+      "nearbyOrgans": ["الرئتين"],
+      "diseases": [
+        {
+          "name": "نفاخ رئوي",
+          "symptoms": ["ضيق تنفس", "صفير", "تعب", "فقدان وزن"],
+          "treatments": ["موسعات شعب", "أكسجين", "إيقاف التدخين"]
+        }
+      ],
+      "keywords": ["emphysema", "نفاخ رئوي"]
+    },
+    {
+      "id": 270,
+      "term": "asthma",
+      "arabic": "ربو",
+      "latin": "asthma",
+      "pronunciation": "آز-ما",
+      "definition": "مرض التهابي مزمن في الشعب الهوائية يسبب نوبات متكررة من ضيق التنفس والصفير",
+      "parts": {},
+      "system": "الجهاز التنفسي",
+      "systemFunction": "تهوية الرئتين",
+      "location": "الشعب الهوائية",
+      "nearbyOrgans": ["الرئتين"],
+      "diseases": [
+        {
+          "name": "الربو",
+          "symptoms": ["ضيق تنفس", "صفير", "سعال", "ضيق صدر"],
+          "treatments": ["موسعات شعب", "كورتيزون", "تجنب المثيرات"]
+        }
+      ],
+      "keywords": ["asthma", "ربو"]
+    },
+    {
+      "id": 271,
+      "term": "pneumonia",
+      "arabic": "التهاب رئوي",
+      "latin": "pneumonia",
+      "pronunciation": "نيو-مو-نيا",
+      "definition": "عدوى تسبب التهاباً في الحويصلات الهوائية في الرئتين",
+      "parts": {},
+      "system": "الجهاز التنفسي",
+      "systemFunction": "تبادل الغازات",
+      "location": "الحويصلات الهوائية",
+      "nearbyOrgans": ["الرئتين"],
+      "diseases": [
+        {
+          "name": "الالتهاب الرئوي الجرثومي",
+          "symptoms": ["حمى عالية", "سعال مع بلغم", "ألم صدر", "ضيق تنفس"],
+          "treatments": ["مضادات حيوية", "مسكنات", "أكسجين"]
+        },
+        {
+          "name": "الالتهاب الرئوي الفيروسي",
+          "symptoms": ["حمى", "سعال جاف", "صداع", "ألم عضلي"],
+          "treatments": ["علاج داعم", "مسكنات", "سوائل"]
+        }
+      ],
+      "keywords": ["pneumonia", "التهاب رئوي"]
+    },
+    {
+      "id": 272,
+      "term": "tuberculosis",
+      "arabic": "سل",
+      "latin": "tuberculosis",
+      "pronunciation": "تو-بير-كيو-لو-سيس",
+      "definition": "مرض معد تسببه بكتيريا المتفطرة السلية، يصيب الرئتين غالباً",
+      "parts": {},
+      "system": "الجهاز التنفسي",
+      "systemFunction": "التهوية",
+      "location": "الرئتين",
+      "nearbyOrgans": ["الرئتين"],
+      "diseases": [
+        {
+          "name": "السل الرئوي",
+          "symptoms": ["سعال مزمن", "نفث دم", "حمى", "تعرق ليلي", "فقدان وزن"],
+          "treatments": ["مضادات سلية متعددة", "علاج طويل الأمد"]
+        }
+      ],
+      "keywords": ["tuberculosis", "TB", "سل"]
+    },
+    {
+      "id": 273,
+      "term": "pleural effusion",
+      "arabic": "انصباب جنبي",
+      "latin": "effusio pleuralis",
+      "pronunciation": "بلو-رال إف-يو-جن",
+      "definition": "تراكم السوائل في الحيز الجنبي (بين طبقتي غشاء الجنب)",
+      "parts": {},
+      "system": "الجهاز التنفسي",
+      "systemFunction": "حركة الرئة",
+      "location": "الحيز الجنبي",
+      "nearbyOrgans": ["الرئتين", "غشاء الجنب"],
+      "diseases": [
+        {
+          "name": "انصباب جنبي",
+          "symptoms": ["ضيق تنفس", "ألم صدر", "سعال"],
+          "treatments": ["علاج السبب", "بزل الصدر", "تصريف السائل"]
+        }
+      ],
+      "keywords": ["pleural effusion", "انصباب جنبي"]
+    },
+    {
+      "id": 274,
+      "term": "pulmonary edema",
+      "arabic": "وذمة رئوية",
+      "latin": "oedema pulmonum",
+      "pronunciation": "بول-مو-ناري إي-دي-ما",
+      "definition": "تراكم السوائل في أنسجة الرئة",
+      "parts": {},
+      "system": "الجهاز التنفسي",
+      "systemFunction": "تبادل الغازات",
+      "location": "الرئتين",
+      "nearbyOrgans": ["القلب"],
+      "diseases": [
+        {
+          "name": "الوذمة الرئوية",
+          "symptoms": ["ضيق تنفس شديد", "أزيز", "قلق", "سعال رغوي"],
+          "treatments": ["مدرات بول", "أكسجين", "علاج السبب"]
+        }
+      ],
+      "keywords": ["pulmonary edema", "وذمة رئوية"]
+    },
+    {
+      "id": 275,
+      "term": "pulmonary fibrosis",
+      "arabic": "تليف رئوي",
+      "latin": "fibrosis pulmonum",
+      "pronunciation": "بول-مو-ناري فاي-برو-سيس",
+      "definition": "تندب وسماكة في أنسجة الرئة، مما يؤدي إلى صعوبة التنفس",
+      "parts": {},
+      "system": "الجهاز التنفسي",
+      "systemFunction": "تبادل الغازات",
+      "location": "الرئتين",
+      "nearbyOrgans": ["الرئتين"],
+      "diseases": [
+        {
+          "name": "التليف الرئوي",
+          "symptoms": ["ضيق تنفس", "سعال جاف", "تعب", "فقدان وزن"],
+          "treatments": ["أدوية مضادة للتليف", "أكسجين", "زراعة رئة"]
+        }
+      ],
+      "keywords": ["pulmonary fibrosis", "تليف رئوي"]
+    },
+    {
+      "id": 276,
+      "term": "cystic fibrosis",
+      "arabic": "تليف كيسي",
+      "latin": "fibrosis cystica",
+      "pronunciation": "سيس-تيك فاي-برو-سيس",
+      "definition": "مرض وراثي يسبب إنتاج مخاط سميك ولزج يسد الشعب الهوائية",
+      "parts": {},
+      "system": "الجهاز التنفسي والهضمي",
+      "systemFunction": "إفراز المخاط",
+      "location": "الرئتين والبنكرياس",
+      "nearbyOrgans": ["الرئتين", "البنكرياس"],
+      "diseases": [
+        {
+          "name": "التليف الكيسي",
+          "symptoms": ["سعال مزمن", "عدوى رئوية متكررة", "ضعف النمو", "براز دهني"],
+          "treatments": ["علاج طبيعي للصدر", "موسعات شعب", "مضادات حيوية", "إنزيمات بنكرياسية"]
+        }
+      ],
+      "keywords": ["cystic fibrosis", "تليف كيسي"]
+    },
+    {
+      "id": 277,
+      "term": "pneumothorax",
+      "arabic": "استرواح الصدر",
+      "latin": "pneumothorax",
+      "pronunciation": "نيو-مو-ثو-راكس",
+      "definition": "تجمع الهواء في الحيز الجنبي مما يؤدي إلى انهيار الرئة",
+      "parts": {},
+      "system": "الجهاز التنفسي",
+      "systemFunction": "تهوية الرئة",
+      "location": "الحيز الجنبي",
+      "nearbyOrgans": ["الرئة", "غشاء الجنب"],
+      "diseases": [
+        {
+          "name": "استرواح الصدر العفوي",
+          "symptoms": ["ألم صدر مفاجئ", "ضيق تنفس"],
+          "treatments": ["مراقبة", "تصريف الهواء", "جراحة"]
+        }
+      ],
+      "keywords": ["pneumothorax", "استرواح صدر"]
+    },
+    {
+      "id": 278,
+      "term": "hemothorax",
+      "arabic": "تدمي الصدر",
+      "latin": "haemothorax",
+      "pronunciation": "هي-مو-ثو-راكس",
+      "definition": "تجمع الدم في الحيز الجنبي",
+      "parts": {},
+      "system": "الجهاز التنفسي",
+      "systemFunction": "تهوية الرئة",
+      "location": "الحيز الجنبي",
+      "nearbyOrgans": ["الرئة", "الأوعية الدموية"],
+      "diseases": [
+        {
+          "name": "تدمي الصدر",
+          "symptoms": ["ألم صدر", "ضيق تنفس", "صدمة"],
+          "treatments": ["تصريف الدم", "وقف النزيف"]
+        }
+      ],
+      "keywords": ["hemothorax", "تدمي صدر"]
+    },
+    {
+      "id": 279,
+      "term": "anoxia",
+      "arabic": "انعدام الأكسجين",
+      "latin": "anoxia",
+      "pronunciation": "آن-أوكس-يا",
+      "definition": "غياب كامل للأكسجين في الأنسجة",
+      "parts": {},
+      "system": "الجهاز التنفسي",
+      "systemFunction": "إمداد الأكسجين",
+      "location": "الأنسجة",
+      "nearbyOrgans": ["الدماغ"],
+      "diseases": [
+        {
+          "name": "نقص الأكسجين الدماغي",
+          "symptoms": ["فقدان الوعي", "تلف دماغي"],
+          "treatments": ["أكسجين", "إنعاش"]
+        }
+      ],
+      "keywords": ["anoxia", "انعدام أكسجين"]
+    },
+    {
+      "id": 280,
+      "term": "hypoxia",
+      "arabic": "نقص الأكسجين",
+      "latin": "hypoxia",
+      "pronunciation": "هاي-بوكس-يا",
+      "definition": "انخفاض مستوى الأكسجين في الأنسجة",
+      "parts": {},
+      "system": "الجهاز التنفسي",
+      "systemFunction": "إمداد الأكسجين",
+      "location": "الأنسجة",
+      "nearbyOrgans": ["جميع الأعضاء"],
+      "diseases": [
+        {
+          "name": "نقص الأكسجين",
+          "symptoms": ["ضيق تنفس", "زرقة", "تسارع قلب", "ارتباك"],
+          "treatments": ["أكسجين", "علاج السبب"]
+        }
+      ],
+      "keywords": ["hypoxia", "نقص أكسجين"]
+    },
+    {
+      "id": 281,
+      "term": "asphyxia",
+      "arabic": "اختناق",
+      "latin": "asphyxia",
+      "pronunciation": "آس-فيكس-يا",
+      "definition": "حالة نقص حاد في الأكسجين وزيادة ثاني أكسيد الكربون في الجسم",
+      "parts": {},
+      "system": "الجهاز التنفسي",
+      "systemFunction": "التهوية",
+      "location": "الرئتين والدم",
+      "nearbyOrgans": ["الدماغ"],
+      "diseases": [
+        {
+          "name": "الاختناق",
+          "symptoms": ["زرقة", "فقدان الوعي", "توقف التنفس"],
+          "treatments": ["إنعاش قلبي رئوي", "أكسجين", "تنبيب"]
+        }
+      ],
+      "keywords": ["asphyxia", "اختناق"]
+    },
+    {
+      "id": 282,
+      "term": "cyanosis",
+      "arabic": "زرقة",
+      "latin": "cyanosis",
+      "pronunciation": "ساي-أ-نو-سيس",
+      "definition": "ازرقاق الجلد والأغشية المخاطية بسبب نقص الأكسجين في الدم",
+      "parts": {},
+      "system": "الجهاز التنفسي والدوراني",
+      "systemFunction": "أكسجة الدم",
+      "location": "الجلد، الشفتين، الأظافر",
+      "nearbyOrgans": ["الرئتين", "القلب"],
+      "diseases": [
+        {
+          "name": "الزرقة",
+          "symptoms": ["ازرقاق الجلد", "ضيق تنفس"],
+          "treatments": ["أكسجين", "علاج السبب"]
+        }
+      ],
+      "keywords": ["cyanosis", "زرقة"]
+    },
+    {
+      "id": 283,
+      "term": "bronchoscopy",
+      "arabic": "تنظير القصبات",
+      "latin": "bronchoscopia",
+      "pronunciation": "برون-كوس-كو-بي",
+      "definition": "إجراء تنظيري لفحص الشعب الهوائية",
+      "parts": {},
+      "system": "الجهاز التنفسي",
+      "systemFunction": "تشخيص وعلاج أمراض القصبات",
+      "location": "القصبات الهوائية",
+      "nearbyOrgans": ["الرئتين"],
+      "diseases": [],
+      "keywords": ["bronchoscopy", "تنظير قصبات"]
+    },
+    {
+      "id": 284,
+      "term": "spirometry",
+      "arabic": "قياس التنفس",
+      "latin": "spirometria",
+      "pronunciation": "سباي-روم-إ-تري",
+      "definition": "اختبار يقيس كمية الهواء الذي يمكن استنشاقه وزفيره وسرعة الزفير",
+      "parts": {},
+      "system": "الجهاز التنفسي",
+      "systemFunction": "تقييم وظائف الرئة",
+      "location": "الرئتين",
+      "nearbyOrgans": ["الرئتين"],
+      "diseases": [],
+      "keywords": ["spirometry", "قياس تنفس"]
+    },
+    {
+      "id": 285,
+      "term": "pulmonary function test",
+      "arabic": "اختبار وظائف الرئة",
+      "latin": "exploratio functionis pulmonalis",
+      "pronunciation": "بول-مو-ناري فنك-شن تست",
+      "definition": "مجموعة من الاختبارات تقيس مدى كفاءة عمل الرئتين",
+      "parts": {},
+      "system": "الجهاز التنفسي",
+      "systemFunction": "تقييم وظائف الرئة",
+      "location": "الرئتين",
+      "nearbyOrgans": ["الرئتين"],
+      "diseases": [],
+      "keywords": ["PFT", "اختبار وظائف رئة"]
+    },
+    {
+      "id": 286,
+      "term": "intubation",
+      "arabic": "تنبيب",
+      "latin": "intubatio",
+      "pronunciation": "إن-تو-بي-شن",
+      "definition": "إدخال أنبوب في القصبة الهوائية لتأمين مجرى هوائي",
+      "parts": {},
+      "system": "الجهاز التنفسي",
+      "systemFunction": "تأمين التنفس",
+      "location": "القصبة الهوائية",
+      "nearbyOrgans": ["الحنجرة", "القصبة الهوائية"],
+      "diseases": [],
+      "keywords": ["intubation", "تنبيب"]
+    },
+    {
+      "id": 287,
+      "term": "tracheostomy",
+      "arabic": "ثقب القصبة الهوائية",
+      "latin": "tracheostomia",
+      "pronunciation": "تراي-كي-أوس-تو-مي",
+      "definition": "فتح جراحي في القصبة الهوائية لإنشاء مجرى هوائي",
+      "parts": {},
+      "system": "الجهاز التنفسي",
+      "systemFunction": "تأمين التنفس",
+      "location": "القصبة الهوائية",
+      "nearbyOrgans": ["الرقبة", "القصبة الهوائية"],
+      "diseases": [],
+      "keywords": ["tracheostomy", "ثقب قصبة هوائية"]
+    },
+    {
+      "id": 288,
+      "term": "thoracentesis",
+      "arabic": "بزل الصدر",
+      "latin": "thoracocentesis",
+      "pronunciation": "ثو-را-سن-تي-سيس",
+      "definition": "إجراء لسحب السوائل أو الهواء من الحيز الجنبي",
+      "parts": {},
+      "system": "الجهاز التنفسي",
+      "systemFunction": "تشخيص وعلاج",
+      "location": "الحيز الجنبي",
+      "nearbyOrgans": ["الرئة", "غشاء الجنب"],
+      "diseases": [],
+      "keywords": ["thoracentesis", "بزل صدر"]
+    },
+    {
+      "id": 289,
+      "term": "upper respiratory infection",
+      "arabic": "عدوى الجهاز التنفسي العلوي",
+      "latin": "infectio tractus respiratorii superioris",
+      "pronunciation": "أبر ريس-باير-أ-توري إن-فيك-شن",
+      "definition": "عدوى تصيب الأنف والجيوب الأنفية والبلعوم والحنجرة",
+      "parts": {},
+      "system": "الجهاز التنفسي",
+      "systemFunction": "التهوية",
+      "location": "الجهاز التنفسي العلوي",
+      "nearbyOrgans": ["الأنف", "الجيوب", "البلعوم", "الحنجرة"],
+      "diseases": [
+        {
+          "name": "الزكام",
+          "symptoms": ["رشح", "عطاس", "احتقان", "سعال", "صداع"],
+          "treatments": ["راحة", "سوائل", "مسكنات"]
+        }
+      ],
+      "keywords": ["URI", "عدوى تنفسية علوية"]
+    },
+    {
+      "id": 290,
+      "term": "influenza",
+      "arabic": "إنفلونزا",
+      "latin": "influenza",
+      "pronunciation": "إن-فل-إن-زا",
+      "definition": "عدوى فيروسية حادة تصيب الجهاز التنفسي",
+      "parts": {},
+      "system": "الجهاز التنفسي",
+      "systemFunction": "التهوية",
+      "location": "الجهاز التنفسي",
+      "nearbyOrgans": ["الرئتين", "الحلق", "الأنف"],
+      "diseases": [
+        {
+          "name": "الإنفلونزا الموسمية",
+          "symptoms": ["حمى", "قشعريرة", "سعال", "صداع", "ألم عضلي", "تعب"],
+          "treatments": ["راحة", "سوائل", "مسكنات", "مضادات فيروسية"]
+        }
+      ],
+      "keywords": ["influenza", "flu", "إنفلونزا"]
+    },
+    {
+      "id": 291,
+      "term": "common cold",
+      "arabic": "زكام",
+      "latin": "rhinitis acuta",
+      "pronunciation": "كوم-ن كولد",
+      "definition": "عدوى فيروسية خفيفة تصيب الجهاز التنفسي العلوي",
+      "parts": {},
+      "system": "الجهاز التنفسي",
+      "systemFunction": "التهوية",
+      "location": "الأنف والحلق",
+      "nearbyOrgans": ["الأنف", "الحلق", "الجيوب الأنفية"],
+      "diseases": [
+        {
+          "name": "الزكام",
+          "symptoms": ["رشح", "عطاس", "احتقان", "سعال خفيف"],
+          "treatments": ["راحة", "سوائل", "مسكنات", "فيتامين C"]
+        }
+      ],
+      "keywords": ["common cold", "زكام"]
+    },
+    {
+      "id": 292,
+      "term": "pharyngitis",
+      "arabic": "التهاب البلعوم",
+      "latin": "pharyngitis",
+      "pronunciation": "فار-رين-جاى-تس",
+      "definition": "التهاب البلعوم (الحلق)",
+      "parts": {
+        "root": { "value": "pharyng", "meaning": "بلعوم" },
+        "suffix": { "value": "itis", "meaning": "التهاب" }
+      },
+      "system": "الجهاز التنفسي",
+      "systemFunction": "تمرير الهواء والغذاء",
+      "location": "البلعوم",
+      "nearbyOrgans": ["اللوزتين", "الحنجرة"],
+      "diseases": [
+        {
+          "name": "التهاب البلعوم الفيروسي",
+          "symptoms": ["ألم حلق", "احمرار", "سعال", "رشح"],
+          "treatments": ["مسكنات", "غرغرة", "سوائل دافئة"]
+        },
+        {
+          "name": "التهاب البلعوم الجرثومي",
+          "symptoms": ["ألم حلق شديد", "حمى", "صديد على اللوزتين"],
+          "treatments": ["مضادات حيوية", "مسكنات"]
+        }
+      ],
+      "keywords": ["pharyngitis", "التهاب بلعوم"]
+    },
+    {
+      "id": 293,
+      "term": "laryngitis",
+      "arabic": "التهاب الحنجرة",
+      "latin": "laryngitis",
+      "pronunciation": "لار-رين-جاى-تس",
+      "definition": "التهاب الحنجرة والأحبال الصوتية",
+      "parts": {
+        "root": { "value": "laryng", "meaning": "حنجرة" },
+        "suffix": { "value": "itis", "meaning": "التهاب" }
+      },
+      "system": "الجهاز التنفسي",
+      "systemFunction": "إنتاج الصوت",
+      "location": "الحنجرة",
+      "nearbyOrgans": ["البلعوم", "القصبة الهوائية"],
+      "diseases": [
+        {
+          "name": "التهاب الحنجرة الحاد",
+          "symptoms": ["بحة صوت", "فقدان الصوت", "ألم حلق"],
+          "treatments": ["راحة الصوت", "ترطيب الجو", "مسكنات"]
+        }
+      ],
+      "keywords": ["laryngitis", "التهاب حنجرة"]
+    },
+    {
+      "id": 294,
+      "term": "sinusitis",
+      "arabic": "التهاب الجيوب الأنفية",
+      "latin": "sinusitis",
+      "pronunciation": "ساي-نو-ساي-تس",
+      "definition": "التهاب بطانة الجيوب الأنفية",
+      "parts": {
+        "root": { "value": "sinus", "meaning": "جيب أنفي" },
+        "suffix": { "value": "itis", "meaning": "التهاب" }
+      },
+      "system": "الجهاز التنفسي",
+      "systemFunction": "ترطيب وتدفئة الهواء",
+      "location": "الجيوب الأنفية",
+      "nearbyOrgans": ["الأنف", "العينان", "الدماغ"],
+      "diseases": [
+        {
+          "name": "التهاب الجيوب الحاد",
+          "symptoms": ["صداع", "ألم في الوجه", "احتقان أنف", "إفرازات صفراء"],
+          "treatments": ["مضادات حيوية", "مسكنات", "بخاخات أنفية"]
+        },
+        {
+          "name": "التهاب الجيوب المزمن",
+          "symptoms": ["احتقان مزمن", "صداع", "إرهاق"],
+          "treatments": ["كورتيزون موضعي", "غسول أنف", "جراحة"]
+        }
+      ],
+      "keywords": ["sinusitis", "التهاب جيوب"]
+    },
+    {
+      "id": 295,
+      "term": "epistaxis",
+      "arabic": "رعاف",
+      "latin": "epistaxis",
+      "pronunciation": "إبي-ستاك-سيس",
+      "definition": "نزيف من الأنف",
+      "parts": {},
+      "system": "الجهاز التنفسي",
+      "systemFunction": "التهوية",
+      "location": "الأنف",
+      "nearbyOrgans": ["الأوعية الدموية الأنفية"],
+      "diseases": [
+        {
+          "name": "الرعاف الأمامي",
+          "symptoms": ["نزيف من فتحة الأنف", "دم أحمر"],
+          "treatments": ["الضغط", "كي", "تعبئة أنفية"]
+        },
+        {
+          "name": "الرعاف الخلفي",
+          "symptoms": ["نزيف إلى الحلق", "دم غزير"],
+          "treatments": ["تعبئة خلفية", "جراحة"]
+        }
+      ],
+      "keywords": ["epistaxis", "nosebleed", "رعاف"]
+    },
+    {
+      "id": 296,
+      "term": "croup",
+      "arabic": "خانوق",
+      "latin": "laryngotracheobronchitis acuta",
+      "pronunciation": "كروب",
+      "definition": "عدوى فيروسية تصيب الأطفال تسبب انسداداً في الحنجرة والقصبة الهوائية",
+      "parts": {},
+      "system": "الجهاز التنفسي",
+      "systemFunction": "التنفس",
+      "location": "الحنجرة والقصبة الهوائية",
+      "nearbyOrgans": ["الحنجرة", "القصبة الهوائية"],
+      "diseases": [
+        {
+          "name": "الخانوق",
+          "symptoms": ["سعال نباحي", "صوت صرير عند التنفس", "بحة", "حمى"],
+          "treatments": ["كورتيزون", "بخار", "راحة"]
+        }
+      ],
+      "keywords": ["croup", "خانوق"]
+    },
+    {
+      "id": 297,
+      "term": "pertussis",
+      "arabic": "سعال ديكي",
+      "latin": "pertussis",
+      "pronunciation": "بير-تاس-سيس",
+      "definition": "عدوى بكتيرية شديدة العدوى تسبب سعالاً شديداً",
+      "parts": {},
+      "system": "الجهاز التنفسي",
+      "systemFunction": "التهوية",
+      "location": "القصبات الهوائية",
+      "nearbyOrgans": ["الرئتين"],
+      "diseases": [
+        {
+          "name": "السعال الديكي",
+          "symptoms": ["سعال شديد", "صوت ديكي", "قيء بعد السعال"],
+          "treatments": ["مضادات حيوية", "راحة", "لقاح وقائي"]
+        }
+      ],
+      "keywords": ["pertussis", "whooping cough", "سعال ديكي"]
+    }
+  ]
+}

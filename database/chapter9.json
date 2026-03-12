@@ -1,0 +1,1056 @@
+{
+  "chapter": 9,
+  "title": "الجهاز البولي",
+  "title_en": "Urinary System",
+  "terms": [
+    {
+      "id": 333,
+      "term": "kidney",
+      "arabic": "كلية",
+      "latin": "ren",
+      "pronunciation": "كيد-ني",
+      "definition": "عضو يقع على جانبي العمود الفقري، يقوم بتصفية الدم وإنتاج البول",
+      "parts": {},
+      "system": "الجهاز البولي",
+      "systemFunction": "تصفية الدم من الفضلات، تنظيم ضغط الدم، إنتاج الهرمونات",
+      "location": "خلف الصفاق، على جانبي العمود الفقري عند مستوى الفقرات القطنية",
+      "nearbyOrgans": ["الغدة الكظرية", "الحالب", "الأمعاء", "عضلات الظهر"],
+      "diseases": [
+        {
+          "name": "الفشل الكلوي",
+          "symptoms": ["تورم", "تعب", "غثيان", "قلة البول"],
+          "treatments": ["غسيل كلوي", "زراعة كلية"]
+        },
+        {
+          "name": "التهاب الكلى",
+          "symptoms": ["حمى", "ألم في الخاصرة", "حرقة بول"],
+          "treatments": ["مضادات حيوية", "مسكنات"]
+        }
+      ],
+      "keywords": ["kidney", "كلية", "renal"]
+    },
+    {
+      "id": 334,
+      "term": "renal cortex",
+      "arabic": "قشرة كلوية",
+      "latin": "cortex renalis",
+      "pronunciation": "ري-نال كور-تكس",
+      "definition": "الطبقة الخارجية من الكلية، تحتوي على الكبيبات",
+      "parts": {},
+      "system": "الجهاز البولي",
+      "systemFunction": "ترشيح الدم",
+      "location": "الجزء الخارجي من الكلية",
+      "nearbyOrgans": ["نخاع الكلى", "كبيبات"],
+      "diseases": [],
+      "keywords": ["renal cortex", "قشرة كلوية"]
+    },
+    {
+      "id": 335,
+      "term": "renal medulla",
+      "arabic": "لب كلوي",
+      "latin": "medulla renalis",
+      "pronunciation": "ري-نال مي-دولا",
+      "definition": "الطبقة الداخلية من الكلية، تحتوي على الأهرامات الكلوية",
+      "parts": {},
+      "system": "الجهاز البولي",
+      "systemFunction": "تركيز البول",
+      "location": "داخل الكلية، تحت القشرة",
+      "nearbyOrgans": ["القشرة", "الحويضة"],
+      "diseases": [],
+      "keywords": ["renal medulla", "لب كلوي"]
+    },
+    {
+      "id": 336,
+      "term": "nephron",
+      "arabic": "نفرون",
+      "latin": "nephron",
+      "pronunciation": "نيف-رون",
+      "definition": "الوحدة الوظيفية الأساسية في الكلية",
+      "parts": {},
+      "system": "الجهاز البولي",
+      "systemFunction": "ترشيح الدم وإنتاج البول",
+      "location": "الكلية",
+      "nearbyOrgans": ["كبيبة", "أنابيب كلوية"],
+      "diseases": [
+        {
+          "name": "اعتلال الكبيبات",
+          "symptoms": ["بروتين في البول", "دم في البول", "تورم"],
+          "treatments": ["علاج السبب"]
+        }
+      ],
+      "keywords": ["nephron", "نفرون"]
+    },
+    {
+      "id": 337,
+      "term": "glomerulus",
+      "arabic": "كبيبة",
+      "latin": "glomerulus",
+      "pronunciation": "غلو-مير-يو-لس",
+      "definition": "شبكة من الشعيرات الدموية في الكلية تقوم بترشيح الدم",
+      "parts": {},
+      "system": "الجهاز البولي",
+      "systemFunction": "ترشيح الدم",
+      "location": "داخل النفرون في القشرة الكلوية",
+      "nearbyOrgans": ["محفظة بومان", "أنابيب كلوية"],
+      "diseases": [
+        {
+          "name": "التهاب كبيبات الكلى",
+          "symptoms": ["دم في البول", "بروتين في البول", "تورم", "ارتفاع ضغط الدم"],
+          "treatments": ["كورتيزون", "مثبطات مناعة"]
+        }
+      ],
+      "keywords": ["glomerulus", "كبيبة"],
+      "plural": "glomeruli"
+    },
+    {
+      "id": 338,
+      "term": "Bowman's capsule",
+      "arabic": "محفظة بومان",
+      "latin": "capsula glomeruli",
+      "pronunciation": "بو-مانز كاب-سول",
+      "definition": "كوب محيط بالكبيبة يجمع الراشح",
+      "parts": {},
+      "system": "الجهاز البولي",
+      "systemFunction": "تجميع الراشح من الكبيبة",
+      "location": "بداية النفرون، حول الكبيبة",
+      "nearbyOrgans": ["كبيبة", "أنابيب كلوية"],
+      "diseases": [],
+      "keywords": ["Bowman's capsule", "محفظة بومان"]
+    },
+    {
+      "id": 339,
+      "term": "renal tubule",
+      "arabic": "نبيب كلوي",
+      "latin": "tubulus renalis",
+      "pronunciation": "ري-نال تو-بيول",
+      "definition": "سلسلة من الأنابيب في الكلية تعيد امتصاص المواد المفيدة",
+      "parts": {},
+      "system": "الجهاز البولي",
+      "systemFunction": "إعادة امتصاص الماء والأملاح، إفراز الفضلات",
+      "location": "بعد الكبيبة في النفرون",
+      "nearbyOrgans": ["كبيبة", "قناة جامعة"],
+      "diseases": [
+        {
+          "name": "التهاب الأنابيب الكلوية",
+          "symptoms": ["قلة البول", "حمى", "طفح"],
+          "treatments": ["علاج السبب"]
+        }
+      ],
+      "keywords": ["renal tubule", "نبيب كلوي"]
+    },
+    {
+      "id": 340,
+      "term": "loop of Henle",
+      "arabic": "عروة هنلي",
+      "latin": "ansa nephroni",
+      "pronunciation": "لوب أوف هين-لي",
+      "definition": "جزء من النبيب الكلوي على شكل حرف U مسؤول عن تركيز البول",
+      "parts": {},
+      "system": "الجهاز البولي",
+      "systemFunction": "تركيز البول",
+      "location": "بين النبيب القريب والبعيد",
+      "nearbyOrgans": ["أنابيب كلوية"],
+      "diseases": [],
+      "keywords": ["loop of Henle", "عروة هنلي"]
+    },
+    {
+      "id": 341,
+      "term": "renal pelvis",
+      "arabic": "حويضة كلوية",
+      "latin": "pelvis renalis",
+      "pronunciation": "ري-نال بيل-فيس",
+      "definition": "تجويف على شكل قمع في مركز الكلية يجمع البول",
+      "parts": {},
+      "system": "الجهاز البولي",
+      "systemFunction": "تجميع البول قبل دخوله الحالب",
+      "location": "مركز الكلية",
+      "nearbyOrgans": ["الكلى", "الحالب"],
+      "diseases": [
+        {
+          "name": "التهاب الحويضة",
+          "symptoms": ["حمى", "ألم في الخاصرة", "حرقة بول"],
+          "treatments": ["مضادات حيوية"]
+        }
+      ],
+      "keywords": ["renal pelvis", "حويضة كلوية"]
+    },
+    {
+      "id": 342,
+      "term": "ureter",
+      "arabic": "حالب",
+      "latin": "ureter",
+      "pronunciation": "يو-ري-تر",
+      "definition": "أنبوب عضلي ينقل البول من الكلية إلى المثانة",
+      "parts": {},
+      "system": "الجهاز البولي",
+      "systemFunction": "نقل البول من الكلية إلى المثانة",
+      "location": "بين الكلية والمثانة، خلف الصفاق",
+      "nearbyOrgans": ["الكلى", "المثانة", "الأوعية الدموية"],
+      "diseases": [
+        {
+          "name": "حصى الحالب",
+          "symptoms": ["ألم شديد", "دم في البول", "غثيان"],
+          "treatments": ["تفتيت الحصى", "تنظير"]
+        }
+      ],
+      "keywords": ["ureter", "حالب"]
+    },
+    {
+      "id": 343,
+      "term": "urinary bladder",
+      "arabic": "مثانة",
+      "latin": "vesica urinaria",
+      "pronunciation": "يو-ري-نيري بلاد-ر",
+      "definition": "عضو عضلي مجوف يخزن البول",
+      "parts": {},
+      "system": "الجهاز البولي",
+      "systemFunction": "تخزين البول قبل التبول",
+      "location": "الحوض، خلف عظم العانة",
+      "nearbyOrgans": ["الحالبان", "الإحليل", "الرحم (عند النساء)", "البروستاتا (عند الرجال)"],
+      "diseases": [
+        {
+          "name": "التهاب المثانة",
+          "symptoms": ["حرقة بول", "تبول متكرر", "ألم أسفل البطن"],
+          "treatments": ["مضادات حيوية", "مسكنات"]
+        },
+        {
+          "name": "سرطان المثانة",
+          "symptoms": ["دم في البول", "تبول مؤلم"],
+          "treatments": ["جراحة", "علاج كيميائي"]
+        }
+      ],
+      "keywords": ["bladder", "مثانة"]
+    },
+    {
+      "id": 344,
+      "term": "urethra",
+      "arabic": "إحليل",
+      "latin": "urethra",
+      "pronunciation": "يو-ري-ثرا",
+      "definition": "أنبوب ينقل البول من المثانة إلى خارج الجسم",
+      "parts": {},
+      "system": "الجهاز البولي",
+      "systemFunction": "إخراج البول",
+      "location": "من المثانة إلى الفتحة الخارجية",
+      "nearbyOrgans": ["المثانة", "المهبل (عند النساء)", "البروستاتا (عند الرجال)"],
+      "diseases": [
+        {
+          "name": "التهاب الإحليل",
+          "symptoms": ["حرقة بول", "إفرازات"],
+          "treatments": ["مضادات حيوية"]
+        }
+      ],
+      "keywords": ["urethra", "إحليل"]
+    },
+    {
+      "id": 345,
+      "term": "urine",
+      "arabic": "بول",
+      "latin": "urina",
+      "pronunciation": "يو-رين",
+      "definition": "سائل يحتوي على فضلات ينتجه الكلى ويخرج عبر المثانة",
+      "parts": {},
+      "system": "الجهاز البولي",
+      "systemFunction": "إخراج الفضلات",
+      "location": "الكلى، الحالب، المثانة",
+      "nearbyOrgans": ["الكلى", "المثانة"],
+      "diseases": [],
+      "keywords": ["urine", "بول"]
+    },
+    {
+      "id": 346,
+      "term": "micturition",
+      "arabic": "تبول",
+      "latin": "micturitio",
+      "pronunciation": "ميك-تو-ري-شن",
+      "definition": "عملية إفراغ المثانة من البول",
+      "parts": {},
+      "system": "الجهاز البولي",
+      "systemFunction": "إخراج البول",
+      "location": "المثانة والإحليل",
+      "nearbyOrgans": ["المثانة", "الإحليل"],
+      "diseases": [
+        {
+          "name": "اضطرابات التبول",
+          "symptoms": ["تبول مؤلم", "تبول متكرر", "سلس بول"],
+          "treatments": ["علاج السبب"]
+        }
+      ],
+      "keywords": ["micturition", "تبول", "urination"]
+    },
+    {
+      "id": 347,
+      "term": "nephrologist",
+      "arabic": "أخصائي كلى",
+      "latin": "nephrologus",
+      "pronunciation": "نيف-رولو-جيست",
+      "definition": "طبيب متخصص في أمراض الكلى",
+      "parts": {
+        "root": { "value": "nephr", "meaning": "كلية" },
+        "suffix": { "value": "ologist", "meaning": "أخصائي" }
+      },
+      "system": "الجهاز البولي",
+      "systemFunction": "تشخيص وعلاج أمراض الكلى",
+      "location": "الكلى",
+      "nearbyOrgans": [],
+      "diseases": [],
+      "keywords": ["nephrologist", "أخصائي كلى"]
+    },
+    {
+      "id": 348,
+      "term": "urologist",
+      "arabic": "أخصائي مسالك بولية",
+      "latin": "urologus",
+      "pronunciation": "يو-رولو-جيست",
+      "definition": "طبيب متخصص في أمراض الجهاز البولي والتناسلي الذكري",
+      "parts": {
+        "root": { "value": "ur", "meaning": "بول" },
+        "suffix": { "value": "ologist", "meaning": "أخصائي" }
+      },
+      "system": "الجهاز البولي والتناسلي",
+      "systemFunction": "تشخيص وعلاج أمراض المسالك البولية",
+      "location": "الكلى، الحالب، المثانة، الإحليل، البروستاتا",
+      "nearbyOrgans": [],
+      "diseases": [],
+      "keywords": ["urologist", "أخصائي مسالك بولية"]
+    },
+    {
+      "id": 349,
+      "term": "renal failure",
+      "arabic": "فشل كلوي",
+      "latin": "insufficientia renalis",
+      "pronunciation": "ري-نال فايل-يور",
+      "definition": "عدم قدرة الكلى على أداء وظائفها بشكل كاف",
+      "parts": {},
+      "system": "الجهاز البولي",
+      "systemFunction": "تصفية الدم",
+      "location": "الكلى",
+      "nearbyOrgans": ["الكلى"],
+      "diseases": [
+        {
+          "name": "الفشل الكلوي الحاد",
+          "symptoms": ["قلة البول", "تورم", "تعب", "غثيان"],
+          "treatments": ["علاج السبب", "غسيل كلوي"]
+        },
+        {
+          "name": "الفشل الكلوي المزمن",
+          "symptoms": ["تعب", "حكة", "غثيان", "تورم", "ضيق تنفس"],
+          "treatments": ["غسيل كلوي", "زراعة كلية"]
+        }
+      ],
+      "keywords": ["renal failure", "فشل كلوي", "kidney failure"]
+    },
+    {
+      "id": 350,
+      "term": "uremia",
+      "arabic": "يوريمية",
+      "latin": "uraemia",
+      "pronunciation": "يو-ري-ميا",
+      "definition": "تراكم الفضلات النيتروجينية في الدم بسبب الفشل الكلوي",
+      "parts": {
+        "root": { "value": "ur", "meaning": "بول" },
+        "suffix": { "value": "emia", "meaning": "دم" }
+      },
+      "system": "الجهاز البولي",
+      "systemFunction": "تصفية الدم",
+      "location": "الدم",
+      "nearbyOrgans": ["الكلى"],
+      "diseases": [
+        {
+          "name": "متلازمة اليوريميا",
+          "symptoms": ["غثيان", "قيء", "حكة", "تعب", "ارتباك"],
+          "treatments": ["غسيل كلوي"]
+        }
+      ],
+      "keywords": ["uremia", "يوريمية"]
+    },
+    {
+      "id": 351,
+      "term": "nephrotic syndrome",
+      "arabic": "متلازمة كلوية",
+      "latin": "syndroma nephrotica",
+      "pronunciation": "نيف-رو-تيك سين-دروم",
+      "definition": "اضطراب كلوي يتسبب في تسرب كميات كبيرة من البروتين إلى البول",
+      "parts": {},
+      "system": "الجهاز البولي",
+      "systemFunction": "تصفية الدم",
+      "location": "الكلى",
+      "nearbyOrgans": ["الكلى"],
+      "diseases": [
+        {
+          "name": "المتلازمة الكلوية",
+          "symptoms": ["تورم شديد", "بروتين في البول", "نقص بروتين الدم"],
+          "treatments": ["كورتيزون", "مثبطات مناعة", "مدرات بول"]
+        }
+      ],
+      "keywords": ["nephrotic syndrome", "متلازمة كلوية"]
+    },
+    {
+      "id": 352,
+      "term": "proteinuria",
+      "arabic": "بيلة بروتينية",
+      "latin": "proteinuria",
+      "pronunciation": "برو-تين-يو-ريا",
+      "definition": "وجود بروتين في البول",
+      "parts": {
+        "root1": { "value": "protein", "meaning": "بروتين" },
+        "suffix": { "value": "uria", "meaning": "بول" }
+      },
+      "system": "الجهاز البولي",
+      "systemFunction": "تصفية الدم",
+      "location": "الكلى والبول",
+      "nearbyOrgans": ["الكلى"],
+      "diseases": [
+        {
+          "name": "البيلة البروتينية",
+          "symptoms": ["رغوة في البول", "تورم"],
+          "treatments": ["علاج السبب"]
+        }
+      ],
+      "keywords": ["proteinuria", "بيلة بروتينية"]
+    },
+    {
+      "id": 353,
+      "term": "hematuria",
+      "arabic": "بيلة دموية",
+      "latin": "haematuria",
+      "pronunciation": "هي-ما-تو-ريا",
+      "definition": "وجود دم في البول",
+      "parts": {
+        "root1": { "value": "hemat", "meaning": "دم" },
+        "suffix": { "value": "uria", "meaning": "بول" }
+      },
+      "system": "الجهاز البولي",
+      "systemFunction": "تصفية الدم",
+      "location": "الكلى والبول",
+      "nearbyOrgans": ["الكلى", "المثانة"],
+      "diseases": [
+        {
+          "name": "البيلة الدموية",
+          "symptoms": ["بول أحمر أو بني", "ألم"],
+          "treatments": ["علاج السبب"]
+        }
+      ],
+      "keywords": ["hematuria", "بيلة دموية", "دم في البول"]
+    },
+    {
+      "id": 354,
+      "term": "pyuria",
+      "arabic": "بيلة قيحية",
+      "latin": "pyuria",
+      "pronunciation": "باي-يو-ريا",
+      "definition": "وجود صديد (قيح) في البول",
+      "parts": {
+        "root1": { "value": "py", "meaning": "قيح" },
+        "suffix": { "value": "uria", "meaning": "بول" }
+      },
+      "system": "الجهاز البولي",
+      "systemFunction": "تصفية الدم",
+      "location": "الكلى والبول",
+      "nearbyOrgans": ["الكلى", "المثانة"],
+      "diseases": [
+        {
+          "name": "البيلة القيحية",
+          "symptoms": ["بول عكر", "رائحة كريهة", "حرقة"],
+          "treatments": ["مضادات حيوية"]
+        }
+      ],
+      "keywords": ["pyuria", "بيلة قيحية"]
+    },
+    {
+      "id": 355,
+      "term": "anuria",
+      "arabic": "انقطاع البول",
+      "latin": "anuria",
+      "pronunciation": "آن-يو-ريا",
+      "definition": "انقطاع إنتاج البول (أقل من 50 مل في اليوم)",
+      "parts": {
+        "prefix": { "value": "an", "meaning": "بدون" },
+        "suffix": { "value": "uria", "meaning": "بول" }
+      },
+      "system": "الجهاز البولي",
+      "systemFunction": "إنتاج البول",
+      "location": "الكلى",
+      "nearbyOrgans": ["الكلى"],
+      "diseases": [
+        {
+          "name": "انقطاع البول",
+          "symptoms": ["عدم التبول", "تورم", "ارتفاع ضغط الدم"],
+          "treatments": ["علاج السبب", "غسيل كلوي"]
+        }
+      ],
+      "keywords": ["anuria", "انقطاع بول"]
+    },
+    {
+      "id": 356,
+      "term": "oliguria",
+      "arabic": "قلة البول",
+      "latin": "oliguria",
+      "pronunciation": "أو-لي-غو-ريا",
+      "definition": "نقص كمية البول (أقل من 400 مل في اليوم)",
+      "parts": {
+        "prefix": { "value": "olig", "meaning": "قليل" },
+        "suffix": { "value": "uria", "meaning": "بول" }
+      },
+      "system": "الجهاز البولي",
+      "systemFunction": "إنتاج البول",
+      "location": "الكلى",
+      "nearbyOrgans": ["الكلى"],
+      "diseases": [
+        {
+          "name": "قلة البول",
+          "symptoms": ["قلة التبول", "تورم"],
+          "treatments": ["علاج السبب"]
+        }
+      ],
+      "keywords": ["oliguria", "قلة بول"]
+    },
+    {
+      "id": 357,
+      "term": "polyuria",
+      "arabic": "بوال",
+      "latin": "polyuria",
+      "pronunciation": "بول-إي-يو-ريا",
+      "definition": "زيادة كمية البول (أكثر من 2.5 لتر في اليوم)",
+      "parts": {
+        "prefix": { "value": "poly", "meaning": "كثير" },
+        "suffix": { "value": "uria", "meaning": "بول" }
+      },
+      "system": "الجهاز البولي",
+      "systemFunction": "إنتاج البول",
+      "location": "الكلى",
+      "nearbyOrgans": ["الكلى"],
+      "diseases": [
+        {
+          "name": "البوال",
+          "symptoms": ["كثرة التبول", "عطش شديد"],
+          "treatments": ["علاج السبب"]
+        }
+      ],
+      "keywords": ["polyuria", "بوال"]
+    },
+    {
+      "id": 358,
+      "term": "dysuria",
+      "arabic": "عسر التبول",
+      "latin": "dysuria",
+      "pronunciation": "ديس-يو-ريا",
+      "definition": "تبول مؤلم أو صعب",
+      "parts": {
+        "prefix": { "value": "dys", "meaning": "صعب" },
+        "suffix": { "value": "uria", "meaning": "بول" }
+      },
+      "system": "الجهاز البولي",
+      "systemFunction": "التبول",
+      "location": "المثانة والإحليل",
+      "nearbyOrgans": ["المثانة", "الإحليل"],
+      "diseases": [
+        {
+          "name": "عسر التبول",
+          "symptoms": ["حرقة أثناء التبول", "ألم"],
+          "treatments": ["مضادات حيوية", "مسكنات"]
+        }
+      ],
+      "keywords": ["dysuria", "عسر تبول"]
+    },
+    {
+      "id": 359,
+      "term": "nocturia",
+      "arabic": "تبول ليلي",
+      "latin": "nocturia",
+      "pronunciation": "نوك-تو-ريا",
+      "definition": "الاستيقاظ المتكرر ليلاً للتبول",
+      "parts": {
+        "root": { "value": "noct", "meaning": "ليل" },
+        "suffix": { "value": "uria", "meaning": "بول" }
+      },
+      "system": "الجهاز البولي",
+      "systemFunction": "التبول",
+      "location": "المثانة",
+      "nearbyOrgans": ["المثانة"],
+      "diseases": [
+        {
+          "name": "التبول الليلي",
+          "symptoms": ["الاستيقاظ للتبول", "اضطراب النوم"],
+          "treatments": ["علاج السبب"]
+        }
+      ],
+      "keywords": ["nocturia", "تبول ليلي"]
+    },
+    {
+      "id": 360,
+      "term": "enuresis",
+      "arabic": "سلس بولي",
+      "latin": "enuresis",
+      "pronunciation": "إن-يو-ري-سيس",
+      "definition": "التبول اللاإرادي (خاصة أثناء النوم)",
+      "parts": {},
+      "system": "الجهاز البولي",
+      "systemFunction": "التحكم في التبول",
+      "location": "المثانة",
+      "nearbyOrgans": ["المثانة"],
+      "diseases": [
+        {
+          "name": "التبول اللاإرادي الليلي",
+          "symptoms": ["تبول أثناء النوم"],
+          "treatments": ["تدريب", "أدوية", "إنذارات"]
+        }
+      ],
+      "keywords": ["enuresis", "سلس بولي", "bedwetting"]
+    },
+    {
+      "id": 361,
+      "term": "urinary incontinence",
+      "arabic": "سلس بول",
+      "latin": "incontinentia urinae",
+      "pronunciation": "يو-ري-نيري إن-كون-تي-ننس",
+      "definition": "فقدان السيطرة على المثانة وخروج البول لا إرادياً",
+      "parts": {},
+      "system": "الجهاز البولي",
+      "systemFunction": "التحكم في التبول",
+      "location": "المثانة",
+      "nearbyOrgans": ["المثانة", "الإحليل"],
+      "diseases": [
+        {
+          "name": "سلس الإجهاد",
+          "symptoms": ["تسرب البول مع السعال أو العطس"],
+          "treatments": ["تمارين قاع الحوض", "جراحة"]
+        },
+        {
+          "name": "سلس الإلحاح",
+          "symptoms": ["رغبة مفاجئة وقوية في التبول", "تسرب"],
+          "treatments": ["أدوية", "تدريب المثانة"]
+        }
+      ],
+      "keywords": ["incontinence", "سلس بول"]
+    },
+    {
+      "id": 362,
+      "term": "urinary retention",
+      "arabic": "احتباس بول",
+      "latin": "retentio urinae",
+      "pronunciation": "يو-ري-نيري ري-تن-شن",
+      "definition": "عدم القدرة على إفراغ المثانة بالكامل",
+      "parts": {},
+      "system": "الجهاز البولي",
+      "systemFunction": "إفراغ المثانة",
+      "location": "المثانة",
+      "nearbyOrgans": ["المثانة", "الإحليل", "البروستاتا"],
+      "diseases": [
+        {
+          "name": "احتباس البول الحاد",
+          "symptoms": ["ألم أسفل البطن", "عدم القدرة على التبول"],
+          "treatments": ["قسطرة"]
+        },
+        {
+          "name": "احتباس البول المزمن",
+          "symptoms": ["تبول متقطع", "ضعف التدفق", "شعور بعدم الإفراغ"],
+          "treatments": ["علاج السبب", "قسطرة متقطعة"]
+        }
+      ],
+      "keywords": ["urinary retention", "احتباس بول"]
+    },
+    {
+      "id": 363,
+      "term": "nephritis",
+      "arabic": "التهاب الكلى",
+      "latin": "nephritis",
+      "pronunciation": "نيف-راي-تس",
+      "definition": "التهاب يصيب الكلى",
+      "parts": {
+        "root": { "value": "nephr", "meaning": "كلية" },
+        "suffix": { "value": "itis", "meaning": "التهاب" }
+      },
+      "system": "الجهاز البولي",
+      "systemFunction": "تصفية الدم",
+      "location": "الكلى",
+      "nearbyOrgans": ["الكلى"],
+      "diseases": [
+        {
+          "name": "التهاب الكلى الخلالي",
+          "symptoms": ["حمى", "ألم في الخاصرة", "قلة البول"],
+          "treatments": ["مضادات حيوية", "علاج السبب"]
+        }
+      ],
+      "keywords": ["nephritis", "التهاب كلية"]
+    },
+    {
+      "id": 364,
+      "term": "glomerulonephritis",
+      "arabic": "التهاب كبيبات الكلى",
+      "latin": "glomerulonephritis",
+      "pronunciation": "غلو-مير-يو-لو-نيف-راي-تس",
+      "definition": "التهاب يصيب كبيبات الكلى",
+      "parts": {
+        "root1": { "value": "glomerul", "meaning": "كبيبة" },
+        "root2": { "value": "nephr", "meaning": "كلية" },
+        "suffix": { "value": "itis", "meaning": "التهاب" }
+      },
+      "system": "الجهاز البولي",
+      "systemFunction": "تصفية الدم",
+      "location": "كبيبات الكلى",
+      "nearbyOrgans": ["الكلى"],
+      "diseases": [
+        {
+          "name": "التهاب كبيبات الكلى الحاد",
+          "symptoms": ["بول داكن", "تورم", "ارتفاع ضغط الدم"],
+          "treatments": ["كورتيزون", "مثبطات مناعة"]
+        }
+      ],
+      "keywords": ["glomerulonephritis", "التهاب كبيبات"]
+    },
+    {
+      "id": 365,
+      "term": "pyelonephritis",
+      "arabic": "التهاب الحويضة والكلية",
+      "latin": "pyelonephritis",
+      "pronunciation": "باي-إ-لو-نيف-راي-تس",
+      "definition": "التهاب يصيب الحويضة والكلية",
+      "parts": {
+        "root1": { "value": "pyel", "meaning": "حويضة" },
+        "root2": { "value": "nephr", "meaning": "كلية" },
+        "suffix": { "value": "itis", "meaning": "التهاب" }
+      },
+      "system": "الجهاز البولي",
+      "systemFunction": "تصفية الدم",
+      "location": "الكلى والحويضة",
+      "nearbyOrgans": ["الكلى", "الحالب"],
+      "diseases": [
+        {
+          "name": "التهاب الحويضة والكلية الحاد",
+          "symptoms": ["حمى عالية", "قشعريرة", "ألم في الخاصرة", "حرقة بول"],
+          "treatments": ["مضادات حيوية وريدية", "مسكنات"]
+        }
+      ],
+      "keywords": ["pyelonephritis", "التهاب حويضة وكلية"]
+    },
+    {
+      "id": 366,
+      "term": "cystitis",
+      "arabic": "التهاب المثانة",
+      "latin": "cystitis",
+      "pronunciation": "سيس-تاي-تس",
+      "definition": "التهاب جدار المثانة",
+      "parts": {
+        "root": { "value": "cyst", "meaning": "مثانة" },
+        "suffix": { "value": "itis", "meaning": "التهاب" }
+      },
+      "system": "الجهاز البولي",
+      "systemFunction": "تخزين البول",
+      "location": "المثانة",
+      "nearbyOrgans": ["المثانة"],
+      "diseases": [
+        {
+          "name": "التهاب المثانة الحاد",
+          "symptoms": ["حرقة بول", "تبول متكرر", "ألم أسفل البطن"],
+          "treatments": ["مضادات حيوية", "مسكنات"]
+        }
+      ],
+      "keywords": ["cystitis", "التهاب مثانة"]
+    },
+    {
+      "id": 367,
+      "term": "urethritis",
+      "arabic": "التهاب الإحليل",
+      "latin": "urethritis",
+      "pronunciation": "يو-ري-ثراي-تس",
+      "definition": "التهاب الإحليل",
+      "parts": {
+        "root": { "value": "urethr", "meaning": "إحليل" },
+        "suffix": { "value": "itis", "meaning": "التهاب" }
+      },
+      "system": "الجهاز البولي",
+      "systemFunction": "إخراج البول",
+      "location": "الإحليل",
+      "nearbyOrgans": ["المثانة"],
+      "diseases": [
+        {
+          "name": "التهاب الإحليل",
+          "symptoms": ["حرقة بول", "إفرازات"],
+          "treatments": ["مضادات حيوية"]
+        }
+      ],
+      "keywords": ["urethritis", "التهاب إحليل"]
+    },
+    {
+      "id": 368,
+      "term": "hydronephrosis",
+      "arabic": "موه الكلية",
+      "latin": "hydronephrosis",
+      "pronunciation": "هاي-درو-نيف-رو-سيس",
+      "definition": "توسع الكلية بسبب تجمع البول نتيجة انسداد",
+      "parts": {
+        "root1": { "value": "hydr", "meaning": "ماء" },
+        "root2": { "value": "nephr", "meaning": "كلية" },
+        "suffix": { "value": "osis", "meaning": "حالة مرضية" }
+      },
+      "system": "الجهاز البولي",
+      "systemFunction": "تدفق البول",
+      "location": "الكلى",
+      "nearbyOrgans": ["الكلى", "الحالب"],
+      "diseases": [
+        {
+          "name": "موه الكلية",
+          "symptoms": ["ألم في الخاصرة", "غثيان", "قلة البول"],
+          "treatments": ["إزالة الانسداد", "دعامة", "جراحة"]
+        }
+      ],
+      "keywords": ["hydronephrosis", "موه كلية"]
+    },
+    {
+      "id": 369,
+      "term": "nephrolithiasis",
+      "arabic": "تحصي كلوي",
+      "latin": "nephrolithiasis",
+      "pronunciation": "نيف-رو-لي-ثاي-أ-سيس",
+      "definition": "وجود حصوات في الكلى",
+      "parts": {
+        "root1": { "value": "nephr", "meaning": "كلية" },
+        "suffix": { "value": "lithiasis", "meaning": "تحصي" }
+      },
+      "system": "الجهاز البولي",
+      "systemFunction": "تصفية الدم",
+      "location": "الكلى",
+      "nearbyOrgans": ["الكلى", "الحالب"],
+      "diseases": [
+        {
+          "name": "حصوات الكلى",
+          "symptoms": ["ألم شديد", "دم في البول", "غثيان"],
+          "treatments": ["مسكنات", "تفتيت الحصى", "تنظير"]
+        }
+      ],
+      "keywords": ["nephrolithiasis", "kidney stones", "حصوات كلوية"]
+    },
+    {
+      "id": 370,
+      "term": "renal colic",
+      "arabic": "مغص كلوي",
+      "latin": "colica renalis",
+      "pronunciation": "ري-نال كو-ليك",
+      "definition": "ألم حاد ومتقطع ناتج عن مرور حصوة في الحالب",
+      "parts": {},
+      "system": "الجهاز البولي",
+      "systemFunction": "مرور البول",
+      "location": "الحالب",
+      "nearbyOrgans": ["الحالب", "الكلى"],
+      "diseases": [
+        {
+          "name": "المغص الكلوي",
+          "symptoms": ["ألم شديد يمتد من الخاصرة إلى أسفل البطن", "غثيان", "قيء"],
+          "treatments": ["مسكنات قوية", "تفتيت الحصى"]
+        }
+      ],
+      "keywords": ["renal colic", "مغص كلوي"]
+    },
+    {
+      "id": 371,
+      "term": "urinary tract infection",
+      "arabic": "عدوى المسالك البولية",
+      "latin": "infectio tractus urinarii",
+      "pronunciation": "يو-ري-نيري تراكت إن-فيك-شن",
+      "definition": "عدوى تصيب أي جزء من الجهاز البولي",
+      "parts": {},
+      "system": "الجهاز البولي",
+      "systemFunction": "التبول",
+      "location": "المثانة، الإحليل، الكلى",
+      "nearbyOrgans": ["المثانة", "الإحليل", "الكلى"],
+      "diseases": [
+        {
+          "name": "عدوى المسالك البولية السفلية",
+          "symptoms": ["حرقة بول", "تبول متكرر", "ألم"],
+          "treatments": ["مضادات حيوية"]
+        }
+      ],
+      "keywords": ["UTI", "عدوى بولية"]
+    },
+    {
+      "id": 372,
+      "term": "urinalysis",
+      "arabic": "تحليل بول",
+      "latin": "urinalysis",
+      "pronunciation": "يو-ري-نال-إ-سيس",
+      "definition": "فحص مختبري للبول لتشخيص الأمراض",
+      "parts": {},
+      "system": "الجهاز البولي",
+      "systemFunction": "تشخيص",
+      "location": "البول",
+      "nearbyOrgans": [],
+      "diseases": [],
+      "keywords": ["urinalysis", "تحليل بول"]
+    },
+    {
+      "id": 373,
+      "term": "catheterization",
+      "arabic": "قسطرة",
+      "latin": "catheterismus",
+      "pronunciation": "كاث-إ-تير-إ-زاي-شن",
+      "definition": "إدخال أنبوب رفيع (قسطرة) عبر الإحليل إلى المثانة لتصريف البول",
+      "parts": {},
+      "system": "الجهاز البولي",
+      "systemFunction": "تصريف البول",
+      "location": "المثانة والإحليل",
+      "nearbyOrgans": ["المثانة", "الإحليل"],
+      "diseases": [],
+      "keywords": ["catheterization", "قسطرة"]
+    },
+    {
+      "id": 374,
+      "term": "cystoscopy",
+      "arabic": "تنظير المثانة",
+      "latin": "cystoscopia",
+      "pronunciation": "سيس-توس-كو-بي",
+      "definition": "فحص داخلي للمثانة باستخدام منظار",
+      "parts": {
+        "root": { "value": "cyst", "meaning": "مثانة" },
+        "suffix": { "value": "scopy", "meaning": "فحص بصري" }
+      },
+      "system": "الجهاز البولي",
+      "systemFunction": "تشخيص وعلاج",
+      "location": "المثانة",
+      "nearbyOrgans": ["المثانة"],
+      "diseases": [],
+      "keywords": ["cystoscopy", "تنظير مثانة"]
+    },
+    {
+      "id": 375,
+      "term": "intravenous pyelogram",
+      "arabic": "تصوير الحويضة الوريدي",
+      "latin": "urographia intravenosa",
+      "pronunciation": "إن-ترا-في-نوس باي-إ-لو-غرام",
+      "definition": "تصوير الجهاز البولي بعد حقن صبغة في الوريد",
+      "parts": {},
+      "system": "الجهاز البولي",
+      "systemFunction": "تشخيص",
+      "location": "الكلى، الحالب، المثانة",
+      "nearbyOrgans": ["الكلى", "الحالب", "المثانة"],
+      "diseases": [],
+      "keywords": ["IVP", "تصوير الحويضة"]
+    },
+    {
+      "id": 376,
+      "term": "KUB",
+      "arabic": "تصوير الكلى والحالب والمثانة",
+      "latin": "radiographia abdominis",
+      "pronunciation": "كاي-يو-بي",
+      "definition": "أشعة سينية عادية للبطن تظهر الكلى والحالب والمثانة",
+      "parts": {},
+      "system": "الجهاز البولي",
+      "systemFunction": "تشخيص",
+      "location": "البطن",
+      "nearbyOrgans": ["الكلى", "الحالب", "المثانة"],
+      "diseases": [],
+      "keywords": ["KUB", "تصوير بطن"]
+    },
+    {
+      "id": 377,
+      "term": "dialysis",
+      "arabic": "ديال",
+      "latin": "dialysis",
+      "pronunciation": "داي-أ-لي-سيس",
+      "definition": "عملية صناعية لتصفية الدم من الفضلات عندما تفشل الكلى",
+      "parts": {},
+      "system": "الجهاز البولي",
+      "systemFunction": "تصفية الدم",
+      "location": "خارج الجسم (غسيل كلوي) أو داخل البطن (غسيل بريتوني)",
+      "nearbyOrgans": ["الدم"],
+      "diseases": [],
+      "keywords": ["dialysis", "غسيل كلوي"]
+    },
+    {
+      "id": 378,
+      "term": "hemodialysis",
+      "arabic": "غسيل كلوي",
+      "latin": "haemodialysis",
+      "pronunciation": "هي-مو-داي-أ-لي-سيس",
+      "definition": "تصفية الدم باستخدام جهاز خارجي (كلية صناعية)",
+      "parts": {},
+      "system": "الجهاز البولي",
+      "systemFunction": "تصفية الدم",
+      "location": "مركز غسيل كلوي",
+      "nearbyOrgans": ["الدم"],
+      "diseases": [],
+      "keywords": ["hemodialysis", "غسيل كلوي"]
+    },
+    {
+      "id": 379,
+      "term": "peritoneal dialysis",
+      "arabic": "غسيل كلوي صفاقي",
+      "latin": "dialysis peritonealis",
+      "pronunciation": "بير-إي-تو-ني-ال داي-أ-لي-سيس",
+      "definition": "تصفية الدم باستخدام الغشاء البريتوني كمرشح",
+      "parts": {},
+      "system": "الجهاز البولي",
+      "systemFunction": "تصفية الدم",
+      "location": "البطن",
+      "nearbyOrgans": ["الصفاق"],
+      "diseases": [],
+      "keywords": ["peritoneal dialysis", "غسيل صفاقي"]
+    },
+    {
+      "id": 380,
+      "term": "kidney transplant",
+      "arabic": "زرع كلية",
+      "latin": "transplantatio renalis",
+      "pronunciation": "كيد-ني ترانس-بلانت",
+      "definition": "زراعة كلية سليمة من متبرع لمريض بالفشل الكلوي",
+      "parts": {},
+      "system": "الجهاز البولي",
+      "systemFunction": "استبدال الكلية الفاشلة",
+      "location": "الحوض",
+      "nearbyOrgans": ["الأوعية الدموية", "المثانة"],
+      "diseases": [],
+      "keywords": ["kidney transplant", "زراعة كلية"]
+    },
+    {
+      "id": 381,
+      "term": "nephrectomy",
+      "arabic": "استئصال كلية",
+      "latin": "nephrectomia",
+      "pronunciation": "نيف-ريك-تو-مي",
+      "definition": "استئصال جراحي للكلية",
+      "parts": {
+        "root": { "value": "nephr", "meaning": "كلية" },
+        "suffix": { "value": "ectomy", "meaning": "استئصال" }
+      },
+      "system": "الجهاز البولي",
+      "systemFunction": "إزالة الكلية",
+      "location": "الكلية",
+      "nearbyOrgans": ["الكلية"],
+      "diseases": [],
+      "keywords": ["nephrectomy", "استئصال كلية"]
+    },
+    {
+      "id": 382,
+      "term": "nephrostomy",
+      "arabic": "فغر الكلية",
+      "latin": "nephrostomia",
+      "pronunciation": "نيف-روس-تو-مي",
+      "definition": "فتح جراحي في الكلية لتصريف البول",
+      "parts": {
+        "root": { "value": "nephr", "meaning": "كلية" },
+        "suffix": { "value": "ostomy", "meaning": "فغر" }
+      },
+      "system": "الجهاز البولي",
+      "systemFunction": "تصريف البول",
+      "location": "الكلية",
+      "nearbyOrgans": ["الكلية"],
+      "diseases": [],
+      "keywords": ["nephrostomy", "فغر كلية"]
+    },
+    {
+      "id": 383,
+      "term": "lithotripsy",
+      "arabic": "تفتيت الحصى",
+      "latin": "lithotripsia",
+      "pronunciation": "لي-ثو-تريب-سي",
+      "definition": "تفتيت حصوات الكلى باستخدام موجات صادمة",
+      "parts": {},
+      "system": "الجهاز البولي",
+      "systemFunction": "تفتيت الحصوات",
+      "location": "الكلى أو الحالب",
+      "nearbyOrgans": ["الكلى", "الحالب"],
+      "diseases": [],
+      "keywords": ["lithotripsy", "تفتيت حصى"]
+    }
+  ]
+}

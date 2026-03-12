@@ -1,0 +1,1176 @@
+{
+  "chapter": 2,
+  "title": "اللواحق وصيغ الجمع",
+  "title_en": "Suffixes and Plural Endings",
+  "terms": [
+    {
+      "id": 41,
+      "term": "phalanx",
+      "arabic": "سلامية",
+      "latin": "phalanx",
+      "pronunciation": "فا-لانكس",
+      "definition": "عظمة من عظام الأصابع (في اليدين أو القدمين)",
+      "parts": {},
+      "system": "الجهاز الهيكلي",
+      "systemFunction": "تكوين هيكل الأصابع",
+      "location": "الأصابع في اليدين والقدمين",
+      "nearbyOrgans": ["السلاميات الأخرى", "المفاصل بين السلاميات"],
+      "diseases": [
+        {
+          "name": "كسر السلامية",
+          "symptoms": ["ألم", "تورم", "تشوه", "عدم القدرة على تحريك الإصبع"],
+          "treatments": ["تجبير", "جراحة", "تثبيت"]
+        }
+      ],
+      "keywords": ["phalanx", "سلامية", "finger bone"],
+      "plural": "phalanges"
+    },
+    {
+      "id": 42,
+      "term": "bursa",
+      "arabic": "جراب",
+      "latin": "bursa",
+      "pronunciation": "بور-سا",
+      "definition": "كيس مليء بالسائل يقلل الاحتكاك بين الأنسجة",
+      "parts": {},
+      "system": "الجهاز الهيكلي",
+      "systemFunction": "تقليل الاحتكاك",
+      "location": "حول المفاصل",
+      "nearbyOrgans": ["الأوتار", "العظام", "المفاصل"],
+      "diseases": [
+        {
+          "name": "التهاب الجراب",
+          "symptoms": ["ألم", "تورم", "احمرار", "دفء"],
+          "treatments": ["راحة", "ثلج", "مضادات التهاب", "حقن كورتيزون"]
+        }
+      ],
+      "keywords": ["bursa", "جراب"],
+      "plural": "bursae"
+    },
+    {
+      "id": 43,
+      "term": "vertebra",
+      "arabic": "فقرة",
+      "latin": "vertebra",
+      "pronunciation": "فير-تي-برا",
+      "definition": "عظمة من عظام العمود الفقري",
+      "parts": {},
+      "system": "الجهاز الهيكلي",
+      "systemFunction": "حماية النخاع الشوكي ودعم الجسم",
+      "location": "العمود الفقري",
+      "nearbyOrgans": ["الأقراص الفقرية", "النخاع الشوكي", "الأعصاب الشوكية"],
+      "diseases": [
+        {
+          "name": "انزلاق الفقار",
+          "symptoms": ["ألم ظهر", "ألم في الساقين", "تنميل", "ضعف"],
+          "treatments": ["علاج طبيعي", "مسكنات", "جراحة"]
+        }
+      ],
+      "keywords": ["vertebra", "فقرة", "spine"],
+      "plural": "vertebrae"
+    },
+    {
+      "id": 44,
+      "term": "appendix",
+      "arabic": "زائدة دودية",
+      "latin": "appendix",
+      "pronunciation": "أ-بن-ديكس",
+      "definition": "امتداد أنبوبي صغير من الأعور في بداية الأمعاء الغليظة",
+      "parts": {},
+      "system": "الجهاز الهضمي",
+      "systemFunction": "وظيفة مناعية (يعتقد أنها مخزن للبكتيريا النافعة)",
+      "location": "أسفل البطن من الجهة اليمنى",
+      "nearbyOrgans": ["الأعور", "الأمعاء الدقيقة", "القولون"],
+      "diseases": [
+        {
+          "name": "التهاب الزائدة الدودية",
+          "symptoms": ["ألم حول السرة ينتقل للأسفل اليمين", "غثيان", "قيء", "فقدان الشهية", "حمى"],
+          "treatments": ["استئصال الزائدة الدودية", "مضادات حيوية"]
+        }
+      ],
+      "keywords": ["appendix", "زائدة دودية"],
+      "plural": "appendices"
+    },
+    {
+      "id": 45,
+      "term": "diagnosis",
+      "arabic": "تشخيص",
+      "latin": "diagnosis",
+      "pronunciation": "داي-أغ-نو-سيس",
+      "definition": "تحديد المرض بناءً على الأعراض والفحوصات",
+      "parts": {
+        "prefix": { "value": "dia", "meaning": "خلال" },
+        "root": { "value": "gnos", "meaning": "معرفة" },
+        "suffix": { "value": "is", "meaning": "حالة" }
+      },
+      "system": "عام",
+      "systemFunction": "تحديد الأمراض",
+      "location": "جميع أجزاء الجسم",
+      "nearbyOrgans": ["حسب المرض"],
+      "diseases": [],
+      "keywords": ["diagnosis", "تشخيص"],
+      "plural": "diagnoses"
+    },
+    {
+      "id": 46,
+      "term": "metastasis",
+      "arabic": "نقيلة",
+      "latin": "metastasis",
+      "pronunciation": "مي-تاس-تا-سيس",
+      "definition": "انتشار الخلايا السرطانية من موقع إلى آخر في الجسم",
+      "parts": {
+        "prefix": { "value": "meta", "meaning": "بعد، تغير" },
+        "root": { "value": "stas", "meaning": "وضع" },
+        "suffix": { "value": "is", "meaning": "حالة" }
+      },
+      "system": "الجهاز المناعي والأورام",
+      "systemFunction": "انتشار الأورام",
+      "location": "يمكن أن تنتقل إلى أي عضو",
+      "nearbyOrgans": ["حسب موقع الورم الأساسي"],
+      "diseases": [
+        {
+          "name": "سرطان نقيلي",
+          "symptoms": ["ألم", "تعب", "فقدان وزن", "أعراض حسب العضو المصاب"],
+          "treatments": ["علاج كيميائي", "علاج إشعاعي", "علاج هرموني", "علاج موجه"]
+        }
+      ],
+      "keywords": ["metastasis", "نقيلة", "انتشار سرطاني"],
+      "plural": "metastases"
+    },
+    {
+      "id": 47,
+      "term": "meningitis",
+      "arabic": "التهاب السحايا",
+      "latin": "meningitis",
+      "pronunciation": "مين-إن-جاى-تس",
+      "definition": "التهاب الأغشية المحيطة بالدماغ والنخاع الشوكي",
+      "parts": {
+        "root": { "value": "mening", "meaning": "سحايا" },
+        "suffix": { "value": "itis", "meaning": "التهاب" }
+      },
+      "system": "الجهاز العصبي",
+      "systemFunction": "حماية الدماغ والنخاع الشوكي",
+      "location": "السحايا (الأغشية المحيطة بالجهاز العصبي المركزي)",
+      "nearbyOrgans": ["الدماغ", "النخاع الشوكي", "الجمجمة", "الفقرات"],
+      "diseases": [
+        {
+          "name": "التهاب السحايا الجرثومي",
+          "symptoms": ["حمى عالية", "صداع شديد", "تصلب الرقبة", "غثيان", "قيء", "حساسية للضوء", "تغير الحالة العقلية"],
+          "treatments": ["مضادات حيوية وريدية", "كورتيزون", "رعاية داعمة"]
+        },
+        {
+          "name": "التهاب السحايا الفيروسي",
+          "symptoms": ["أعراض مشابهة لكن أقل حدة", "حمى", "صداع", "تصلب رقبة خفيف"],
+          "treatments": ["راحة", "مسكنات", "سوائل"]
+        }
+      ],
+      "keywords": ["meningitis", "التهاب سحايا"],
+      "plural": "meningitides"
+    },
+    {
+      "id": 48,
+      "term": "meninx",
+      "arabic": "سحايا",
+      "latin": "meninx",
+      "pronunciation": "مي-ننكس",
+      "definition": "الغشاء المحيط بالدماغ والنخاع الشوكي (بصيغة المفرد)",
+      "parts": {},
+      "system": "الجهاز العصبي",
+      "systemFunction": "حماية الجهاز العصبي المركزي",
+      "location": "حول الدماغ والنخاع الشوكي",
+      "nearbyOrgans": ["الدماغ", "النخاع الشوكي"],
+      "diseases": [],
+      "keywords": ["meninx", "سحايا"],
+      "plural": "meninges"
+    },
+    {
+      "id": 49,
+      "term": "criterion",
+      "arabic": "معيار",
+      "latin": "criterium",
+      "pronunciation": "كراي-تي-ري-ون",
+      "definition": "معيار أو قاعدة للتقييم أو الحكم",
+      "parts": {},
+      "system": "عام",
+      "systemFunction": "التقييم",
+      "location": "غير محدد",
+      "nearbyOrgans": [],
+      "diseases": [],
+      "keywords": ["criterion", "معيار"],
+      "plural": "criteria"
+    },
+    {
+      "id": 50,
+      "term": "ganglion",
+      "arabic": "عقدة عصبية",
+      "latin": "ganglion",
+      "pronunciation": "غان-غلي-ون",
+      "definition": "مجموعة من أجسام الخلايا العصبية خارج الجهاز العصبي المركزي",
+      "parts": {},
+      "system": "الجهاز العصبي",
+      "systemFunction": "تجميع وتوزيع الإشارات العصبية",
+      "location": "على طول الأعصاب",
+      "nearbyOrgans": ["الأعصاب", "النخاع الشوكي"],
+      "diseases": [
+        {
+          "name": "كيسة عقدية",
+          "symptoms": ["كتلة تحت الجلد", "ألم خفيف", "ضغط على الأعصاب المجاورة"],
+          "treatments": ["مراقبة", "شفط", "استئصال جراحي"]
+        }
+      ],
+      "keywords": ["ganglion", "عقدة عصبية"],
+      "plural": "ganglia"
+    },
+    {
+      "id": 51,
+      "term": "diverticulum",
+      "arabic": "رتج",
+      "latin": "diverticulum",
+      "pronunciation": "داي-فير-تي-كيو-لوم",
+      "definition": "نتوء أو كيس صغير في جدار عضو مجوف",
+      "parts": {},
+      "system": "الجهاز الهضمي",
+      "systemFunction": "تخزين مؤقت",
+      "location": "غالباً في القولون",
+      "nearbyOrgans": ["القولون", "الأمعاء"],
+      "diseases": [
+        {
+          "name": "داء الرتوج",
+          "symptoms": ["غالباً بلا أعراض", "انتفاخ", "إمساك"],
+          "treatments": ["نظام غذائي غني بالألياف"]
+        },
+        {
+          "name": "التهاب الرتوج",
+          "symptoms": ["ألم بطني", "حمى", "غثيان", "تغير عادات التبرز"],
+          "treatments": ["مضادات حيوية", "نظام غذائي سائل", "جراحة في الحالات الشديدة"]
+        }
+      ],
+      "keywords": ["diverticulum", "رتج"],
+      "plural": "diverticula"
+    },
+    {
+      "id": 52,
+      "term": "ovum",
+      "arabic": "بويضة",
+      "latin": "ovum",
+      "pronunciation": "أو-فوم",
+      "definition": "الخلية التناسلية الأنثوية",
+      "parts": {},
+      "system": "الجهاز التناسلي الأنثوي",
+      "systemFunction": "التكاثر",
+      "location": "المبيض",
+      "nearbyOrgans": ["المبيض", "قناة فالوب", "الرحم"],
+      "diseases": [],
+      "keywords": ["ovum", "بويضة", "egg"],
+      "plural": "ova"
+    },
+    {
+      "id": 53,
+      "term": "alveolus",
+      "arabic": "حويصلة هوائية",
+      "latin": "alveolus",
+      "pronunciation": "أل-في-أو-لوس",
+      "definition": "كيس هوائي صغير في الرئة يتم فيه تبادل الغازات",
+      "parts": {},
+      "system": "الجهاز التنفسي",
+      "systemFunction": "تبادل الأكسجين وثاني أكسيد الكربون",
+      "location": "نهايات القصيبات في الرئتين",
+      "nearbyOrgans": ["القصيبات", "الشعيرات الدموية الرئوية"],
+      "diseases": [
+        {
+          "name": "انتفاخ الرئة",
+          "symptoms": ["ضيق تنفس", "سعال مزمن", "صفير"],
+          "treatments": ["موسعات شعب", "كورتيزون", "أكسجين"]
+        }
+      ],
+      "keywords": ["alveolus", "حويصلة هوائية", "alveoli"],
+      "plural": "alveoli"
+    },
+    {
+      "id": 54,
+      "term": "malleolus",
+      "arabic": "كعب",
+      "latin": "malleolus",
+      "pronunciation": "ما-لي-أو-لوس",
+      "definition": "النتوء العظمي في الكاحل",
+      "parts": {},
+      "system": "الجهاز الهيكلي",
+      "systemFunction": "تكوين مفصل الكاحل",
+      "location": "الكاحل",
+      "nearbyOrgans": ["الظنبوب", "الشظية", "عظام الكاحل"],
+      "diseases": [
+        {
+          "name": "كسر الكعب",
+          "symptoms": ["ألم", "تورم", "كدمات", "عدم القدرة على المشي"],
+          "treatments": ["تجبير", "جراحة", "تثبيت"]
+        }
+      ],
+      "keywords": ["malleolus", "كعب", "ankle"],
+      "plural": "malleoli"
+    },
+    {
+      "id": 55,
+      "term": "sign",
+      "arabic": "علامة",
+      "latin": "signum",
+      "pronunciation": "ساين",
+      "definition": "دليل موضوعي على المرض يمكن قياسه أو ملاحظته",
+      "parts": {},
+      "system": "عام",
+      "systemFunction": "التشخيص",
+      "location": "جميع أنحاء الجسم",
+      "nearbyOrgans": [],
+      "diseases": [],
+      "keywords": ["sign", "علامة"]
+    },
+    {
+      "id": 56,
+      "term": "symptom",
+      "arabic": "عرض",
+      "latin": "symptoma",
+      "pronunciation": "سيم-بتوم",
+      "definition": "دليل شخصي على المرض يشعر به المريض",
+      "parts": {},
+      "system": "عام",
+      "systemFunction": "التشخيص",
+      "location": "حسب المرض",
+      "nearbyOrgans": [],
+      "diseases": [],
+      "keywords": ["symptom", "عرض"]
+    },
+    {
+      "id": 57,
+      "term": "syndrome",
+      "arabic": "متلازمة",
+      "latin": "syndromum",
+      "pronunciation": "سين-دروم",
+      "definition": "مجموعة من العلامات والأعراض التي تحدث معاً",
+      "parts": {
+        "prefix": { "value": "syn", "meaning": "معاً" },
+        "root": { "value": "drom", "meaning": "جري" }
+      },
+      "system": "عام",
+      "systemFunction": "تحديد الحالات المرضية",
+      "location": "حسب المتلازمة",
+      "nearbyOrgans": [],
+      "diseases": [],
+      "keywords": ["syndrome", "متلازمة"]
+    },
+    {
+      "id": 58,
+      "term": "prognosis",
+      "arabic": "إنذار",
+      "latin": "prognosis",
+      "pronunciation": "بروغ-نو-سيس",
+      "definition": "توقع مسار المرض ونتيجته",
+      "parts": {
+        "prefix": { "value": "pro", "meaning": "قبل" },
+        "root": { "value": "gnos", "meaning": "معرفة" },
+        "suffix": { "value": "is", "meaning": "حالة" }
+      },
+      "system": "عام",
+      "systemFunction": "تقدير المستقبل",
+      "location": "غير محدد",
+      "nearbyOrgans": [],
+      "diseases": [],
+      "keywords": ["prognosis", "إنذار"],
+      "plural": "prognoses"
+    },
+    {
+      "id": 59,
+      "term": "acute",
+      "arabic": "حاد",
+      "latin": "acutus",
+      "pronunciation": "أ-كوت",
+      "definition": "بداية سريعة ومسار شديد ومدة قصيرة للمرض",
+      "parts": {},
+      "system": "عام",
+      "systemFunction": "وصف الحالات المرضية",
+      "location": "جميع أنحاء الجسم",
+      "nearbyOrgans": [],
+      "diseases": [],
+      "keywords": ["acute", "حاد"]
+    },
+    {
+      "id": 60,
+      "term": "chronic",
+      "arabic": "مزمن",
+      "latin": "chronicus",
+      "pronunciation": "كرون-يك",
+      "definition": "طويل الأمد، يمكن السيطرة عليه لكن نادراً ما يُشفى",
+      "parts": {},
+      "system": "عام",
+      "systemFunction": "وصف الحالات المرضية",
+      "location": "جميع أنحاء الجسم",
+      "nearbyOrgans": [],
+      "diseases": [],
+      "keywords": ["chronic", "مزمن"]
+    },
+    {
+      "id": 61,
+      "term": "remission",
+      "arabic": "هجوع",
+      "latin": "remissio",
+      "pronunciation": "ري-مشن",
+      "definition": "اختفاء مؤقت للأعراض دون شفاء كامل",
+      "parts": {},
+      "system": "عام",
+      "systemFunction": "وصف مسار المرض",
+      "location": "جميع أنحاء الجسم",
+      "nearbyOrgans": [],
+      "diseases": [],
+      "keywords": ["remission", "هجوع"]
+    },
+    {
+      "id": 62,
+      "term": "eponym",
+      "arabic": "اسم منسوب",
+      "latin": "eponymum",
+      "pronunciation": "إب-أو-نيم",
+      "definition": "مرض أو هيكل سمي نسبة لمكتشفه",
+      "parts": {},
+      "system": "عام",
+      "systemFunction": "التسمية الطبية",
+      "location": "حسب المصطلح",
+      "nearbyOrgans": [],
+      "diseases": [
+        {
+          "name": "مرض أديسون",
+          "symptoms": ["تعب", "فقدان وزن", "فرط تصبغ", "انخفاض ضغط الدم"],
+          "treatments": ["تعويض الكورتيزون"]
+        },
+        {
+          "name": "مرض كوشينغ",
+          "symptoms": ["سمنة مركزية", "وجه قمري", "علامات تمدد أرجوانية", "ارتفاع ضغط الدم"],
+          "treatments": ["علاج السبب", "جراحة", "أدوية"]
+        }
+      ],
+      "keywords": ["eponym", "اسم منسوب"]
+    },
+    {
+      "id": 63,
+      "term": "acronym",
+      "arabic": "اختصار",
+      "latin": "acronymum",
+      "pronunciation": "أك-رو-نيم",
+      "definition": "كلمة مكونة من الحروف الأولى لمصطلح مركب",
+      "parts": {},
+      "system": "عام",
+      "systemFunction": "تسهيل الكتابة",
+      "location": "غير محدد",
+      "nearbyOrgans": [],
+      "diseases": [],
+      "keywords": ["acronym", "اختصار"]
+    },
+    {
+      "id": 64,
+      "term": "flatus",
+      "arabic": "ريح",
+      "latin": "flatus",
+      "pronunciation": "فلا-تس",
+      "definition": "غازات في الجهاز الهضمي تخرج من الشرج",
+      "parts": {},
+      "system": "الجهاز الهضمي",
+      "systemFunction": "التخلص من الغازات",
+      "location": "الأمعاء",
+      "nearbyOrgans": ["المعدة", "الأمعاء الدقيقة", "الأمعاء الغليظة", "الشرج"],
+      "diseases": [
+        {
+          "name": "انتفاخ البطن",
+          "symptoms": ["غازات مفرطة", "انتفاخ", "ألم بطني", "تطبل"],
+          "treatments": ["تعديل النظام الغذائي", "تجنب الأطعمة المسببة للغازات", "أدوية طاردة للغازات"]
+        }
+      ],
+      "keywords": ["flatus", "ريح", "غازات"]
+    },
+    {
+      "id": 65,
+      "term": "phlegm",
+      "arabic": "بلغم",
+      "latin": "phlegma",
+      "pronunciation": "فليم",
+      "definition": "مخاط سميك يفرز من الجهاز التنفسي",
+      "parts": {},
+      "system": "الجهاز التنفسي",
+      "systemFunction": "تنظيف المجاري التنفسية",
+      "location": "الرئتين والمجاري التنفسية",
+      "nearbyOrgans": ["القصبات", "الرئتين", "الحنجرة", "البلعوم"],
+      "diseases": [
+        {
+          "name": "التهاب القصبات",
+          "symptoms": ["سعال مع بلغم", "حمى", "ضيق تنفس"],
+          "treatments": ["طاردات بلغم", "مضادات حيوية", "موسعات شعب"]
+        }
+      ],
+      "keywords": ["phlegm", "بلغم", "mucus"]
+    },
+    {
+      "id": 66,
+      "term": "gingivitis",
+      "arabic": "التهاب اللثة",
+      "latin": "gingivitis",
+      "pronunciation": "جين-جي-فاي-تس",
+      "definition": "التهاب يصيب اللثة",
+      "parts": {
+        "root": { "value": "gingiv", "meaning": "لثة" },
+        "suffix": { "value": "itis", "meaning": "التهاب" }
+      },
+      "system": "الجهاز الهضمي",
+      "systemFunction": "دعم الأسنان",
+      "location": "الفم، حول الأسنان",
+      "nearbyOrgans": ["الأسنان", "الفك", "الغشاء المخاطي للفم"],
+      "diseases": [
+        {
+          "name": "التهاب اللثة",
+          "symptoms": ["احمرار اللثة", "تورم", "نزف أثناء التفريش", "رائحة فم كريهة"],
+          "treatments": ["تحسين نظافة الفم", "تنظيف أسنان احترافي", "غسول فم مطهر"]
+        }
+      ],
+      "keywords": ["gingivitis", "التهاب لثة"]
+    },
+    {
+      "id": 67,
+      "term": "jaundice",
+      "arabic": "يرقان",
+      "latin": "icterus",
+      "pronunciation": "جاون-دس",
+      "definition": "اصفرار الجلد والعينين نتيجة زيادة البيليروبين في الدم",
+      "parts": {},
+      "system": "الجهاز الهضمي والدوراني",
+      "systemFunction": "تكسير الهيموغلوبين",
+      "location": "الجلد، العينان، الأغشية المخاطية",
+      "nearbyOrgans": ["الكبد", "المرارة", "البنكرياس", "الدم"],
+      "diseases": [
+        {
+          "name": "اليرقان الانسدادي",
+          "symptoms": ["اصفرار الجلد", "بول داكن", "براز فاتح", "حكة", "ألم بطني"],
+          "treatments": ["إزالة الانسداد", "دعامات", "جراحة"]
+        },
+        {
+          "name": "اليرقان الكبدي",
+          "symptoms": ["اصفرار", "تعب", "غثيان", "ألم بطني"],
+          "treatments": ["علاج السبب الكامن"]
+        }
+      ],
+      "keywords": ["jaundice", "يرقان", "icterus"]
+    },
+    {
+      "id": 68,
+      "term": "crepitus",
+      "arabic": "فرقعة",
+      "latin": "crepitus",
+      "pronunciation": "كري-بي-تس",
+      "definition": "صوت طقطقة أو فرقعة عند تحرك العظام المكسورة أو المفاصل",
+      "parts": {},
+      "system": "الجهاز الهيكلي",
+      "systemFunction": "مؤشر على وجود مشكلة",
+      "location": "المفاصل أو موقع الكسر",
+      "nearbyOrgans": ["العظام", "المفاصل", "الغضاريف"],
+      "diseases": [
+        {
+          "name": "خشونة المفاصل",
+          "symptoms": ["ألم", "تيبس", "فرقعة", "محدودية الحركة"],
+          "treatments": ["مسكنات", "علاج طبيعي", "حقن مفصلية", "استبدال المفصل"]
+        }
+      ],
+      "keywords": ["crepitus", "فرقعة", "طقطقة"]
+    },
+    {
+      "id": 69,
+      "term": "cholera",
+      "arabic": "كوليرا",
+      "latin": "cholera",
+      "pronunciation": "كو-لي-را",
+      "definition": "مرض إسهالي حاد تسببه بكتيريا الضمة الكوليرية",
+      "parts": {},
+      "system": "الجهاز الهضمي",
+      "systemFunction": "تسبب العدوى",
+      "location": "الأمعاء الدقيقة",
+      "nearbyOrgans": ["المعدة", "الأمعاء"],
+      "diseases": [
+        {
+          "name": "الكوليرا",
+          "symptoms": ["إسهال مائي شديد", "قيء", "جفاف سريع", "تشنجات عضلية", "صدمة"],
+          "treatments": ["محاليل الجفاف", "سوائل وريدية", "مضادات حيوية", "مكملات الزنك"]
+        }
+      ],
+      "keywords": ["cholera", "كوليرا"]
+    },
+    {
+      "id": 70,
+      "term": "kyphosis",
+      "arabic": "حداب",
+      "latin": "kyphosis",
+      "pronunciation": "كاي-فو-سيس",
+      "definition": "انحناء زائد للخلف في العمود الفقري الصدري",
+      "parts": {
+        "root": { "value": "kyph", "meaning": "حدب" },
+        "suffix": { "value": "osis", "meaning": "حالة مرضية" }
+      },
+      "system": "الجهاز الهيكلي",
+      "systemFunction": "دعم الجسم",
+      "location": "العمود الفقري الصدري",
+      "nearbyOrgans": ["الفقرات", "الأضلاع", "الرئتين"],
+      "diseases": [
+        {
+          "name": "حداب الشيخوخة",
+          "symptoms": ["انحناء الظهر", "ألم", "تيبس", "صعوبة في الوقوف باستقامة"],
+          "treatments": ["علاج طبيعي", "مسكنات", "دعامات", "جراحة في الحالات الشديدة"]
+        }
+      ],
+      "keywords": ["kyphosis", "حداب", "humpback"]
+    },
+    {
+      "id": 71,
+      "term": "quadriplegia",
+      "arabic": "شلل رباعي",
+      "latin": "quadriplegia",
+      "pronunciation": "كوا-دري-بلي-جيا",
+      "definition": "شلل في جميع الأطراف الأربعة",
+      "parts": {
+        "prefix": { "value": "quadri", "meaning": "أربعة" },
+        "root": { "value": "plegia", "meaning": "شلل" }
+      },
+      "system": "الجهاز العصبي",
+      "systemFunction": "الحركة",
+      "location": "النخاع الشوكي في منطقة الرقبة",
+      "nearbyOrgans": ["النخاع الشوكي", "الأطراف العلوية", "الأطراف السفلية", "عضلات الجذع"],
+      "diseases": [
+        {
+          "name": "إصابة النخاع الشوكي",
+          "symptoms": ["فقدان الحركة والإحساس في الأطراف الأربعة", "صعوبة تنفس", "فقدان السيطرة على المثانة والأمعاء"],
+          "treatments": ["تأهيل", "علاج طبيعي", "أجهزة مساعدة", "دعم تنفسي"]
+        }
+      ],
+      "keywords": ["quadriplegia", "شلل رباعي", "tetraplegia"]
+    },
+    {
+      "id": 72,
+      "term": "cytology",
+      "arabic": "علم الخلايا",
+      "latin": "cytologia",
+      "pronunciation": "ساي-تو-لو-جي",
+      "definition": "دراسة الخلايا وبنيتها ووظائفها",
+      "parts": {
+        "root": { "value": "cyt", "meaning": "خلية" },
+        "suffix": { "value": "ology", "meaning": "علم" }
+      },
+      "system": "عام",
+      "systemFunction": "التشخيص",
+      "location": "جميع أنحاء الجسم",
+      "nearbyOrgans": [],
+      "diseases": [],
+      "keywords": ["cytology", "علم الخلايا"]
+    },
+    {
+      "id": 73,
+      "term": "psychologist",
+      "arabic": "أخصائي نفسي",
+      "latin": "psychologus",
+      "pronunciation": "ساي-كو-لو-جيست",
+      "definition": "أخصائي في دراسة العقل والسلوك",
+      "parts": {
+        "root": { "value": "psych", "meaning": "نفس" },
+        "suffix": { "value": "ologist", "meaning": "أخصائي" }
+      },
+      "system": "الجهاز العصبي",
+      "systemFunction": "علاج الاضطرابات النفسية",
+      "location": "الدماغ",
+      "nearbyOrgans": [],
+      "diseases": [],
+      "keywords": ["psychologist", "أخصائي نفسي"]
+    },
+    {
+      "id": 74,
+      "term": "serum",
+      "arabic": "مصل",
+      "latin": "serum",
+      "pronunciation": "سي-رام",
+      "definition": "الجزء السائل من الدم بعد التجلط",
+      "parts": {},
+      "system": "الجهاز الدوراني",
+      "systemFunction": "نقل المواد",
+      "location": "الدم",
+      "nearbyOrgans": ["الدم", "الكبد"],
+      "diseases": [],
+      "keywords": ["serum", "مصل"]
+    },
+    {
+      "id": 75,
+      "term": "xeroderma",
+      "arabic": "جفاف الجلد",
+      "latin": "xeroderma",
+      "pronunciation": "زي-رو-در-ما",
+      "definition": "جفاف غير طبيعي في الجلد",
+      "parts": {
+        "prefix": { "value": "xero", "meaning": "جاف" },
+        "root": { "value": "derm", "meaning": "جلد" }
+      },
+      "system": "الجهاز اللحافي",
+      "systemFunction": "حماية الجسم",
+      "location": "الجلد",
+      "nearbyOrgans": ["الجلد"],
+      "diseases": [
+        {
+          "name": "جفاف الجلد",
+          "symptoms": ["جلد جاف", "تقشر", "حكة", "تشقق"],
+          "treatments": ["مرطبات", "تجنب الصابون القاسي", "ترطيب الجو"]
+        }
+      ],
+      "keywords": ["xeroderma", "جفاف جلد", "dry skin"]
+    },
+    {
+      "id": 76,
+      "term": "zygote",
+      "arabic": "لاقحة",
+      "latin": "zygotum",
+      "pronunciation": "زي-غوت",
+      "definition": "البويضة المخصبة قبل الانقسام",
+      "parts": {},
+      "system": "الجهاز التناسلي",
+      "systemFunction": "بداية الحياة",
+      "location": "قناة فالوب",
+      "nearbyOrgans": ["قناة فالوب", "الرحم"],
+      "diseases": [],
+      "keywords": ["zygote", "لاقحة", "fertilized egg"]
+    },
+    {
+      "id": 77,
+      "term": "ileum",
+      "arabic": "لفائفي",
+      "latin": "ileum",
+      "pronunciation": "إي-لي-أم",
+      "definition": "الجزء الأخير والأطول من الأمعاء الدقيقة",
+      "parts": {},
+      "system": "الجهاز الهضمي",
+      "systemFunction": "امتصاص العناصر الغذائية",
+      "location": "أسفل البطن",
+      "nearbyOrgans": ["الصائم", "الأعور", "القولون"],
+      "diseases": [
+        {
+          "name": "داء كرون",
+          "symptoms": ["ألم بطني", "إسهال", "نزيف", "فقدان وزن", "تعب"],
+          "treatments": ["مضادات التهاب", "مثبطات مناعة", "جراحة"]
+        }
+      ],
+      "keywords": ["ileum", "لفائفي"]
+    },
+    {
+      "id": 78,
+      "term": "ilium",
+      "arabic": "حرقفة",
+      "latin": "ilium",
+      "pronunciation": "إي-لي-أم",
+      "definition": "أحد عظام الحوض الثلاثة (أكبرها)",
+      "parts": {},
+      "system": "الجهاز الهيكلي",
+      "systemFunction": "تكوين الحوض",
+      "location": "الحوض",
+      "nearbyOrgans": ["العانة", "الإسك", "مفصل الورك"],
+      "diseases": [
+        {
+          "name": "كسر الحرقفة",
+          "symptoms": ["ألم شديد", "عدم القدرة على المشي", "كدمات"],
+          "treatments": ["راحة", "تثبيت", "جراحة"]
+        }
+      ],
+      "keywords": ["ilium", "حرقفة"]
+    },
+    {
+      "id": 79,
+      "term": "infection",
+      "arabic": "عدوى",
+      "latin": "infectio",
+      "pronunciation": "إن-فيك-شن",
+      "definition": "غزو الجسم بكائنات ممرضة (بكتيريا، فيروسات، فطريات)",
+      "parts": {},
+      "system": "الجهاز المناعي",
+      "systemFunction": "الدفاع عن الجسم",
+      "location": "جميع أنحاء الجسم",
+      "nearbyOrgans": ["حسب موقع العدوى"],
+      "diseases": [],
+      "keywords": ["infection", "عدوى"]
+    },
+    {
+      "id": 80,
+      "term": "inflammation",
+      "arabic": "التهاب",
+      "latin": "inflammatio",
+      "pronunciation": "إن-فلا-ماي-شن",
+      "definition": "استجابة موضعية لإصابة أو تدمير الأنسجة",
+      "parts": {},
+      "system": "الجهاز المناعي",
+      "systemFunction": "الدفاع والإصلاح",
+      "location": "جميع أنحاء الجسم",
+      "nearbyOrgans": ["حسب الموقع"],
+      "diseases": [],
+      "keywords": ["inflammation", "التهاب"]
+    },
+    {
+      "id": 81,
+      "term": "malaise",
+      "arabic": "توعك",
+      "latin": "malaise",
+      "pronunciation": "ما-ليز",
+      "definition": "شعور عام بعدم الراحة والمرض",
+      "parts": {},
+      "system": "عام",
+      "systemFunction": "مؤشر على المرض",
+      "location": "الجسم كله",
+      "nearbyOrgans": [],
+      "diseases": [],
+      "keywords": ["malaise", "توعك"]
+    },
+    {
+      "id": 82,
+      "term": "exudate",
+      "arabic": "إفراز",
+      "latin": "exsudatum",
+      "pronunciation": "إك-سو-دايت",
+      "definition": "سائل يخرج من الأوعية الدموية إلى الأنسجة نتيجة الالتهاب",
+      "parts": {},
+      "system": "الجهاز المناعي",
+      "systemFunction": "الاستجابة الالتهابية",
+      "location": "موقع الالتهاب",
+      "nearbyOrgans": ["الأنسجة الملتهبة"],
+      "diseases": [],
+      "keywords": ["exudate", "إفراز"]
+    },
+    {
+      "id": 83,
+      "term": "erythema",
+      "arabic": "حمامى",
+      "latin": "erythema",
+      "pronunciation": "إي-ري-ثي-ما",
+      "definition": "احمرار الجلد نتيجة تمدد الأوعية الدموية",
+      "parts": {},
+      "system": "الجهاز اللحافي",
+      "systemFunction": "مؤشر على التهاب",
+      "location": "الجلد",
+      "nearbyOrgans": ["الجلد", "الأوعية الدموية"],
+      "diseases": [
+        {
+          "name": "حمامى عقدية",
+          "symptoms": ["عقيدات حمراء مؤلمة", "حمى", "ألم مفصلي"],
+          "treatments": ["علاج السبب", "مضادات التهاب"]
+        }
+      ],
+      "keywords": ["erythema", "حمامى", "احمرار"]
+    },
+    {
+      "id": 84,
+      "term": "edema",
+      "arabic": "وذمة",
+      "latin": "oedema",
+      "pronunciation": "إ-دي-ما",
+      "definition": "تورم بسبب تراكم السوائل في الأنسجة",
+      "parts": {},
+      "system": "الجهاز الدوراني",
+      "systemFunction": "توازن السوائل",
+      "location": "الأطراف، الوجه، البطن",
+      "nearbyOrgans": ["القلب", "الكلى", "الكبد"],
+      "diseases": [
+        {
+          "name": "وذمة قلبية",
+          "symptoms": ["تورم الساقين", "ضيق تنفس", "تعب"],
+          "treatments": ["مدرات بول", "علاج السبب"]
+        }
+      ],
+      "keywords": ["edema", "وذمة", "تورم"]
+    },
+    {
+      "id": 85,
+      "term": "laceration",
+      "arabic": "تمزق",
+      "latin": "laceratio",
+      "pronunciation": "لا-سي-راي-شن",
+      "definition": "جرح ممزق أو قطع غير منتظم",
+      "parts": {},
+      "system": "الجهاز اللحافي",
+      "systemFunction": "السلامة",
+      "location": "الجلد والأنسجة تحته",
+      "nearbyOrgans": ["الجلد", "العضلات", "الأوعية الدموية"],
+      "diseases": [],
+      "keywords": ["laceration", "تمزق"]
+    },
+    {
+      "id": 86,
+      "term": "lesion",
+      "arabic": "آفة",
+      "latin": "laesio",
+      "pronunciation": "لي-جن",
+      "definition": "تغير مرضي في الأنسجة",
+      "parts": {},
+      "system": "عام",
+      "systemFunction": "وصف التغيرات",
+      "location": "جميع أنحاء الجسم",
+      "nearbyOrgans": ["حسب الموقع"],
+      "diseases": [],
+      "keywords": ["lesion", "آفة"]
+    },
+    {
+      "id": 87,
+      "term": "mucous",
+      "arabic": "مخاطي",
+      "latin": "mucosus",
+      "pronunciation": "مو-كس",
+      "definition": "صفة للأغشية التي تفرز المخاط",
+      "parts": {},
+      "system": "عام",
+      "systemFunction": "الإفراز",
+      "location": "الأغشية المخاطية",
+      "nearbyOrgans": ["الجهاز التنفسي", "الهضمي", "البولي", "التناسلي"],
+      "diseases": [],
+      "keywords": ["mucous", "مخاطي"]
+    },
+    {
+      "id": 88,
+      "term": "mucus",
+      "arabic": "مخاط",
+      "latin": "mucus",
+      "pronunciation": "مو-كس",
+      "definition": "السائل الذي تفرزه الأغشية المخاطية",
+      "parts": {},
+      "system": "عام",
+      "systemFunction": "ترطيب وحماية",
+      "location": "الأغشية المخاطية",
+      "nearbyOrgans": ["الأنف", "الرئتين", "المعدة", "الأمعاء"],
+      "diseases": [],
+      "keywords": ["mucus", "مخاط"]
+    },
+    {
+      "id": 89,
+      "term": "neonatology",
+      "arabic": "طب حديثي الولادة",
+      "latin": "neonatologia",
+      "pronunciation": "ني-أو-ناي-تو-لو-جي",
+      "definition": "فرع الطب المتخصص في رعاية حديثي الولادة",
+      "parts": {
+        "prefix": { "value": "neo", "meaning": "جديد" },
+        "root": { "value": "nat", "meaning": "ولادة" },
+        "suffix": { "value": "ology", "meaning": "علم" }
+      },
+      "system": "طب الأطفال",
+      "systemFunction": "رعاية المواليد",
+      "location": "حديثو الولادة",
+      "nearbyOrgans": [],
+      "diseases": [],
+      "keywords": ["neonatology", "حديثي ولادة"]
+    },
+    {
+      "id": 90,
+      "term": "dermatologist",
+      "arabic": "طبيب جلدية",
+      "latin": "dermatologus",
+      "pronunciation": "در-ما-تو-لو-جيست",
+      "definition": "طبيب متخصص في تشخيص وعلاج أمراض الجلد",
+      "parts": {
+        "root": { "value": "dermat", "meaning": "جلد" },
+        "suffix": { "value": "ologist", "meaning": "أخصائي" }
+      },
+      "system": "الجهاز اللحافي",
+      "systemFunction": "علاج أمراض الجلد",
+      "location": "الجلد",
+      "nearbyOrgans": [],
+      "diseases": [],
+      "keywords": ["dermatologist", "طبيب جلدية"]
+    },
+    {
+      "id": 91,
+      "term": "palpation",
+      "arabic": "جس",
+      "latin": "palpatio",
+      "pronunciation": "بال-باي-شن",
+      "definition": "تقنية فحص باستخدام اليدين لتحسس الأعضاء والأنسجة",
+      "parts": {},
+      "system": "عام",
+      "systemFunction": "التشخيص",
+      "location": "جميع أنحاء الجسم",
+      "nearbyOrgans": [],
+      "diseases": [],
+      "keywords": ["palpation", "جس"]
+    },
+    {
+      "id": 92,
+      "term": "palpitation",
+      "arabic": "خفقان",
+      "latin": "palpitatio",
+      "pronunciation": "بال-بي-تاي-شن",
+      "definition": "شعور بضربات قلب سريعة أو قوية أو غير منتظمة",
+      "parts": {},
+      "system": "الجهاز القلبي الوعائي",
+      "systemFunction": "ضخ الدم",
+      "location": "الصدر",
+      "nearbyOrgans": ["القلب"],
+      "diseases": [
+        {
+          "name": "اضطرابات النظم",
+          "symptoms": ["خفقان", "دوار", "إغماء", "ضيق تنفس"],
+          "treatments": ["أدوية", "تعديل نمط الحياة", "جهاز تنظيم ضربات القلب"]
+        }
+      ],
+      "keywords": ["palpitation", "خفقان"]
+    },
+    {
+      "id": 93,
+      "term": "prostate",
+      "arabic": "بروستاتا",
+      "latin": "prostata",
+      "pronunciation": "بروس-تيت",
+      "definition": "غدة ذكرية تقع تحت المثانة وتحيط بالإحليل",
+      "parts": {},
+      "system": "الجهاز التناسلي الذكري",
+      "systemFunction": "إنتاج السائل المنوي",
+      "location": "الحوض، تحت المثانة",
+      "nearbyOrgans": ["المثانة", "الإحليل", "المستقيم", "الحويصلات المنوية"],
+      "diseases": [
+        {
+          "name": "تضخم البروستاتا الحميد",
+          "symptoms": ["صعوبة التبول", "تبول متكرر", "ضعف تدفق البول", "تبول ليلي"],
+          "treatments": ["أدوية", "جراحة بالمنظار", "استئصال البروستاتا"]
+        },
+        {
+          "name": "سرطان البروستاتا",
+          "symptoms": ["أعراض مشابهة للتضخم", "دم في البول", "ألم عظام"],
+          "treatments": ["جراحة", "علاج إشعاعي", "علاج هرموني"]
+        }
+      ],
+      "keywords": ["prostate", "بروستاتا"]
+    },
+    {
+      "id": 94,
+      "term": "prostrate",
+      "arabic": "منبطح",
+      "latin": "prostratus",
+      "pronunciation": "بروس-تريت",
+      "definition": "الاستلقاء على الأرض أو الإرهاق الشديد",
+      "parts": {},
+      "system": "عام",
+      "systemFunction": "وصف الوضعية",
+      "location": "الجسم كله",
+      "nearbyOrgans": [],
+      "diseases": [],
+      "keywords": ["prostrate", "منبطح"]
+    },
+    {
+      "id": 95,
+      "term": "pyelitis",
+      "arabic": "التهاب الحويضة",
+      "latin": "pyelitis",
+      "pronunciation": "باي-إ-لاي-تس",
+      "definition": "التهاب الحويضة الكلوية",
+      "parts": {
+        "root": { "value": "pyel", "meaning": "حويضة" },
+        "suffix": { "value": "itis", "meaning": "التهاب" }
+      },
+      "system": "الجهاز البولي",
+      "systemFunction": "تجميع البول",
+      "location": "حويضة الكلية",
+      "nearbyOrgans": ["الكلى", "الحالب"],
+      "diseases": [
+        {
+          "name": "التهاب الحويضة",
+          "symptoms": ["حمى", "ألم في الخاصرة", "حرقة بول", "غثيان"],
+          "treatments": ["مضادات حيوية", "مسكنات", "سوائل"]
+        }
+      ],
+      "keywords": ["pyelitis", "التهاب حويضة"]
+    },
+    {
+      "id": 96,
+      "term": "pyoderma",
+      "arabic": "تقيح الجلد",
+      "latin": "pyoderma",
+      "pronunciation": "باي-أو-در-ما",
+      "definition": "عدوى جلدية بكتيرية مكونة للقيح",
+      "parts": {
+        "prefix": { "value": "pyo", "meaning": "قيح" },
+        "root": { "value": "derm", "meaning": "جلد" }
+      },
+      "system": "الجهاز اللحافي",
+      "systemFunction": "حماية الجسم",
+      "location": "الجلد",
+      "nearbyOrgans": ["الجلد"],
+      "diseases": [
+        {
+          "name": "تقيح الجلد",
+          "symptoms": ["بثور", "احمرار", "تورم", "ألم", "قيح"],
+          "treatments": ["مضادات حيوية", "مطهرات موضعية"]
+        }
+      ],
+      "keywords": ["pyoderma", "تقيح جلد"]
+    },
+    {
+      "id": 97,
+      "term": "pyrosis",
+      "arabic": "حرقة الفؤاد",
+      "latin": "pyrosis",
+      "pronunciation": "باي-رو-سيس",
+      "definition": "إحساس بالحرقة خلف عظم القص نتيجة ارتجاع حمض المعدة",
+      "parts": {
+        "root": { "value": "pyr", "meaning": "نار" },
+        "suffix": { "value": "osis", "meaning": "حالة مرضية" }
+      },
+      "system": "الجهاز الهضمي",
+      "systemFunction": "الهضم",
+      "location": "المريء",
+      "nearbyOrgans": ["المعدة", "المريء"],
+      "diseases": [
+        {
+          "name": "الجزر المعدي المريئي",
+          "symptoms": ["حرقة", "قلس حمضي", "ألم صدر", "صعوبة بلع"],
+          "treatments": ["مضادات حموضة", "مثبطات مضخة البروتون", "تعديل نمط الحياة"]
+        }
+      ],
+      "keywords": ["pyrosis", "حرقة", "heartburn"]
+    },
+    {
+      "id": 98,
+      "term": "triage",
+      "arabic": "فرز",
+      "latin": "triage",
+      "pronunciation": "تري-أج",
+      "definition": "عملية تقييم المرضى لتحديد أولويات العلاج",
+      "parts": {},
+      "system": "طب الطوارئ",
+      "systemFunction": "تنظيم الرعاية",
+      "location": "غرفة الطوارئ",
+      "nearbyOrgans": [],
+      "diseases": [],
+      "keywords": ["triage", "فرز"]
+    },
+    {
+      "id": 99,
+      "term": "trauma",
+      "arabic": "رضح",
+      "latin": "trauma",
+      "pronunciation": "تراو-ما",
+      "definition": "جرح أو إصابة جسدية",
+      "parts": {},
+      "system": "عام",
+      "systemFunction": "السلامة",
+      "location": "جميع أنحاء الجسم",
+      "nearbyOrgans": ["حسب موقع الإصابة"],
+      "diseases": [],
+      "keywords": ["trauma", "رضح"]
+    },
+    {
+      "id": 100,
+      "term": "ventral",
+      "arabic": "بطني",
+      "latin": "ventralis",
+      "pronunciation": "فين-ترال",
+      "definition": "متعلق بالجانب الأمامي أو البطن",
+      "parts": {
+        "root": { "value": "ventr", "meaning": "بطن" },
+        "suffix": { "value": "al", "meaning": "متعلق بـ" }
+      },
+      "system": "عام",
+      "systemFunction": "تحديد الاتجاهات",
+      "location": "الجانب الأمامي من الجسم",
+      "nearbyOrgans": ["الأعضاء الأمامية"],
+      "diseases": [],
+      "keywords": ["ventral", "بطني", "anterior"]
+    }
+  ]
+}

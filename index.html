@@ -3,102 +3,133 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MedTerm AI - عرض شامل لجميع الحقول</title>
+    <title>تبسيط الطب - مرجع المصطلحات الطبية</title>
     
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700;800&display=swap" rel="stylesheet">
+    <!-- Google Fonts - خط عادي وبسيط -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Tajawal:wght@300;400;500;700&display=swap" rel="stylesheet">
     
     <style>
+        /* ========== الأساسيات البسيطة ========== */
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
-            font-family: 'Tajawal', sans-serif;
         }
         
         body {
-            background: #f0f4f8;
+            background: #f5f7fb;
+            font-family: 'Tajawal', -apple-system, BlinkMacSystemFont, sans-serif;
             color: #1e293b;
             padding: 16px;
-            padding-bottom: 90px;
-            min-height: 100vh;
+            padding-bottom: 80px;
+            line-height: 1.5;
         }
         
+        /* ========== الهيدر البسيط ========== */
         .header {
             background: white;
-            padding: 15px 20px;
-            border-radius: 20px;
+            padding: 14px 18px;
+            border-radius: 16px;
             display: flex;
             justify-content: space-between;
             align-items: center;
-            margin-bottom: 20px;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
-            border: 1px solid rgba(39, 174, 96, 0.1);
+            margin-bottom: 16px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.03);
+            border: 1px solid #edf2f7;
         }
         
         .logo {
             display: flex;
             align-items: center;
-            gap: 12px;
+            gap: 10px;
         }
         
         .logo i {
-            color: #27ae60;
-            font-size: 32px;
-            background: #e8f5e9;
-            padding: 10px;
-            border-radius: 15px;
+            color: #2d6a4f;
+            font-size: 24px;
         }
         
         .logo h1 {
-            font-size: 24px;
-            font-weight: 700;
+            font-size: 20px;
+            font-weight: 600;
             color: #1e293b;
         }
         
         .logo span {
-            color: #27ae60;
-            font-size: 14px;
+            color: #2d6a4f;
+            font-size: 13px;
+            background: #e8f5e9;
+            padding: 2px 8px;
+            border-radius: 20px;
+            margin-right: 8px;
         }
         
-        .search-box {
+        .home-btn {
+            background: #f1f5f9;
+            border: none;
+            padding: 8px 16px;
+            border-radius: 30px;
+            font-size: 14px;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            color: #475569;
+        }
+        
+        /* ========== مربع البحث البسيط ========== */
+        .search-wrapper {
             background: white;
             border-radius: 50px;
-            padding: 15px 25px;
+            padding: 12px 20px;
             margin-bottom: 20px;
             display: flex;
             align-items: center;
-            gap: 15px;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
-            border: 2px solid #e2e8f0;
+            gap: 12px;
+            border: 1px solid #e2e8f0;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.02);
         }
         
-        .search-box input {
+        .search-wrapper i {
+            color: #94a3b8;
+            font-size: 18px;
+        }
+        
+        .search-wrapper input {
             border: none;
             outline: none;
             width: 100%;
-            font-size: 16px;
+            font-size: 15px;
             background: transparent;
             font-family: 'Tajawal', sans-serif;
         }
         
+        .search-wrapper input::placeholder {
+            color: #b9c7d9;
+        }
+        
+        /* ========== شريط التحميل ========== */
         .loading {
             text-align: center;
-            padding: 60px 20px;
-            color: #64748b;
+            padding: 50px 20px;
             background: white;
             border-radius: 20px;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            box-shadow: 0 2px 10px rgba(0,0,0,0.02);
         }
         
         .loading i {
-            font-size: 48px;
-            margin-bottom: 20px;
-            color: #27ae60;
+            font-size: 36px;
+            color: #2d6a4f;
+            margin-bottom: 12px;
             animation: spin 1s linear infinite;
+        }
+        
+        .loading p {
+            color: #64748b;
+            font-size: 15px;
         }
         
         @keyframes spin {
@@ -106,303 +137,262 @@
             100% { transform: rotate(360deg); }
         }
         
-        .results-container {
+        /* ========== بطاقات النتائج البسيطة ========== */
+        .results-list {
             background: white;
             border-radius: 20px;
-            padding: 20px;
-            box-shadow: 0 4px 20px rgba(0,0,0,0.05);
-            margin-top: 10px;
-            margin-bottom: 20px;
+            padding: 16px;
+            box-shadow: 0 2px 12px rgba(0,0,0,0.03);
         }
         
-        .result-item {
-            padding: 18px;
-            border-bottom: 1px solid #e2e8f0;
+        .result-card {
+            padding: 16px;
+            border-bottom: 1px solid #edf2f7;
             cursor: pointer;
-            transition: all 0.2s;
-            border-radius: 12px;
+            transition: all 0.15s;
         }
         
-        .result-item:hover {
-            background: #f8fafc;
+        .result-card:last-child {
+            border-bottom: none;
+        }
+        
+        .result-card:hover {
+            background: #fafcff;
+        }
+        
+        .result-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 6px;
         }
         
         .result-term {
-            font-size: 18px;
-            font-weight: 700;
+            font-size: 17px;
+            font-weight: 600;
             color: #1e293b;
         }
         
         .result-arabic {
-            color: #27ae60;
-            margin-top: 5px;
-            font-size: 16px;
+            color: #2d6a4f;
+            font-weight: 500;
+            font-size: 15px;
         }
         
-        .result-meta {
-            display: flex;
-            gap: 15px;
-            margin-top: 10px;
+        .result-chapter {
             font-size: 13px;
-            color: #64748b;
+            color: #94a3b8;
+            display: flex;
+            align-items: center;
+            gap: 4px;
         }
         
+        /* ========== بطاقة التفاصيل الرئيسية (مبسطة) ========== */
         .detail-card {
             background: white;
-            border-radius: 25px;
-            padding: 30px;
-            box-shadow: 0 4px 25px rgba(0,0,0,0.08);
-            margin-bottom: 20px;
+            border-radius: 24px;
+            padding: 24px;
+            box-shadow: 0 4px 16px rgba(0,0,0,0.03);
         }
         
-        .term-header {
+        .term-badge {
+            display: inline-block;
+            background: #e8f5e9;
+            color: #2d6a4f;
+            padding: 4px 12px;
+            border-radius: 30px;
+            font-size: 13px;
+            margin-bottom: 12px;
+        }
+        
+        .detail-header {
             display: flex;
             justify-content: space-between;
-            align-items: center;
+            align-items: flex-start;
             margin-bottom: 20px;
-            border-bottom: 2px solid #f1f5f9;
-            padding-bottom: 20px;
         }
         
-        .term-title {
-            font-size: 42px;
-            font-weight: 800;
-            color: #1e293b;
-        }
-        
-        .term-arabic {
+        .detail-title {
             font-size: 32px;
-            color: #27ae60;
-            margin-top: 10px;
             font-weight: 700;
+            color: #0f172a;
+            line-height: 1.2;
         }
         
-        .save-btn {
-            background: #f1f5f9;
-            border: none;
-            width: 55px;
-            height: 55px;
-            border-radius: 50%;
+        .detail-arabic {
             font-size: 24px;
+            color: #2d6a4f;
+            margin-top: 6px;
+        }
+        
+        .save-star {
+            background: none;
+            border: none;
+            font-size: 26px;
             color: #f1c40f;
             cursor: pointer;
+            padding: 8px;
         }
         
-        .save-btn.saved {
-            background: #f1c40f;
-            color: white;
+        .save-star.saved {
+            color: #f1c40f;
         }
         
-        .pronunciation {
+        .pronunciation-box {
             background: #f8fafc;
-            padding: 12px 20px;
+            padding: 12px 16px;
             border-radius: 40px;
             display: inline-flex;
             align-items: center;
-            gap: 10px;
-            margin: 15px 0;
-            font-size: 18px;
-            border: 1px solid #e2e8f0;
+            gap: 8px;
+            margin: 16px 0;
+            font-size: 16px;
+            border: 1px solid #edf2f7;
         }
         
-        /* ========== الحقول الشاملة ========== */
-        
-        /* الحاوية الرئيسية لجميع الحقول */
-        .fields-container {
-            display: flex;
-            flex-direction: column;
-            gap: 25px;
-            margin: 25px 0;
+        .pronunciation-box i {
+            color: #2d6a4f;
         }
         
-        /* قسم كل مجموعة من الحقول */
-        .field-section {
-            background: #f8fafc;
+        /* ========== الأقسام المبسطة ========== */
+        .section-box {
+            background: #fafcff;
             border-radius: 18px;
-            padding: 20px;
-            border: 1px solid #e2e8f0;
+            padding: 18px;
+            margin: 20px 0;
+            border: 1px solid #edf2f7;
         }
         
-        .section-header {
+        .section-title {
+            font-size: 18px;
+            font-weight: 600;
+            margin-bottom: 16px;
             display: flex;
             align-items: center;
-            gap: 10px;
-            margin-bottom: 15px;
-            padding-bottom: 10px;
-            border-bottom: 2px solid #27ae60;
+            gap: 8px;
+            color: #0f172a;
         }
         
-        .section-header i {
-            font-size: 20px;
-            color: #27ae60;
-            background: white;
-            padding: 8px;
-            border-radius: 12px;
+        .section-title i {
+            color: #2d6a4f;
+            font-size: 18px;
         }
         
-        .section-header h3 {
-            font-size: 20px;
-            font-weight: 700;
-            color: #1e293b;
-        }
-        
-        /* شبكة الحقول */
-        .fields-grid {
+        /* شبكة المعلومات البسيطة */
+        .info-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-            gap: 15px;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 12px;
         }
         
-        /* بطاقة الحقل الواحد */
-        .field-card {
+        .info-item {
             background: white;
-            padding: 15px;
-            border-radius: 12px;
-            border: 1px solid #e2e8f0;
-            transition: all 0.2s;
+            padding: 14px;
+            border-radius: 14px;
+            border: 1px solid #edf2f7;
         }
         
-        .field-card:hover {
-            border-color: #27ae60;
-            box-shadow: 0 4px 12px rgba(39, 174, 96, 0.1);
-        }
-        
-        .field-label {
+        .info-label {
             font-size: 13px;
             color: #64748b;
-            margin-bottom: 8px;
+            margin-bottom: 6px;
             display: flex;
             align-items: center;
-            gap: 5px;
+            gap: 4px;
         }
         
-        .field-value {
-            font-size: 16px;
-            font-weight: 600;
+        .info-value {
+            font-size: 15px;
+            font-weight: 500;
+            color: #0f172a;
+        }
+        
+        /* تحليل المصطلح - بطاقات ملونة بسيطة */
+        .parts-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 10px;
+        }
+        
+        .part-card {
+            background: white;
+            padding: 14px;
+            border-radius: 14px;
+            text-align: center;
+            border: 1px solid #edf2f7;
+        }
+        
+        .part-type {
+            font-size: 12px;
+            color: #64748b;
+            margin-bottom: 6px;
+        }
+        
+        .part-value {
+            font-size: 18px;
+            font-weight: 700;
+            color: #2d6a4f;
+            margin-bottom: 4px;
+        }
+        
+        .part-meaning {
+            font-size: 13px;
             color: #1e293b;
-            word-break: break-word;
         }
         
-        /* القيم المتعددة (مصفوفات) */
-        .array-values {
+        /* المصفوفات - وسوم بسيطة */
+        .tags-list {
             display: flex;
             flex-wrap: wrap;
             gap: 8px;
             margin-top: 8px;
         }
         
-        .array-tag {
-            background: #e8f5e9;
-            color: #27ae60;
-            padding: 5px 12px;
-            border-radius: 20px;
-            font-size: 13px;
-            font-weight: 500;
-        }
-        
-        /* الكائنات المتداخلة (مثل parts) */
-        .nested-object {
-            background: #f8fafc;
-            padding: 12px;
-            border-radius: 10px;
-            margin-top: 10px;
-        }
-        
-        .nested-item {
-            display: grid;
-            grid-template-columns: 80px 1fr;
-            gap: 10px;
-            padding: 8px;
-            border-bottom: 1px dashed #e2e8f0;
-        }
-        
-        .nested-item:last-child {
-            border-bottom: none;
-        }
-        
-        .nested-label {
-            color: #27ae60;
-            font-weight: 600;
-            font-size: 14px;
-        }
-        
-        .nested-value {
+        .tag {
+            background: #f1f5f9;
             color: #1e293b;
+            padding: 6px 14px;
+            border-radius: 30px;
+            font-size: 13px;
         }
         
-        /* الأمراض */
-        .disease-card {
+        .tag-green {
+            background: #e8f5e9;
+            color: #2d6a4f;
+        }
+        
+        .tag-red {
+            background: #fee;
+            color: #b91c1c;
+        }
+        
+        /* بطاقات الأمراض */
+        .disease-simple {
             background: white;
-            padding: 20px;
-            border-radius: 15px;
-            margin-bottom: 15px;
-            border-right: 5px solid #e74c3c;
+            padding: 18px;
+            border-radius: 16px;
+            margin-bottom: 12px;
+            border-right: 3px solid #b91c1c;
         }
         
         .disease-name {
-            font-size: 20px;
-            font-weight: 700;
-            color: #e74c3c;
-            margin-bottom: 15px;
+            font-size: 18px;
+            font-weight: 600;
+            color: #b91c1c;
+            margin-bottom: 12px;
         }
         
-        .disease-field {
+        .disease-row {
             margin: 12px 0;
         }
         
         .disease-label {
-            font-size: 14px;
+            font-size: 13px;
             color: #64748b;
-            margin-bottom: 5px;
+            margin-bottom: 6px;
         }
         
-        .tags-container {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 8px;
-        }
-        
-        .symptom-tag {
-            background: #fee;
-            color: #e74c3c;
-            padding: 6px 15px;
-            border-radius: 25px;
-            font-size: 14px;
-        }
-        
-        .treatment-tag {
-            background: #e8f5e9;
-            color: #27ae60;
-            padding: 6px 15px;
-            border-radius: 25px;
-            font-size: 14px;
-        }
-        
-        /* معلومات أساسية */
-        .basic-info {
-            background: linear-gradient(135deg, #1e293b, #2d3a4f);
-            color: white;
-            padding: 25px;
-            border-radius: 18px;
-            margin-bottom: 25px;
-        }
-        
-        .info-row {
-            display: flex;
-            margin: 10px 0;
-        }
-        
-        .info-label {
-            width: 120px;
-            color: #94a3b8;
-        }
-        
-        .info-content {
-            flex: 1;
-            font-weight: 500;
-        }
-        
-        /* أزرار التنقل */
+        /* ========== أزرار التنقل البسيطة ========== */
         .bottom-nav {
             position: fixed;
             bottom: 0;
@@ -411,10 +401,9 @@
             background: white;
             display: flex;
             justify-content: space-around;
-            padding: 15px 0 10px;
-            border-top-left-radius: 25px;
-            border-top-right-radius: 25px;
-            box-shadow: 0 -4px 20px rgba(0,0,0,0.1);
+            padding: 12px 0 8px;
+            border-top: 1px solid #edf2f7;
+            box-shadow: 0 -2px 10px rgba(0,0,0,0.02);
         }
         
         .nav-item {
@@ -424,85 +413,106 @@
             text-decoration: none;
             color: #94a3b8;
             font-size: 12px;
-            flex: 1;
+            gap: 4px;
             cursor: pointer;
-            gap: 5px;
         }
         
         .nav-item.active {
-            color: #27ae60;
+            color: #2d6a4f;
         }
         
-        .back-button {
+        .nav-item i {
+            font-size: 20px;
+        }
+        
+        .back-btn {
             background: #f1f5f9;
             border: none;
-            padding: 15px 30px;
-            border-radius: 40px;
+            padding: 12px 20px;
+            border-radius: 30px;
             cursor: pointer;
             display: inline-flex;
             align-items: center;
-            gap: 10px;
-            margin-top: 20px;
-            font-size: 16px;
-            font-weight: 500;
+            gap: 8px;
+            margin-top: 16px;
+            font-size: 14px;
+            color: #475569;
         }
         
-        /* إشعارات */
-        .toast {
+        /* إشعار بسيط */
+        .toast-simple {
             position: fixed;
             bottom: 100px;
             left: 50%;
             transform: translateX(-50%);
             background: #1e293b;
             color: white;
-            padding: 15px 30px;
-            border-radius: 50px;
-            display: flex;
-            align-items: center;
-            gap: 10px;
+            padding: 12px 24px;
+            border-radius: 40px;
+            font-size: 14px;
             z-index: 1000;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
-            animation: slideUp 0.3s ease;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+            animation: fadeUp 0.2s ease;
         }
         
-        @keyframes slideUp {
-            from { transform: translate(-50%, 100px); opacity: 0; }
+        @keyframes fadeUp {
+            from { transform: translate(-50%, 20px); opacity: 0; }
             to { transform: translate(-50%, 0); opacity: 1; }
         }
         
+        /* ========== تصميم متجاوب ========== */
         @media (max-width: 480px) {
-            .term-title { font-size: 32px; }
-            .term-arabic { font-size: 24px; }
-            .fields-grid { grid-template-columns: 1fr; }
+            .parts-grid { grid-template-columns: 1fr; }
+            .info-grid { grid-template-columns: 1fr; }
+            .detail-title { font-size: 28px; }
+            .detail-arabic { font-size: 20px; }
         }
     </style>
 </head>
 <body>
+    <!-- هيدر بسيط -->
     <div class="header">
         <div class="logo">
-            <i class="fas fa-heartbeat"></i>
-            <div>
-                <h1>MedTerm AI</h1>
-                <span>عرض جميع الحقول</span>
-            </div>
+            <i class="fas fa-book-open"></i>
+            <h1>مرجع الطب <span>للطلاب</span></h1>
         </div>
-        <button class="back-btn" onclick="showHome()">
+        <button class="home-btn" onclick="showHome()">
             <i class="fas fa-home"></i> الرئيسية
         </button>
     </div>
 
-    <div class="search-box">
+    <!-- مربع بحث بسيط -->
+    <div class="search-wrapper">
         <i class="fas fa-search"></i>
-        <input type="text" id="searchInput" placeholder="ابحث عن مصطلح طبي..." autocomplete="off">
+        <input type="text" id="searchInput" placeholder="ابحث عن مصطلح طبي... (إنجليزي - عربي - لاتيني)">
     </div>
 
+    <!-- المحتوى الرئيسي -->
     <div id="mainContent">
         <div class="loading">
             <i class="fas fa-spinner fa-spin"></i>
-            <p>جاري تحميل الموسوعة الطبية...</p>
+            <p>جاري تحميل المرجع الطبي...</p>
         </div>
     </div>
 
+    <!-- قائمة سريعة للفصول -->
+    <div style="margin: 20px 0;">
+        <div style="display: flex; gap: 8px; overflow-x: auto; padding: 4px 0;">
+            <span onclick="showChapter(1)" style="background: white; padding: 8px 16px; border-radius: 30px; font-size: 14px; cursor: pointer; border: 1px solid #edf2f7;">📘 الفصل 1</span>
+            <span onclick="showChapter(2)" style="background: white; padding: 8px 16px; border-radius: 30px; font-size: 14px; cursor: pointer; border: 1px solid #edf2f7;">📗 الفصل 2</span>
+            <span onclick="showChapter(3)" style="background: white; padding: 8px 16px; border-radius: 30px; font-size: 14px; cursor: pointer; border: 1px solid #edf2f7;">📙 الفصل 3</span>
+            <span onclick="showChapter(4)" style="background: white; padding: 8px 16px; border-radius: 30px; font-size: 14px; cursor: pointer; border: 1px solid #edf2f7;">📘 الفصل 4</span>
+            <span onclick="showChapter(5)" style="background: white; padding: 8px 16px; border-radius: 30px; font-size: 14px; cursor: pointer; border: 1px solid #edf2f7;">📗 الفصل 5</span>
+            <span onclick="showChapter(6)" style="background: white; padding: 8px 16px; border-radius: 30px; font-size: 14px; cursor: pointer; border: 1px solid #edf2f7;">📙 الفصل 6</span>
+            <span onclick="showChapter(7)" style="background: white; padding: 8px 16px; border-radius: 30px; font-size: 14px; cursor: pointer; border: 1px solid #edf2f7;">📘 الفصل 7</span>
+            <span onclick="showChapter(8)" style="background: white; padding: 8px 16px; border-radius: 30px; font-size: 14px; cursor: pointer; border: 1px solid #edf2f7;">📗 الفصل 8</span>
+            <span onclick="showChapter(9)" style="background: white; padding: 8px 16px; border-radius: 30px; font-size: 14px; cursor: pointer; border: 1px solid #edf2f7;">📙 الفصل 9</span>
+            <span onclick="showChapter(10)" style="background: white; padding: 8px 16px; border-radius: 30px; font-size: 14px; cursor: pointer; border: 1px solid #edf2f7;">📘 الفصل 10</span>
+            <span onclick="showChapter(11)" style="background: white; padding: 8px 16px; border-radius: 30px; font-size: 14px; cursor: pointer; border: 1px solid #edf2f7;">📗 الفصل 11</span>
+        </div>
+    </div>
+
+    <!-- التنقل السفلي -->
     <div class="bottom-nav">
         <div class="nav-item active" onclick="showHome()">
             <i class="fas fa-home"></i>
@@ -510,331 +520,405 @@
         </div>
         <div class="nav-item" onclick="showAllTerms()">
             <i class="fas fa-list"></i>
-            <span>جميع المصطلحات</span>
+            <span>كل المصطلحات</span>
         </div>
-        <div class="nav-item" onclick="focusSearch()">
-            <i class="fas fa-search"></i>
-            <span>البحث</span>
+        <div class="nav-item" onclick="showRandom()">
+            <i class="fas fa-shuffle"></i>
+            <span>مصطلح عشوائي</span>
         </div>
         <div class="nav-item" onclick="showSaved()">
             <i class="fas fa-star"></i>
-            <span>محفوظات</span>
+            <span>المحفوظات</span>
         </div>
     </div>
 
     <script>
-        // ==================== المتغيرات العامة ====================
+        // ========== المتغيرات الأساسية ==========
         let allTerms = [];
-        let chapters = [];
-        let savedTerms = JSON.parse(localStorage.getItem('medTerm_savedTerms') || '[]');
-        
+        let savedTerms = JSON.parse(localStorage.getItem('student_medical_saved') || '[]');
         const mainContent = document.getElementById('mainContent');
         const searchInput = document.getElementById('searchInput');
 
-        // ==================== تحميل جميع الفصول ====================
-        async function loadAllChapters() {
+        // ========== تحميل البيانات ==========
+        async function loadMedicalData() {
             try {
-                const chaptersInfo = [
-                    { num: 1, file: 'database/chapter1.json' },
-                    { num: 2, file: 'database/chapter2.json' },
-                    { num: 3, file: 'database/chapter3.json' },
-                    { num: 4, file: 'database/chapter4.json' },
-                    { num: 5, file: 'database/chapter5.json' },
-                    { num: 6, file: 'database/chapter6.json' },
-                    { num: 7, file: 'database/chapter7.json' },
-                    { num: 8, file: 'database/chapter8.json' },
-                    { num: 9, file: 'database/chapter9.json' },
-                    { num: 10, file: 'database/chapter10.json' },
-                    { num: 11, file: 'database/chapter11.json' }
-                ];
-
-                for (const chapter of chaptersInfo) {
+                const chapters = [1,2,3,4,5,6,7,8,9,10,11];
+                
+                for (const num of chapters) {
                     try {
-                        const response = await fetch(chapter.file);
-                        if (!response.ok) continue;
-                        
-                        const data = await response.json();
-                        
-                        chapters.push({
-                            number: data.chapter,
-                            title: data.arabicTitle || data.title,
-                            count: data.terms.length
-                        });
-                        
+                        const res = await fetch(`database/chapter${num}.json`);
+                        if (!res.ok) continue;
+                        const data = await res.json();
                         allTerms = [...allTerms, ...data.terms];
-                        
-                    } catch (e) {
-                        console.log(`خطأ في الفصل ${chapter.num}`);
-                    }
+                    } catch (e) {}
                 }
-
+                
                 allTerms.sort((a, b) => a.id - b.id);
                 showHome();
                 
             } catch (error) {
-                showError('فشل تحميل قاعدة البيانات');
+                mainContent.innerHTML = `<div class="results-list" style="text-align: center; padding: 40px;">❌ حدث خطأ في التحميل</div>`;
             }
         }
 
-        // ==================== عرض جميع الحقول في بطاقة المصطلح ====================
+        // ========== عرض الصفحة الرئيسية (أحدث 10 مصطلحات) ==========
+        function showHome() {
+            if (allTerms.length === 0) {
+                mainContent.innerHTML = `<div class="loading"><i class="fas fa-spinner fa-spin"></i><p>جاري التحميل...</p></div>`;
+                return;
+            }
+            
+            const recent = allTerms.slice(-10).reverse();
+            
+            mainContent.innerHTML = `
+                <div class="results-list">
+                    <div style="margin-bottom: 16px; color: #2d6a4f; font-weight: 500;">
+                        <i class="fas fa-clock"></i> أحدث 10 مصطلحات
+                    </div>
+                    ${recent.map(term => `
+                        <div class="result-card" onclick="showTermDetail(${term.id})">
+                            <div class="result-header">
+                                <span class="result-term">${term.term}</span>
+                                <span class="result-arabic">${term.arabic}</span>
+                            </div>
+                            <div class="result-chapter">
+                                <i class="fas fa-book"></i> فصل ${term.chapter || '?'}
+                                ${term.type ? ` · ${term.type}` : ''}
+                            </div>
+                        </div>
+                    `).join('')}
+                </div>
+            `;
+        }
+
+        // ========== عرض فصل معين ==========
+        async function showChapter(num) {
+            try {
+                const res = await fetch(`database/chapter${num}.json`);
+                const data = await res.json();
+                
+                mainContent.innerHTML = `
+                    <div class="results-list">
+                        <div style="margin-bottom: 20px;">
+                            <div style="font-size: 22px; font-weight: 600; color: #0f172a;">${data.arabicTitle || data.title}</div>
+                            <div style="color: #64748b; margin-top: 8px; font-size: 14px;">${data.description || ''}</div>
+                            <div style="background: #e8f5e9; color: #2d6a4f; display: inline-block; padding: 4px 12px; border-radius: 30px; font-size: 13px; margin-top: 12px;">
+                                <i class="fas fa-list"></i> ${data.terms.length} مصطلح
+                            </div>
+                        </div>
+                        
+                        ${data.terms.map(term => `
+                            <div class="result-card" onclick="showTermDetail(${term.id})">
+                                <div class="result-header">
+                                    <span class="result-term">${term.term}</span>
+                                    <span class="result-arabic">${term.arabic}</span>
+                                </div>
+                                <div class="result-chapter">
+                                    <i class="fas fa-tag"></i> ${term.type || 'مصطلح'}
+                                </div>
+                            </div>
+                        `).join('')}
+                        
+                        <button class="back-btn" onclick="showHome()">
+                            <i class="fas fa-arrow-right"></i> عودة
+                        </button>
+                    </div>
+                `;
+                
+            } catch (error) {
+                showToast('❌ الفصل غير متوفر');
+            }
+        }
+
+        // ========== عرض تفاصيل المصطلح (مبسطة وشاملة) ==========
         function showTermDetail(id) {
             const term = allTerms.find(t => t.id === id);
             if (!term) return;
-
+            
             const isSaved = savedTerms.includes(id);
             
-            // دالة لإنشاء عرض الحقول بشكل ديناميكي
-            function renderField(label, value, icon = 'fa-tag') {
-                if (value === undefined || value === null || value === '') return '';
-                
-                // معالجة المصفوفات
-                if (Array.isArray(value)) {
-                    return `
-                        <div class="field-card">
-                            <div class="field-label"><i class="fas ${icon}"></i> ${label}</div>
-                            <div class="array-values">
-                                ${value.map(v => `<span class="array-tag">${v}</span>`).join('')}
-                            </div>
-                        </div>
-                    `;
+            // دالة مساعدة لعرض القيم
+            const displayValue = (val) => {
+                if (val === undefined || val === null || val === '') return null;
+                if (Array.isArray(val)) {
+                    return `<div class="tags-list">${val.map(v => `<span class="tag tag-green">${v}</span>`).join('')}</div>`;
                 }
-                
-                // معالجة الكائنات
-                if (typeof value === 'object') {
-                    let nestedHtml = '<div class="nested-object">';
-                    for (const [key, val] of Object.entries(value)) {
-                        if (val && typeof val === 'object') {
-                            nestedHtml += `<div class="nested-item"><span class="nested-label">${key}:</span> <span class="nested-value">${JSON.stringify(val)}</span></div>`;
-                        } else {
-                            nestedHtml += `<div class="nested-item"><span class="nested-label">${key}:</span> <span class="nested-value">${val || '-'}</span></div>`;
-                        }
+                if (typeof val === 'object') {
+                    let html = '<div style="background: #f8fafc; padding: 10px; border-radius: 10px;">';
+                    for (let [k,v] of Object.entries(val)) {
+                        html += `<div style="margin: 6px 0;"><span style="color: #2d6a4f; font-weight: 500;">${k}:</span> ${v || '-'}</div>`;
                     }
-                    nestedHtml += '</div>';
-                    return `
-                        <div class="field-card">
-                            <div class="field-label"><i class="fas ${icon}"></i> ${label}</div>
-                            ${nestedHtml}
-                        </div>
-                    `;
+                    html += '</div>';
+                    return html;
                 }
-                
-                // القيم العادية
-                return `
-                    <div class="field-card">
-                        <div class="field-label"><i class="fas ${icon}"></i> ${label}</div>
-                        <div class="field-value">${value}</div>
-                    </div>
-                `;
-            }
+                return `<span style="font-weight: 500;">${val}</span>`;
+            };
 
-            // بناء HTML لجميع الحقول
-            let allFieldsHtml = '<div class="fields-container">';
-            
-            // 1. المعلومات الأساسية
-            allFieldsHtml += `
-                <div class="basic-info">
-                    <div class="info-row"><span class="info-label">المعرف:</span><span class="info-content">${term.id || '-'}</span></div>
-                    <div class="info-row"><span class="info-label">الفصل:</span><span class="info-content">${term.chapter || '-'}</span></div>
-                    <div class="info-row"><span class="info-label">النوع:</span><span class="info-content">${term.type || '-'}</span></div>
-                </div>
-            `;
-            
-            // 2. قسم التعريفات
-            allFieldsHtml += '<div class="field-section"><div class="section-header"><i class="fas fa-book"></i><h3>التعريفات</h3></div><div class="fields-grid">';
-            allFieldsHtml += renderField('الاسم الإنجليزي', term.term, 'fa-language');
-            allFieldsHtml += renderField('الاسم العربي', term.arabic, 'fa-language');
-            allFieldsHtml += renderField('الاسم اللاتيني', term.latin, 'fa-scroll');
-            allFieldsHtml += renderField('النطق', term.pronunciation, 'fa-microphone');
-            allFieldsHtml += renderField('التعريف (عربي)', term.definition, 'fa-align-right');
-            allFieldsHtml += renderField('التعريف (إنجليزي)', term.definition_en, 'fa-align-left');
-            allFieldsHtml += renderField('الجملة الإنجليزية', term.englishSentence, 'fa-quote-right');
-            allFieldsHtml += '</div></div>';
-            
-            // 3. قسم التحليل (parts)
-            if (term.parts) {
-                allFieldsHtml += '<div class="field-section"><div class="section-header"><i class="fas fa-puzzle-piece"></i><h3>تحليل المصطلح</h3></div><div class="fields-grid">';
-                
-                for (const [partType, partData] of Object.entries(term.parts)) {
-                    if (partData && typeof partData === 'object') {
-                        let partHtml = `<div class="field-card"><div class="field-label"><i class="fas fa-code"></i> ${partType}</div><div class="nested-object">`;
-                        for (const [key, val] of Object.entries(partData)) {
-                            partHtml += `<div class="nested-item"><span class="nested-label">${key}:</span> <span class="nested-value">${val || '-'}</span></div>`;
-                        }
-                        partHtml += '</div></div>';
-                        allFieldsHtml += partHtml;
-                    }
-                }
-                
-                allFieldsHtml += '</div></div>';
-            }
-            
-            // 4. معلومات الجهاز
-            allFieldsHtml += '<div class="field-section"><div class="section-header"><i class="fas fa-heartbeat"></i><h3>معلومات الجهاز</h3></div><div class="fields-grid">';
-            allFieldsHtml += renderField('الجهاز (عربي)', term.system, 'fa-stethoscope');
-            allFieldsHtml += renderField('الجهاز (إنجليزي)', term.system_en, 'fa-stethoscope');
-            allFieldsHtml += renderField('وظيفة الجهاز (عربي)', term.systemFunction, 'fa-cogs');
-            allFieldsHtml += renderField('وظيفة الجهاز (إنجليزي)', term.systemFunction_en, 'fa-cogs');
-            allFieldsHtml += '</div></div>';
-            
-            // 5. الموقع التشريحي
-            allFieldsHtml += '<div class="field-section"><div class="section-header"><i class="fas fa-map-marker-alt"></i><h3>الموقع التشريحي</h3></div><div class="fields-grid">';
-            allFieldsHtml += renderField('الموقع (عربي)', term.location, 'fa-location-dot');
-            allFieldsHtml += renderField('الموقع (إنجليزي)', term.location_en, 'fa-location-dot');
-            allFieldsHtml += renderField('الأعضاء المجاورة (عربي)', term.nearbyOrgans, 'fa-project-diagram');
-            allFieldsHtml += renderField('الأعضاء المجاورة (إنجليزي)', term.nearbyOrgans_en, 'fa-project-diagram');
-            allFieldsHtml += '</div></div>';
-            
-            // 6. الكلمات المفتاحية
-            allFieldsHtml += '<div class="field-section"><div class="section-header"><i class="fas fa-key"></i><h3>كلمات مفتاحية</h3></div><div class="fields-grid">';
-            allFieldsHtml += renderField('keywords', term.keywords, 'fa-tags');
-            allFieldsHtml += '</div></div>';
-            
-            // 7. الوظائف (functions)
-            if (term.functions) {
-                allFieldsHtml += '<div class="field-section"><div class="section-header"><i class="fas fa-tasks"></i><h3>الوظائف</h3></div><div class="fields-grid">';
-                allFieldsHtml += renderField('functions', term.functions, 'fa-check-circle');
-                allFieldsHtml += '</div></div>';
-            }
-            
-            // 8. الاختصارات
-            if (term.abbreviation) {
-                allFieldsHtml += '<div class="field-section"><div class="section-header"><i class="fas fa-font"></i><h3>الاختصارات</h3></div><div class="fields-grid">';
-                allFieldsHtml += renderField('الاختصار', term.abbreviation, 'fa-bolt');
-                if (term.fullForm) allFieldsHtml += renderField('الاسم الكامل', term.fullForm, 'fa-expand');
-                if (term.category) allFieldsHtml += renderField('التصنيف', term.category, 'fa-layer-group');
-                allFieldsHtml += '</div></div>';
-            }
-            
-            // 9. الأمراض
-            if (term.diseases && term.diseases.length > 0) {
-                allFieldsHtml += '<div class="field-section"><div class="section-header"><i class="fas fa-disease"></i><h3>الأمراض المرتبطة</h3></div>';
-                
-                term.diseases.forEach((disease, index) => {
-                    allFieldsHtml += `
-                        <div class="disease-card">
-                            <div class="disease-name">📌 ${disease.name || disease.name_en || `مرض ${index + 1}`}</div>
-                            
-                            ${disease.name ? `<div class="disease-field"><div class="disease-label">الاسم (عربي):</div><div>${disease.name}</div></div>` : ''}
-                            ${disease.name_en ? `<div class="disease-field"><div class="disease-label">الاسم (إنجليزي):</div><div>${disease.name_en}</div></div>` : ''}
-                            
-                            ${disease.symptoms ? `
-                                <div class="disease-field">
-                                    <div class="disease-label">الأعراض (عربي):</div>
-                                    <div class="tags-container">
-                                        ${disease.symptoms.map(s => `<span class="symptom-tag"><i class="fas fa-circle"></i> ${s}</span>`).join('')}
-                                    </div>
-                                </div>
-                            ` : ''}
-                            
-                            ${disease.symptoms_en ? `
-                                <div class="disease-field">
-                                    <div class="disease-label">الأعراض (إنجليزي):</div>
-                                    <div class="tags-container">
-                                        ${disease.symptoms_en.map(s => `<span class="symptom-tag"><i class="fas fa-circle"></i> ${s}</span>`).join('')}
-                                    </div>
-                                </div>
-                            ` : ''}
-                            
-                            ${disease.treatments ? `
-                                <div class="disease-field">
-                                    <div class="disease-label">العلاج (عربي):</div>
-                                    <div class="tags-container">
-                                        ${disease.treatments.map(t => `<span class="treatment-tag"><i class="fas fa-check"></i> ${t}</span>`).join('')}
-                                    </div>
-                                </div>
-                            ` : ''}
-                            
-                            ${disease.treatments_en ? `
-                                <div class="disease-field">
-                                    <div class="disease-label">العلاج (إنجليزي):</div>
-                                    <div class="tags-container">
-                                        ${disease.treatments_en.map(t => `<span class="treatment-tag"><i class="fas fa-check"></i> ${t}</span>`).join('')}
-                                    </div>
-                                </div>
-                            ` : ''}
-                        </div>
-                    `;
-                });
-                
-                allFieldsHtml += '</div>';
-            }
-            
-            // 10. حقول إضافية (أي حقول أخرى غير مغطاة)
-            const extraFields = ['singular', 'plural', 'functions', 'abbreviation', 'fullForm', 'category'];
-            const allKeys = Object.keys(term);
-            const coveredKeys = ['id', 'term', 'arabic', 'latin', 'pronunciation', 'definition', 'definition_en', 
-                               'englishSentence', 'parts', 'system', 'system_en', 'systemFunction', 'systemFunction_en',
-                               'location', 'location_en', 'nearbyOrgans', 'nearbyOrgans_en', 'keywords', 'chapter', 
-                               'type', 'diseases', 'functions', 'abbreviation', 'fullForm', 'category', 'singular', 'plural'];
-            
-            const remainingKeys = allKeys.filter(key => !coveredKeys.includes(key) && term[key] !== undefined);
-            
-            if (remainingKeys.length > 0) {
-                allFieldsHtml += '<div class="field-section"><div class="section-header"><i class="fas fa-ellipsis-h"></i><h3>حقول إضافية</h3></div><div class="fields-grid">';
-                remainingKeys.forEach(key => {
-                    allFieldsHtml += renderField(key, term[key], 'fa-plus-circle');
-                });
-                allFieldsHtml += '</div></div>';
-            }
-            
-            allFieldsHtml += '</div>'; // إغلاق fields-container
-
-            // عرض الصفحة كاملة
-            mainContent.innerHTML = `
+            // بناء HTML
+            let html = `
                 <div class="detail-card">
-                    <div class="term-header">
+                    <div class="term-badge">${term.type || 'مصطلح طبي'} · فصل ${term.chapter || '?'}</div>
+                    
+                    <div class="detail-header">
                         <div>
-                            <div class="term-title">${term.term}</div>
-                            <div class="term-arabic">${term.arabic}</div>
+                            <div class="detail-title">${term.term}</div>
+                            <div class="detail-arabic">${term.arabic}</div>
                         </div>
-                        <button class="save-btn ${isSaved ? 'saved' : ''}" onclick="toggleSave(${term.id})">
+                        <button class="save-star ${isSaved ? 'saved' : ''}" onclick="toggleSave(${term.id})">
                             <i class="${isSaved ? 'fas' : 'far'} fa-star"></i>
                         </button>
                     </div>
-
+                    
                     ${term.pronunciation ? `
-                        <div class="pronunciation">
-                            <i class="fas fa-microphone-alt"></i>
-                            <span>${term.pronunciation}</span>
+                        <div class="pronunciation-box">
+                            <i class="fas fa-microphone-alt"></i> ${term.pronunciation}
                         </div>
                     ` : ''}
+                    
+                    ${term.latin ? `
+                        <div style="background: #f1f5f9; padding: 10px 16px; border-radius: 12px; margin: 16px 0; font-family: monospace; font-size: 16px;">
+                            <i class="fas fa-scroll" style="color: #2d6a4f;"></i> ${term.latin}
+                        </div>
+                    ` : ''}
+                    
+                    <!-- التعريف -->
+                    <div class="section-box">
+                        <div class="section-title"><i class="fas fa-align-right"></i> التعريف</div>
+                        <div style="line-height: 1.7;">${term.definition}</div>
+                        ${term.definition_en ? `<div style="margin-top: 10px; color: #64748b; font-size: 14px; border-top: 1px dashed #edf2f7; padding-top: 10px;">${term.definition_en}</div>` : ''}
+                        ${term.englishSentence ? `<div style="margin-top: 10px; font-style: italic; color: #475569;"><i class="fas fa-quote-right"></i> ${term.englishSentence}</div>` : ''}
+                    </div>
+            `;
+            
+            // أقسام الأجزاء (parts)
+            if (term.parts) {
+                html += `
+                    <div class="section-box">
+                        <div class="section-title"><i class="fas fa-puzzle-piece"></i> تحليل الكلمة</div>
+                        <div class="parts-grid">
+                `;
+                
+                if (term.parts.prefix) {
+                    html += `
+                        <div class="part-card">
+                            <div class="part-type">بادئة</div>
+                            <div class="part-value">${term.parts.prefix.value || '-'}</div>
+                            <div class="part-meaning">${term.parts.prefix.meaning || ''}</div>
+                        </div>
+                    `;
+                }
+                
+                if (term.parts.root) {
+                    html += `
+                        <div class="part-card">
+                            <div class="part-type">جذر</div>
+                            <div class="part-value">${term.parts.root.value || '-'}</div>
+                            <div class="part-meaning">${term.parts.root.meaning || ''}</div>
+                        </div>
+                    `;
+                }
+                
+                if (term.parts.root1) {
+                    html += `
+                        <div class="part-card">
+                            <div class="part-type">جذر ١</div>
+                            <div class="part-value">${term.parts.root1.value || '-'}</div>
+                            <div class="part-meaning">${term.parts.root1.meaning || ''}</div>
+                        </div>
+                    `;
+                }
+                
+                if (term.parts.root2) {
+                    html += `
+                        <div class="part-card">
+                            <div class="part-type">جذر ٢</div>
+                            <div class="part-value">${term.parts.root2.value || '-'}</div>
+                            <div class="part-meaning">${term.parts.root2.meaning || ''}</div>
+                        </div>
+                    `;
+                }
+                
+                if (term.parts.suffix) {
+                    html += `
+                        <div class="part-card">
+                            <div class="part-type">لاحقة</div>
+                            <div class="part-value">${term.parts.suffix.value || '-'}</div>
+                            <div class="part-meaning">${term.parts.suffix.meaning || ''}</div>
+                        </div>
+                    `;
+                }
+                
+                html += `</div></div>`;
+            }
+            
+            // معلومات الجهاز والموقع
+            if (term.system || term.location) {
+                html += `
+                    <div class="section-box">
+                        <div class="section-title"><i class="fas fa-heartbeat"></i> الجهاز والموقع</div>
+                        <div class="info-grid">
+                `;
+                
+                if (term.system) html += `<div class="info-item"><div class="info-label"><i class="fas fa-stethoscope"></i> الجهاز</div><div class="info-value">${term.system}</div></div>`;
+                if (term.system_en) html += `<div class="info-item"><div class="info-label">🌐 System</div><div class="info-value">${term.system_en}</div></div>`;
+                if (term.location) html += `<div class="info-item"><div class="info-label"><i class="fas fa-map-pin"></i> الموقع</div><div class="info-value">${term.location}</div></div>`;
+                if (term.location_en) html += `<div class="info-item"><div class="info-label">📍 Location</div><div class="info-value">${term.location_en}</div></div>`;
+                
+                html += `</div>`;
+                
+                if (term.nearbyOrgans) {
+                    html += `<div style="margin-top: 16px;"><div style="color: #64748b; font-size: 14px; margin-bottom: 8px;"><i class="fas fa-project-diagram"></i> الأعضاء المجاورة</div>${displayValue(term.nearbyOrgans)}</div>`;
+                }
+                
+                html += `</div>`;
+            }
+            
+            // وظيفة الجهاز
+            if (term.systemFunction || term.systemFunction_en) {
+                html += `
+                    <div class="section-box">
+                        <div class="section-title"><i class="fas fa-cogs"></i> وظيفة الجهاز</div>
+                        ${term.systemFunction ? `<div style="margin-bottom: 8px;">${term.systemFunction}</div>` : ''}
+                        ${term.systemFunction_en ? `<div style="color: #64748b; font-size: 14px;">${term.systemFunction_en}</div>` : ''}
+                    </div>
+                `;
+            }
+            
+            // الكلمات المفتاحية
+            if (term.keywords) {
+                html += `
+                    <div class="section-box">
+                        <div class="section-title"><i class="fas fa-tags"></i> كلمات مفتاحية</div>
+                        <div class="tags-list">
+                            ${term.keywords.map(k => `<span class="tag">${k}</span>`).join('')}
+                        </div>
+                    </div>
+                `;
+            }
+            
+            // الاختصارات
+            if (term.abbreviation || term.fullForm) {
+                html += `
+                    <div class="section-box">
+                        <div class="section-title"><i class="fas fa-font"></i> اختصارات</div>
+                        <div class="info-grid">
+                            ${term.abbreviation ? `<div class="info-item"><div class="info-label">الاختصار</div><div class="info-value">${term.abbreviation}</div></div>` : ''}
+                            ${term.fullForm ? `<div class="info-item"><div class="info-label">الاسم الكامل</div><div class="info-value">${term.fullForm}</div></div>` : ''}
+                            ${term.category ? `<div class="info-item"><div class="info-label">التصنيف</div><div class="info-value">${term.category}</div></div>` : ''}
+                        </div>
+                    </div>
+                `;
+            }
+            
+            // الأمراض
+            if (term.diseases && term.diseases.length > 0) {
+                html += `<div class="section-box"><div class="section-title"><i class="fas fa-disease"></i> أمراض مرتبطة</div>`;
+                
+                term.diseases.forEach(d => {
+                    html += `
+                        <div class="disease-simple">
+                            <div class="disease-name">${d.name || d.name_en || 'مرض'}</div>
+                            
+                            ${d.symptoms ? `
+                                <div class="disease-row">
+                                    <div class="disease-label">الأعراض</div>
+                                    <div class="tags-list">
+                                        ${d.symptoms.map(s => `<span class="tag tag-red">${s}</span>`).join('')}
+                                    </div>
+                                </div>
+                            ` : ''}
+                            
+                            ${d.treatments ? `
+                                <div class="disease-row">
+                                    <div class="disease-label">العلاج</div>
+                                    <div class="tags-list">
+                                        ${d.treatments.map(t => `<span class="tag tag-green">${t}</span>`).join('')}
+                                    </div>
+                                </div>
+                            ` : ''}
+                            
+                            ${d.symptoms_en ? `
+                                <div style="margin-top: 10px; color: #64748b; font-size: 13px;">
+                                    <i class="fas fa-language"></i> ${d.symptoms_en.join(' · ')}
+                                </div>
+                            ` : ''}
+                        </div>
+                    `;
+                });
+                
+                html += `</div>`;
+            }
+            
+            // أي حقول إضافية
+            const extraFields = ['singular', 'plural', 'functions'];
+            extraFields.forEach(field => {
+                if (term[field]) {
+                    html += `
+                        <div class="section-box">
+                            <div class="section-title"><i class="fas fa-info-circle"></i> ${field}</div>
+                            ${displayValue(term[field])}
+                        </div>
+                    `;
+                }
+            });
+            
+            html += `<button class="back-btn" onclick="showHome()"><i class="fas fa-arrow-right"></i> عودة</button></div>`;
+            
+            mainContent.innerHTML = html;
+        }
 
-                    ${allFieldsHtml}
-
-                    <button class="back-button" onclick="showHome()">
-                        <i class="fas fa-arrow-right"></i> عودة للرئيسية
-                    </button>
+        // ========== عرض جميع المصطلحات ==========
+        function showAllTerms() {
+            mainContent.innerHTML = `
+                <div class="results-list">
+                    <div style="margin-bottom: 16px; color: #2d6a4f; font-weight: 500;">
+                        <i class="fas fa-list"></i> جميع المصطلحات (${allTerms.length})
+                    </div>
+                    ${allTerms.slice(0, 30).map(term => `
+                        <div class="result-card" onclick="showTermDetail(${term.id})">
+                            <div class="result-header">
+                                <span class="result-term">${term.term}</span>
+                                <span class="result-arabic">${term.arabic}</span>
+                            </div>
+                            <div class="result-chapter">فصل ${term.chapter || '?'}</div>
+                        </div>
+                    `).join('')}
+                    ${allTerms.length > 30 ? '<div style="text-align: center; margin-top: 20px; color: #94a3b8;">والمزيد...</div>' : ''}
                 </div>
             `;
         }
 
-        // ==================== عرض الصفحة الرئيسية ====================
-        function showHome() {
-            if (allTerms.length === 0) {
+        // ========== مصطلح عشوائي ==========
+        function showRandom() {
+            if (allTerms.length === 0) return;
+            const randomId = allTerms[Math.floor(Math.random() * allTerms.length)].id;
+            showTermDetail(randomId);
+        }
+
+        // ========== المحفوظات ==========
+        function showSaved() {
+            const saved = allTerms.filter(t => savedTerms.includes(t.id));
+            
+            if (saved.length === 0) {
                 mainContent.innerHTML = `
-                    <div class="results-container" style="text-align: center; padding: 60px;">
-                        <i class="fas fa-database" style="font-size: 64px; color: #94a3b8;"></i>
-                        <p style="margin: 20px 0;">جاري التحميل...</p>
+                    <div class="results-list" style="text-align: center; padding: 40px;">
+                        <i class="far fa-star" style="font-size: 40px; color: #f1c40f;"></i>
+                        <p style="margin-top: 16px;">لا توجد مصطلحات محفوظة</p>
                     </div>
                 `;
                 return;
             }
             
-            const recentTerms = allTerms.slice(-20).reverse();
-            
             mainContent.innerHTML = `
-                <div class="results-container">
-                    <h3 style="margin-bottom: 20px;"><i class="fas fa-fire" style="color: #27ae60;"></i> أحدث المصطلحات (${allTerms.length} إجمالي)</h3>
-                    
-                    ${recentTerms.map(term => `
-                        <div class="result-item" onclick="showTermDetail(${term.id})">
-                            <div style="display: flex; justify-content: space-between;">
-                                <div class="result-term">${term.term}</div>
-                                <span style="color: #27ae60;">${term.arabic}</span>
-                            </div>
-                            <div class="result-meta">
-                                <span><i class="fas fa-folder"></i> فصل ${term.chapter || '?'}</span>
-                                <span><i class="fas fa-tag"></i> ${term.type || 'مصطلح'}</span>
+                <div class="results-list">
+                    <div style="margin-bottom: 16px; color: #f1c40f; font-weight: 500;">
+                        <i class="fas fa-star"></i> المحفوظات (${saved.length})
+                    </div>
+                    ${saved.map(term => `
+                        <div class="result-card" onclick="showTermDetail(${term.id})">
+                            <div class="result-header">
+                                <span class="result-term">${term.term}</span>
+                                <span class="result-arabic">${term.arabic}</span>
                             </div>
                         </div>
                     `).join('')}
@@ -842,157 +926,76 @@
             `;
         }
 
-        // ==================== عرض جميع المصطلحات ====================
-        function showAllTerms() {
-            mainContent.innerHTML = `
-                <div class="results-container">
-                    <h3 style="margin-bottom: 20px;"><i class="fas fa-list"></i> جميع المصطلحات (${allTerms.length})</h3>
-                    
-                    ${allTerms.slice(0, 50).map(term => `
-                        <div class="result-item" onclick="showTermDetail(${term.id})">
-                            <div style="display: flex; justify-content: space-between;">
-                                <div class="result-term">${term.term}</div>
-                                <span style="color: #27ae60;">${term.arabic}</span>
-                            </div>
-                            <div class="result-meta">
-                                <span><i class="fas fa-folder"></i> فصل ${term.chapter || '?'}</span>
-                            </div>
-                        </div>
-                    `).join('')}
-                    
-                    ${allTerms.length > 50 ? '<p style="text-align: center; margin-top: 20px;">والمزيد...</p>' : ''}
-                </div>
-            `;
-        }
-
-        // ==================== البحث ====================
+        // ========== البحث ==========
         function search(query) {
             if (!query || query.length < 2) {
                 showHome();
                 return;
             }
 
-            query = query.toLowerCase().trim();
+            const q = query.toLowerCase().trim();
             
             const results = allTerms.filter(term => {
                 return (
-                    (term.term && term.term.toLowerCase().includes(query)) ||
-                    (term.arabic && term.arabic.includes(query)) ||
-                    (term.latin && term.latin.toLowerCase().includes(query)) ||
-                    (term.definition && term.definition.toLowerCase().includes(query)) ||
-                    (term.keywords && term.keywords.some(k => k && k.toLowerCase().includes(query)))
+                    (term.term && term.term.toLowerCase().includes(q)) ||
+                    (term.arabic && term.arabic.includes(q)) ||
+                    (term.latin && term.latin.toLowerCase().includes(q)) ||
+                    (term.definition && term.definition.toLowerCase().includes(q))
                 );
             });
 
             if (results.length === 0) {
                 mainContent.innerHTML = `
-                    <div class="results-container" style="text-align: center; padding: 60px;">
-                        <i class="fas fa-search" style="font-size: 64px; color: #94a3b8;"></i>
-                        <p style="margin: 20px 0;">لا توجد نتائج لـ "${query}"</p>
+                    <div class="results-list" style="text-align: center; padding: 40px;">
+                        <i class="fas fa-search" style="font-size: 40px; color: #94a3b8;"></i>
+                        <p style="margin-top: 16px;">لا توجد نتائج</p>
                     </div>
                 `;
                 return;
             }
 
             mainContent.innerHTML = `
-                <div class="results-container">
-                    <h3 style="margin-bottom: 20px;">نتائج البحث عن "${query}" (${results.length})</h3>
-                    
-                    ${results.slice(0, 30).map(term => `
-                        <div class="result-item" onclick="showTermDetail(${term.id})">
-                            <div style="display: flex; justify-content: space-between;">
-                                <div class="result-term">${term.term}</div>
-                                <span style="color: #27ae60;">${term.arabic}</span>
-                            </div>
-                            <div class="result-meta">
-                                <span><i class="fas fa-folder"></i> فصل ${term.chapter || '?'}</span>
-                                <span><i class="fas fa-scroll"></i> ${term.latin || ''}</span>
+                <div class="results-list">
+                    <div style="margin-bottom: 16px;">🔍 ${results.length} نتيجة لـ "${query}"</div>
+                    ${results.slice(0, 20).map(term => `
+                        <div class="result-card" onclick="showTermDetail(${term.id})">
+                            <div class="result-header">
+                                <span class="result-term">${term.term}</span>
+                                <span class="result-arabic">${term.arabic}</span>
                             </div>
                         </div>
                     `).join('')}
-                    
-                    ${results.length > 30 ? '<p style="text-align: center; margin-top: 20px;">و' + (results.length - 30) + ' نتائج أخرى...</p>' : ''}
                 </div>
             `;
         }
 
-        // ==================== حفظ/إزالة من المفضلة ====================
+        // ========== حفظ/إزالة ==========
         function toggleSave(id) {
             if (savedTerms.includes(id)) {
                 savedTerms = savedTerms.filter(t => t !== id);
-                showToast('تمت الإزالة من المحفوظات');
+                showToast('⭐ أزيل من المحفوظات');
             } else {
                 savedTerms.push(id);
-                showToast('تمت الإضافة للمحفوظات');
+                showToast('✅ أضيف إلى المحفوظات');
             }
-            localStorage.setItem('medTerm_savedTerms', JSON.stringify(savedTerms));
+            localStorage.setItem('student_medical_saved', JSON.stringify(savedTerms));
             showTermDetail(id);
         }
 
-        // ==================== عرض المحفوظات ====================
-        function showSaved() {
-            const saved = allTerms.filter(t => savedTerms.includes(t.id));
-            
-            if (saved.length === 0) {
-                mainContent.innerHTML = `
-                    <div class="results-container" style="text-align: center; padding: 60px;">
-                        <i class="far fa-star" style="font-size: 64px; color: #f1c40f;"></i>
-                        <p style="margin: 20px 0;">لا توجد مصطلحات محفوظة</p>
-                    </div>
-                `;
-                return;
-            }
-
-            mainContent.innerHTML = `
-                <div class="results-container">
-                    <h3 style="margin-bottom: 20px;"><i class="fas fa-star" style="color: #f1c40f;"></i> المحفوظات (${saved.length})</h3>
-                    
-                    ${saved.map(term => `
-                        <div class="result-item" onclick="showTermDetail(${term.id})">
-                            <div style="display: flex; justify-content: space-between;">
-                                <div class="result-term">${term.term}</div>
-                                <span style="color: #27ae60;">${term.arabic}</span>
-                            </div>
-                        </div>
-                    `).join('')}
-                </div>
-            `;
+        // ========== إشعارات ==========
+        function showToast(msg) {
+            const t = document.createElement('div');
+            t.className = 'toast-simple';
+            t.innerText = msg;
+            document.body.appendChild(t);
+            setTimeout(() => t.remove(), 2000);
         }
 
-        // ==================== عرض الخطأ ====================
-        function showError(message) {
-            mainContent.innerHTML = `
-                <div class="results-container" style="text-align: center; padding: 60px;">
-                    <i class="fas fa-exclamation-circle" style="font-size: 64px; color: #e74c3c;"></i>
-                    <p style="margin: 20px 0;">${message}</p>
-                    <button class="back-button" onclick="location.reload()">
-                        <i class="fas fa-redo"></i> إعادة المحاولة
-                    </button>
-                </div>
-            `;
-        }
-
-        // ==================== إشعارات Toast ====================
-        function showToast(message) {
-            const toast = document.createElement('div');
-            toast.className = 'toast';
-            toast.innerHTML = `<i class="fas fa-info-circle"></i> ${message}`;
-            document.body.appendChild(toast);
-            setTimeout(() => toast.remove(), 3000);
-        }
-
-        // ==================== دوال مساعدة ====================
-        function focusSearch() {
-            searchInput.focus();
-        }
-
-        // ==================== الأحداث ====================
-        searchInput.addEventListener('input', (e) => {
-            search(e.target.value);
-        });
+        // ========== ربط البحث ==========
+        searchInput.addEventListener('input', (e) => search(e.target.value));
 
         // بدء التحميل
-        loadAllChapters();
+        loadMedicalData();
     </script>
 </body>
 </html>

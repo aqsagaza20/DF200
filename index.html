@@ -32,6 +32,8 @@
             --success: #10b981;
             --danger: #ef4444;
             --warning: #f59e0b;
+            --analyzer-btn: #7c3aed;
+            --analyzer-btn-hover: #6d28d9;
         }
         
         body {
@@ -535,24 +537,43 @@
             border-color: var(--primary);
         }
         
-        .analyzer-input-group button {
-            background: var(--primary);
+        /* زر التحليل المميز */
+        .analyzer-btn {
+            background: linear-gradient(135deg, #7c3aed, #6d28d9);
             color: white;
             border: none;
-            padding: 0 30px;
+            padding: 0 35px;
             border-radius: 50px;
-            font-size: 16px;
-            font-weight: 600;
+            font-size: 18px;
+            font-weight: 700;
             cursor: pointer;
             display: flex;
             align-items: center;
-            gap: 8px;
-            transition: background 0.2s;
+            gap: 10px;
+            transition: all 0.3s;
+            box-shadow: 0 8px 20px rgba(124, 58, 237, 0.3);
+            border: 2px solid transparent;
             white-space: nowrap;
+            height: 58px;
         }
         
-        .analyzer-input-group button:hover {
-            background: var(--primary-dark);
+        .analyzer-btn i {
+            font-size: 20px;
+            transition: transform 0.3s;
+        }
+        
+        .analyzer-btn:hover {
+            background: linear-gradient(135deg, #6d28d9, #5b21b6);
+            transform: translateY(-2px);
+            box-shadow: 0 12px 25px rgba(124, 58, 237, 0.4);
+        }
+        
+        .analyzer-btn:hover i {
+            transform: scale(1.1);
+        }
+        
+        .analyzer-btn:active {
+            transform: translateY(0);
         }
         
         /* نتائج التحليل - بطاقات بسيطة */
@@ -576,6 +597,12 @@
             border-radius: 20px;
             text-align: center;
             border: 1px solid var(--border);
+            transition: all 0.2s;
+        }
+        
+        .result-card-simple:hover {
+            border-color: var(--primary);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.05);
         }
         
         .result-label {
@@ -603,6 +630,17 @@
             padding: 8px 12px;
             border-radius: 30px;
             display: inline-block;
+        }
+        
+        .result-source {
+            font-size: 12px;
+            color: var(--text-light);
+            margin-top: 8px;
+        }
+        
+        .result-source i {
+            color: var(--primary);
+            margin-left: 4px;
         }
         
         /* ========== بطاقات نتائج البحث من قاعدة البيانات ========== */
@@ -697,6 +735,49 @@
             margin-left: 6px;
         }
         
+        /* ========== زر الرجوع المحسن ========== */
+        .back-btn-container {
+            display: flex;
+            justify-content: center;
+            margin: 30px 0 10px;
+        }
+        
+        .back-btn-improved {
+            background: white;
+            color: var(--primary);
+            border: 2px solid var(--primary);
+            padding: 14px 35px;
+            border-radius: 60px;
+            font-size: 18px;
+            font-weight: 600;
+            cursor: pointer;
+            display: inline-flex;
+            align-items: center;
+            gap: 12px;
+            transition: all 0.3s;
+            box-shadow: 0 4px 12px rgba(13, 148, 136, 0.1);
+        }
+        
+        .back-btn-improved i {
+            font-size: 20px;
+            transition: transform 0.3s;
+        }
+        
+        .back-btn-improved:hover {
+            background: var(--primary);
+            color: white;
+            gap: 15px;
+            box-shadow: 0 8px 20px rgba(13, 148, 136, 0.3);
+        }
+        
+        .back-btn-improved:hover i {
+            transform: translateX(-5px);
+        }
+        
+        .back-btn-improved:active {
+            transform: scale(0.98);
+        }
+        
         /* ========== الأمراض ========== */
         .disease-card {
             background: white;
@@ -745,20 +826,6 @@
         
         .nav-btn i {
             font-size: 22px;
-        }
-        
-        .back-btn {
-            background: #f1f5f9;
-            border: none;
-            padding: 14px 24px;
-            border-radius: 40px;
-            cursor: pointer;
-            display: inline-flex;
-            align-items: center;
-            gap: 10px;
-            margin-top: 16px;
-            font-size: 16px;
-            font-weight: 500;
         }
         
         /* ========== إشعار ========== */
@@ -884,11 +951,26 @@
         function setHash(hash) { location.hash = hash; }
         function getHash() { return location.hash.substring(1) || 'home'; }
         
+        // ========== دالة التمرير للأعلى (مضمونة 100%) ==========
         function scrollToTop() {
-            window.scrollTo({ top: 0, behavior: 'smooth' });
+            // طرق متعددة لضمان التمرير للأعلى
+            window.scrollTo({
+                top: 0,
+                left: 0,
+                behavior: 'smooth'
+            });
+            
+            // طريقة احتياطية
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+            
+            // تأكيد إضافي
+            setTimeout(() => {
+                window.scrollTo(0, 0);
+            }, 50);
         }
 
-        // ========== التنقل مع الحفظ ==========
+        // ========== التنقل مع الحفظ والتمرير للأعلى ==========
         function navigate(page, param = null) {
             if (page === 'home') setHash('');
             else if (page === 'term' && param) setHash(`term/${param}`);
@@ -900,7 +982,7 @@
             else if (page === 'analyzer') setHash('analyzer');
             
             loadFromHash();
-            scrollToTop();
+            scrollToTop(); // تمرير للأعلى فوراً
             
             document.querySelectorAll('.nav-btn').forEach(btn => btn.classList.remove('active'));
             const activeNav = document.querySelector(`[data-nav="${page}"]`);
@@ -957,6 +1039,9 @@
                 performSearch(q);
             }
             else showHome();
+            
+            // تمرير للأعلى بعد تحميل المحتوى
+            setTimeout(scrollToTop, 100);
         }
 
         // ========== عرض جميع الشابترز ==========
@@ -1016,7 +1101,13 @@
                             <p style="color: #64748b;">${data.description || ''}</p>
                         </div>
                         ${termsHtml}
-                        <button class="back-btn" onclick="navigate('chapters')"><i class="fas fa-arrow-right"></i> عودة للشابترز</button>
+                        
+                        <!-- زر الرجوع المحسن -->
+                        <div class="back-btn-container">
+                            <button class="back-btn-improved" onclick="navigate('chapters')">
+                                <i class="fas fa-arrow-right"></i> عودة للشابترز
+                            </button>
+                        </div>
                     </div>
                 `;
                 
@@ -1201,7 +1292,14 @@
                 html += `</div></div>`;
             }
             
-            html += `<button class="back-btn" onclick="navigate('home')"><i class="fas fa-arrow-right"></i> عودة</button></div>`;
+            // زر الرجوع المحسن
+            html += `
+                <div class="back-btn-container">
+                    <button class="back-btn-improved" onclick="navigate('home')">
+                        <i class="fas fa-arrow-right"></i> عودة للرئيسية
+                    </button>
+                </div>
+            </div>`;
             
             mainEl.innerHTML = html;
         }
@@ -1220,30 +1318,33 @@
                             </div>
                         </div>
                         
-                        <!-- حقل الإدخال البسيط -->
+                        <!-- حقل الإدخال مع زر التحليل المميز -->
                         <div class="analyzer-input-group">
                             <input type="text" id="analyzerInput" placeholder="مثال: cardiomyopathy, gastritis, nephrectomy...">
-                            <button onclick="analyzeTerm()">
-                                <i class="fas fa-magnifying-glass"></i> تحليل وبحث
+                            <button class="analyzer-btn" onclick="analyzeTerm()">
+                                <i class="fas fa-magic"></i> تحليل وبحث
                             </button>
                         </div>
                         
                         <!-- نتائج التحليل - بطاقات بسيطة -->
                         <div class="analyzer-results">
-                            <div class="result-card-simple">
+                            <div class="result-card-simple" id="prefixCard">
                                 <div class="result-label"><i class="fas fa-arrow-right"></i> البادئة (Prefix)</div>
                                 <div class="result-value" id="prefixValue">-</div>
                                 <div class="result-meaning" id="prefixDesc">...</div>
+                                <div class="result-source" id="prefixSource"></div>
                             </div>
-                            <div class="result-card-simple">
+                            <div class="result-card-simple" id="rootCard">
                                 <div class="result-label"><i class="fas fa-code"></i> الجذر (Root)</div>
                                 <div class="result-value" id="rootValue">-</div>
                                 <div class="result-meaning" id="rootDesc">...</div>
+                                <div class="result-source" id="rootSource"></div>
                             </div>
-                            <div class="result-card-simple">
+                            <div class="result-card-simple" id="suffixCard">
                                 <div class="result-label"><i class="fas fa-arrow-left"></i> اللاحقة (Suffix)</div>
                                 <div class="result-value" id="suffixValue">-</div>
                                 <div class="result-meaning" id="suffixDesc">...</div>
+                                <div class="result-source" id="suffixSource"></div>
                             </div>
                         </div>
                         
@@ -1251,9 +1352,12 @@
                         <div id="databaseResults" class="database-results"></div>
                     </div>
                     
-                    <button class="back-btn" onclick="navigate('home')" style="margin-top: 10px;">
-                        <i class="fas fa-arrow-right"></i> عودة للرئيسية
-                    </button>
+                    <!-- زر الرجوع المحسن -->
+                    <div class="back-btn-container">
+                        <button class="back-btn-improved" onclick="navigate('home')">
+                            <i class="fas fa-arrow-right"></i> عودة للرئيسية
+                        </button>
+                    </div>
                 </div>
             `;
         }
@@ -1266,7 +1370,10 @@
                 return;
             }
             
-            // قواعد للتحليل
+            // البحث عن المصطلح في قاعدة البيانات
+            const exactMatch = allTerms.find(t => t.term.toLowerCase() === input);
+            
+            // قواعد للتحليل (افتراضية)
             const prefixes = {
                 'a': 'بدون/عدم',
                 'an': 'بدون/عدم',
@@ -1346,61 +1453,112 @@
             let prefixFound = null;
             let rootFound = null;
             let suffixFound = null;
+            let prefixSource = 'تحليل تلقائي';
+            let rootSource = 'تحليل تلقائي';
+            let suffixSource = 'تحليل تلقائي';
             
-            // البحث عن اللاحقة
-            for (let s in suffixes) {
-                if (input.endsWith(s)) {
-                    suffixFound = { value: s, meaning: suffixes[s] };
-                    break;
+            // ===== البحث في قاعدة البيانات أولاً (إذا وجد تطابق تام) =====
+            if (exactMatch && exactMatch.parts) {
+                // استخراج البادئة من قاعدة البيانات
+                if (exactMatch.parts.prefix) {
+                    prefixFound = {
+                        value: exactMatch.parts.prefix.value,
+                        meaning: exactMatch.parts.prefix.meaning
+                    };
+                    prefixSource = 'مأخوذ من قاعدة البيانات';
+                }
+                
+                // استخراج الجذر من قاعدة البيانات
+                if (exactMatch.parts.root) {
+                    rootFound = {
+                        value: exactMatch.parts.root.value,
+                        meaning: exactMatch.parts.root.meaning
+                    };
+                    rootSource = 'مأخوذ من قاعدة البيانات';
+                } else if (exactMatch.parts.root1) {
+                    rootFound = {
+                        value: exactMatch.parts.root1.value,
+                        meaning: exactMatch.parts.root1.meaning
+                    };
+                    rootSource = 'مأخوذ من قاعدة البيانات (جذر 1)';
+                } else if (exactMatch.parts.root2) {
+                    rootFound = {
+                        value: exactMatch.parts.root2.value,
+                        meaning: exactMatch.parts.root2.meaning
+                    };
+                    rootSource = 'مأخوذ من قاعدة البيانات (جذر 2)';
+                }
+                
+                // استخراج اللاحقة من قاعدة البيانات
+                if (exactMatch.parts.suffix) {
+                    suffixFound = {
+                        value: exactMatch.parts.suffix.value,
+                        meaning: exactMatch.parts.suffix.meaning
+                    };
+                    suffixSource = 'مأخوذ من قاعدة البيانات';
                 }
             }
             
-            let remaining = input;
-            if (suffixFound) {
-                remaining = remaining.substring(0, remaining.length - suffixFound.value.length);
-            }
-            
-            // البحث عن البادئة
-            for (let p in prefixes) {
-                if (remaining.startsWith(p)) {
-                    prefixFound = { value: p, meaning: prefixes[p] };
-                    remaining = remaining.substring(p.length);
-                    break;
+            // ===== إذا لم نجد في قاعدة البيانات، نستخدم التحليل التلقائي =====
+            if (!prefixFound) {
+                // البحث عن البادئة
+                for (let p in prefixes) {
+                    if (input.startsWith(p)) {
+                        prefixFound = { value: p, meaning: prefixes[p] };
+                        break;
+                    }
                 }
             }
             
-            // البحث عن الجذر
-            for (let r in roots) {
-                if (remaining.includes(r)) {
-                    rootFound = { value: r, meaning: roots[r] };
-                    break;
+            if (!rootFound) {
+                // البحث عن الجذر
+                for (let r in roots) {
+                    if (input.includes(r)) {
+                        rootFound = { value: r, meaning: roots[r] };
+                        break;
+                    }
                 }
             }
             
-            // عرض نتائج التحليل
+            if (!suffixFound) {
+                // البحث عن اللاحقة
+                for (let s in suffixes) {
+                    if (input.endsWith(s)) {
+                        suffixFound = { value: s, meaning: suffixes[s] };
+                        break;
+                    }
+                }
+            }
+            
+            // عرض نتائج التحليل مع مصدرها
             document.getElementById('prefixValue').textContent = prefixFound ? prefixFound.value : '─';
             document.getElementById('prefixDesc').textContent = prefixFound ? prefixFound.meaning : 'لا توجد بادئة';
+            document.getElementById('prefixSource').innerHTML = prefixFound ? `<i class="fas fa-database"></i> ${prefixSource}` : '';
+            
             document.getElementById('rootValue').textContent = rootFound ? rootFound.value : '─';
             document.getElementById('rootDesc').textContent = rootFound ? rootFound.meaning : 'لم يتم العثور على جذر';
+            document.getElementById('rootSource').innerHTML = rootFound ? `<i class="fas fa-database"></i> ${rootSource}` : '';
+            
             document.getElementById('suffixValue').textContent = suffixFound ? suffixFound.value : '─';
             document.getElementById('suffixDesc').textContent = suffixFound ? suffixFound.meaning : 'لا توجد لاحقة';
+            document.getElementById('suffixSource').innerHTML = suffixFound ? `<i class="fas fa-database"></i> ${suffixSource}` : '';
             
             // ===== البحث في قاعدة البيانات عن المصطلح المدخل =====
             const databaseResultsDiv = document.getElementById('databaseResults');
             
             // البحث عن تطابق تام أولاً
-            const exactMatch = allTerms.find(t => t.term.toLowerCase() === input);
+            const exactMatchTerm = allTerms.find(t => t.term.toLowerCase() === input);
             
             // البحث عن مصطلحات تحتوي على الكلمة المدخلة
             const relatedMatches = allTerms.filter(t => 
                 t.term.toLowerCase().includes(input) && 
-                (exactMatch ? t.id !== exactMatch.id : true)
+                (exactMatchTerm ? t.id !== exactMatchTerm.id : true)
             ).slice(0, 3); // نأخذ أول 3 نتائج فقط
             
             let dbHtml = '';
             
             // عرض النتيجة المطابقة تماماً إن وجدت
-            if (exactMatch) {
+            if (exactMatchTerm) {
                 dbHtml += `
                     <div class="database-title">
                         <i class="fas fa-check-circle" style="color: #10b981;"></i> 
@@ -1409,23 +1567,23 @@
                 `;
                 
                 dbHtml += `
-                    <div class="database-item" onclick="navigate('term', ${exactMatch.id})">
+                    <div class="database-item" onclick="navigate('term', ${exactMatchTerm.id})">
                         <div class="database-term-header">
-                            <span class="database-term-english">${exactMatch.term}</span>
-                            <span class="database-term-arabic">${exactMatch.arabic}</span>
+                            <span class="database-term-english">${exactMatchTerm.term}</span>
+                            <span class="database-term-arabic">${exactMatchTerm.arabic}</span>
                         </div>
                         <div class="database-term-definition">
-                            ${exactMatch.definition ? exactMatch.definition.substring(0, 120) + '...' : ''}
+                            ${exactMatchTerm.definition ? exactMatchTerm.definition.substring(0, 120) + '...' : ''}
                         </div>
                         <div class="database-term-meta">
-                            <span class="database-term-chapter">${exactMatch.chapterData?.name || `Chapter ${exactMatch.chapter}`}</span>
-                            <span>${exactMatch.type || 'مصطلح'}</span>
+                            <span class="database-term-chapter">${exactMatchTerm.chapterData?.name || `Chapter ${exactMatchTerm.chapter}`}</span>
+                            <span>${exactMatchTerm.type || 'مصطلح'}</span>
                         </div>
                         
                         <!-- أهمية المصطلح الطبي -->
                         <div class="term-importance">
                             <i class="fas fa-star"></i> 
-                            ${getTermImportance(exactMatch)}
+                            ${getTermImportance(exactMatchTerm)}
                         </div>
                     </div>
                 `;
@@ -1465,7 +1623,7 @@
             }
             
             // إذا لم يتم العثور على أي نتائج
-            if (!exactMatch && relatedMatches.length === 0) {
+            if (!exactMatchTerm && relatedMatches.length === 0) {
                 dbHtml = `
                     <div class="database-title" style="color: #ef4444;">
                         <i class="fas fa-exclamation-circle"></i> 
@@ -1572,7 +1730,13 @@
                     <div class="detail-container" style="text-align: center; padding: 40px;">
                         <i class="fas fa-search" style="font-size: 48px; color: #94a3b8;"></i>
                         <p style="margin: 20px 0;">لا توجد نتائج لـ "${query}"</p>
-                        <button class="back-btn" onclick="navigate('home')">عودة</button>
+                        
+                        <!-- زر الرجوع المحسن -->
+                        <div class="back-btn-container">
+                            <button class="back-btn-improved" onclick="navigate('home')">
+                                <i class="fas fa-arrow-right"></i> عودة
+                            </button>
+                        </div>
                     </div>
                 `;
                 return;
@@ -1598,7 +1762,14 @@
                 `;
             });
             
-            html += `</div><button class="back-btn" onclick="navigate('home')"><i class="fas fa-arrow-right"></i> عودة</button></div>`;
+            html += `</div>
+                    <!-- زر الرجوع المحسن -->
+                    <div class="back-btn-container">
+                        <button class="back-btn-improved" onclick="navigate('home')">
+                            <i class="fas fa-arrow-right"></i> عودة للرئيسية
+                        </button>
+                    </div>
+                </div>`;
             mainEl.innerHTML = html;
         }
 
@@ -1668,7 +1839,13 @@
                     <div class="detail-container" style="text-align: center; padding: 40px;">
                         <i class="far fa-star" style="font-size: 48px; color: #f1c40f;"></i>
                         <p style="margin: 20px 0;">لا توجد مصطلحات محفوظة</p>
-                        <button class="back-btn" onclick="navigate('home')">عودة</button>
+                        
+                        <!-- زر الرجوع المحسن -->
+                        <div class="back-btn-container">
+                            <button class="back-btn-improved" onclick="navigate('home')">
+                                <i class="fas fa-arrow-right"></i> عودة
+                            </button>
+                        </div>
                     </div>
                 `;
                 return;
@@ -1694,7 +1871,13 @@
                 <div class="detail-container">
                     <div style="margin-bottom: 16px;"><i class="fas fa-star" style="color: #f1c40f;"></i> المحفوظات (${saved.length})</div>
                     ${html}
-                    <button class="back-btn" onclick="navigate('home')"><i class="fas fa-arrow-right"></i> عودة</button>
+                    
+                    <!-- زر الرجوع المحسن -->
+                    <div class="back-btn-container">
+                        <button class="back-btn-improved" onclick="navigate('home')">
+                            <i class="fas fa-arrow-right"></i> عودة للرئيسية
+                        </button>
+                    </div>
                 </div>
             `;
         }

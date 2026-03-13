@@ -477,7 +477,7 @@
             color: var(--danger);
         }
         
-        /* ========== محلل المصطلح (مبسط وأنيق) - تم تحسينه ========== */
+        /* ========== محلل المصطلح (مبسط وأنيق) ========== */
         .analyzer-section {
             background: white;
             border-radius: 24px;
@@ -605,75 +605,96 @@
             display: inline-block;
         }
         
-        /* اقتراحات سريعة */
-        .quick-suggestions {
-            margin: 25px 0 15px;
+        /* ========== بطاقات نتائج البحث من قاعدة البيانات ========== */
+        .database-results {
+            margin-top: 30px;
+            padding-top: 20px;
+            border-top: 2px solid var(--border);
         }
         
-        .suggestions-title {
-            font-size: 16px;
+        .database-title {
+            font-size: 18px;
             font-weight: 600;
-            margin-bottom: 12px;
+            margin-bottom: 16px;
             display: flex;
             align-items: center;
             gap: 8px;
-            color: var(--text-light);
+            color: var(--text);
         }
         
-        .suggestions-grid {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 10px;
+        .database-title i {
+            color: var(--primary);
         }
         
-        .suggestion-chip {
-            background: #f1f5f9;
-            padding: 10px 20px;
-            border-radius: 40px;
-            font-size: 15px;
-            cursor: pointer;
-            border: 1px solid var(--border);
-            transition: all 0.15s;
-        }
-        
-        .suggestion-chip:hover {
-            background: var(--primary);
-            color: white;
-            border-color: var(--primary);
-        }
-        
-        /* نتائج البحث عن المصطلحات المشابهة */
-        .similar-terms {
-            margin-top: 25px;
-            padding-top: 20px;
-            border-top: 2px dashed var(--border);
-        }
-        
-        .similar-term-item {
+        .database-item {
             background: #f8fafc;
-            padding: 12px 18px;
-            border-radius: 16px;
-            margin: 8px 0;
-            cursor: pointer;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
+            border-radius: 18px;
+            padding: 18px;
+            margin-bottom: 12px;
             border: 1px solid var(--border);
+            cursor: pointer;
             transition: all 0.15s;
         }
         
-        .similar-term-item:hover {
+        .database-item:hover {
             border-color: var(--primary);
             background: #ecfdf5;
         }
         
-        .similar-term-english {
-            font-weight: 600;
+        .database-term-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+        
+        .database-term-english {
+            font-size: 20px;
+            font-weight: 700;
             color: var(--text);
         }
         
-        .similar-term-arabic {
+        .database-term-arabic {
+            font-size: 18px;
             color: var(--primary);
+            font-weight: 500;
+        }
+        
+        .database-term-definition {
+            color: var(--text-light);
+            margin: 10px 0;
+            line-height: 1.6;
+            font-size: 15px;
+        }
+        
+        .database-term-meta {
+            display: flex;
+            gap: 15px;
+            margin-top: 10px;
+            font-size: 14px;
+            color: var(--text-light);
+        }
+        
+        .database-term-chapter {
+            background: #f1f5f9;
+            padding: 4px 12px;
+            border-radius: 30px;
+        }
+        
+        /* أهمية المصطلح الطبي */
+        .term-importance {
+            margin-top: 12px;
+            padding: 12px;
+            background: #fef9e7;
+            border-radius: 12px;
+            border-right: 3px solid #f1c40f;
+            font-size: 14px;
+            color: #7d5d23;
+        }
+        
+        .term-importance i {
+            color: #f1c40f;
+            margin-left: 6px;
         }
         
         /* ========== الأمراض ========== */
@@ -1185,7 +1206,7 @@
             mainEl.innerHTML = html;
         }
 
-        // ========== محلل المصطلحات (مبسط وأنيق) - تم تحسينه ==========
+        // ========== محلل المصطلحات (يبحث في قاعدة البيانات) ==========
         function showAnalyzer() {
             mainEl.innerHTML = `
                 <div class="detail-container">
@@ -1195,15 +1216,15 @@
                             <i class="fas fa-cut"></i>
                             <div>
                                 <h2>محلل المصطلحات الطبية</h2>
-                                <p>أدخل أي مصطلح لتحليله إلى أجزاء</p>
+                                <p>أدخل أي مصطلح لتحليله والبحث عنه في قاعدة البيانات</p>
                             </div>
                         </div>
                         
                         <!-- حقل الإدخال البسيط -->
                         <div class="analyzer-input-group">
-                            <input type="text" id="analyzerInput" placeholder="مثال: cardiomyopathy, gastroenteritis, nephrectomy...">
+                            <input type="text" id="analyzerInput" placeholder="مثال: cardiomyopathy, gastritis, nephrectomy...">
                             <button onclick="analyzeTerm()">
-                                <i class="fas fa-magnifying-glass"></i> تحليل
+                                <i class="fas fa-magnifying-glass"></i> تحليل وبحث
                             </button>
                         </div>
                         
@@ -1226,25 +1247,8 @@
                             </div>
                         </div>
                         
-                        <!-- اقتراحات سريعة للتحليل -->
-                        <div class="quick-suggestions">
-                            <div class="suggestions-title">
-                                <i class="fas fa-lightbulb"></i> جرب تحليل هذه المصطلحات
-                            </div>
-                            <div class="suggestions-grid">
-                                <span class="suggestion-chip" onclick="document.getElementById('analyzerInput').value='cardiology'; analyzeTerm()">cardiology</span>
-                                <span class="suggestion-chip" onclick="document.getElementById('analyzerInput').value='gastritis'; analyzeTerm()">gastritis</span>
-                                <span class="suggestion-chip" onclick="document.getElementById('analyzerInput').value='nephrectomy'; analyzeTerm()">nephrectomy</span>
-                                <span class="suggestion-chip" onclick="document.getElementById('analyzerInput').value='arthritis'; analyzeTerm()">arthritis</span>
-                                <span class="suggestion-chip" onclick="document.getElementById('analyzerInput').value='hemoglobin'; analyzeTerm()">hemoglobin</span>
-                                <span class="suggestion-chip" onclick="document.getElementById('analyzerInput').value='endocarditis'; analyzeTerm()">endocarditis</span>
-                                <span class="suggestion-chip" onclick="document.getElementById('analyzerInput').value='osteoporosis'; analyzeTerm()">osteoporosis</span>
-                                <span class="suggestion-chip" onclick="document.getElementById('analyzerInput').value='hyperthyroidism'; analyzeTerm()">hyperthyroidism</span>
-                            </div>
-                        </div>
-                        
-                        <!-- نتائج البحث عن المصطلحات المشابهة (تظهر عند وجود نتائج) -->
-                        <div id="analyzerResult" class="similar-terms"></div>
+                        <!-- نتائج البحث من قاعدة البيانات (تظهر هنا) -->
+                        <div id="databaseResults" class="database-results"></div>
                     </div>
                     
                     <button class="back-btn" onclick="navigate('home')" style="margin-top: 10px;">
@@ -1254,7 +1258,7 @@
             `;
         }
 
-        // ========== وظيفة التحليل (محسنة) ==========
+        // ========== وظيفة التحليل والبحث في قاعدة البيانات ==========
         function analyzeTerm() {
             const input = document.getElementById('analyzerInput').value.toLowerCase().trim();
             if (!input) {
@@ -1373,7 +1377,7 @@
                 }
             }
             
-            // عرض النتائج
+            // عرض نتائج التحليل
             document.getElementById('prefixValue').textContent = prefixFound ? prefixFound.value : '─';
             document.getElementById('prefixDesc').textContent = prefixFound ? prefixFound.meaning : 'لا توجد بادئة';
             document.getElementById('rootValue').textContent = rootFound ? rootFound.value : '─';
@@ -1381,25 +1385,162 @@
             document.getElementById('suffixValue').textContent = suffixFound ? suffixFound.value : '─';
             document.getElementById('suffixDesc').textContent = suffixFound ? suffixFound.meaning : 'لا توجد لاحقة';
             
-            // البحث عن مصطلحات مشابهة في قاعدة البيانات
-            const matches = allTerms.filter(t => t.term.toLowerCase().includes(input));
-            const resultDiv = document.getElementById('analyzerResult');
+            // ===== البحث في قاعدة البيانات عن المصطلح المدخل =====
+            const databaseResultsDiv = document.getElementById('databaseResults');
             
-            if (matches.length > 0) {
-                let resultHtml = '<div style="margin-top: 15px;"><div style="font-weight: 600; margin-bottom: 12px; color: var(--text);">🔍 مصطلحات مشابهة في البنك:</div>';
-                matches.slice(0, 5).forEach(t => {
-                    resultHtml += `
-                        <div class="similar-term-item" onclick="navigate('term', ${t.id})">
-                            <span class="similar-term-english">${t.term}</span>
-                            <span class="similar-term-arabic">${t.arabic}</span>
+            // البحث عن تطابق تام أولاً
+            const exactMatch = allTerms.find(t => t.term.toLowerCase() === input);
+            
+            // البحث عن مصطلحات تحتوي على الكلمة المدخلة
+            const relatedMatches = allTerms.filter(t => 
+                t.term.toLowerCase().includes(input) && 
+                (exactMatch ? t.id !== exactMatch.id : true)
+            ).slice(0, 3); // نأخذ أول 3 نتائج فقط
+            
+            let dbHtml = '';
+            
+            // عرض النتيجة المطابقة تماماً إن وجدت
+            if (exactMatch) {
+                dbHtml += `
+                    <div class="database-title">
+                        <i class="fas fa-check-circle" style="color: #10b981;"></i> 
+                        تم العثور على تطابق تام في قاعدة البيانات
+                    </div>
+                `;
+                
+                dbHtml += `
+                    <div class="database-item" onclick="navigate('term', ${exactMatch.id})">
+                        <div class="database-term-header">
+                            <span class="database-term-english">${exactMatch.term}</span>
+                            <span class="database-term-arabic">${exactMatch.arabic}</span>
+                        </div>
+                        <div class="database-term-definition">
+                            ${exactMatch.definition ? exactMatch.definition.substring(0, 120) + '...' : ''}
+                        </div>
+                        <div class="database-term-meta">
+                            <span class="database-term-chapter">${exactMatch.chapterData?.name || `Chapter ${exactMatch.chapter}`}</span>
+                            <span>${exactMatch.type || 'مصطلح'}</span>
+                        </div>
+                        
+                        <!-- أهمية المصطلح الطبي -->
+                        <div class="term-importance">
+                            <i class="fas fa-star"></i> 
+                            ${getTermImportance(exactMatch)}
+                        </div>
+                    </div>
+                `;
+            }
+            
+            // عرض النتائج ذات الصلة
+            if (relatedMatches.length > 0) {
+                dbHtml += `
+                    <div class="database-title" style="margin-top: 20px;">
+                        <i class="fas fa-link"></i> 
+                        مصطلحات ذات صلة في قاعدة البيانات
+                    </div>
+                `;
+                
+                relatedMatches.forEach(term => {
+                    dbHtml += `
+                        <div class="database-item" onclick="navigate('term', ${term.id})">
+                            <div class="database-term-header">
+                                <span class="database-term-english">${term.term}</span>
+                                <span class="database-term-arabic">${term.arabic}</span>
+                            </div>
+                            <div class="database-term-definition">
+                                ${term.definition ? term.definition.substring(0, 100) + '...' : ''}
+                            </div>
+                            <div class="database-term-meta">
+                                <span class="database-term-chapter">${term.chapterData?.name || `Chapter ${term.chapter}`}</span>
+                            </div>
+                            
+                            <!-- أهمية المصطلح الطبي -->
+                            <div class="term-importance">
+                                <i class="fas fa-info-circle"></i> 
+                                ${getTermImportance(term)}
+                            </div>
                         </div>
                     `;
                 });
-                resultHtml += '</div>';
-                resultDiv.innerHTML = resultHtml;
-            } else {
-                resultDiv.innerHTML = '';
             }
+            
+            // إذا لم يتم العثور على أي نتائج
+            if (!exactMatch && relatedMatches.length === 0) {
+                dbHtml = `
+                    <div class="database-title" style="color: #ef4444;">
+                        <i class="fas fa-exclamation-circle"></i> 
+                        لم يتم العثور على هذا المصطلح في قاعدة البيانات
+                    </div>
+                    <p style="color: #64748b; margin-top: 10px;">جرب البحث بكلمات أخرى أو استخدم خاصية البحث العامة.</p>
+                `;
+            }
+            
+            databaseResultsDiv.innerHTML = dbHtml;
+        }
+
+        // ========== دالة لتحديد أهمية المصطلح الطبي ==========
+        function getTermImportance(term) {
+            // قائمة بالمصطلحات الهامة
+            const importantTerms = {
+                'heart': 'أحد أهم أعضاء الجسم - مسؤول عن ضخ الدم',
+                'brain': 'المركز الرئيسي للجهاز العصبي',
+                'lung': 'مسؤول عن تبادل الغازات والأكسجين',
+                'liver': 'مسؤول عن إزالة السموم وتخزين الطاقة',
+                'kidney': 'مسؤول عن تصفية الدم وإخراج الفضلات',
+                'stomach': 'مسؤول عن هضم الطعام',
+                'bone': 'يشكل الهيكل العظمي ويحمي الأعضاء',
+                'blood': 'ينقل الأكسجين والغذاء لجميع الخلايا',
+                'cancer': 'مرض خطير ينتشر في جميع أنحاء العالم',
+                'diabetes': 'مرض مزمن يؤثر على ملايين البشر',
+                'hypertension': 'مرض شائع يزيد خطر الإصابة بأمراض القلب',
+                'pneumonia': 'التهاب رئوي قد يكون خطيراً لكبار السن',
+                'arthritis': 'التهاب المفاصل يؤثر على جودة الحياة',
+                'asthma': 'مرض تنفسي مزمن شائع',
+                'stroke': 'سبب رئيسي للإعاقة والوفاة',
+                'infarction': 'نوبة قلبية - حالة طارئة تهدد الحياة',
+                'hepatitis': 'التهاب الكبد الفيروسي منتشر عالمياً',
+                'tuberculosis': 'مرض معدٍ يصيب الرئتين',
+                'hiv': 'فيروس نقص المناعة - وباء عالمي',
+                'alzheimer': 'مرض تنكسي عصبي شائع لدى كبار السن',
+                'parkinson': 'اضطراب حركي تقدمي',
+                'epilepsy': 'اضطراب عصبي شائع',
+                'migraine': 'صداع شديد يؤثر على الحياة اليومية',
+                'depression': 'مرض نفسي شائع عالمياً',
+                'anxiety': 'اضطراب نفسي واسع الانتشار',
+                'fracture': 'كسر عظمي - إصابة شائعة',
+                'infection': 'عدوى - سبب رئيسي للمرض',
+                'inflammation': 'استجابة الجسم الطبيعية للإصابة',
+                'tumor': 'نمو غير طبيعي للخلايا',
+                'metastasis': 'انتشار السرطان - مرحلة متقدمة'
+            };
+            
+            // البحث عن كلمات مفتاحية في المصطلح
+            for (let [key, value] of Object.entries(importantTerms)) {
+                if (term.term.toLowerCase().includes(key) || 
+                    (term.arabic && term.arabic.includes(key)) ||
+                    (term.keywords && term.keywords.some(k => k && k.toLowerCase().includes(key)))) {
+                    return value;
+                }
+            }
+            
+            // أهمية افتراضية للمصطلحات الأخرى
+            const types = {
+                'condition': 'حالة مرضية شائعة في الممارسة السريرية',
+                'disease': 'مرض له أهمية في التشخيص والعلاج',
+                'symptom': 'عرض مهم في التقييم السريري',
+                'procedure': 'إجراء طبي شائع',
+                'medication': 'دواء واسع الاستخدام',
+                'anatomy': 'تركيب تشريحي أساسي',
+                'physiology': 'وظيفة حيوية مهمة',
+                'pathology': 'حالة مرضية تهم الأطباء'
+            };
+            
+            if (term.type && types[term.type.toLowerCase()]) {
+                return types[term.type.toLowerCase()];
+            }
+            
+            // أهمية عامة
+            return 'مصطلح طبي مهم في المجال الطبي';
         }
 
         // ========== البحث ==========

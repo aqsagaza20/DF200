@@ -1,6 +1,5 @@
-const CACHE_NAME = "medterm-v1";
+const CACHE_NAME = "medterm-v2";
 
-// الملفات الأساسية
 const STATIC_ASSETS = [
   "./",
   "./index.html",
@@ -9,57 +8,58 @@ const STATIC_ASSETS = [
   "./icons/icon-512.png"
 ];
 
-// تثبيت Service Worker
+// install
 self.addEventListener("install", event => {
   event.waitUntil(
     caches.open(CACHE_NAME).then(cache => {
       return cache.addAll(STATIC_ASSETS);
+    }).catch(err => {
+      console.error("Cache addAll failed:", err);
     })
   );
   self.skipWaiting();
 });
 
-// تفعيل Service Worker
+// activate
 self.addEventListener("activate", event => {
   event.waitUntil(
-    caches.keys().then(keys => {
-      return Promise.all(
-        keys.filter(key => key !== CACHE_NAME)
-        .map(key => caches.delete(key))
-      );
-    })
+    caches.keys().then(keys =>
+      Promise.all(
+        keys.filter(k => k !== CACHE_NAME).map(k => caches.delete(k))
+      )
+    )
   );
   self.clients.claim();
 });
 
-// جلب الملفات
+// fetch
 self.addEventListener("fetch", event => {
+  const req = event.request;
 
-  // تخزين ملفات JSON تلقائياً
-  if (event.request.url.includes("/database/")) {
+  // تخزين JSON من database
+  if (req.url.includes("/database/")) {
     event.respondWith(
       caches.open(CACHE_NAME).then(cache =>
-        fetch(event.request)
-          .then(response => {
-            cache.put(event.request, response.clone());
-            return response;
+        fetch(req)
+          .then(res => {
+            cache.put(req, res.clone());
+            return res;
           })
-          .catch(() => caches.match(event.request))
+          .catch(() => caches.match(req))
       )
     );
     return;
   }
 
-  // استراتيجية Cache First
+  // cache first
   event.respondWith(
-    caches.match(event.request).then(response => {
-      return response || fetch(event.request).then(fetchRes => {
+    caches.match(req).then(res => {
+      return res || fetch(req).then(fetchRes => {
         return caches.open(CACHE_NAME).then(cache => {
-          cache.put(event.request, fetchRes.clone());
+          cache.put(req, fetchRes.clone());
           return fetchRes;
         });
       });
     })
   );
-
 });

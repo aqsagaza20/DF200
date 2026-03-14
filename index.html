@@ -1028,13 +1028,22 @@
     </div>
 
     <!-- المحتوى الرئيسي -->
-    <div id="mainContent">
-        <div class="loading-screen">
-            <i class="fas fa-spinner fa-spin"></i>
-            <p>جاري تحميل MedTerm...</p>
-            <p style="font-size: 14px; color: #94a3b8; margin-top: 8px;">11 فصل - آلاف المصطلحات</p>
-        </div>
+    <!-- المحتوى الرئيسي -->
+<div id="mainContent">
+    <div class="loading-screen">
+        <i class="fas fa-spinner fa-spin"></i>
+        <p>جاري تحميل MedTerm...</p>
+        <p style="font-size: 14px; color: #94a3b8; margin-top: 8px;">11 فصل - آلاف المصطلحات</p>
     </div>
+</div>
+
+<button id="installBtn" class="install-btn" style="display:none;">
+    <i class="fas fa-download"></i>
+    تثبيت MedTerm
+</button>
+
+<!-- القائمة السفلية -->
+<div class="bottom-nav">
 
     <!-- القائمة السفلية -->
     <div class="bottom-nav">
@@ -2208,35 +2217,34 @@
 // ====== كود زر تثبيت التطبيق ======
 
 let deferredPrompt;
+const installBtn = document.getElementById("installBtn");
 
 window.addEventListener("beforeinstallprompt", (e) => {
     e.preventDefault();
     deferredPrompt = e;
 
-    const installBtn = document.createElement("button");
-    installBtn.innerText = "📲 تثبيت MedTerm";
+    if (installBtn) {
+        installBtn.style.display = "flex";
+    }
+});
 
-    installBtn.style.position = "fixed";
-    installBtn.style.bottom = "120px";
-    installBtn.style.left = "50%";
-    installBtn.style.transform = "translateX(-50%)";
-    installBtn.style.padding = "12px 25px";
-    installBtn.style.borderRadius = "30px";
-    installBtn.style.border = "none";
-    installBtn.style.background = "#0d9488";
-    installBtn.style.color = "white";
-    installBtn.style.fontSize = "16px";
-    installBtn.style.zIndex = "999";
+if (installBtn) {
+    installBtn.addEventListener("click", async () => {
+        if (!deferredPrompt) return;
 
-    document.body.appendChild(installBtn);
-
-    installBtn.addEventListener("click", () => {
-        installBtn.remove();
         deferredPrompt.prompt();
-        deferredPrompt.userChoice.then(() => {
-            deferredPrompt = null;
-        });
+
+        const choiceResult = await deferredPrompt.userChoice;
+
+        deferredPrompt = null;
+        installBtn.style.display = "none";
     });
+}
+
+window.addEventListener("appinstalled", () => {
+    if (installBtn) {
+        installBtn.style.display = "none";
+    }
 });
     </script>
 </body>

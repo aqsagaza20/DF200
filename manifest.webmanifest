@@ -1,20 +1,21 @@
 {
-  "name": "MedTerm",
+  "name": "MedTerm - البنك الطبي الشامل",
   "short_name": "MedTerm",
-  "description": "البنك الطبي الشامل",
-  "start_url": "./",
+  "description": "البنك الطبي الشامل للمصطلحات الطبية",
+  "start_url": "./index.html",
   "scope": "./",
   "display": "standalone",
-  "background_color": "#ffffff",
+  "orientation": "portrait",
+  "background_color": "#0d9488",
   "theme_color": "#0d9488",
   "icons": [
     {
-      "src": "icons/icon-192.png",
+      "src": "./icons/icon-192.png",
       "sizes": "192x192",
       "type": "image/png"
     },
     {
-      "src": "icons/icon-512.png",
+      "src": "./icons/icon-512.png",
       "sizes": "512x512",
       "type": "image/png"
     }

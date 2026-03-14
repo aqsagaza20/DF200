@@ -1,4 +1,4 @@
-const CACHE_NAME = "medterm-v2";
+const CACHE_NAME = "medterm-cache-v3";
 
 const STATIC_ASSETS = [
   "./",
@@ -8,56 +8,66 @@ const STATIC_ASSETS = [
   "./icons/icon-512.png"
 ];
 
-// install
-self.addEventListener("install", event => {
+// INSTALL
+self.addEventListener("install", (event) => {
+  console.log("Service Worker Installing...");
+
   event.waitUntil(
-    caches.open(CACHE_NAME).then(cache => {
+    caches.open(CACHE_NAME).then((cache) => {
       return cache.addAll(STATIC_ASSETS);
-    }).catch(err => {
-      console.error("Cache addAll failed:", err);
     })
   );
+
   self.skipWaiting();
 });
 
-// activate
-self.addEventListener("activate", event => {
+// ACTIVATE
+self.addEventListener("activate", (event) => {
+  console.log("Service Worker Activated");
+
   event.waitUntil(
-    caches.keys().then(keys =>
-      Promise.all(
-        keys.filter(k => k !== CACHE_NAME).map(k => caches.delete(k))
-      )
-    )
+    caches.keys().then((keys) => {
+      return Promise.all(
+        keys
+          .filter((key) => key !== CACHE_NAME)
+          .map((key) => caches.delete(key))
+      );
+    })
   );
+
   self.clients.claim();
 });
 
-// fetch
-self.addEventListener("fetch", event => {
-  const req = event.request;
+// FETCH
+self.addEventListener("fetch", (event) => {
+  const request = event.request;
 
-  // تخزين JSON من database
-  if (req.url.includes("/database/")) {
+  // تخزين ملفات قاعدة البيانات
+  if (request.url.includes("/database/")) {
     event.respondWith(
-      caches.open(CACHE_NAME).then(cache =>
-        fetch(req)
-          .then(res => {
-            cache.put(req, res.clone());
-            return res;
-          })
-          .catch(() => caches.match(req))
-      )
+      fetch(request)
+        .then((response) => {
+          return caches.open(CACHE_NAME).then((cache) => {
+            cache.put(request, response.clone());
+            return response;
+          });
+        })
+        .catch(() => caches.match(request))
     );
     return;
   }
 
-  // cache first
+  // استراتيجية cache first
   event.respondWith(
-    caches.match(req).then(res => {
-      return res || fetch(req).then(fetchRes => {
-        return caches.open(CACHE_NAME).then(cache => {
-          cache.put(req, fetchRes.clone());
-          return fetchRes;
+    caches.match(request).then((cached) => {
+      if (cached) {
+        return cached;
+      }
+
+      return fetch(request).then((response) => {
+        return caches.open(CACHE_NAME).then((cache) => {
+          cache.put(request, response.clone());
+          return response;
         });
       });
     })

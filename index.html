@@ -11,6 +11,9 @@
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700;800&display=swap" rel="stylesheet">
     
+    <!-- Fuse.js للبحث المتقدم (إضافة) -->
+    <script src="https://cdn.jsdelivr.net/npm/fuse.js@7.0.0/dist/fuse.min.js"></script>
+    
     <style>
         /* ========== الأساسيات - متوافقة مع جميع الشاشات ========== */
         * {
@@ -263,7 +266,7 @@
             color: var(--text-light);
         }
         
-        /* ========== بطاقات المصطلحات ========== */
+        /* ========== بطاقات المصطلحات مع Pagination ========== */
         .terms-grid {
             display: flex;
             flex-direction: column;
@@ -306,6 +309,35 @@
             gap: 16px;
             font-size: 13px;
             color: var(--text-light);
+        }
+        
+        /* ========== Pagination ========== */
+        .pagination {
+            display: flex;
+            justify-content: center;
+            gap: 8px;
+            margin: 20px 0;
+            flex-wrap: wrap;
+        }
+        
+        .page-btn {
+            background: white;
+            border: 1px solid var(--border);
+            padding: 8px 14px;
+            border-radius: 30px;
+            font-size: 14px;
+            cursor: pointer;
+            transition: all 0.15s;
+        }
+        
+        .page-btn.active {
+            background: var(--primary);
+            border-color: var(--primary);
+            color: white;
+        }
+        
+        .page-btn:hover:not(.active) {
+            border-color: var(--primary);
         }
         
         /* ========== صفحة التفاصيل الكاملة (كل حقول JSON) ========== */
@@ -873,11 +905,11 @@
     
     <!-- فلاتر البحث -->
     <div class="search-filters" id="filterContainer">
-        <span class="filter-chip active" onclick="setFilter('all')"><i class="fas fa-globe"></i> الكل</span>
-        <span class="filter-chip" onclick="setFilter('english')"><i class="fas fa-language"></i> إنجليزي</span>
-        <span class="filter-chip" onclick="setFilter('arabic')"><i class="fas fa-language"></i> عربي</span>
-        <span class="filter-chip" onclick="setFilter('latin')"><i class="fas fa-scroll"></i> لاتيني</span>
-        <span class="filter-chip" onclick="setFilter('definition')"><i class="fas fa-align-right"></i> تعريف</span>
+        <span class="filter-chip active" onclick="setFilter('all', event)"><i class="fas fa-globe"></i> الكل</span>
+        <span class="filter-chip" onclick="setFilter('english', event)"><i class="fas fa-language"></i> إنجليزي</span>
+        <span class="filter-chip" onclick="setFilter('arabic', event)"><i class="fas fa-language"></i> عربي</span>
+        <span class="filter-chip" onclick="setFilter('latin', event)"><i class="fas fa-scroll"></i> لاتيني</span>
+        <span class="filter-chip" onclick="setFilter('definition', event)"><i class="fas fa-align-right"></i> تعريف</span>
     </div>
 
     <!-- المحتوى الرئيسي -->
@@ -920,9 +952,16 @@
         let userId = localStorage.getItem('medical_user_id') || generateUserId();
         let currentFilter = 'all';
         
+        // متغيرات للـ Pagination
+        let currentPage = 1;
+        const itemsPerPage = 10;
+        
         // عناصر الصفحة
         const mainEl = document.getElementById('mainContent');
         const searchInput = document.getElementById('searchInput');
+        
+        // متغير للـ Fuse.js (بحث متقدم)
+        let fuseSearch = null;
         
         // بيانات الشابترز (Chapter بدلاً من فصل)
         const chaptersData = {
@@ -989,32 +1028,135 @@
             if (activeNav) activeNav.classList.add('active');
         }
 
-        // ========== تحميل كل البيانات من JSON ==========
+        // ========== دالة مساعدة لتعقيم النص (منع XSS) ==========
+        function sanitizeHTML(text) {
+            if (!text) return '';
+            const div = document.createElement('div');
+            div.textContent = text;
+            return div.innerHTML;
+        }
+
+        // ========== دالة لإنشاء بطاقة مصطلح (لتجنب تكرار الكود) ==========
+        function createTermCard(term) {
+            return `
+                <div class="term-card" onclick="navigate('term', ${term.id})">
+                    <div class="term-header">
+                        <span class="term-english">${sanitizeHTML(term.term)}</span>
+                        <span class="term-arabic">${sanitizeHTML(term.arabic)}</span>
+                    </div>
+                    <div class="term-meta">
+                        <span><i class="fas fa-layer-group"></i> ${sanitizeHTML(term.chapterData?.name || `Chapter ${term.chapter}`)}</span>
+                        <span><i class="fas fa-tag"></i> ${sanitizeHTML(term.type || 'مصطلح')}</span>
+                    </div>
+                </div>
+            `;
+        }
+
+        // ========== دالة لإنشاء Pagination ==========
+        function createPagination(totalItems, currentPage, baseUrl) {
+            const totalPages = Math.ceil(totalItems / itemsPerPage);
+            if (totalPages <= 1) return '';
+            
+            let paginationHtml = '<div class="pagination">';
+            
+            // زر السابق
+            if (currentPage > 1) {
+                paginationHtml += `<button class="page-btn" onclick="changePage(${currentPage - 1})">«</button>`;
+            }
+            
+            // أرقام الصفحات
+            for (let i = 1; i <= totalPages; i++) {
+                if (i === currentPage) {
+                    paginationHtml += `<button class="page-btn active">${i}</button>`;
+                } else {
+                    paginationHtml += `<button class="page-btn" onclick="changePage(${i})">${i}</button>`;
+                }
+            }
+            
+            // زر التالي
+            if (currentPage < totalPages) {
+                paginationHtml += `<button class="page-btn" onclick="changePage(${currentPage + 1})">»</button>`;
+            }
+            
+            paginationHtml += '</div>';
+            return paginationHtml;
+        }
+
+        // ========== تغيير الصفحة ==========
+        function changePage(page) {
+            currentPage = page;
+            // إعادة عرض المحتوى حسب الصفحة الحالية
+            if (getHash().startsWith('search/')) {
+                const query = decodeURIComponent(getHash().split('/')[1]);
+                performSearch(query, true);
+            } else {
+                showHome(true);
+            }
+            scrollToTop();
+        }
+
+        // ========== تحميل كل البيانات من JSON (باستخدام Promise.all) ==========
         async function loadAllJSON() {
             try {
                 const chapters = [1,2,3,4,5,6,7,8,9,10,11];
-                for (const num of chapters) {
+                
+                // استخدام Promise.all للتحميل المتوازي (أسرع)
+                const fetchPromises = chapters.map(async (num) => {
                     try {
                         const res = await fetch(`database/chapter${num}.json`);
-                        if (!res.ok) continue;
-                        const data = await res.json();
-                        
-                        // إضافة بيانات الشابتر لكل مصطلح
-                        data.terms.forEach(t => {
-                            t.chapterData = chaptersData[num];
-                            t.chapterNum = num;
-                        });
-                        
-                        allTerms = [...allTerms, ...data.terms];
-                    } catch (e) {}
-                }
+                        if (!res.ok) {
+                            console.warn(`⚠️ الفصل ${num} غير موجود`);
+                            return null;
+                        }
+                        return await res.json();
+                    } catch (e) {
+                        console.warn(`⚠️ خطأ في تحميل الفصل ${num}:`, e);
+                        return null;
+                    }
+                });
+                
+                const results = await Promise.all(fetchPromises);
+                
+                results.forEach((data, index) => {
+                    if (!data) return;
+                    const num = chapters[index];
+                    
+                    // إضافة بيانات الشابتر لكل مصطلح
+                    data.terms.forEach(t => {
+                        t.chapterData = chaptersData[num];
+                        t.chapterNum = num;
+                    });
+                    
+                    allTerms = [...allTerms, ...data.terms];
+                });
                 
                 allTerms.sort((a, b) => a.id - b.id);
+                
+                // إنشاء Index للبحث باستخدام Fuse.js
+                setupFuseSearch();
+                
                 loadFromHash();
                 
             } catch (error) {
+                console.error('خطأ في تحميل البيانات:', error);
                 showToast('⚠️ خطأ في تحميل البيانات');
             }
+        }
+
+        // ========== إعداد Fuse.js للبحث المتقدم ==========
+        function setupFuseSearch() {
+            const options = {
+                keys: [
+                    { name: 'term', weight: 0.5 },
+                    { name: 'arabic', weight: 0.3 },
+                    { name: 'latin', weight: 0.1 },
+                    { name: 'definition', weight: 0.1 }
+                ],
+                threshold: 0.4,
+                ignoreLocation: true,
+                shouldSort: true
+            };
+            fuseSearch = new Fuse(allTerms, options);
         }
 
         // ========== تحميل الصفحة حسب الرابط ==========
@@ -1036,7 +1178,7 @@
             }
             else if (hash.startsWith('search/')) {
                 const q = decodeURIComponent(hash.split('/')[1]);
-                performSearch(q);
+                performSearch(q, true);
             }
             else showHome();
             
@@ -1057,10 +1199,10 @@
                         </div>
                         <div class="chapter-info">
                             <div class="chapter-number">
-                                <span>${chaptersData[i].name}</span>
+                                <span>${sanitizeHTML(chaptersData[i].name)}</span>
                                 <span class="chapter-count">${count}</span>
                             </div>
-                            <div class="chapter-title">${chaptersData[i].title}</div>
+                            <div class="chapter-title">${sanitizeHTML(chaptersData[i].title)}</div>
                         </div>
                     </div>
                 `;
@@ -1070,79 +1212,75 @@
             mainEl.innerHTML = `<div class="detail-container">${html}</div>`;
         }
 
-        // ========== عرض شابتر معين ==========
-        async function showChapter(num) {
-            try {
-                const res = await fetch(`database/chapter${num}.json`);
-                const data = await res.json();
-                
-                let termsHtml = '<div class="terms-grid">';
-                data.terms.forEach(term => {
-                    termsHtml += `
-                        <div class="term-card" onclick="navigate('term', ${term.id})">
-                            <div class="term-header">
-                                <span class="term-english">${term.term}</span>
-                                <span class="term-arabic">${term.arabic}</span>
-                            </div>
-                            <div class="term-meta">
-                                <span><i class="fas fa-tag"></i> ${term.type || 'مصطلح'}</span>
-                                ${term.pronunciation ? `<span><i class="fas fa-microphone"></i> ${term.pronunciation}</span>` : ''}
-                            </div>
-                        </div>
-                    `;
-                });
-                termsHtml += '</div>';
-                
-                mainEl.innerHTML = `
-                    <div class="detail-container">
-                        <div style="margin-bottom: 20px;">
-                            <span class="detail-badge"><i class="fas ${chaptersData[num].icon}"></i> ${chaptersData[num].name}</span>
-                            <h2 style="font-size: 26px; margin: 10px 0;">${data.arabicTitle || data.title}</h2>
-                            <p style="color: #64748b;">${data.description || ''}</p>
-                        </div>
-                        ${termsHtml}
-                        
-                        <!-- زر الرجوع المحسن -->
-                        <div class="back-btn-container">
-                            <button class="back-btn-improved" onclick="navigate('chapters')">
-                                <i class="fas fa-arrow-right"></i> عودة للشابترز
-                            </button>
-                        </div>
-                    </div>
-                `;
-                
-            } catch (error) {
-                showToast('❌ خطأ في تحميل الشابتر');
+        // ========== عرض شابتر معين (باستخدام البيانات المخزنة) ==========
+        function showChapter(num) {
+            // الحصول على بيانات الفصل من allTerms
+            const chapterTerms = allTerms.filter(t => t.chapterNum === num);
+            
+            if (chapterTerms.length === 0) {
+                showToast('❌ هذا الفصل غير متوفر');
                 navigate('chapters');
+                return;
             }
+            
+            const chapterInfo = chaptersData[num];
+            
+            let termsHtml = '<div class="terms-grid">';
+            chapterTerms.forEach(term => {
+                termsHtml += createTermCard(term);
+            });
+            termsHtml += '</div>';
+            
+            mainEl.innerHTML = `
+                <div class="detail-container">
+                    <div style="margin-bottom: 20px;">
+                        <span class="detail-badge"><i class="fas ${chapterInfo.icon}"></i> ${sanitizeHTML(chapterInfo.name)}</span>
+                        <h2 style="font-size: 26px; margin: 10px 0;">${sanitizeHTML(chapterInfo.title)}</h2>
+                    </div>
+                    ${termsHtml}
+                    
+                    <!-- زر الرجوع المحسن -->
+                    <div class="back-btn-container">
+                        <button class="back-btn-improved" onclick="navigate('chapters')">
+                            <i class="fas fa-arrow-right"></i> عودة للشابترز
+                        </button>
+                    </div>
+                </div>
+            `;
         }
 
         // ========== عرض المصطلح بكل حقوله (كل JSON) ==========
         function showFullTerm(id) {
             const term = allTerms.find(t => t.id === id);
-            if (!term) return;
+            
+            // التحقق من وجود المصطلح
+            if (!term) {
+                showToast('❌ المصطلح غير موجود');
+                navigate('home');
+                return;
+            }
             
             const isSaved = savedTerms.includes(id);
             
-            // دالة لعرض أي قيمة
+            // دالة لعرض أي قيمة مع تعقيم النص
             function renderValue(key, value) {
                 if (value === undefined || value === null || value === '') return '';
                 
                 if (Array.isArray(value)) {
                     return `
                         <div class="info-card">
-                            <div class="info-label"><i class="fas fa-list"></i> ${key}</div>
+                            <div class="info-label"><i class="fas fa-list"></i> ${sanitizeHTML(key)}</div>
                             <div class="tags-container">
-                                ${value.map(v => `<span class="tag-item tag-green">${v}</span>`).join('')}
+                                ${value.map(v => `<span class="tag-item tag-green">${sanitizeHTML(v)}</span>`).join('')}
                             </div>
                         </div>
                     `;
                 }
                 
                 if (typeof value === 'object') {
-                    let nested = `<div class="info-card"><div class="info-label"><i class="fas fa-code"></i> ${key}</div>`;
+                    let nested = `<div class="info-card"><div class="info-label"><i class="fas fa-code"></i> ${sanitizeHTML(key)}</div>`;
                     for (let [k, v] of Object.entries(value)) {
-                        nested += `<div style="margin: 8px 0;"><span style="color: #0d9488;">${k}:</span> ${v || '-'}</div>`;
+                        nested += `<div style="margin: 8px 0;"><span style="color: #0d9488;">${sanitizeHTML(k)}:</span> ${sanitizeHTML(v) || '-'}</div>`;
                     }
                     nested += '</div>';
                     return nested;
@@ -1150,8 +1288,8 @@
                 
                 return `
                     <div class="info-card">
-                        <div class="info-label"><i class="fas fa-tag"></i> ${key}</div>
-                        <div class="info-value">${value}</div>
+                        <div class="info-label"><i class="fas fa-tag"></i> ${sanitizeHTML(key)}</div>
+                        <div class="info-value">${sanitizeHTML(value)}</div>
                     </div>
                 `;
             }
@@ -1161,13 +1299,13 @@
                 <div class="detail-container">
                     <span class="detail-badge">
                         <i class="fas ${term.chapterData?.icon || 'fa-book'}"></i> 
-                        ${term.chapterData?.name || `Chapter ${term.chapter}`}
+                        ${sanitizeHTML(term.chapterData?.name || `Chapter ${term.chapter}`)}
                     </span>
                     
                     <div class="detail-header">
                         <div>
-                            <div class="detail-title-main">${term.term}</div>
-                            <div class="detail-title-arabic">${term.arabic}</div>
+                            <div class="detail-title-main">${sanitizeHTML(term.term)}</div>
+                            <div class="detail-title-arabic">${sanitizeHTML(term.arabic)}</div>
                         </div>
                         <button class="save-button ${isSaved ? 'saved' : ''}" onclick="toggleSave(${term.id})">
                             <i class="${isSaved ? 'fas' : 'far'} fa-star"></i>
@@ -1176,13 +1314,13 @@
                     
                     ${term.pronunciation ? `
                         <div class="pronounce-box">
-                            <i class="fas fa-microphone-alt"></i> ${term.pronunciation}
+                            <i class="fas fa-microphone-alt"></i> ${sanitizeHTML(term.pronunciation)}
                         </div>
                     ` : ''}
                     
                     ${term.latin ? `
                         <div class="latin-box">
-                            <i class="fas fa-scroll"></i> ${term.latin}
+                            <i class="fas fa-scroll"></i> ${sanitizeHTML(term.latin)}
                         </div>
                     ` : ''}
             `;
@@ -1199,9 +1337,9 @@
                 html += `<div class="info-section"><div class="section-head"><i class="fas fa-puzzle-piece"></i> تحليل المصطلح (Parts)</div><div class="info-grid-2">`;
                 for (let [partKey, partVal] of Object.entries(term.parts)) {
                     if (partVal && typeof partVal === 'object') {
-                        let partHtml = `<div class="info-card"><div class="info-label"><i class="fas fa-code"></i> ${partKey}</div>`;
+                        let partHtml = `<div class="info-card"><div class="info-label"><i class="fas fa-code"></i> ${sanitizeHTML(partKey)}</div>`;
                         for (let [k, v] of Object.entries(partVal)) {
-                            partHtml += `<div style="margin: 6px 0;"><span style="color: #0d9488;">${k}:</span> ${v || '-'}</div>`;
+                            partHtml += `<div style="margin: 6px 0;"><span style="color: #0d9488;">${sanitizeHTML(k)}:</span> ${sanitizeHTML(v) || '-'}</div>`;
                         }
                         partHtml += '</div>';
                         html += partHtml;
@@ -1229,7 +1367,7 @@
             // 5. الكلمات المفتاحية
             if (term.keywords) {
                 html += `<div class="info-section"><div class="section-head"><i class="fas fa-tags"></i> كلمات مفتاحية</div>`;
-                html += `<div class="tags-container">${term.keywords.map(k => `<span class="tag-item">${k}</span>`).join('')}</div>`;
+                html += `<div class="tags-container">${term.keywords.map(k => `<span class="tag-item">${sanitizeHTML(k)}</span>`).join('')}</div>`;
                 html += `</div>`;
             }
             
@@ -1253,7 +1391,7 @@
             // 8. وظائف إضافية
             if (term.functions) {
                 html += `<div class="info-section"><div class="section-head"><i class="fas fa-tasks"></i> وظائف</div>`;
-                html += `<div class="tags-container">${term.functions.map(f => `<span class="tag-item tag-green">${f}</span>`).join('')}</div>`;
+                html += `<div class="tags-container">${term.functions.map(f => `<span class="tag-item tag-green">${sanitizeHTML(f)}</span>`).join('')}</div>`;
                 html += `</div>`;
             }
             
@@ -1263,12 +1401,12 @@
                 term.diseases.forEach(d => {
                     html += `
                         <div class="disease-card">
-                            <div class="disease-name">${d.name || d.name_en || ''}</div>
-                            ${d.name_en ? `<div style="margin-bottom: 8px; color: #475569;">${d.name_en}</div>` : ''}
-                            ${d.symptoms ? `<div style="margin: 12px 0;"><span style="color: #64748b;">الأعراض:</span> <div class="tags-container">${d.symptoms.map(s => `<span class="tag-item tag-red">${s}</span>`).join('')}</div></div>` : ''}
-                            ${d.symptoms_en ? `<div style="margin: 8px 0;"><span style="color: #64748b;">Symptoms:</span> <div class="tags-container">${d.symptoms_en.map(s => `<span class="tag-item">${s}</span>`).join('')}</div></div>` : ''}
-                            ${d.treatments ? `<div style="margin: 12px 0;"><span style="color: #64748b;">العلاج:</span> <div class="tags-container">${d.treatments.map(t => `<span class="tag-item tag-green">${t}</span>`).join('')}</div></div>` : ''}
-                            ${d.treatments_en ? `<div style="margin: 8px 0;"><span style="color: #64748b;">Treatments:</span> <div class="tags-container">${d.treatments_en.map(t => `<span class="tag-item">${t}</span>`).join('')}</div></div>` : ''}
+                            <div class="disease-name">${sanitizeHTML(d.name || d.name_en || '')}</div>
+                            ${d.name_en ? `<div style="margin-bottom: 8px; color: #475569;">${sanitizeHTML(d.name_en)}</div>` : ''}
+                            ${d.symptoms ? `<div style="margin: 12px 0;"><span style="color: #64748b;">الأعراض:</span> <div class="tags-container">${d.symptoms.map(s => `<span class="tag-item tag-red">${sanitizeHTML(s)}</span>`).join('')}</div></div>` : ''}
+                            ${d.symptoms_en ? `<div style="margin: 8px 0;"><span style="color: #64748b;">Symptoms:</span> <div class="tags-container">${d.symptoms_en.map(s => `<span class="tag-item">${sanitizeHTML(s)}</span>`).join('')}</div></div>` : ''}
+                            ${d.treatments ? `<div style="margin: 12px 0;"><span style="color: #64748b;">العلاج:</span> <div class="tags-container">${d.treatments.map(t => `<span class="tag-item tag-green">${sanitizeHTML(t)}</span>`).join('')}</div></div>` : ''}
+                            ${d.treatments_en ? `<div style="margin: 8px 0;"><span style="color: #64748b;">Treatments:</span> <div class="tags-container">${d.treatments_en.map(t => `<span class="tag-item">${sanitizeHTML(t)}</span>`).join('')}</div></div>` : ''}
                         </div>
                     `;
                 });
@@ -1370,7 +1508,7 @@
                 return;
             }
             
-            // البحث عن المصطلح في قاعدة البيانات
+            // البحث عن المصطلح في قاعدة البيانات (تطابق تام)
             const exactMatch = allTerms.find(t => t.term.toLowerCase() === input);
             
             // قواعد للتحليل (افتراضية)
@@ -1569,21 +1707,21 @@
                 dbHtml += `
                     <div class="database-item" onclick="navigate('term', ${exactMatchTerm.id})">
                         <div class="database-term-header">
-                            <span class="database-term-english">${exactMatchTerm.term}</span>
-                            <span class="database-term-arabic">${exactMatchTerm.arabic}</span>
+                            <span class="database-term-english">${sanitizeHTML(exactMatchTerm.term)}</span>
+                            <span class="database-term-arabic">${sanitizeHTML(exactMatchTerm.arabic)}</span>
                         </div>
                         <div class="database-term-definition">
-                            ${exactMatchTerm.definition ? exactMatchTerm.definition.substring(0, 120) + '...' : ''}
+                            ${sanitizeHTML(exactMatchTerm.definition ? exactMatchTerm.definition.substring(0, 120) + '...' : '')}
                         </div>
                         <div class="database-term-meta">
-                            <span class="database-term-chapter">${exactMatchTerm.chapterData?.name || `Chapter ${exactMatchTerm.chapter}`}</span>
-                            <span>${exactMatchTerm.type || 'مصطلح'}</span>
+                            <span class="database-term-chapter">${sanitizeHTML(exactMatchTerm.chapterData?.name || `Chapter ${exactMatchTerm.chapter}`)}</span>
+                            <span>${sanitizeHTML(exactMatchTerm.type || 'مصطلح')}</span>
                         </div>
                         
                         <!-- أهمية المصطلح الطبي -->
                         <div class="term-importance">
                             <i class="fas fa-star"></i> 
-                            ${getTermImportance(exactMatchTerm)}
+                            ${sanitizeHTML(getTermImportance(exactMatchTerm))}
                         </div>
                     </div>
                 `;
@@ -1602,20 +1740,20 @@
                     dbHtml += `
                         <div class="database-item" onclick="navigate('term', ${term.id})">
                             <div class="database-term-header">
-                                <span class="database-term-english">${term.term}</span>
-                                <span class="database-term-arabic">${term.arabic}</span>
+                                <span class="database-term-english">${sanitizeHTML(term.term)}</span>
+                                <span class="database-term-arabic">${sanitizeHTML(term.arabic)}</span>
                             </div>
                             <div class="database-term-definition">
-                                ${term.definition ? term.definition.substring(0, 100) + '...' : ''}
+                                ${sanitizeHTML(term.definition ? term.definition.substring(0, 100) + '...' : '')}
                             </div>
                             <div class="database-term-meta">
-                                <span class="database-term-chapter">${term.chapterData?.name || `Chapter ${term.chapter}`}</span>
+                                <span class="database-term-chapter">${sanitizeHTML(term.chapterData?.name || `Chapter ${term.chapter}`)}</span>
                             </div>
                             
                             <!-- أهمية المصطلح الطبي -->
                             <div class="term-importance">
                                 <i class="fas fa-info-circle"></i> 
-                                ${getTermImportance(term)}
+                                ${sanitizeHTML(getTermImportance(term))}
                             </div>
                         </div>
                     `;
@@ -1701,35 +1839,43 @@
             return 'مصطلح طبي مهم في المجال الطبي';
         }
 
-        // ========== البحث ==========
-        function performSearch(query) {
+        // ========== البحث المحسن باستخدام Fuse.js ==========
+        function performSearch(query, fromHash = false) {
             if (!query || query.length < 2) {
                 navigate('home');
                 return;
             }
 
             const q = query.toLowerCase().trim();
+            let results = [];
             
-            const results = allTerms.filter(term => {
-                if (currentFilter === 'english') return term.term?.toLowerCase().includes(q);
-                if (currentFilter === 'arabic') return term.arabic?.includes(q);
-                if (currentFilter === 'latin') return term.latin?.toLowerCase().includes(q);
-                if (currentFilter === 'definition') return term.definition?.toLowerCase().includes(q);
-                
-                return (
-                    term.term?.toLowerCase().includes(q) ||
-                    term.arabic?.includes(q) ||
-                    term.latin?.toLowerCase().includes(q) ||
-                    term.definition?.toLowerCase().includes(q) ||
-                    (term.keywords && term.keywords.some(k => k?.toLowerCase().includes(q)))
-                );
-            });
+            // استخدام Fuse.js إذا كان متاحاً
+            if (fuseSearch) {
+                const fuseResults = fuseSearch.search(q);
+                results = fuseResults.map(r => r.item);
+            } else {
+                // البحث العادي كبديل
+                results = allTerms.filter(term => {
+                    if (currentFilter === 'english') return term.term?.toLowerCase().includes(q);
+                    if (currentFilter === 'arabic') return term.arabic?.includes(q);
+                    if (currentFilter === 'latin') return term.latin?.toLowerCase().includes(q);
+                    if (currentFilter === 'definition') return term.definition?.toLowerCase().includes(q);
+                    
+                    return (
+                        term.term?.toLowerCase().includes(q) ||
+                        term.arabic?.includes(q) ||
+                        term.latin?.toLowerCase().includes(q) ||
+                        term.definition?.toLowerCase().includes(q) ||
+                        (term.keywords && term.keywords.some(k => k?.toLowerCase().includes(q)))
+                    );
+                });
+            }
 
             if (results.length === 0) {
                 mainEl.innerHTML = `
                     <div class="detail-container" style="text-align: center; padding: 40px;">
                         <i class="fas fa-search" style="font-size: 48px; color: #94a3b8;"></i>
-                        <p style="margin: 20px 0;">لا توجد نتائج لـ "${query}"</p>
+                        <p style="margin: 20px 0;">لا توجد نتائج لـ "${sanitizeHTML(query)}"</p>
                         
                         <!-- زر الرجوع المحسن -->
                         <div class="back-btn-container">
@@ -1742,27 +1888,30 @@
                 return;
             }
 
+            // Pagination
+            const totalPages = Math.ceil(results.length / itemsPerPage);
+            const startIndex = (currentPage - 1) * itemsPerPage;
+            const endIndex = startIndex + itemsPerPage;
+            const paginatedResults = results.slice(startIndex, endIndex);
+
             let html = `
                 <div class="detail-container">
-                    <div style="margin-bottom: 20px;">🔍 ${results.length} نتيجة لـ "${query}"</div>
+                    <div style="margin-bottom: 20px;">🔍 ${results.length} نتيجة لـ "${sanitizeHTML(query)}"</div>
                     <div class="terms-grid">
             `;
             
-            results.slice(0, 30).forEach(term => {
-                html += `
-                    <div class="term-card" onclick="navigate('term', ${term.id})">
-                        <div class="term-header">
-                            <span class="term-english">${term.term}</span>
-                            <span class="term-arabic">${term.arabic}</span>
-                        </div>
-                        <div class="term-meta">
-                            <span>${term.chapterData?.name || `Chapter ${term.chapter}`}</span>
-                        </div>
-                    </div>
-                `;
+            paginatedResults.forEach(term => {
+                html += createTermCard(term);
             });
             
-            html += `</div>
+            html += `</div>`;
+            
+            // إضافة Pagination إذا كان هناك أكثر من صفحة
+            if (totalPages > 1) {
+                html += createPagination(results.length, currentPage, 'search');
+            }
+            
+            html += `
                     <!-- زر الرجوع المحسن -->
                     <div class="back-btn-container">
                         <button class="back-btn-improved" onclick="navigate('home')">
@@ -1773,29 +1922,28 @@
             mainEl.innerHTML = html;
         }
 
-        // ========== الصفحة الرئيسية ==========
-        function showHome() {
+        // ========== الصفحة الرئيسية مع Pagination ==========
+        function showHome(resetPage = true) {
+            if (resetPage) currentPage = 1;
+            
             if (allTerms.length === 0) {
                 mainEl.innerHTML = `<div class="loading-screen"><i class="fas fa-spinner fa-spin"></i><p>جاري التحميل...</p></div>`;
                 return;
             }
             
-            const randomTerms = [...allTerms].sort(() => 0.5 - Math.random()).slice(0, 12);
+            // Pagination للمصطلحات العشوائية
+            const totalRandomTerms = allTerms.length;
+            const totalPages = Math.ceil(totalRandomTerms / itemsPerPage);
+            const startIndex = (currentPage - 1) * itemsPerPage;
+            const endIndex = startIndex + itemsPerPage;
+            
+            // ترتيب عشوائي مع الحفاظ على Pagination
+            const shuffled = [...allTerms].sort(() => 0.5 - Math.random());
+            const randomTerms = shuffled.slice(0, 12); // نأخذ 12 مصطلح عشوائي فقط
             
             let termsHtml = '<div class="terms-grid">';
             randomTerms.forEach(term => {
-                termsHtml += `
-                    <div class="term-card" onclick="navigate('term', ${term.id})">
-                        <div class="term-header">
-                            <span class="term-english">${term.term}</span>
-                            <span class="term-arabic">${term.arabic}</span>
-                        </div>
-                        <div class="term-meta">
-                            <span><i class="fas fa-layer-group"></i> ${term.chapterData?.name || `Chapter ${term.chapter}`}</span>
-                            <span><i class="fas fa-tag"></i> ${term.type || 'مصطلح'}</span>
-                        </div>
-                    </div>
-                `;
+                termsHtml += createTermCard(term);
             });
             termsHtml += '</div>';
             
@@ -1830,7 +1978,7 @@
             `;
         }
 
-        // ========== المحفوظات ==========
+        // ========== المحفوظات مع Pagination ==========
         function showSaved() {
             const saved = allTerms.filter(t => savedTerms.includes(t.id));
             
@@ -1851,26 +1999,39 @@
                 return;
             }
             
+            // Pagination للمحفوظات
+            const totalPages = Math.ceil(saved.length / itemsPerPage);
+            const startIndex = (currentPage - 1) * itemsPerPage;
+            const endIndex = startIndex + itemsPerPage;
+            const paginatedSaved = saved.slice(startIndex, endIndex);
+            
             let html = '<div class="terms-grid">';
-            saved.forEach(term => {
+            paginatedSaved.forEach(term => {
                 html += `
                     <div class="term-card" onclick="navigate('term', ${term.id})">
                         <div class="term-header">
-                            <span class="term-english">${term.term}</span>
-                            <span class="term-arabic">${term.arabic}</span>
+                            <span class="term-english">${sanitizeHTML(term.term)}</span>
+                            <span class="term-arabic">${sanitizeHTML(term.arabic)}</span>
                         </div>
                         <div class="term-meta">
-                            <span>${term.chapterData?.name || `Chapter ${term.chapter}`}</span>
+                            <span>${sanitizeHTML(term.chapterData?.name || `Chapter ${term.chapter}`)}</span>
                         </div>
                     </div>
                 `;
             });
             html += '</div>';
             
+            // إضافة Pagination إذا كان هناك أكثر من صفحة
+            let paginationHtml = '';
+            if (totalPages > 1) {
+                paginationHtml = createPagination(saved.length, currentPage, 'saved');
+            }
+            
             mainEl.innerHTML = `
                 <div class="detail-container">
                     <div style="margin-bottom: 16px;"><i class="fas fa-star" style="color: #f1c40f;"></i> المحفوظات (${saved.length})</div>
                     ${html}
+                    ${paginationHtml}
                     
                     <!-- زر الرجوع المحسن -->
                     <div class="back-btn-container">
@@ -1889,21 +2050,31 @@
             navigate('term', randomId);
         }
 
-        // ========== حفظ/إزالة ==========
+        // ========== حفظ/إزالة مع التحقق من سعة التخزين ==========
         function toggleSave(id) {
             if (savedTerms.includes(id)) {
                 savedTerms = savedTerms.filter(t => t !== id);
                 showToast('⭐ أزيل من المحفوظات');
             } else {
+                // التحقق من حجم المحفوظات (لا نريد تخزين آلاف المصطلحات)
+                if (savedTerms.length >= 100) {
+                    showToast('⚠️ لا يمكن حفظ أكثر من 100 مصطلح');
+                    return;
+                }
                 savedTerms.push(id);
                 showToast('✅ أضيف إلى المحفوظات');
             }
-            localStorage.setItem('medical_bank_saved', JSON.stringify(savedTerms));
+            try {
+                localStorage.setItem('medical_bank_saved', JSON.stringify(savedTerms));
+            } catch (e) {
+                showToast('⚠️ فشل في حفظ المحفوظات');
+                savedTerms = savedTerms.filter(t => t !== id); // تراجع
+            }
             showFullTerm(id);
         }
 
-        // ========== تغيير فلتر البحث ==========
-        function setFilter(filter) {
+        // ========== تغيير فلتر البحث مع تمرير الحدث بشكل صحيح ==========
+        function setFilter(filter, event) {
             currentFilter = filter;
             document.querySelectorAll('.filter-chip').forEach(chip => chip.classList.remove('active'));
             event.target.classList.add('active');
@@ -1924,14 +2095,19 @@
             setTimeout(() => t.remove(), 2000);
         }
 
-        // ========== ربط البحث ==========
+        // ========== ربط البحث مع Debounce ==========
+        let searchTimeout;
         searchInput.addEventListener('input', (e) => {
-            const val = e.target.value;
-            if (val.length >= 2) {
-                navigate('search', val);
-            } else if (val.length === 0) {
-                navigate('home');
-            }
+            clearTimeout(searchTimeout);
+            searchTimeout = setTimeout(() => {
+                const val = e.target.value;
+                if (val.length >= 2) {
+                    currentPage = 1; // إعادة تعيين الصفحة عند بحث جديد
+                    navigate('search', val);
+                } else if (val.length === 0) {
+                    navigate('home');
+                }
+            }, 300); // Debounce 300ms
         });
 
         // ========== تهيئة الموقع ==========

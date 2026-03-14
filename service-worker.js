@@ -1,35 +1,65 @@
-const CACHE_NAME = "medterm-cache-v1";
+const CACHE_NAME = "medterm-v1";
 
-const urlsToCache = [
-  "/",
-  "/index.html",
-  "/manifest.webmanifest",
-
-  "/database/chapter1.json",
-  "/database/chapter2.json",
-  "/database/chapter3.json",
-  "/database/chapter4.json",
-  "/database/chapter5.json",
-  "/database/chapter6.json",
-  "/database/chapter7.json",
-  "/database/chapter8.json",
-  "/database/chapter9.json",
-  "/database/chapter10.json",
-  "/database/chapter11.json"
+// الملفات الأساسية
+const STATIC_ASSETS = [
+  "./",
+  "./index.html",
+  "./manifest.webmanifest",
+  "./icons/icon-192.png",
+  "./icons/icon-512.png"
 ];
 
+// تثبيت Service Worker
 self.addEventListener("install", event => {
   event.waitUntil(
     caches.open(CACHE_NAME).then(cache => {
-      return cache.addAll(urlsToCache);
+      return cache.addAll(STATIC_ASSETS);
     })
   );
+  self.skipWaiting();
 });
 
-self.addEventListener("fetch", event => {
-  event.respondWith(
-    caches.match(event.request).then(response => {
-      return response || fetch(event.request);
+// تفعيل Service Worker
+self.addEventListener("activate", event => {
+  event.waitUntil(
+    caches.keys().then(keys => {
+      return Promise.all(
+        keys.filter(key => key !== CACHE_NAME)
+        .map(key => caches.delete(key))
+      );
     })
   );
+  self.clients.claim();
+});
+
+// جلب الملفات
+self.addEventListener("fetch", event => {
+
+  // تخزين ملفات JSON تلقائياً
+  if (event.request.url.includes("/database/")) {
+    event.respondWith(
+      caches.open(CACHE_NAME).then(cache =>
+        fetch(event.request)
+          .then(response => {
+            cache.put(event.request, response.clone());
+            return response;
+          })
+          .catch(() => caches.match(event.request))
+      )
+    );
+    return;
+  }
+
+  // استراتيجية Cache First
+  event.respondWith(
+    caches.match(event.request).then(response => {
+      return response || fetch(event.request).then(fetchRes => {
+        return caches.open(CACHE_NAME).then(cache => {
+          cache.put(event.request, fetchRes.clone());
+          return fetchRes;
+        });
+      });
+    })
+  );
+
 });

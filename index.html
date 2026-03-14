@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
-    <title>البنك الطبي الشامل - جميع المصطلحات</title>
+    <title>MedTerm - البنك الطبي الشامل</title>
     
     <!-- Font Awesome 6 (أحدث إصدار) -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
@@ -11,7 +11,7 @@
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700;800&display=swap" rel="stylesheet">
     
-    <!-- Fuse.js للبحث المتقدم (إضافة) -->
+    <!-- Fuse.js للبحث المتقدم -->
     <script src="https://cdn.jsdelivr.net/npm/fuse.js@7.0.0/dist/fuse.min.js"></script>
     
     <style>
@@ -85,6 +85,7 @@
         .logo h1 {
             font-size: 22px;
             font-weight: 700;
+            color: var(--text);
         }
         
         .logo span {
@@ -194,7 +195,7 @@
             100% { transform: rotate(360deg); }
         }
         
-        /* ========== بطاقات الفصول - تصميم أنيق ========== */
+        /* ========== بطاقات الفصول ========== */
         .chapters-grid {
             display: grid;
             grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
@@ -266,7 +267,7 @@
             color: var(--text-light);
         }
         
-        /* ========== بطاقات المصطلحات مع Pagination ========== */
+        /* ========== بطاقات المصطلحات ========== */
         .terms-grid {
             display: flex;
             flex-direction: column;
@@ -340,7 +341,7 @@
             border-color: var(--primary);
         }
         
-        /* ========== صفحة التفاصيل الكاملة (كل حقول JSON) ========== */
+        /* ========== صفحة التفاصيل ========== */
         .detail-container {
             background: white;
             border-radius: 28px;
@@ -402,7 +403,6 @@
             color: #f1c40f;
         }
         
-        /* قسم النطق */
         .pronounce-box {
             background: #f8fafc;
             padding: 12px 20px;
@@ -426,7 +426,6 @@
             text-align: left;
         }
         
-        /* ========== أقسام المعلومات ========== */
         .info-section {
             background: #fafdff;
             border-radius: 22px;
@@ -451,7 +450,6 @@
             border-radius: 16px;
         }
         
-        /* شبكة المعلومات */
         .info-grid-2 {
             display: grid;
             grid-template-columns: repeat(2, 1fr);
@@ -486,7 +484,6 @@
             font-size: 16px;
         }
         
-        /* مصفوفات - Tags */
         .tags-container {
             display: flex;
             flex-wrap: wrap;
@@ -511,7 +508,7 @@
             color: var(--danger);
         }
         
-        /* ========== محلل المصطلح (مبسط وأنيق) ========== */
+        /* ========== محلل المصطلح ========== */
         .analyzer-section {
             background: white;
             border-radius: 24px;
@@ -569,7 +566,6 @@
             border-color: var(--primary);
         }
         
-        /* زر التحليل المميز */
         .analyzer-btn {
             background: linear-gradient(135deg, #7c3aed, #6d28d9);
             color: white;
@@ -608,7 +604,6 @@
             transform: translateY(0);
         }
         
-        /* نتائج التحليل - بطاقات بسيطة */
         .analyzer-results {
             display: grid;
             grid-template-columns: repeat(3, 1fr);
@@ -675,7 +670,7 @@
             margin-left: 4px;
         }
         
-        /* ========== بطاقات نتائج البحث من قاعدة البيانات ========== */
+        /* ========== بطاقات نتائج البحث ========== */
         .database-results {
             margin-top: 30px;
             padding-top: 20px;
@@ -751,7 +746,6 @@
             border-radius: 30px;
         }
         
-        /* أهمية المصطلح الطبي */
         .term-importance {
             margin-top: 12px;
             padding: 12px;
@@ -826,7 +820,119 @@
             margin-bottom: 12px;
         }
         
-        /* ========== أزرار التنقل ========== */
+        /* ========== تذييل الصفحة - توقيع المهندس وروابط التواصل ========== */
+        .site-footer {
+            background: white;
+            border-radius: 24px;
+            padding: 20px;
+            margin-top: 30px;
+            margin-bottom: 20px;
+            border: 1px solid var(--border);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.02);
+        }
+        
+        .footer-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+        
+        @media (max-width: 500px) {
+            .footer-content {
+                flex-direction: column;
+                text-align: center;
+            }
+        }
+        
+        .engineer-signature {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+        
+        .engineer-icon {
+            width: 50px;
+            height: 50px;
+            background: linear-gradient(135deg, #0d9488, #14b8a6);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 24px;
+            box-shadow: 0 4px 12px rgba(13, 148, 136, 0.3);
+        }
+        
+        .engineer-text {
+            font-size: 16px;
+            color: var(--text);
+        }
+        
+        .engineer-name {
+            font-weight: 700;
+            color: var(--primary);
+            font-size: 18px;
+        }
+        
+        .engineer-title {
+            font-size: 14px;
+            color: var(--text-light);
+        }
+        
+        .social-links {
+            display: flex;
+            gap: 12px;
+            flex-wrap: wrap;
+        }
+        
+        .social-link {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            background: #f1f5f9;
+            padding: 10px 18px;
+            border-radius: 40px;
+            text-decoration: none;
+            color: var(--text);
+            transition: all 0.2s;
+            border: 1px solid var(--border);
+        }
+        
+        .social-link:hover {
+            background: var(--primary);
+            color: white;
+            border-color: var(--primary);
+        }
+        
+        .social-link i {
+            font-size: 18px;
+        }
+        
+        .whatsapp-badge {
+            background: #25D366;
+            color: white;
+            padding: 2px 10px;
+            border-radius: 30px;
+            font-size: 12px;
+            font-weight: 500;
+        }
+        
+        .footer-copyright {
+            text-align: center;
+            margin-top: 15px;
+            padding-top: 15px;
+            border-top: 1px dashed var(--border);
+            color: var(--text-light);
+            font-size: 14px;
+        }
+        
+        .footer-copyright i {
+            color: #e74c3c;
+        }
+        
+        /* ========== أزرار التنقل السفلية ========== */
         .bottom-nav {
             position: fixed;
             bottom: 0;
@@ -887,7 +993,7 @@
     <div class="header">
         <div class="logo">
             <i class="fas fa-book-medical"></i>
-            <h1>البنك الطبي <span>v2.0</span></h1>
+            <h1>MedTerm <span>v2.0</span></h1>
         </div>
         <div class="user-info">
             <div class="user-badge">
@@ -916,7 +1022,7 @@
     <div id="mainContent">
         <div class="loading-screen">
             <i class="fas fa-spinner fa-spin"></i>
-            <p>جاري تحميل البنك الطبي الشامل...</p>
+            <p>جاري تحميل MedTerm...</p>
             <p style="font-size: 14px; color: #94a3b8; margin-top: 8px;">11 فصل - آلاف المصطلحات</p>
         </div>
     </div>
@@ -942,6 +1048,38 @@
         <div class="nav-btn" data-nav="random" onclick="navigate('random')">
             <i class="fas fa-shuffle"></i>
             <span>عشوائي</span>
+        </div>
+    </div>
+
+    <!-- تذييل الصفحة - توقيع المهندس وروابط التواصل -->
+    <div class="site-footer">
+        <div class="footer-content">
+            <div class="engineer-signature">
+                <div class="engineer-icon">
+                    <i class="fas fa-code"></i>
+                </div>
+                <div class="engineer-text">
+                    <div class="engineer-name">مهندس نادر</div>
+                    <div class="engineer-title">مطور الواجهات الطبية</div>
+                </div>
+            </div>
+            
+            <div class="social-links">
+                <a href="https://chat.whatsapp.com/GF0lqOtmMaEFxybTDdN5YF" target="_blank" class="social-link" title="جروب الطلاب">
+                    <i class="fab fa-whatsapp" style="color: #25D366;"></i>
+                    <span>جروب طلاب</span>
+                    <span class="whatsapp-badge">جديد</span>
+                </a>
+                <a href="https://chat.whatsapp.com/HtJwGUlGX0E3QeGcnRlfjO?mode=gi_t" target="_blank" class="social-link" title="جروب الطالبات">
+                    <i class="fab fa-whatsapp" style="color: #25D366;"></i>
+                    <span>جروب طالبات</span>
+                    <span class="whatsapp-badge">خاص</span>
+                </a>
+            </div>
+        </div>
+        
+        <div class="footer-copyright">
+            <i class="fas fa-heart"></i> MedTerm - جميع الحقوق محفوظة © 2026
         </div>
     </div>
 
@@ -992,18 +1130,15 @@
         
         // ========== دالة التمرير للأعلى (مضمونة 100%) ==========
         function scrollToTop() {
-            // طرق متعددة لضمان التمرير للأعلى
             window.scrollTo({
                 top: 0,
                 left: 0,
                 behavior: 'smooth'
             });
             
-            // طريقة احتياطية
             document.body.scrollTop = 0;
             document.documentElement.scrollTop = 0;
             
-            // تأكيد إضافي
             setTimeout(() => {
                 window.scrollTo(0, 0);
             }, 50);
@@ -1021,7 +1156,7 @@
             else if (page === 'analyzer') setHash('analyzer');
             
             loadFromHash();
-            scrollToTop(); // تمرير للأعلى فوراً
+            scrollToTop();
             
             document.querySelectorAll('.nav-btn').forEach(btn => btn.classList.remove('active'));
             const activeNav = document.querySelector(`[data-nav="${page}"]`);
@@ -1036,7 +1171,7 @@
             return div.innerHTML;
         }
 
-        // ========== دالة لإنشاء بطاقة مصطلح (لتجنب تكرار الكود) ==========
+        // ========== دالة لإنشاء بطاقة مصطلح ==========
         function createTermCard(term) {
             return `
                 <div class="term-card" onclick="navigate('term', ${term.id})">
@@ -1059,12 +1194,10 @@
             
             let paginationHtml = '<div class="pagination">';
             
-            // زر السابق
             if (currentPage > 1) {
                 paginationHtml += `<button class="page-btn" onclick="changePage(${currentPage - 1})">«</button>`;
             }
             
-            // أرقام الصفحات
             for (let i = 1; i <= totalPages; i++) {
                 if (i === currentPage) {
                     paginationHtml += `<button class="page-btn active">${i}</button>`;
@@ -1073,7 +1206,6 @@
                 }
             }
             
-            // زر التالي
             if (currentPage < totalPages) {
                 paginationHtml += `<button class="page-btn" onclick="changePage(${currentPage + 1})">»</button>`;
             }
@@ -1085,7 +1217,6 @@
         // ========== تغيير الصفحة ==========
         function changePage(page) {
             currentPage = page;
-            // إعادة عرض المحتوى حسب الصفحة الحالية
             if (getHash().startsWith('search/')) {
                 const query = decodeURIComponent(getHash().split('/')[1]);
                 performSearch(query, true);
@@ -1095,12 +1226,11 @@
             scrollToTop();
         }
 
-        // ========== تحميل كل البيانات من JSON (باستخدام Promise.all) ==========
+        // ========== تحميل كل البيانات من JSON ==========
         async function loadAllJSON() {
             try {
                 const chapters = [1,2,3,4,5,6,7,8,9,10,11];
                 
-                // استخدام Promise.all للتحميل المتوازي (أسرع)
                 const fetchPromises = chapters.map(async (num) => {
                     try {
                         const res = await fetch(`database/chapter${num}.json`);
@@ -1121,7 +1251,6 @@
                     if (!data) return;
                     const num = chapters[index];
                     
-                    // إضافة بيانات الشابتر لكل مصطلح
                     data.terms.forEach(t => {
                         t.chapterData = chaptersData[num];
                         t.chapterNum = num;
@@ -1132,7 +1261,6 @@
                 
                 allTerms.sort((a, b) => a.id - b.id);
                 
-                // إنشاء Index للبحث باستخدام Fuse.js
                 setupFuseSearch();
                 
                 loadFromHash();
@@ -1182,7 +1310,6 @@
             }
             else showHome();
             
-            // تمرير للأعلى بعد تحميل المحتوى
             setTimeout(scrollToTop, 100);
         }
 
@@ -1212,9 +1339,8 @@
             mainEl.innerHTML = `<div class="detail-container">${html}</div>`;
         }
 
-        // ========== عرض شابتر معين (باستخدام البيانات المخزنة) ==========
+        // ========== عرض شابتر معين ==========
         function showChapter(num) {
-            // الحصول على بيانات الفصل من allTerms
             const chapterTerms = allTerms.filter(t => t.chapterNum === num);
             
             if (chapterTerms.length === 0) {
@@ -1239,7 +1365,6 @@
                     </div>
                     ${termsHtml}
                     
-                    <!-- زر الرجوع المحسن -->
                     <div class="back-btn-container">
                         <button class="back-btn-improved" onclick="navigate('chapters')">
                             <i class="fas fa-arrow-right"></i> عودة للشابترز
@@ -1253,7 +1378,6 @@
         function showFullTerm(id) {
             const term = allTerms.find(t => t.id === id);
             
-            // التحقق من وجود المصطلح
             if (!term) {
                 showToast('❌ المصطلح غير موجود');
                 navigate('home');
@@ -1262,7 +1386,6 @@
             
             const isSaved = savedTerms.includes(id);
             
-            // دالة لعرض أي قيمة مع تعقيم النص
             function renderValue(key, value) {
                 if (value === undefined || value === null || value === '') return '';
                 
@@ -1294,7 +1417,6 @@
                 `;
             }
 
-            // بناء HTML كامل لجميع الحقول
             let html = `
                 <div class="detail-container">
                     <span class="detail-badge">
@@ -1325,14 +1447,12 @@
                     ` : ''}
             `;
             
-            // 1. التعريفات
             html += `<div class="info-section"><div class="section-head"><i class="fas fa-align-right"></i> التعريفات</div><div class="info-grid-2">`;
             html += renderValue('definition (عربي)', term.definition);
             html += renderValue('definition_en (إنجليزي)', term.definition_en);
             html += renderValue('englishSentence', term.englishSentence);
             html += `</div></div>`;
             
-            // 2. تحليل المصطلح (parts) - كل شيء
             if (term.parts) {
                 html += `<div class="info-section"><div class="section-head"><i class="fas fa-puzzle-piece"></i> تحليل المصطلح (Parts)</div><div class="info-grid-2">`;
                 for (let [partKey, partVal] of Object.entries(term.parts)) {
@@ -1348,7 +1468,6 @@
                 html += `</div></div>`;
             }
             
-            // 3. نظام وأجهزة
             html += `<div class="info-section"><div class="section-head"><i class="fas fa-heartbeat"></i> النظام والجهاز</div><div class="info-grid-2">`;
             html += renderValue('system', term.system);
             html += renderValue('system_en', term.system_en);
@@ -1356,7 +1475,6 @@
             html += renderValue('systemFunction_en', term.systemFunction_en);
             html += `</div></div>`;
             
-            // 4. الموقع والأعضاء
             html += `<div class="info-section"><div class="section-head"><i class="fas fa-map-pin"></i> الموقع التشريحي</div><div class="info-grid-2">`;
             html += renderValue('location', term.location);
             html += renderValue('location_en', term.location_en);
@@ -1364,14 +1482,12 @@
             html += renderValue('nearbyOrgans_en', term.nearbyOrgans_en);
             html += `</div></div>`;
             
-            // 5. الكلمات المفتاحية
             if (term.keywords) {
                 html += `<div class="info-section"><div class="section-head"><i class="fas fa-tags"></i> كلمات مفتاحية</div>`;
                 html += `<div class="tags-container">${term.keywords.map(k => `<span class="tag-item">${sanitizeHTML(k)}</span>`).join('')}</div>`;
                 html += `</div>`;
             }
             
-            // 6. الاختصارات
             if (term.abbreviation || term.fullForm || term.category) {
                 html += `<div class="info-section"><div class="section-head"><i class="fas fa-font"></i> اختصارات</div><div class="info-grid-2">`;
                 html += renderValue('abbreviation', term.abbreviation);
@@ -1380,7 +1496,6 @@
                 html += `</div></div>`;
             }
             
-            // 7. مفرد وجمع
             if (term.singular || term.plural) {
                 html += `<div class="info-section"><div class="section-head"><i class="fas fa-language"></i> مفرد وجمع</div><div class="info-grid-2">`;
                 html += renderValue('singular', term.singular);
@@ -1388,14 +1503,12 @@
                 html += `</div></div>`;
             }
             
-            // 8. وظائف إضافية
             if (term.functions) {
                 html += `<div class="info-section"><div class="section-head"><i class="fas fa-tasks"></i> وظائف</div>`;
                 html += `<div class="tags-container">${term.functions.map(f => `<span class="tag-item tag-green">${sanitizeHTML(f)}</span>`).join('')}</div>`;
                 html += `</div>`;
             }
             
-            // 9. الأمراض (كاملة)
             if (term.diseases && term.diseases.length > 0) {
                 html += `<div class="info-section"><div class="section-head"><i class="fas fa-disease"></i> أمراض مرتبطة</div>`;
                 term.diseases.forEach(d => {
@@ -1413,7 +1526,6 @@
                 html += `</div>`;
             }
             
-            // 10. أي حقول إضافية غير مغطاة
             const allKeys = Object.keys(term);
             const coveredKeys = ['id', 'term', 'arabic', 'latin', 'pronunciation', 'definition', 'definition_en', 
                                'englishSentence', 'parts', 'system', 'system_en', 'systemFunction', 'systemFunction_en',
@@ -1430,7 +1542,6 @@
                 html += `</div></div>`;
             }
             
-            // زر الرجوع المحسن
             html += `
                 <div class="back-btn-container">
                     <button class="back-btn-improved" onclick="navigate('home')">
@@ -1442,11 +1553,10 @@
             mainEl.innerHTML = html;
         }
 
-        // ========== محلل المصطلحات (يبحث في قاعدة البيانات) ==========
+        // ========== محلل المصطلحات ==========
         function showAnalyzer() {
             mainEl.innerHTML = `
                 <div class="detail-container">
-                    <!-- قسم المحلل المبسط -->
                     <div class="analyzer-section">
                         <div class="analyzer-header">
                             <i class="fas fa-cut"></i>
@@ -1456,7 +1566,6 @@
                             </div>
                         </div>
                         
-                        <!-- حقل الإدخال مع زر التحليل المميز -->
                         <div class="analyzer-input-group">
                             <input type="text" id="analyzerInput" placeholder="مثال: cardiomyopathy, gastritis, nephrectomy...">
                             <button class="analyzer-btn" onclick="analyzeTerm()">
@@ -1464,7 +1573,6 @@
                             </button>
                         </div>
                         
-                        <!-- نتائج التحليل - بطاقات بسيطة -->
                         <div class="analyzer-results">
                             <div class="result-card-simple" id="prefixCard">
                                 <div class="result-label"><i class="fas fa-arrow-right"></i> البادئة (Prefix)</div>
@@ -1486,11 +1594,9 @@
                             </div>
                         </div>
                         
-                        <!-- نتائج البحث من قاعدة البيانات (تظهر هنا) -->
                         <div id="databaseResults" class="database-results"></div>
                     </div>
                     
-                    <!-- زر الرجوع المحسن -->
                     <div class="back-btn-container">
                         <button class="back-btn-improved" onclick="navigate('home')">
                             <i class="fas fa-arrow-right"></i> عودة للرئيسية
@@ -1508,10 +1614,8 @@
                 return;
             }
             
-            // البحث عن المصطلح في قاعدة البيانات (تطابق تام)
             const exactMatch = allTerms.find(t => t.term.toLowerCase() === input);
             
-            // قواعد للتحليل (افتراضية)
             const prefixes = {
                 'a': 'بدون/عدم',
                 'an': 'بدون/عدم',
@@ -1595,9 +1699,7 @@
             let rootSource = 'تحليل تلقائي';
             let suffixSource = 'تحليل تلقائي';
             
-            // ===== البحث في قاعدة البيانات أولاً (إذا وجد تطابق تام) =====
             if (exactMatch && exactMatch.parts) {
-                // استخراج البادئة من قاعدة البيانات
                 if (exactMatch.parts.prefix) {
                     prefixFound = {
                         value: exactMatch.parts.prefix.value,
@@ -1606,7 +1708,6 @@
                     prefixSource = 'مأخوذ من قاعدة البيانات';
                 }
                 
-                // استخراج الجذر من قاعدة البيانات
                 if (exactMatch.parts.root) {
                     rootFound = {
                         value: exactMatch.parts.root.value,
@@ -1627,7 +1728,6 @@
                     rootSource = 'مأخوذ من قاعدة البيانات (جذر 2)';
                 }
                 
-                // استخراج اللاحقة من قاعدة البيانات
                 if (exactMatch.parts.suffix) {
                     suffixFound = {
                         value: exactMatch.parts.suffix.value,
@@ -1637,9 +1737,7 @@
                 }
             }
             
-            // ===== إذا لم نجد في قاعدة البيانات، نستخدم التحليل التلقائي =====
             if (!prefixFound) {
-                // البحث عن البادئة
                 for (let p in prefixes) {
                     if (input.startsWith(p)) {
                         prefixFound = { value: p, meaning: prefixes[p] };
@@ -1649,7 +1747,6 @@
             }
             
             if (!rootFound) {
-                // البحث عن الجذر
                 for (let r in roots) {
                     if (input.includes(r)) {
                         rootFound = { value: r, meaning: roots[r] };
@@ -1659,7 +1756,6 @@
             }
             
             if (!suffixFound) {
-                // البحث عن اللاحقة
                 for (let s in suffixes) {
                     if (input.endsWith(s)) {
                         suffixFound = { value: s, meaning: suffixes[s] };
@@ -1668,7 +1764,6 @@
                 }
             }
             
-            // عرض نتائج التحليل مع مصدرها
             document.getElementById('prefixValue').textContent = prefixFound ? prefixFound.value : '─';
             document.getElementById('prefixDesc').textContent = prefixFound ? prefixFound.meaning : 'لا توجد بادئة';
             document.getElementById('prefixSource').innerHTML = prefixFound ? `<i class="fas fa-database"></i> ${prefixSource}` : '';
@@ -1681,21 +1776,17 @@
             document.getElementById('suffixDesc').textContent = suffixFound ? suffixFound.meaning : 'لا توجد لاحقة';
             document.getElementById('suffixSource').innerHTML = suffixFound ? `<i class="fas fa-database"></i> ${suffixSource}` : '';
             
-            // ===== البحث في قاعدة البيانات عن المصطلح المدخل =====
             const databaseResultsDiv = document.getElementById('databaseResults');
             
-            // البحث عن تطابق تام أولاً
             const exactMatchTerm = allTerms.find(t => t.term.toLowerCase() === input);
             
-            // البحث عن مصطلحات تحتوي على الكلمة المدخلة
             const relatedMatches = allTerms.filter(t => 
                 t.term.toLowerCase().includes(input) && 
                 (exactMatchTerm ? t.id !== exactMatchTerm.id : true)
-            ).slice(0, 3); // نأخذ أول 3 نتائج فقط
+            ).slice(0, 3);
             
             let dbHtml = '';
             
-            // عرض النتيجة المطابقة تماماً إن وجدت
             if (exactMatchTerm) {
                 dbHtml += `
                     <div class="database-title">
@@ -1718,7 +1809,6 @@
                             <span>${sanitizeHTML(exactMatchTerm.type || 'مصطلح')}</span>
                         </div>
                         
-                        <!-- أهمية المصطلح الطبي -->
                         <div class="term-importance">
                             <i class="fas fa-star"></i> 
                             ${sanitizeHTML(getTermImportance(exactMatchTerm))}
@@ -1727,7 +1817,6 @@
                 `;
             }
             
-            // عرض النتائج ذات الصلة
             if (relatedMatches.length > 0) {
                 dbHtml += `
                     <div class="database-title" style="margin-top: 20px;">
@@ -1750,7 +1839,6 @@
                                 <span class="database-term-chapter">${sanitizeHTML(term.chapterData?.name || `Chapter ${term.chapter}`)}</span>
                             </div>
                             
-                            <!-- أهمية المصطلح الطبي -->
                             <div class="term-importance">
                                 <i class="fas fa-info-circle"></i> 
                                 ${sanitizeHTML(getTermImportance(term))}
@@ -1760,7 +1848,6 @@
                 });
             }
             
-            // إذا لم يتم العثور على أي نتائج
             if (!exactMatchTerm && relatedMatches.length === 0) {
                 dbHtml = `
                     <div class="database-title" style="color: #ef4444;">
@@ -1776,7 +1863,6 @@
 
         // ========== دالة لتحديد أهمية المصطلح الطبي ==========
         function getTermImportance(term) {
-            // قائمة بالمصطلحات الهامة
             const importantTerms = {
                 'heart': 'أحد أهم أعضاء الجسم - مسؤول عن ضخ الدم',
                 'brain': 'المركز الرئيسي للجهاز العصبي',
@@ -1810,7 +1896,6 @@
                 'metastasis': 'انتشار السرطان - مرحلة متقدمة'
             };
             
-            // البحث عن كلمات مفتاحية في المصطلح
             for (let [key, value] of Object.entries(importantTerms)) {
                 if (term.term.toLowerCase().includes(key) || 
                     (term.arabic && term.arabic.includes(key)) ||
@@ -1819,7 +1904,6 @@
                 }
             }
             
-            // أهمية افتراضية للمصطلحات الأخرى
             const types = {
                 'condition': 'حالة مرضية شائعة في الممارسة السريرية',
                 'disease': 'مرض له أهمية في التشخيص والعلاج',
@@ -1835,7 +1919,6 @@
                 return types[term.type.toLowerCase()];
             }
             
-            // أهمية عامة
             return 'مصطلح طبي مهم في المجال الطبي';
         }
 
@@ -1849,12 +1932,10 @@
             const q = query.toLowerCase().trim();
             let results = [];
             
-            // استخدام Fuse.js إذا كان متاحاً
             if (fuseSearch) {
                 const fuseResults = fuseSearch.search(q);
                 results = fuseResults.map(r => r.item);
             } else {
-                // البحث العادي كبديل
                 results = allTerms.filter(term => {
                     if (currentFilter === 'english') return term.term?.toLowerCase().includes(q);
                     if (currentFilter === 'arabic') return term.arabic?.includes(q);
@@ -1877,7 +1958,6 @@
                         <i class="fas fa-search" style="font-size: 48px; color: #94a3b8;"></i>
                         <p style="margin: 20px 0;">لا توجد نتائج لـ "${sanitizeHTML(query)}"</p>
                         
-                        <!-- زر الرجوع المحسن -->
                         <div class="back-btn-container">
                             <button class="back-btn-improved" onclick="navigate('home')">
                                 <i class="fas fa-arrow-right"></i> عودة
@@ -1888,7 +1968,6 @@
                 return;
             }
 
-            // Pagination
             const totalPages = Math.ceil(results.length / itemsPerPage);
             const startIndex = (currentPage - 1) * itemsPerPage;
             const endIndex = startIndex + itemsPerPage;
@@ -1906,13 +1985,11 @@
             
             html += `</div>`;
             
-            // إضافة Pagination إذا كان هناك أكثر من صفحة
             if (totalPages > 1) {
                 html += createPagination(results.length, currentPage, 'search');
             }
             
             html += `
-                    <!-- زر الرجوع المحسن -->
                     <div class="back-btn-container">
                         <button class="back-btn-improved" onclick="navigate('home')">
                             <i class="fas fa-arrow-right"></i> عودة للرئيسية
@@ -1922,7 +1999,7 @@
             mainEl.innerHTML = html;
         }
 
-        // ========== الصفحة الرئيسية مع Pagination ==========
+        // ========== الصفحة الرئيسية ==========
         function showHome(resetPage = true) {
             if (resetPage) currentPage = 1;
             
@@ -1931,15 +2008,8 @@
                 return;
             }
             
-            // Pagination للمصطلحات العشوائية
-            const totalRandomTerms = allTerms.length;
-            const totalPages = Math.ceil(totalRandomTerms / itemsPerPage);
-            const startIndex = (currentPage - 1) * itemsPerPage;
-            const endIndex = startIndex + itemsPerPage;
-            
-            // ترتيب عشوائي مع الحفاظ على Pagination
             const shuffled = [...allTerms].sort(() => 0.5 - Math.random());
-            const randomTerms = shuffled.slice(0, 12); // نأخذ 12 مصطلح عشوائي فقط
+            const randomTerms = shuffled.slice(0, 12);
             
             let termsHtml = '<div class="terms-grid">';
             randomTerms.forEach(term => {
@@ -1978,7 +2048,7 @@
             `;
         }
 
-        // ========== المحفوظات مع Pagination ==========
+        // ========== المحفوظات ==========
         function showSaved() {
             const saved = allTerms.filter(t => savedTerms.includes(t.id));
             
@@ -1988,7 +2058,6 @@
                         <i class="far fa-star" style="font-size: 48px; color: #f1c40f;"></i>
                         <p style="margin: 20px 0;">لا توجد مصطلحات محفوظة</p>
                         
-                        <!-- زر الرجوع المحسن -->
                         <div class="back-btn-container">
                             <button class="back-btn-improved" onclick="navigate('home')">
                                 <i class="fas fa-arrow-right"></i> عودة
@@ -1999,7 +2068,6 @@
                 return;
             }
             
-            // Pagination للمحفوظات
             const totalPages = Math.ceil(saved.length / itemsPerPage);
             const startIndex = (currentPage - 1) * itemsPerPage;
             const endIndex = startIndex + itemsPerPage;
@@ -2021,7 +2089,6 @@
             });
             html += '</div>';
             
-            // إضافة Pagination إذا كان هناك أكثر من صفحة
             let paginationHtml = '';
             if (totalPages > 1) {
                 paginationHtml = createPagination(saved.length, currentPage, 'saved');
@@ -2033,7 +2100,6 @@
                     ${html}
                     ${paginationHtml}
                     
-                    <!-- زر الرجوع المحسن -->
                     <div class="back-btn-container">
                         <button class="back-btn-improved" onclick="navigate('home')">
                             <i class="fas fa-arrow-right"></i> عودة للرئيسية
@@ -2050,13 +2116,12 @@
             navigate('term', randomId);
         }
 
-        // ========== حفظ/إزالة مع التحقق من سعة التخزين ==========
+        // ========== حفظ/إزالة ==========
         function toggleSave(id) {
             if (savedTerms.includes(id)) {
                 savedTerms = savedTerms.filter(t => t !== id);
                 showToast('⭐ أزيل من المحفوظات');
             } else {
-                // التحقق من حجم المحفوظات (لا نريد تخزين آلاف المصطلحات)
                 if (savedTerms.length >= 100) {
                     showToast('⚠️ لا يمكن حفظ أكثر من 100 مصطلح');
                     return;
@@ -2068,12 +2133,12 @@
                 localStorage.setItem('medical_bank_saved', JSON.stringify(savedTerms));
             } catch (e) {
                 showToast('⚠️ فشل في حفظ المحفوظات');
-                savedTerms = savedTerms.filter(t => t !== id); // تراجع
+                savedTerms = savedTerms.filter(t => t !== id);
             }
             showFullTerm(id);
         }
 
-        // ========== تغيير فلتر البحث مع تمرير الحدث بشكل صحيح ==========
+        // ========== تغيير فلتر البحث ==========
         function setFilter(filter, event) {
             currentFilter = filter;
             document.querySelectorAll('.filter-chip').forEach(chip => chip.classList.remove('active'));
@@ -2102,13 +2167,23 @@
             searchTimeout = setTimeout(() => {
                 const val = e.target.value;
                 if (val.length >= 2) {
-                    currentPage = 1; // إعادة تعيين الصفحة عند بحث جديد
+                    currentPage = 1;
                     navigate('search', val);
                 } else if (val.length === 0) {
                     navigate('home');
                 }
-            }, 300); // Debounce 300ms
+            }, 300);
         });
+
+        // ========== Service Worker للتخزين المؤقت ==========
+        if ("serviceWorker" in navigator) {
+            window.addEventListener("load", () => {
+                navigator.serviceWorker
+                    .register("/service-worker.js")
+                    .then(() => console.log("Service Worker Registered"))
+                    .catch(err => console.log("Service Worker Error:", err));
+            });
+        }
 
         // ========== تهيئة الموقع ==========
         window.addEventListener('load', () => {

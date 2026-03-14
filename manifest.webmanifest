@@ -1,31 +1,20 @@
 {
-  "id": "/",
-  "name": "MedTerm - البنك الطبي",
+  "name": "MedTerm",
   "short_name": "MedTerm",
-  "description": "MedTerm بنك المصطلحات الطبية الشامل. تطوير: نادر",
-  "lang": "ar",
-  "dir": "rtl",
-  "start_url": "/",
-  "scope": "/",
+  "description": "البنك الطبي الشامل",
+  "start_url": "./",
+  "scope": "./",
   "display": "standalone",
-  "orientation": "portrait",
-  "background_color": "#f8fafc",
+  "background_color": "#ffffff",
   "theme_color": "#0d9488",
-
-  "categories": ["medical", "education"],
-
-  "developer": {
-    "name": "Nader"
-  },
-
   "icons": [
     {
-      "src": "/icons/icon-192.png",
+      "src": "icons/icon-192.png",
       "sizes": "192x192",
       "type": "image/png"
     },
     {
-      "src": "/icons/icon-512.png",
+      "src": "icons/icon-512.png",
       "sizes": "512x512",
       "type": "image/png"
     }

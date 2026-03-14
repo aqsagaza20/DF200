@@ -2,7 +2,7 @@
   "id": "/",
   "name": "MedTerm - البنك الطبي",
   "short_name": "MedTerm",
-  "description": "MedTerm بنك المصطلحات الطبية الشامل مع بحث وتحليل المصطلحات الطبية. تطوير: نادر",
+  "description": "MedTerm بنك المصطلحات الطبية الشامل. تطوير: نادر",
   "lang": "ar",
   "dir": "rtl",
   "start_url": "/",
@@ -11,6 +11,8 @@
   "orientation": "portrait",
   "background_color": "#f8fafc",
   "theme_color": "#0d9488",
+
+  "categories": ["medical", "education"],
 
   "developer": {
     "name": "Nader"

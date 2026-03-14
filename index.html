@@ -2194,6 +2194,45 @@
             loadFromHash();
             scrollToTop();
         });
+window.addEventListener('hashchange', () => {
+    loadFromHash();
+    scrollToTop();
+});
+
+
+// ====== كود زر تثبيت التطبيق ======
+
+let deferredPrompt;
+
+window.addEventListener("beforeinstallprompt", (e) => {
+    e.preventDefault();
+    deferredPrompt = e;
+
+    const installBtn = document.createElement("button");
+    installBtn.innerText = "📲 تثبيت MedTerm";
+
+    installBtn.style.position = "fixed";
+    installBtn.style.bottom = "120px";
+    installBtn.style.left = "50%";
+    installBtn.style.transform = "translateX(-50%)";
+    installBtn.style.padding = "12px 25px";
+    installBtn.style.borderRadius = "30px";
+    installBtn.style.border = "none";
+    installBtn.style.background = "#0d9488";
+    installBtn.style.color = "white";
+    installBtn.style.fontSize = "16px";
+    installBtn.style.zIndex = "999";
+
+    document.body.appendChild(installBtn);
+
+    installBtn.addEventListener("click", () => {
+        installBtn.remove();
+        deferredPrompt.prompt();
+        deferredPrompt.userChoice.then(() => {
+            deferredPrompt = null;
+        });
+    });
+});
     </script>
 </body>
 </html>
